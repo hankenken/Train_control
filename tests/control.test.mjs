@@ -23,3 +23,21 @@ test('4組は独立して動作', () => {
   all[0].sensorA(0); all[2].sensorA(0); all[2].sensorB(2500,3000,2000);
   assert.deepEqual(all.map(c => c.phase), ['waiting','idle','locked','idle']);
 });
+test('両方式：進路決定前はポイントを操作せず、解除後も前回位置を保持', () => {
+  for (const mode of ['time', 'led']) {
+    const c = new Controller(mode);
+    assert.equal(c.point, null);
+    c.sensorA(0);
+    c.indication(2500, 2000);
+    assert.equal(c.point, null);
+    c.sensorB(2500, 2000, 2000);
+    assert.equal(c.point, 'curve');
+    c.reset();
+    assert.equal(c.point, 'curve');
+    c.sensorA(5000);
+    c.indication(5001, 2000);
+    assert.equal(c.point, 'curve');
+    c.sensorB(5001, 2000, 2000);
+    assert.equal(c.point, 'straight');
+  }
+});

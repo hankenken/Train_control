@@ -13,7 +13,8 @@ function render() {
     const el = document.querySelector(`#panel-${i}`);
     const active = c.route || (c.phase === 'waiting' && c.mode === 'led' ? c.indication(now, Number(interval.value) * 1000) : null);
     el.querySelector('.status').textContent = c.phase === 'idle' ? '待機中 / 信号：停止' : c.phase === 'waiting' ? '選択中 / 信号：停止' : `進路ロック / 模擬信号：${routeName(c.route)}進行`;
-    el.querySelector('.detail').textContent = c.started === null ? 'Aの通過を待っています' : c.phase === 'locked' ? `ポイント：${routeName(c.route)}（模擬）` : `A通過から ${((now - c.started) / 1000).toFixed(1)} 秒`;
+    const point = c.point === null ? '未確認' : routeName(c.point);
+    el.querySelector('.detail').textContent = `ポイント：${point}（模擬） / ` + (c.phase === 'idle' ? '現在位置を保持・A待ち' : c.phase === 'locked' ? '進路確定・ロック中' : `現在位置を保持・A通過から ${((now - c.started) / 1000).toFixed(1)} 秒`);
     ['straight', 'curve'].forEach(r => el.querySelector(`.${r}`).classList.toggle('lit', active === r));
     el.querySelector('[data-action="a"]').disabled = c.phase !== 'idle' || !settingsValid();
     el.querySelector('[data-action="b"]').disabled = c.phase !== 'waiting';
