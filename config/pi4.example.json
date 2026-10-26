@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "status": "design_example_not_loaded_by_app",
+  "platform": {
+    "model": "Raspberry Pi 4 Model B",
+    "gpio_numbering": "BCM"
+  },
+  "adc": {
+    "model": "MCP3008",
+    "reference_volts": 3.3,
+    "spi_bus": 0,
+    "spi_device": 0,
+    "speed_hz": 500000,
+    "sample_hz_per_channel": 100,
+    "bcm_pins": {
+      "sclk": 11,
+      "miso": 9,
+      "mosi": 10,
+      "ce0": 8
+    }
+  },
+  "sensors": [
+    {
+      "id": "upper_outer_a",
+      "adc_channel": 0,
+      "enabled": false,
+      "calibration": {
+        "empty": null,
+        "roof": null
+      },
+      "filter": {
+        "on": 0.6,
+        "off": 0.35,
+        "on_ms": 30,
+        "off_ms": 150,
+        "min_contrast_counts": 100
+      }
+    },
+    {
+      "id": "upper_outer_b",
+      "adc_channel": 1,
+      "enabled": false,
+      "calibration": {
+        "empty": null,
+        "roof": null
+      },
+      "filter": {
+        "on": 0.6,
+        "off": 0.35,
+        "on_ms": 30,
+        "off_ms": 150,
+        "min_contrast_counts": 100
+      }
+    },
+    {
+      "id": "upper_inner_a",
+      "adc_channel": 2,
+      "enabled": false,
+      "calibration": {
+        "empty": null,
+        "roof": null
+      },
+      "filter": {
+        "on": 0.6,
+        "off": 0.35,
+        "on_ms": 30,
+        "off_ms": 150,
+        "min_contrast_counts": 100
+      }
+    },
+    {
+      "id": "upper_inner_b",
+      "adc_channel": 3,
+      "enabled": false,
+      "calibration": {
+        "empty": null,
+        "roof": null
+      },
+      "filter": {
+        "on": 0.6,
+        "off": 0.35,
+        "on_ms": 30,
+        "off_ms": 150,
+        "min_contrast_counts": 100
+      }
+    },
+    {
+      "id": "lower_outer_a",
+      "adc_channel": 4,
+      "enabled": false,
+      "calibration": {
+        "empty": null,
+        "roof": null
+      },
+      "filter": {
+        "on": 0.6,
+        "off": 0.35,
+        "on_ms": 30,
+        "off_ms": 150,
+        "min_contrast_counts": 100
+      }
+    },
+    {
+      "id": "lower_outer_b",
+      "adc_channel": 5,
+      "enabled": false,
+      "calibration": {
+        "empty": null,
+        "roof": null
+      },
+      "filter": {
+        "on": 0.6,
+        "off": 0.35,
+        "on_ms": 30,
+        "off_ms": 150,
+        "min_contrast_counts": 100
+      }
+    },
+    {
+      "id": "lower_inner_a",
+      "adc_channel": 6,
+      "enabled": false,
+      "calibration": {
+        "empty": null,
+        "roof": null
+      },
+      "filter": {
+        "on": 0.6,
+        "off": 0.35,
+        "on_ms": 30,
+        "off_ms": 150,
+        "min_contrast_counts": 100
+      }
+    },
+    {
+      "id": "lower_inner_b",
+      "adc_channel": 7,
+      "enabled": false,
+      "calibration": {
+        "empty": null,
+        "roof": null
+      },
+      "filter": {
+        "on": 0.6,
+        "off": 0.35,
+        "on_ms": 30,
+        "off_ms": 150,
+        "min_contrast_counts": 100
+      }
+    }
+  ],
+  "routes": [
+    {
+      "id": "upper_outer",
+      "mode": "time",
+      "sensor_a": "upper_outer_a",
+      "sensor_b": "upper_outer_b"
+    },
+    {
+      "id": "upper_inner",
+      "mode": "time",
+      "sensor_a": "upper_inner_a",
+      "sensor_b": "upper_inner_b"
+    },
+    {
+      "id": "lower_outer",
+      "mode": "led",
+      "sensor_a": "lower_outer_a",
+      "sensor_b": "lower_outer_b"
+    },
+    {
+      "id": "lower_inner",
+      "mode": "led",
+      "sensor_a": "lower_inner_a",
+      "sensor_b": "lower_inner_b"
+    }
+  ],
+  "turnout_output": {
+    "enabled": false,
+    "pins": null
+  },
+  "signal_output": {
+    "enabled": false,
+    "pins": null
+  },
+  "release_mode": "manual"
+}
