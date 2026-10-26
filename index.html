@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>路面電車 運行操作盤</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div><small>N GAUGE · TROLLEY CONTACTOR</small><h1>路面電車 運行操作盤</h1></div><span class="badge">シミュレーション</span></header>
+<main><p class="intro">列車の運転は手動。センサ通過をボタンで再現して、4組の進路選択を確認できます。GPIO・実際のポイントには接続していません。</p>
+<section class="layout"><div class="section-title"><h2>線路配置</h2><span>交差部分は接続なし · 模式図</span></div>
+<svg viewBox="0 0 1000 540" role="img" aria-label="左右の複線環状線と中央の複線本線。上側に時間差方式、下側にLED選択方式">
+<g fill="none" stroke="#618a9d" stroke-width="4"><path d="M280 55H750C1000 55 1000 485 750 485H280C-30 485 -30 55 280 55Z"/><path d="M280 85H750C950 85 950 455 750 455H280C25 455 25 85 280 85Z"/><path d="M660 15V325Q660 485 470 485M620 15V315Q620 455 430 455M620 525V220Q620 85 430 85M660 525V210Q660 55 470 55"/></g>
+<g fill="#a9c5d0" font-size="28"><text x="62" y="270">↑</text><text x="108" y="270">↓</text><text x="578" y="270">↑</text><text x="684" y="270">↓</text><text x="880" y="270">↑</text><text x="945" y="270">↓</text></g>
+<g font-size="15" text-anchor="middle"><g id="marker-0"><rect x="270" y="15" width="160" height="32" rx="8"/><text x="350" y="37">1 外側 → 時間差</text></g><g id="marker-1"><rect x="270" y="97" width="160" height="32" rx="8"/><text x="350" y="119">1 内側 ← 時間差</text></g><g id="marker-2"><rect x="270" y="493" width="160" height="32" rx="8"/><text x="350" y="515">2 外側 ← LED</text></g><g id="marker-3"><rect x="270" y="411" width="160" height="32" rx="8"/><text x="350" y="433">2 内側 → LED</text></g></g></svg>
+<p class="note">センサ・ポイントの位置は仮配置です。上下の線路ごとに、進行方向へ A → B → ポイントの順で設置します。</p></section>
+<section class="settings"><label>時間差の判定境界 <input id="threshold" type="number" min="0.1" max="60" step="0.1" value="3"> 秒</label><label>LEDの切替間隔 <input id="interval" type="number" min="0.1" max="60" step="0.1" value="2"> 秒</label><p>境界未満は直進、境界以上は分岐。設定は全組が待機中のとき変更できます。</p></section>
+<div id="panels" class="panels"></div>
+<section class="log"><h2>操作履歴</h2><ol id="events" aria-live="polite"><li>操作を待っています。</li></ol></section>
+</main><footer>進路確定後はロックします。模型の通過確認を想定した「通過完了」で解除してください。信号は進路選択の模擬表示で、在線検知・連動装置の機能はまだありません。</footer><script type="module" src="app.mjs"></script></body></html>
