@@ -55,7 +55,7 @@ job['GeneralSpecs']['ProjectId']['Revision']='B0-PROTOTYPE'
 job_path.write_text(json.dumps(job,indent=2)+'\n')
 run('sch','export','pdf','-o',REVIEW/'schematic.pdf',SCH)
 run('pcb','export','pdf','--layers','F.Fab,F.Silkscreen,Edge.Cuts','--sketch-pads-on-fab-layers',
-    '-o',REVIEW/'assembly-top.pdf',BOARD)
+    '--black-and-white','-o',REVIEW/'assembly-top.pdf',BOARD)
 run('pcb','export','svg','--layers','F.Cu,F.Silkscreen,Edge.Cuts','--mode-single','--fit-page-to-board',
     '--exclude-drawing-sheet','-o',REVIEW/'board-top.svg',BOARD)
 svg_path=REVIEW/'board-top.svg'

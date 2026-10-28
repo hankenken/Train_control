@@ -33,6 +33,10 @@ DRV8871を直接載せると放熱パッドの実装が必要になるため、�
 | `source/BOM_hand_assembly.csv` | はんだ付け部品表。JLCPCBの実装用BOMではない |
 | `source/connections.csv` | 全端子とネット名の一覧 |
 | `review/schematic.pdf` | 回路図閲覧用PDF（A1、拡大して閲覧） |
+| `review/TC_IO_REVB_documents.pdf` | 表紙・回路図・部品表・組立図をまとめたPDF（6ページ） |
+| `review/TC_IO_REVB_schematic.pdf` | Rev B回路図の個別PDF（1ページ、A1） |
+| `review/TC_IO_REVB_BOM.pdf` | 日本語の部品表・付属品一覧（2ページ、A4） |
+| `review/TC_IO_REVB_assembly.pdf` | 組立順・接続表と配置図（2ページ、A4） |
 | `review/assembly-top.pdf` | 表面の部品配置・ピン番号図 |
 | `review/board-top.svg` | 表面配線と印刷のプレビュー |
 | `reports/DRC.json` / `ERC.json` | 基板と回路図の検査結果 |
@@ -133,3 +137,6 @@ KiCad 9＋標準ライブラリを使用します。`source/TC_IO_REVB.kicad_pro
 `build_design.py` は初期回路図と**未配線**の基板を生成する開発用スクリプトです。配線済みファイルを上書きするので、通常の再出力には使いません。
 配線にはFreerouting 2.1.0を使用し、KiCadへ戻して余分な枝配線を除去し、最終DRCを再実行しました。
 再配線した場合も最終DRC/ERC、回路図と基板のネット一致を確認してからGerberを再作成してください。
+
+日本語PDFの再出力は、KiCadで元図面を出力した後に`python3 export_documents.py`で行います。
+Pythonの`reportlab`、`pypdf`、`fonttools`を使用し、未取得時はGoogle Fontsの公式リポジトリからNoto Sans JPを取得します。日本語フォントはPDFへ埋め込みます。

@@ -1,0 +1,26 @@
+{
+  "board": "TC_IO_REVB",
+  "board_source_sha256": "64183ccb332354549c41f617817d056ff900d212656eacd6f6708704bad0e31a",
+  "bom_source_sha256": "c0b3cb314cfa354e5837f3d0a9dbbcdc77296d3938eabadf33a9fcf0f77ac0d0",
+  "grouped_components": 16,
+  "board_component_quantity": 49,
+  "font_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/NotoSansJP%5Bwght%5D.ttf",
+  "pdfs": {
+    "TC_IO_REVB_schematic.pdf": {
+      "pages": 1,
+      "sha256": "d78f283afb9796513357d6c0cf33d00215f1706c14279c6e86d3133d87aa9698"
+    },
+    "TC_IO_REVB_BOM.pdf": {
+      "pages": 2,
+      "sha256": "64fe9ab7549efab61931e64902d9ddf34b3471124401185710839851346f0f8d"
+    },
+    "TC_IO_REVB_assembly.pdf": {
+      "pages": 2,
+      "sha256": "f21dd67a7ce0c1b7b925f589a8ab44fe60f874f1ab6441c691174f0de6794087"
+    },
+    "TC_IO_REVB_documents.pdf": {
+      "pages": 6,
+      "sha256": "6614a3adad6128e4a1b3e8f871e5b46a5c3b822a9c0d010fe5d3c1097bec92f9"
+    }
+  }
+}
