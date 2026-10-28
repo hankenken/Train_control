@@ -177,7 +177,44 @@
   ],
   "turnout_output": {
     "enabled": false,
-    "pins": null
+    "status": "design_only_no_gpio_driver",
+    "supply_volts": 12,
+    "target_pulse_ms": 50,
+    "acceptance_max_pulse_ms": 100,
+    "min_repeat_interval_ms": 1000,
+    "serialize_all_channels": true,
+    "bcm_arm": 23,
+    "position_confirmation": "operator_required",
+    "channels": [
+      {
+        "id": "upper_outer",
+        "bcm_p": 5,
+        "bcm_n": 6,
+        "bcm_trigger": 12,
+        "straight_polarity": null
+      },
+      {
+        "id": "upper_inner",
+        "bcm_p": 13,
+        "bcm_n": 16,
+        "bcm_trigger": 19,
+        "straight_polarity": null
+      },
+      {
+        "id": "lower_outer",
+        "bcm_p": 20,
+        "bcm_n": 21,
+        "bcm_trigger": 26,
+        "straight_polarity": null
+      },
+      {
+        "id": "lower_inner",
+        "bcm_p": 17,
+        "bcm_n": 27,
+        "bcm_trigger": 22,
+        "straight_polarity": null
+      }
+    ]
   },
   "signal_output": {
     "enabled": false,
