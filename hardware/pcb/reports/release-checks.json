@@ -1,0 +1,37 @@
+{
+  "board": "TC_IO_REVA",
+  "status": "UNTESTED_PROTOTYPE_NOT_PRODUCTION_QUALIFIED",
+  "size_mm": [
+    170,
+    120
+  ],
+  "layers": 2,
+  "thickness_mm": 1.6,
+  "copper_oz": 1,
+  "assembly": "bare PCB, hand assembly",
+  "included_function": "3.3V logic, 8 ADC channels, 4 pulse gates; separate DRV8871 modules required",
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "erc_violations": 0,
+  "schematic_pcb_netlist_match": true,
+  "manufacturer_datasheet_review_complete": false,
+  "physical_testing_complete": false,
+  "source_sha256": {
+    "TC_IO_REVA.kicad_pcb": "70ee176d460d846014c1f3c5c5c080bd529d97e3f457a82ec422eb5ac932f33c",
+    "TC_IO_REVA.kicad_sch": "13b968faf5385797370ce72f03758c0fb898015da8991f1c7e48da817b6a5312",
+    "TC.kicad_sym": "4dde40ab7ae079dcc8acfc44b611e3dd124faa68bd20a114b999f5bbff8379b3"
+  },
+  "fabrication_sha256": {
+    "TC_IO_REVA-B_Cu.gbl": "c92cd738a97ffed5c76e99f6b94e93a7b691b6a46258198e4fa5ef9b1e7bc6b6",
+    "TC_IO_REVA-B_Mask.gbs": "e10481211c39bd7a9ad55bc3dc283fbbbf1a75de4007492f5a60ffce9d4fa7a7",
+    "TC_IO_REVA-B_Silkscreen.gbo": "564340a4a46be9b12292ff4a0ed095247502090b851a6bbe7e7069dd84378606",
+    "TC_IO_REVA-Edge_Cuts.gm1": "add1db4c249430ea5c7095ea2d7db42f1d40f3ff929d9144c18300aaf9383fef",
+    "TC_IO_REVA-F_Cu.gtl": "2f9f2cba281dc2b5a2a15ce0c4d3acedd0191b9863c0d33a47e684f2b0d6003d",
+    "TC_IO_REVA-F_Mask.gts": "ff8179136fe6e28537f2e21c6bab7de018ad176acc05fd93413b209a42deb5de",
+    "TC_IO_REVA-F_Silkscreen.gto": "9cd3b5035a62ba7106d41182092cfcbfdbc7dd31faf7bdbd2281e6bd03ea9cce",
+    "TC_IO_REVA-NPTH.drl": "6a8471ba68b87773bd1bdc5df1775c6e0c5a83c12680a40f223e732123245965",
+    "TC_IO_REVA-PTH.drl": "3aea8b3f77b71f5db811f12d71b1eb202ca8b95680f1d18108cbdf9f1c1b812b",
+    "TC_IO_REVA-job.gbrjob": "f0470236831d9dac5bbd9f59ca1896c751a35a368b205ccfb8e08b4e16e624b9"
+  },
+  "zip_sha256": "d39d6186eb2add93053af0ac3d955335ae1846081d5ea33166fbaeb320b43029"
+}

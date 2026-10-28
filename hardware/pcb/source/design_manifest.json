@@ -1,0 +1,1249 @@
+{
+  "name": "TC_IO_REVA",
+  "status": "DRAFT_NOT_RELEASED",
+  "board_mm": [
+    170,
+    120
+  ],
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "PI4_40PIN_CABLE",
+      "footprint": "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical",
+      "nets": {
+        "1": "+3V3",
+        "2": null,
+        "3": "SDA",
+        "4": null,
+        "5": "SCL",
+        "6": "GND",
+        "7": null,
+        "8": null,
+        "9": "GND",
+        "10": null,
+        "11": "LOW_IN_P",
+        "12": null,
+        "13": "LOW_IN_N",
+        "14": "GND",
+        "15": "LOW_IN_TRIG",
+        "16": "ARM",
+        "17": null,
+        "18": null,
+        "19": "MOSI",
+        "20": "GND",
+        "21": "MISO",
+        "22": null,
+        "23": "SCLK",
+        "24": "ADC_CS",
+        "25": "GND",
+        "26": null,
+        "27": null,
+        "28": null,
+        "29": "UP_OUT_P",
+        "30": "GND",
+        "31": "UP_OUT_N",
+        "32": "UP_OUT_TRIG",
+        "33": "UP_IN_P",
+        "34": "GND",
+        "35": "UP_IN_TRIG",
+        "36": "UP_IN_N",
+        "37": "LOW_OUT_TRIG",
+        "38": "LOW_OUT_P",
+        "39": "GND",
+        "40": "LOW_OUT_N"
+      },
+      "pos": [
+        30,
+        40,
+        0
+      ],
+      "names": {},
+      "types": {
+        "1": "power_out",
+        "3": "bidirectional",
+        "5": "bidirectional",
+        "16": "output",
+        "19": "output",
+        "21": "input",
+        "23": "output",
+        "24": "output",
+        "6": "power_out",
+        "9": "passive",
+        "14": "passive",
+        "20": "passive",
+        "25": "passive",
+        "30": "passive",
+        "34": "passive",
+        "39": "passive",
+        "29": "output",
+        "31": "output",
+        "32": "output",
+        "33": "output",
+        "36": "output",
+        "35": "output",
+        "38": "output",
+        "40": "output",
+        "37": "output",
+        "11": "output",
+        "13": "output",
+        "15": "output"
+      },
+      "note": "Separate board, keyed ribbon cable; no 5V connection; verify pin 1 at both ends"
+    },
+    {
+      "ref": "J2",
+      "value": "SENSOR_0",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "SENSOR_3V3",
+        "3": "AN0"
+      },
+      "pos": [
+        70,
+        30,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "VCC_3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Board-specific pin order, not universal sensor pinout"
+    },
+    {
+      "ref": "J3",
+      "value": "SENSOR_1",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "SENSOR_3V3",
+        "3": "AN1"
+      },
+      "pos": [
+        82,
+        30,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "VCC_3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Board-specific pin order, not universal sensor pinout"
+    },
+    {
+      "ref": "J4",
+      "value": "SENSOR_2",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "SENSOR_3V3",
+        "3": "AN2"
+      },
+      "pos": [
+        94,
+        30,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "VCC_3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Board-specific pin order, not universal sensor pinout"
+    },
+    {
+      "ref": "J5",
+      "value": "SENSOR_3",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "SENSOR_3V3",
+        "3": "AN3"
+      },
+      "pos": [
+        106,
+        30,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "VCC_3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Board-specific pin order, not universal sensor pinout"
+    },
+    {
+      "ref": "J6",
+      "value": "SENSOR_4",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "SENSOR_3V3",
+        "3": "AN4"
+      },
+      "pos": [
+        118,
+        30,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "VCC_3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Board-specific pin order, not universal sensor pinout"
+    },
+    {
+      "ref": "J7",
+      "value": "SENSOR_5",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "SENSOR_3V3",
+        "3": "AN5"
+      },
+      "pos": [
+        130,
+        30,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "VCC_3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Board-specific pin order, not universal sensor pinout"
+    },
+    {
+      "ref": "J8",
+      "value": "SENSOR_6",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "SENSOR_3V3",
+        "3": "AN6"
+      },
+      "pos": [
+        142,
+        30,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "VCC_3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Board-specific pin order, not universal sensor pinout"
+    },
+    {
+      "ref": "J9",
+      "value": "SENSOR_7",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "SENSOR_3V3",
+        "3": "AN7"
+      },
+      "pos": [
+        154,
+        30,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "VCC_3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Board-specific pin order, not universal sensor pinout"
+    },
+    {
+      "ref": "JP1",
+      "value": "SENSOR_POWER_OFF_DEFAULT",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "+3V3",
+        "2": "SENSOR_3V3"
+      },
+      "pos": [
+        55,
+        30,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "NO SHUNT until sensor current budget is verified"
+    },
+    {
+      "ref": "U1",
+      "value": "MCP3008-I/P",
+      "footprint": "Package_DIP:DIP-16_W7.62mm_Socket_LongPads",
+      "nets": {
+        "1": "AN0",
+        "2": "AN1",
+        "3": "AN2",
+        "4": "AN3",
+        "5": "AN4",
+        "6": "AN5",
+        "7": "AN6",
+        "8": "AN7",
+        "9": "GND",
+        "10": "ADC_CS",
+        "11": "MOSI",
+        "12": "MISO",
+        "13": "SCLK",
+        "14": "GND",
+        "15": "+3V3",
+        "16": "+3V3"
+      },
+      "pos": [
+        76,
+        50,
+        0
+      ],
+      "names": {
+        "1": "CH0",
+        "2": "CH1",
+        "3": "CH2",
+        "4": "CH3",
+        "5": "CH4",
+        "6": "CH5",
+        "7": "CH6",
+        "8": "CH7",
+        "9": "DGND",
+        "10": "CS",
+        "11": "DIN",
+        "12": "DOUT",
+        "13": "CLK",
+        "14": "AGND",
+        "15": "VREF",
+        "16": "VDD"
+      },
+      "types": {
+        "9": "power_in",
+        "10": "input",
+        "11": "input",
+        "12": "output",
+        "13": "input",
+        "14": "power_in",
+        "15": "power_in",
+        "16": "power_in"
+      },
+      "note": "10-bit ADC, 3.3V supply/reference; sensor outputs must stay within 0..3.3V"
+    },
+    {
+      "ref": "U2",
+      "value": "SN74HC221N",
+      "footprint": "Package_DIP:DIP-16_W7.62mm_Socket_LongPads",
+      "nets": {
+        "8": "GND",
+        "16": "+3V3",
+        "1": "GND",
+        "2": "UP_OUT_TRIG",
+        "3": "CLEAR_N",
+        "14": "UP_OUT_CE",
+        "15": "UP_OUT_RC",
+        "13": "UP_OUT_Q",
+        "4": null,
+        "9": "GND",
+        "10": "UP_IN_TRIG",
+        "11": "CLEAR_N",
+        "6": "UP_IN_CE",
+        "7": "UP_IN_RC",
+        "5": "UP_IN_Q",
+        "12": null
+      },
+      "pos": [
+        117,
+        53,
+        0
+      ],
+      "names": {
+        "8": "GND",
+        "16": "VCC",
+        "1": "A_N",
+        "2": "B",
+        "3": "CLR_N",
+        "14": "CEXT",
+        "15": "RCEXT",
+        "13": "Q",
+        "4": "Q_N",
+        "9": "A_N",
+        "10": "B",
+        "11": "CLR_N",
+        "6": "CEXT",
+        "7": "RCEXT",
+        "5": "Q",
+        "12": "Q_N"
+      },
+      "types": {
+        "8": "power_in",
+        "16": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "input",
+        "14": "passive",
+        "15": "passive",
+        "13": "output",
+        "4": "output",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "6": "passive",
+        "7": "passive",
+        "5": "output",
+        "12": "output"
+      },
+      "note": "HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
+    },
+    {
+      "ref": "U3",
+      "value": "SN74HC221N",
+      "footprint": "Package_DIP:DIP-16_W7.62mm_Socket_LongPads",
+      "nets": {
+        "8": "GND",
+        "16": "+3V3",
+        "1": "GND",
+        "2": "LOW_OUT_TRIG",
+        "3": "CLEAR_N",
+        "14": "LOW_OUT_CE",
+        "15": "LOW_OUT_RC",
+        "13": "LOW_OUT_Q",
+        "4": null,
+        "9": "GND",
+        "10": "LOW_IN_TRIG",
+        "11": "CLEAR_N",
+        "6": "LOW_IN_CE",
+        "7": "LOW_IN_RC",
+        "5": "LOW_IN_Q",
+        "12": null
+      },
+      "pos": [
+        117,
+        89,
+        0
+      ],
+      "names": {
+        "8": "GND",
+        "16": "VCC",
+        "1": "A_N",
+        "2": "B",
+        "3": "CLR_N",
+        "14": "CEXT",
+        "15": "RCEXT",
+        "13": "Q",
+        "4": "Q_N",
+        "9": "A_N",
+        "10": "B",
+        "11": "CLR_N",
+        "6": "CEXT",
+        "7": "RCEXT",
+        "5": "Q",
+        "12": "Q_N"
+      },
+      "types": {
+        "8": "power_in",
+        "16": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "input",
+        "14": "passive",
+        "15": "passive",
+        "13": "output",
+        "4": "output",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "6": "passive",
+        "7": "passive",
+        "5": "output",
+        "12": "output"
+      },
+      "note": "HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
+    },
+    {
+      "ref": "U4",
+      "value": "SN74HC08N",
+      "footprint": "Package_DIP:DIP-14_W7.62mm_Socket_LongPads",
+      "nets": {
+        "7": "GND",
+        "14": "+3V3",
+        "1": "UP_OUT_P",
+        "2": "UP_OUT_Q",
+        "3": "UP_OUT_IN1",
+        "4": "UP_OUT_N",
+        "5": "UP_OUT_Q",
+        "6": "UP_OUT_IN2",
+        "9": "UP_IN_P",
+        "10": "UP_IN_Q",
+        "8": "UP_IN_IN1",
+        "12": "UP_IN_N",
+        "13": "UP_IN_Q",
+        "11": "UP_IN_IN2"
+      },
+      "pos": [
+        151,
+        53,
+        0
+      ],
+      "names": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "1A",
+        "2": "1B",
+        "3": "1Y",
+        "4": "2A",
+        "5": "2B",
+        "6": "2Y",
+        "9": "3A",
+        "10": "3B",
+        "8": "3Y",
+        "12": "4A",
+        "13": "4B",
+        "11": "4Y"
+      },
+      "types": {
+        "7": "power_in",
+        "14": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "10": "input",
+        "8": "output",
+        "12": "input",
+        "13": "input",
+        "11": "output"
+      },
+      "note": ""
+    },
+    {
+      "ref": "U5",
+      "value": "SN74HC08N",
+      "footprint": "Package_DIP:DIP-14_W7.62mm_Socket_LongPads",
+      "nets": {
+        "7": "GND",
+        "14": "+3V3",
+        "1": "LOW_OUT_P",
+        "2": "LOW_OUT_Q",
+        "3": "LOW_OUT_IN1",
+        "4": "LOW_OUT_N",
+        "5": "LOW_OUT_Q",
+        "6": "LOW_OUT_IN2",
+        "9": "LOW_IN_P",
+        "10": "LOW_IN_Q",
+        "8": "LOW_IN_IN1",
+        "12": "LOW_IN_N",
+        "13": "LOW_IN_Q",
+        "11": "LOW_IN_IN2"
+      },
+      "pos": [
+        151,
+        89,
+        0
+      ],
+      "names": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "1A",
+        "2": "1B",
+        "3": "1Y",
+        "4": "2A",
+        "5": "2B",
+        "6": "2Y",
+        "9": "3A",
+        "10": "3B",
+        "8": "3Y",
+        "12": "4A",
+        "13": "4B",
+        "11": "4Y"
+      },
+      "types": {
+        "7": "power_in",
+        "14": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "10": "input",
+        "8": "output",
+        "12": "input",
+        "13": "input",
+        "11": "output"
+      },
+      "note": ""
+    },
+    {
+      "ref": "U6",
+      "value": "SN74HC08N",
+      "footprint": "Package_DIP:DIP-14_W7.62mm_Socket_LongPads",
+      "nets": {
+        "7": "GND",
+        "14": "+3V3",
+        "1": "ARM",
+        "2": "POWER_GOOD",
+        "3": "CLEAR_N",
+        "4": "GND",
+        "5": "GND",
+        "6": null,
+        "9": "GND",
+        "10": "GND",
+        "8": null,
+        "12": "GND",
+        "13": "GND",
+        "11": null
+      },
+      "pos": [
+        55,
+        101,
+        0
+      ],
+      "names": {},
+      "types": {
+        "7": "power_in",
+        "14": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "10": "input",
+        "8": "output",
+        "12": "input",
+        "13": "input",
+        "11": "output"
+      },
+      "note": ""
+    },
+    {
+      "ref": "U7",
+      "value": "MCP100-300DI/TO",
+      "footprint": "Package_TO_SOT_THT:TO-92_Inline",
+      "nets": {
+        "1": "POWER_GOOD",
+        "2": "+3V3",
+        "3": "GND"
+      },
+      "pos": [
+        83,
+        102,
+        0
+      ],
+      "names": {
+        "1": "RESET_N",
+        "2": "VDD",
+        "3": "VSS"
+      },
+      "types": {
+        "1": "output",
+        "2": "power_in",
+        "3": "power_in"
+      },
+      "note": "RESET_N=pin1,VDD=pin2,VSS=pin3. Manufacturer/package pinout must be independently checked"
+    },
+    {
+      "ref": "RN1",
+      "value": "4609X-101-103LF",
+      "footprint": "Resistor_THT:R_Array_SIP9",
+      "nets": {
+        "1": "GND",
+        "2": "UP_OUT_P",
+        "3": "UP_OUT_N",
+        "4": "UP_OUT_TRIG",
+        "5": "UP_IN_P",
+        "6": "UP_IN_N",
+        "7": "UP_IN_TRIG",
+        "8": "LOW_OUT_P",
+        "9": "LOW_OUT_N"
+      },
+      "pos": [
+        47,
+        78,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "8x10k BUSSED network; common=pin1, NOT isolated resistor network"
+    },
+    {
+      "ref": "RN2",
+      "value": "4609X-101-103LF",
+      "footprint": "Resistor_THT:R_Array_SIP9",
+      "nets": {
+        "1": "GND",
+        "2": "LOW_OUT_TRIG",
+        "3": "LOW_IN_P",
+        "4": "LOW_IN_N",
+        "5": "LOW_IN_TRIG",
+        "6": "ARM",
+        "7": "UP_OUT_IN1",
+        "8": "UP_OUT_IN2",
+        "9": "UP_IN_IN1"
+      },
+      "pos": [
+        47,
+        86,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "8x10k BUSSED network; common=pin1, NOT isolated resistor network"
+    },
+    {
+      "ref": "RN3",
+      "value": "4609X-101-103LF",
+      "footprint": "Resistor_THT:R_Array_SIP9",
+      "nets": {
+        "1": "GND",
+        "2": "UP_IN_IN2",
+        "3": "LOW_OUT_IN1",
+        "4": "LOW_OUT_IN2",
+        "5": "LOW_IN_IN1",
+        "6": "LOW_IN_IN2",
+        "7": "GND",
+        "8": "GND",
+        "9": "GND"
+      },
+      "pos": [
+        130,
+        128,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "8x10k BUSSED network; common=pin1, NOT isolated resistor network"
+    },
+    {
+      "ref": "R1",
+      "value": "150k_1%",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "nets": {
+        "1": "+3V3",
+        "2": "UP_OUT_RC"
+      },
+      "pos": [
+        102,
+        50,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "C1",
+      "value": "470nF_5%_FILM",
+      "footprint": "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4",
+      "nets": {
+        "1": "UP_OUT_CE",
+        "2": "UP_OUT_RC"
+      },
+      "pos": [
+        94,
+        51,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+    },
+    {
+      "ref": "R2",
+      "value": "150k_1%",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "nets": {
+        "1": "+3V3",
+        "2": "UP_IN_RC"
+      },
+      "pos": [
+        102,
+        65,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "C2",
+      "value": "470nF_5%_FILM",
+      "footprint": "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4",
+      "nets": {
+        "1": "UP_IN_CE",
+        "2": "UP_IN_RC"
+      },
+      "pos": [
+        94,
+        66,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+    },
+    {
+      "ref": "R3",
+      "value": "150k_1%",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "nets": {
+        "1": "+3V3",
+        "2": "LOW_OUT_RC"
+      },
+      "pos": [
+        102,
+        86,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "C3",
+      "value": "470nF_5%_FILM",
+      "footprint": "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4",
+      "nets": {
+        "1": "LOW_OUT_CE",
+        "2": "LOW_OUT_RC"
+      },
+      "pos": [
+        94,
+        87,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+    },
+    {
+      "ref": "R4",
+      "value": "150k_1%",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "nets": {
+        "1": "+3V3",
+        "2": "LOW_IN_RC"
+      },
+      "pos": [
+        102,
+        101,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "C4",
+      "value": "470nF_5%_FILM",
+      "footprint": "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4",
+      "nets": {
+        "1": "LOW_IN_CE",
+        "2": "LOW_IN_RC"
+      },
+      "pos": [
+        94,
+        102,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+    },
+    {
+      "ref": "C5",
+      "value": "100nF",
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        85,
+        76,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close"
+    },
+    {
+      "ref": "C6",
+      "value": "100nF",
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        130,
+        73,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close"
+    },
+    {
+      "ref": "C7",
+      "value": "100nF",
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        130,
+        109,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close"
+    },
+    {
+      "ref": "C8",
+      "value": "100nF",
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        164,
+        72,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close"
+    },
+    {
+      "ref": "C9",
+      "value": "100nF",
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        164,
+        108,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close"
+    },
+    {
+      "ref": "C10",
+      "value": "100nF",
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        69,
+        120,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close"
+    },
+    {
+      "ref": "C11",
+      "value": "100nF",
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        83,
+        96,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close"
+    },
+    {
+      "ref": "C12",
+      "value": "100nF",
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        83,
+        44,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "ADC reference bypass"
+    },
+    {
+      "ref": "C13",
+      "value": "10uF_16V",
+      "footprint": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        54,
+        41,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "R5",
+      "value": "10k",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "nets": {
+        "1": "+3V3",
+        "2": "ADC_CS"
+      },
+      "pos": [
+        67,
+        57,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "J10",
+      "value": "UP_OUT_DRV",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "UP_OUT_IN1",
+        "3": "UP_OUT_IN2"
+      },
+      "pos": [
+        179,
+        47,
+        90
+      ],
+      "names": {
+        "1": "GND",
+        "2": "IN1",
+        "3": "IN2"
+      },
+      "types": {},
+      "note": "Logic only to separate DRV8871 module. NEVER connect turnout or 12V here"
+    },
+    {
+      "ref": "J11",
+      "value": "UP_IN_DRV",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "UP_IN_IN1",
+        "3": "UP_IN_IN2"
+      },
+      "pos": [
+        179,
+        70,
+        90
+      ],
+      "names": {
+        "1": "GND",
+        "2": "IN1",
+        "3": "IN2"
+      },
+      "types": {},
+      "note": "Logic only to separate DRV8871 module. NEVER connect turnout or 12V here"
+    },
+    {
+      "ref": "J12",
+      "value": "LOW_OUT_DRV",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "LOW_OUT_IN1",
+        "3": "LOW_OUT_IN2"
+      },
+      "pos": [
+        179,
+        93,
+        90
+      ],
+      "names": {
+        "1": "GND",
+        "2": "IN1",
+        "3": "IN2"
+      },
+      "types": {},
+      "note": "Logic only to separate DRV8871 module. NEVER connect turnout or 12V here"
+    },
+    {
+      "ref": "J13",
+      "value": "LOW_IN_DRV",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "LOW_IN_IN1",
+        "3": "LOW_IN_IN2"
+      },
+      "pos": [
+        179,
+        116,
+        90
+      ],
+      "names": {
+        "1": "GND",
+        "2": "IN1",
+        "3": "IN2"
+      },
+      "types": {},
+      "note": "Logic only to separate DRV8871 module. NEVER connect turnout or 12V here"
+    },
+    {
+      "ref": "J14",
+      "value": "I2C_FUTURE",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SDA",
+        "4": "SCL"
+      },
+      "pos": [
+        37,
+        105,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Reserved only; no signal/LED output circuitry fitted"
+    },
+    {
+      "ref": "TP1",
+      "value": "CLEAR_N",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "CLEAR_N",
+        "2": "GND"
+      },
+      "pos": [
+        72,
+        112,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "TP2",
+      "value": "POWER_GOOD",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "POWER_GOOD",
+        "2": "GND"
+      },
+      "pos": [
+        92,
+        115,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "TP3",
+      "value": "UP_OUT_Q",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "UP_OUT_Q",
+        "2": "GND"
+      },
+      "pos": [
+        138,
+        45,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "TP4",
+      "value": "UP_IN_Q",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "UP_IN_Q",
+        "2": "GND"
+      },
+      "pos": [
+        138,
+        65,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "TP5",
+      "value": "LOW_OUT_Q",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "LOW_OUT_Q",
+        "2": "GND"
+      },
+      "pos": [
+        138,
+        85,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    },
+    {
+      "ref": "TP6",
+      "value": "LOW_IN_Q",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "nets": {
+        "1": "LOW_IN_Q",
+        "2": "GND"
+      },
+      "pos": [
+        138,
+        105,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": ""
+    }
+  ]
+}

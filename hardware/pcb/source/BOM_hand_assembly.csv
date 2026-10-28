@@ -1,0 +1,50 @@
+Reference,Value_or_MPN,Footprint,Quantity,Notes
+J1,PI4_40PIN_CABLE,Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical,1,"Separate board, keyed ribbon cable; no 5V connection; verify pin 1 at both ends"
+J2,SENSOR_0,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
+J3,SENSOR_1,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
+J4,SENSOR_2,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
+J5,SENSOR_3,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
+J6,SENSOR_4,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
+J7,SENSOR_5,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
+J8,SENSOR_6,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
+J9,SENSOR_7,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
+JP1,SENSOR_POWER_OFF_DEFAULT,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,NO SHUNT until sensor current budget is verified
+U1,MCP3008-I/P,Package_DIP:DIP-16_W7.62mm_Socket_LongPads,1,"10-bit ADC, 3.3V supply/reference; sensor outputs must stay within 0..3.3V"
+U2,SN74HC221N,Package_DIP:DIP-16_W7.62mm_Socket_LongPads,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
+U3,SN74HC221N,Package_DIP:DIP-16_W7.62mm_Socket_LongPads,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
+U4,SN74HC08N,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,1,
+U5,SN74HC08N,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,1,
+U6,SN74HC08N,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,1,
+U7,MCP100-300DI/TO,Package_TO_SOT_THT:TO-92_Inline,1,"RESET_N=pin1,VDD=pin2,VSS=pin3. Manufacturer/package pinout must be independently checked"
+RN1,4609X-101-103LF,Resistor_THT:R_Array_SIP9,1,"8x10k BUSSED network; common=pin1, NOT isolated resistor network"
+RN2,4609X-101-103LF,Resistor_THT:R_Array_SIP9,1,"8x10k BUSSED network; common=pin1, NOT isolated resistor network"
+RN3,4609X-101-103LF,Resistor_THT:R_Array_SIP9,1,"8x10k BUSSED network; common=pin1, NOT isolated resistor network"
+R1,150k_1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+C1,470nF_5%_FILM,Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4,1,"Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+R2,150k_1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+C2,470nF_5%_FILM,Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4,1,"Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+R3,150k_1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+C3,470nF_5%_FILM,Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4,1,"Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+R4,150k_1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+C4,470nF_5%_FILM,Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4,1,"Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+C5,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
+C6,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
+C7,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
+C8,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
+C9,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
+C10,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
+C11,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
+C12,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,ADC reference bypass
+C13,10uF_16V,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,1,
+R5,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+J10,UP_OUT_DRV,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,Logic only to separate DRV8871 module. NEVER connect turnout or 12V here
+J11,UP_IN_DRV,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,Logic only to separate DRV8871 module. NEVER connect turnout or 12V here
+J12,LOW_OUT_DRV,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,Logic only to separate DRV8871 module. NEVER connect turnout or 12V here
+J13,LOW_IN_DRV,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,Logic only to separate DRV8871 module. NEVER connect turnout or 12V here
+J14,I2C_FUTURE,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,1,Reserved only; no signal/LED output circuitry fitted
+TP1,CLEAR_N,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
+TP2,POWER_GOOD,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
+TP3,UP_OUT_Q,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
+TP4,UP_IN_Q,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
+TP5,LOW_OUT_Q,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
+TP6,LOW_IN_Q,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
