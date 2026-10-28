@@ -9,7 +9,7 @@ import pcbnew as pcb
 ROOT=Path(__file__).resolve().parent
 SRC=ROOT/'source'; REPORT=ROOT/'reports'; FAB=ROOT/'manufacturing'; REVIEW=ROOT/'review'
 for path in [REPORT,FAB,REVIEW]:path.mkdir(exist_ok=True)
-NAME='TC_IO_REVB'; BOARD=SRC/(NAME+'.kicad_pcb'); SCH=SRC/(NAME+'.kicad_sch')
+NAME='TC_IO_REVC'; BOARD=SRC/(NAME+'.kicad_pcb'); SCH=SRC/(NAME+'.kicad_sch')
 def run(*args):subprocess.run(['kicad-cli',*map(str,args)],check=True)
 run('pcb','drc','--format','json','--exit-code-violations','-o',REPORT/'DRC.json',BOARD)
 run('sch','erc','--format','json','--exit-code-violations','-o',REPORT/'ERC.json',SCH)
@@ -42,7 +42,17 @@ for i in range(8):
     assert actual[('U1',str(i+1))]==f'AN{i}'
     assert actual[('J'+str(i+2),'3')]==f'AN{i}'
 assert actual[('JP1','1')]=='+3V3' and actual[('JP1','2')]=='SENSOR_3V3'
-run('pcb','export','gerbers','-l','F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts',
+populated=[fp for fp in board.GetFootprints() if fp.GetReference().startswith(('U','R','C','VR'))]
+assert len(populated)==50 and all(fp.GetAttributes() & pcb.FP_SMD for fp in populated)
+wire_pads=[fp for fp in board.GetFootprints() if fp.GetReference().startswith(('J','TP'))]
+assert len(wire_pads)==21 and all(fp.GetAttributes() & pcb.FP_DNP for fp in wire_pads)
+assert all(not pad.GetLayerSet().Contains(pcb.F_Paste) for fp in wire_pads for pad in fp.Pads())
+for i,ch in enumerate(['UP_OUT','UP_IN','LOW_OUT','LOW_IN'],1):
+    assert actual[(f'R{i}','1')]=='+3V3' and actual[(f'R{i}','2')]==ch+'_ADJ'
+    assert actual[(f'VR{i}','1')]==ch+'_ADJ'
+    assert actual[(f'VR{i}','2')]==actual[(f'VR{i}','3')]==ch+'_RC'
+    assert actual[(f'C{i}','2')]==ch+'_RC' and actual[(f'C{i}','1')]==ch+'_CE'
+run('pcb','export','gerbers','-l','F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts',
     '--subtract-soldermask','-o',str(FAB)+'/',BOARD)
 run('pcb','export','drill','--format','excellon','--excellon-units','mm','--excellon-separate-th','-o',str(FAB)+'/',BOARD)
 # KiCad 9's job file reports the stroke-inclusive outline bounding box.
@@ -51,7 +61,7 @@ run('pcb','export','drill','--format','excellon','--excellon-units','mm','--exce
 job_path=FAB/(NAME+'-job.gbrjob')
 job=json.loads(job_path.read_text())
 job['GeneralSpecs']['Size']={'X':size_mm[0],'Y':size_mm[1]}
-job['GeneralSpecs']['ProjectId']['Revision']='B0-PROTOTYPE'
+job['GeneralSpecs']['ProjectId']['Revision']='C0-PROTOTYPE'
 job_path.write_text(json.dumps(job,indent=2)+'\n')
 run('sch','export','pdf','-o',REVIEW/'schematic.pdf',SCH)
 run('pcb','export','pdf','--layers','F.Fab,F.Silkscreen,Edge.Cuts','--sketch-pads-on-fab-layers',
@@ -60,23 +70,27 @@ run('pcb','export','svg','--layers','F.Cu,F.Silkscreen,Edge.Cuts','--mode-single
     '--exclude-drawing-sheet','-o',REVIEW/'board-top.svg',BOARD)
 svg_path=REVIEW/'board-top.svg'
 svg_path.write_text('\n'.join(line.rstrip() for line in svg_path.read_text().splitlines())+'\n')
-files=sorted(p for p in FAB.iterdir() if p.suffix.lower() in ['.gtl','.gbl','.gts','.gbs','.gto','.gbo','.gm1','.gbr','.drl','.gbrjob'])
-assert {'.gtl','.gbl','.gts','.gbs','.gto','.gbo','.gm1','.drl'} <= {p.suffix.lower() for p in files}
+files=sorted(p for p in FAB.iterdir() if p.suffix.lower() in ['.gtl','.gbl','.gts','.gbs','.gtp','.gbp','.gto','.gbo','.gm1','.gbr','.drl','.gbrjob'])
+assert {'.gtl','.gbl','.gts','.gbs','.gtp','.gbp','.gto','.gbo','.gm1','.drl'} <= {p.suffix.lower() for p in files}
 assert sum(p.suffix=='.drl' for p in files)==2
 for p in files:
     assert p.stat().st_size>0
     if p.suffix=='.drl':assert 'METRIC' in p.read_text()
-    if p.suffix in ['.gtl','.gbl','.gts','.gbs','.gto','.gbo','.gm1']:
+    if p.suffix in ['.gtl','.gbl','.gts','.gbs','.gtp','.gbp','.gto','.gbo','.gm1']:
         content=p.read_text();assert '%MOMM*%' in content and 'M02*' in content
 archive=ROOT/(NAME+'_JLCPCB_prototype.zip')
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
     for p in files:z.write(p,p.name)
 manifest={
   'board':NAME,'status':'UNTESTED_PROTOTYPE_NOT_PRODUCTION_QUALIFIED',
-  'size_mm':size_mm,'layers':2,'thickness_mm':1.6,'copper_oz':1,'assembly':'bare PCB, hand assembly',
+  'size_mm':size_mm,'layers':2,'thickness_mm':1.6,'copper_oz':1,
+  'assembly':'50 top-side SMT parts including 4 VRs; no connectors fitted; LCSC sourcing unverified','pcba_order_ready':False,
+  'factory_assembly_components':50,'unpopulated_wire_pad_groups':21,'fiducials':3,
   'included_function':'3.3V logic, 8 ADC channels, 4 pulse gates; separate DRV8871 modules required',
   'drc_violations':0,'unconnected_items':0,'erc_violations':0,'schematic_pcb_netlist_match':True,
   'manufacturer_datasheet_review_complete':False,'physical_testing_complete':False,
+  'individual_pulse_adjustment':{'trimmers':4,'fixed_resistance_ohms':150000,'variable_resistance_ohms':100000,
+    'capacitance_farads':470e-9,'nominal_estimate_ms':[49.35,82.25],'guaranteed_100ms_limit':False},
   'source_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [BOARD,SCH,SRC/'TC.kicad_sym']},
   'fabrication_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
   'zip_sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),

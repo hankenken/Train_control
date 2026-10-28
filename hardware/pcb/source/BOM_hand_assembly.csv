@@ -1,50 +1,72 @@
-Reference,Value_or_MPN,Footprint,Quantity,Notes
-J1,PI4_40PIN_CABLE,Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical,1,"Separate board, keyed ribbon cable; no 5V connection; verify pin 1 at both ends"
-J2,SENSOR_0,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
-J3,SENSOR_1,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
-J4,SENSOR_2,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
-J5,SENSOR_3,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
-J6,SENSOR_4,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
-J7,SENSOR_5,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
-J8,SENSOR_6,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
-J9,SENSOR_7,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,"Board-specific pin order, not universal sensor pinout"
-JP1,SENSOR_POWER_OFF_DEFAULT,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,NO SHUNT until sensor current budget is verified
-U1,MCP3008-I/P,Package_DIP:DIP-16_W7.62mm_Socket_LongPads,1,"10-bit ADC, 3.3V supply/reference; sensor outputs must stay within 0..3.3V"
-U2,SN74HC221N,Package_DIP:DIP-16_W7.62mm_Socket_LongPads,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
-U3,SN74HC221N,Package_DIP:DIP-16_W7.62mm_Socket_LongPads,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
-U4,SN74HC08N,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,1,
-U5,SN74HC08N,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,1,
-U6,SN74HC08N,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,1,
-U7,MCP100-300DI/TO,Package_TO_SOT_THT:TO-92_Inline,1,"RESET_N=pin1,VDD=pin2,VSS=pin3. Manufacturer/package pinout must be independently checked"
-RN1,4609X-101-103LF,Resistor_THT:R_Array_SIP9,1,"8x10k BUSSED network; common=pin1, NOT isolated resistor network"
-RN2,4609X-101-103LF,Resistor_THT:R_Array_SIP9,1,"8x10k BUSSED network; common=pin1, NOT isolated resistor network"
-RN3,4609X-101-103LF,Resistor_THT:R_Array_SIP9,1,"8x10k BUSSED network; common=pin1, NOT isolated resistor network"
-R1,150k_1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
-C1,470nF_5%_FILM,Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4,1,"Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
-R2,150k_1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
-C2,470nF_5%_FILM,Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4,1,"Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
-R3,150k_1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
-C3,470nF_5%_FILM,Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4,1,"Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
-R4,150k_1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
-C4,470nF_5%_FILM,Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4,1,"Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
-C5,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
-C6,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
-C7,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
-C8,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
-C9,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
-C10,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
-C11,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,IC bypass; keep close
-C12,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,1,ADC reference bypass
-C13,10uF_16V,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,1,
-R5,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
-J10,UP_OUT_DRV,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,Logic only to separate DRV8871 module. NEVER connect turnout or 12V here
-J11,UP_IN_DRV,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,Logic only to separate DRV8871 module. NEVER connect turnout or 12V here
-J12,LOW_OUT_DRV,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,Logic only to separate DRV8871 module. NEVER connect turnout or 12V here
-J13,LOW_IN_DRV,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1,Logic only to separate DRV8871 module. NEVER connect turnout or 12V here
-J14,I2C_FUTURE,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,1,Reserved only; no signal/LED output circuitry fitted
-TP1,CLEAR_N,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
-TP2,POWER_GOOD,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
-TP3,UP_OUT_Q,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
-TP4,UP_IN_Q,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
-TP5,LOW_OUT_Q,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
-TP6,LOW_IN_Q,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
+Reference,Value_or_MPN,Footprint,Quantity,Notes,Populate
+J1,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_2x20_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J2,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J3,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J4,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J5,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J6,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J7,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J8,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J9,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+JP1,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x02_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no
+U1,MCP3008T-I/SL,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,1,"10-bit ADC, 3.3V supply/reference; sensor outputs must stay within 0..3.3V",yes
+U2,SN74HC221DR,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",yes
+U3,SN74HC221DR,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",yes
+U4,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,1,,yes
+U5,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,1,,yes
+U6,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,1,,yes
+U7,MCP100T-300I/TT,Package_TO_SOT_SMD:SOT-23,1,"RESET_N=pin1,VDD=pin2,VSS=pin3. Manufacturer/package pinout must be independently checked",yes
+R6,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R7,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R8,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R9,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R10,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R11,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R12,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R13,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R14,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R15,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R16,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R17,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R18,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R19,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R20,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R21,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R22,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R23,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R24,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R25,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R26,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
+R1,150k_1%,Resistor_SMD:R_0805_2012Metric,1,,yes
+VR1,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,1,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",yes
+C1,470nF_5%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
+R2,150k_1%,Resistor_SMD:R_0805_2012Metric,1,,yes
+VR2,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,1,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",yes
+C2,470nF_5%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
+R3,150k_1%,Resistor_SMD:R_0805_2012Metric,1,,yes
+VR3,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,1,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",yes
+C3,470nF_5%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
+R4,150k_1%,Resistor_SMD:R_0805_2012Metric,1,,yes
+VR4,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,1,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",yes
+C4,470nF_5%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
+C5,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes
+C6,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes
+C7,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes
+C8,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes
+C9,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes
+C10,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes
+C11,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes
+C12,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,ADC reference bypass,yes
+C13,10uF_X7R_25V,Capacitor_SMD:C_1206_3216Metric,1,Nonpolar MLCC bulk bypass; check effective capacitance,yes
+R5,10k_1%,Resistor_SMD:R_0805_2012Metric,1,,yes
+J10,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J11,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J12,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J13,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
+J14,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x04_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no
+TP1,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x02_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no
+TP2,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x02_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no
+TP3,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x02_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no
+TP4,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x02_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no
+TP5,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x02_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no
+TP6,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x02_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no

@@ -1,0 +1,25 @@
+{
+  "board": "TC_IO_REVC",
+  "status": "BLOCKED_NOT_FOR_PCBA_ORDER",
+  "intended_scope": "50 SMT parts including all ICs, resistors, capacitors and four VRs; connectors omitted",
+  "assembly_technology": "Top-side SMT only; 21 plated wire/test-pad groups carry no components",
+  "board_source_sha256": "9e507af24f37403dea23d8618ea95e6c11796a0bca9d647fb38c7ded469ca7ef",
+  "component_count": 50,
+  "bom_designator_count": 50,
+  "cpl_rows": 50,
+  "omitted_wire_groups": 21,
+  "catalog_access": "JLCPCB and LCSC HTTPS CONNECT 403 at preparation time",
+  "lcsc_codes_verified": false,
+  "stock_verified": false,
+  "assembly_eligibility_verified": false,
+  "pickup_centers_verified": false,
+  "rotations_verified": false,
+  "paste_layers_exported": true,
+  "sockets_included": false,
+  "blockers": [
+    "Verify ALL candidate MPNs against current LCSC listings, stock and JLCPCB assembly eligibility",
+    "Fill LCSC codes only after matching manufacturer, MPN and package",
+    "Verify datasheets, footprints, pin1, pickup points and rotation per accepted supplier parts",
+    "Check timing-MLCC capacitance under DC bias and temperature, and measure all VR ranges"
+  ]
+}

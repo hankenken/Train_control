@@ -1,0 +1,9 @@
+{
+  "router": "Freerouting 2.5.0 JVM CLI",
+  "distribution": "https://github.com/freerouting/freerouting/releases/download/v2.5.0/freerouting-2.5.0-linux-x64.zip",
+  "distribution_sha256": "e8ffca14914e5307a2fa9aea723fb93d11b99bebda20d126472da5460c03196e",
+  "optimizer_max_passes": 0,
+  "autorouter_max_passes": 15,
+  "session_sha256": "06980ac2836621e4c3fedcd1b3ba935e9dd9a963d910cda8827b1caa5584bf11",
+  "final_acceptance": "KiCad 9 DRC/ERC and schematic/board netlist comparison"
+}

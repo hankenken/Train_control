@@ -1,18 +1,77 @@
 {
-  "previous_revision": "TC_IO_REVA",
-  "current_revision": "TC_IO_REVB",
-  "previous_size_mm": [
-    170,
-    120
-  ],
-  "current_size_mm": [
+  "previous_revision": "TC_IO_REVB",
+  "current_revision": "TC_IO_REVC",
+  "size_mm": [
     100,
     100
   ],
-  "baseline_commit": "5b03c2d29c89fd07735abcb9c7a2f86f286c13ef",
-  "electrical_netlist_unchanged": true,
-  "connected_pins_compared": 231,
-  "bom_unchanged": true,
-  "baseline_netlist_sha256": "c3b9c6b09369d6871869c162aafc9adc1decb8c589026ba992f90d46a2ef5fcc",
-  "current_netlist_sha256": "916e827c580b254765afa8792526f700cab3d456ae2af61453409eb08fc99f1e"
+  "baseline_commit": "d57b9ae24a042ffd7be551af620af4108f0a299f",
+  "baseline_connected_pins": 231,
+  "current_connected_pins": 258,
+  "unchanged_existing_pin_nets": 200,
+  "removed_parts": [
+    "RN1",
+    "RN2",
+    "RN3"
+  ],
+  "new_resistors": [
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26"
+  ],
+  "new_vrs": [
+    "VR1",
+    "VR2",
+    "VR3",
+    "VR4"
+  ],
+  "intentional_existing_net_changes": [
+    {
+      "reference": "R1",
+      "pin": "2",
+      "before": "UP_OUT_RC",
+      "after": "UP_OUT_ADJ"
+    },
+    {
+      "reference": "R2",
+      "pin": "2",
+      "before": "UP_IN_RC",
+      "after": "UP_IN_ADJ"
+    },
+    {
+      "reference": "R3",
+      "pin": "2",
+      "before": "LOW_OUT_RC",
+      "after": "LOW_OUT_ADJ"
+    },
+    {
+      "reference": "R4",
+      "pin": "2",
+      "before": "LOW_IN_RC",
+      "after": "LOW_IN_ADJ"
+    }
+  ],
+  "connector_pad_and_ic_pin_nets_unchanged": true,
+  "all_fitted_parts_smt": true,
+  "factory_components": 50,
+  "unpopulated_wire_groups": 21,
+  "current_netlist_sha256": "1d8c25b5d894ed9fd0d9f382024eecba822a3f326075fa5331fb0b3e8b13d7b4"
 }

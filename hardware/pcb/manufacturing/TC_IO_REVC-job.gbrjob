@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.2+dfsg-1"
     },
-    "CreationDate": "2026-10-28T05:50:19+00:00"
+    "CreationDate": "2026-10-28T06:56:39+00:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "TC_IO_REVB",
-      "GUID": "54435f49-4f5f-4524-9556-422e6b696361",
-      "Revision": "B0-PROTOTYPE"
+      "Name": "TC_IO_REVC",
+      "GUID": "54435f49-4f5f-4524-9556-432e6b696361",
+      "Revision": "C0-PROTOTYPE"
     },
     "Size": {
       "X": 100.0,
@@ -27,42 +27,52 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.2
+      "MinLineWidth": 0.1
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "TC_IO_REVB-F_Cu.gtl",
+      "Path": "TC_IO_REVC-F_Cu.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "TC_IO_REVB-B_Cu.gbl",
+      "Path": "TC_IO_REVC-B_Cu.gbl",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "TC_IO_REVB-F_Silkscreen.gto",
+      "Path": "TC_IO_REVC-F_Paste.gtp",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TC_IO_REVC-B_Paste.gbp",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TC_IO_REVC-F_Silkscreen.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "TC_IO_REVB-B_Silkscreen.gbo",
+      "Path": "TC_IO_REVC-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "TC_IO_REVB-F_Mask.gts",
+      "Path": "TC_IO_REVC-F_Mask.gts",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "TC_IO_REVB-B_Mask.gbs",
+      "Path": "TC_IO_REVC-B_Mask.gbs",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "TC_IO_REVB-Edge_Cuts.gm1",
+      "Path": "TC_IO_REVC-Edge_Cuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }

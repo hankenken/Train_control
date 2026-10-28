@@ -1,5 +1,5 @@
 {
-  "name": "TC_IO_REVB",
+  "name": "TC_IO_REVC",
   "status": "DRAFT_NOT_RELEASED",
   "board_mm": [
     100,
@@ -8,8 +8,8 @@
   "parts": [
     {
       "ref": "J1",
-      "value": "PI4_40PIN_CABLE",
-      "footprint": "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_2x20_P2.54",
       "nets": {
         "1": "+3V3",
         "2": null,
@@ -88,12 +88,13 @@
         "13": "output",
         "15": "output"
       },
-      "note": "Separate board, keyed ribbon cable; no 5V connection; verify pin 1 at both ends"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J2",
-      "value": "SENSOR_0",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "SENSOR_3V3",
@@ -101,7 +102,7 @@
       },
       "pos": [
         29.0,
-        34,
+        33,
         0
       ],
       "names": {
@@ -110,12 +111,13 @@
         "3": "OUT"
       },
       "types": {},
-      "note": "Board-specific pin order, not universal sensor pinout"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J3",
-      "value": "SENSOR_1",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "SENSOR_3V3",
@@ -123,7 +125,7 @@
       },
       "pos": [
         40.2,
-        34,
+        33,
         0
       ],
       "names": {
@@ -132,12 +134,13 @@
         "3": "OUT"
       },
       "types": {},
-      "note": "Board-specific pin order, not universal sensor pinout"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J4",
-      "value": "SENSOR_2",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "SENSOR_3V3",
@@ -145,7 +148,7 @@
       },
       "pos": [
         51.4,
-        34,
+        33,
         0
       ],
       "names": {
@@ -154,12 +157,13 @@
         "3": "OUT"
       },
       "types": {},
-      "note": "Board-specific pin order, not universal sensor pinout"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J5",
-      "value": "SENSOR_3",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "SENSOR_3V3",
@@ -167,7 +171,7 @@
       },
       "pos": [
         62.599999999999994,
-        34,
+        33,
         0
       ],
       "names": {
@@ -176,12 +180,13 @@
         "3": "OUT"
       },
       "types": {},
-      "note": "Board-specific pin order, not universal sensor pinout"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J6",
-      "value": "SENSOR_4",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "SENSOR_3V3",
@@ -189,7 +194,7 @@
       },
       "pos": [
         73.8,
-        34,
+        33,
         0
       ],
       "names": {
@@ -198,12 +203,13 @@
         "3": "OUT"
       },
       "types": {},
-      "note": "Board-specific pin order, not universal sensor pinout"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J7",
-      "value": "SENSOR_5",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "SENSOR_3V3",
@@ -211,7 +217,7 @@
       },
       "pos": [
         85.0,
-        34,
+        33,
         0
       ],
       "names": {
@@ -220,12 +226,13 @@
         "3": "OUT"
       },
       "types": {},
-      "note": "Board-specific pin order, not universal sensor pinout"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J8",
-      "value": "SENSOR_6",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "SENSOR_3V3",
@@ -233,7 +240,7 @@
       },
       "pos": [
         96.19999999999999,
-        34,
+        33,
         0
       ],
       "names": {
@@ -242,12 +249,13 @@
         "3": "OUT"
       },
       "types": {},
-      "note": "Board-specific pin order, not universal sensor pinout"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J9",
-      "value": "SENSOR_7",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "SENSOR_3V3",
@@ -255,7 +263,7 @@
       },
       "pos": [
         107.39999999999999,
-        34,
+        33,
         0
       ],
       "names": {
@@ -264,12 +272,13 @@
         "3": "OUT"
       },
       "types": {},
-      "note": "Board-specific pin order, not universal sensor pinout"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "JP1",
-      "value": "SENSOR_POWER_OFF_DEFAULT",
-      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x02_P2.54",
       "nets": {
         "1": "+3V3",
         "2": "SENSOR_3V3"
@@ -281,12 +290,13 @@
       ],
       "names": {},
       "types": {},
-      "note": "NO SHUNT until sensor current budget is verified"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "U1",
-      "value": "MCP3008-I/P",
-      "footprint": "Package_DIP:DIP-16_W7.62mm_Socket_LongPads",
+      "value": "MCP3008T-I/SL",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
       "nets": {
         "1": "AN0",
         "2": "AN1",
@@ -306,8 +316,8 @@
         "16": "+3V3"
       },
       "pos": [
-        45,
-        46,
+        49,
+        55,
         0
       ],
       "names": {
@@ -338,12 +348,13 @@
         "15": "power_in",
         "16": "power_in"
       },
-      "note": "10-bit ADC, 3.3V supply/reference; sensor outputs must stay within 0..3.3V"
+      "note": "10-bit ADC, 3.3V supply/reference; sensor outputs must stay within 0..3.3V",
+      "populate": true
     },
     {
       "ref": "U2",
-      "value": "SN74HC221N",
-      "footprint": "Package_DIP:DIP-16_W7.62mm_Socket_LongPads",
+      "value": "SN74HC221DR",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
       "nets": {
         "8": "GND",
         "16": "+3V3",
@@ -363,8 +374,8 @@
         "12": null
       },
       "pos": [
-        68,
-        46,
+        73,
+        55,
         0
       ],
       "names": {
@@ -403,12 +414,13 @@
         "5": "output",
         "12": "output"
       },
-      "note": "HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
+      "note": "HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",
+      "populate": true
     },
     {
       "ref": "U3",
-      "value": "SN74HC221N",
-      "footprint": "Package_DIP:DIP-16_W7.62mm_Socket_LongPads",
+      "value": "SN74HC221DR",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
       "nets": {
         "8": "GND",
         "16": "+3V3",
@@ -428,8 +440,8 @@
         "12": null
       },
       "pos": [
-        68,
-        77,
+        73,
+        86,
         0
       ],
       "names": {
@@ -468,12 +480,13 @@
         "5": "output",
         "12": "output"
       },
-      "note": "HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
+      "note": "HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",
+      "populate": true
     },
     {
       "ref": "U4",
-      "value": "SN74HC08N",
-      "footprint": "Package_DIP:DIP-14_W7.62mm_Socket_LongPads",
+      "value": "SN74HC08DR",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "nets": {
         "7": "GND",
         "14": "+3V3",
@@ -491,8 +504,8 @@
         "11": "UP_IN_IN2"
       },
       "pos": [
-        95,
-        46,
+        99,
+        55,
         0
       ],
       "names": {
@@ -527,12 +540,13 @@
         "13": "input",
         "11": "output"
       },
-      "note": ""
+      "note": "",
+      "populate": true
     },
     {
       "ref": "U5",
-      "value": "SN74HC08N",
-      "footprint": "Package_DIP:DIP-14_W7.62mm_Socket_LongPads",
+      "value": "SN74HC08DR",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "nets": {
         "7": "GND",
         "14": "+3V3",
@@ -550,8 +564,8 @@
         "11": "LOW_IN_IN2"
       },
       "pos": [
-        95,
-        77,
+        99,
+        86,
         0
       ],
       "names": {
@@ -586,12 +600,13 @@
         "13": "input",
         "11": "output"
       },
-      "note": ""
+      "note": "",
+      "populate": true
     },
     {
       "ref": "U6",
-      "value": "SN74HC08N",
-      "footprint": "Package_DIP:DIP-14_W7.62mm_Socket_LongPads",
+      "value": "SN74HC08DR",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
       "nets": {
         "7": "GND",
         "14": "+3V3",
@@ -609,8 +624,8 @@
         "11": null
       },
       "pos": [
-        45,
-        77,
+        49,
+        86,
         0
       ],
       "names": {},
@@ -630,12 +645,13 @@
         "13": "input",
         "11": "output"
       },
-      "note": ""
+      "note": "",
+      "populate": true
     },
     {
       "ref": "U7",
-      "value": "MCP100-300DI/TO",
-      "footprint": "Package_TO_SOT_THT:TO-92_Inline",
+      "value": "MCP100T-300I/TT",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
       "nets": {
         "1": "POWER_GOOD",
         "2": "+3V3",
@@ -656,87 +672,394 @@
         "2": "power_in",
         "3": "power_in"
       },
-      "note": "RESET_N=pin1,VDD=pin2,VSS=pin3. Manufacturer/package pinout must be independently checked"
+      "note": "RESET_N=pin1,VDD=pin2,VSS=pin3. Manufacturer/package pinout must be independently checked",
+      "populate": true
     },
     {
-      "ref": "RN1",
-      "value": "4609X-101-103LF",
-      "footprint": "Resistor_THT:R_Array_SIP9",
+      "ref": "R6",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
       "nets": {
-        "1": "GND",
-        "2": "UP_OUT_P",
-        "3": "UP_OUT_N",
-        "4": "UP_OUT_TRIG",
-        "5": "UP_IN_P",
-        "6": "UP_IN_N",
-        "7": "UP_IN_TRIG",
-        "8": "LOW_OUT_P",
-        "9": "LOW_OUT_N"
+        "1": "UP_OUT_P",
+        "2": "GND"
       },
       "pos": [
-        44,
-        105,
+        44.0,
+        103,
         0
       ],
       "names": {},
       "types": {},
-      "note": "8x10k BUSSED network; common=pin1, NOT isolated resistor network"
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
     },
     {
-      "ref": "RN2",
-      "value": "4609X-101-103LF",
-      "footprint": "Resistor_THT:R_Array_SIP9",
+      "ref": "R7",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
       "nets": {
-        "1": "GND",
-        "2": "LOW_OUT_TRIG",
-        "3": "LOW_IN_P",
-        "4": "LOW_IN_N",
-        "5": "LOW_IN_TRIG",
-        "6": "ARM",
-        "7": "UP_OUT_IN1",
-        "8": "UP_OUT_IN2",
-        "9": "UP_IN_IN1"
+        "1": "UP_OUT_N",
+        "2": "GND"
       },
       "pos": [
-        73,
-        105,
+        48.5,
+        103,
         0
       ],
       "names": {},
       "types": {},
-      "note": "8x10k BUSSED network; common=pin1, NOT isolated resistor network"
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
     },
     {
-      "ref": "RN3",
-      "value": "4609X-101-103LF",
-      "footprint": "Resistor_THT:R_Array_SIP9",
+      "ref": "R8",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
       "nets": {
-        "1": "GND",
-        "2": "UP_IN_IN2",
-        "3": "LOW_OUT_IN1",
-        "4": "LOW_OUT_IN2",
-        "5": "LOW_IN_IN1",
-        "6": "LOW_IN_IN2",
-        "7": "GND",
-        "8": "GND",
-        "9": "GND"
+        "1": "UP_OUT_TRIG",
+        "2": "GND"
       },
       "pos": [
-        43,
-        112,
+        53.0,
+        103,
         0
       ],
       "names": {},
       "types": {},
-      "note": "8x10k BUSSED network; common=pin1, NOT isolated resistor network"
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R9",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_P",
+        "2": "GND"
+      },
+      "pos": [
+        57.5,
+        103,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R10",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_N",
+        "2": "GND"
+      },
+      "pos": [
+        62.0,
+        103,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R11",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_TRIG",
+        "2": "GND"
+      },
+      "pos": [
+        66.5,
+        103,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R12",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_P",
+        "2": "GND"
+      },
+      "pos": [
+        71.0,
+        103,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R13",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_N",
+        "2": "GND"
+      },
+      "pos": [
+        44.0,
+        108,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R14",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_TRIG",
+        "2": "GND"
+      },
+      "pos": [
+        48.5,
+        108,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R15",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_P",
+        "2": "GND"
+      },
+      "pos": [
+        53.0,
+        108,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R16",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_N",
+        "2": "GND"
+      },
+      "pos": [
+        57.5,
+        108,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R17",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_TRIG",
+        "2": "GND"
+      },
+      "pos": [
+        62.0,
+        108,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R18",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "ARM",
+        "2": "GND"
+      },
+      "pos": [
+        66.5,
+        108,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R19",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_IN1",
+        "2": "GND"
+      },
+      "pos": [
+        71.0,
+        108,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R20",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_IN2",
+        "2": "GND"
+      },
+      "pos": [
+        44.0,
+        113,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R21",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_IN1",
+        "2": "GND"
+      },
+      "pos": [
+        48.5,
+        113,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R22",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_IN2",
+        "2": "GND"
+      },
+      "pos": [
+        53.0,
+        113,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R23",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_IN1",
+        "2": "GND"
+      },
+      "pos": [
+        57.5,
+        113,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R24",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_IN2",
+        "2": "GND"
+      },
+      "pos": [
+        62.0,
+        113,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R25",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_IN1",
+        "2": "GND"
+      },
+      "pos": [
+        66.5,
+        113,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R26",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_IN2",
+        "2": "GND"
+      },
+      "pos": [
+        71.0,
+        113,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
     },
     {
       "ref": "R1",
       "value": "150k_1%",
-      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
       "nets": {
         "1": "+3V3",
-        "2": "UP_OUT_RC"
+        "2": "UP_OUT_ADJ"
       },
       "pos": [
         89.5,
@@ -745,12 +1068,36 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "VR1",
+      "value": "3224W-1-104E",
+      "footprint": "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical",
+      "nets": {
+        "1": "UP_OUT_ADJ",
+        "2": "UP_OUT_RC",
+        "3": "UP_OUT_RC"
+      },
+      "pos": [
+        49,
+        41,
+        0
+      ],
+      "names": {
+        "1": "CCW",
+        "2": "WIPER",
+        "3": "CW"
+      },
+      "types": {},
+      "note": "100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",
+      "populate": true
     },
     {
       "ref": "C1",
-      "value": "470nF_5%_FILM",
-      "footprint": "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4",
+      "value": "470nF_5%_X7R_50V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "nets": {
         "1": "UP_OUT_CE",
         "2": "UP_OUT_RC"
@@ -762,15 +1109,16 @@
       ],
       "names": {},
       "types": {},
-      "note": "Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+      "note": "Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",
+      "populate": true
     },
     {
       "ref": "R2",
       "value": "150k_1%",
-      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
       "nets": {
         "1": "+3V3",
-        "2": "UP_IN_RC"
+        "2": "UP_IN_ADJ"
       },
       "pos": [
         89.5,
@@ -779,12 +1127,36 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "VR2",
+      "value": "3224W-1-104E",
+      "footprint": "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical",
+      "nets": {
+        "1": "UP_IN_ADJ",
+        "2": "UP_IN_RC",
+        "3": "UP_IN_RC"
+      },
+      "pos": [
+        63,
+        41,
+        0
+      ],
+      "names": {
+        "1": "CCW",
+        "2": "WIPER",
+        "3": "CW"
+      },
+      "types": {},
+      "note": "100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",
+      "populate": true
     },
     {
       "ref": "C2",
-      "value": "470nF_5%_FILM",
-      "footprint": "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4",
+      "value": "470nF_5%_X7R_50V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "nets": {
         "1": "UP_IN_CE",
         "2": "UP_IN_RC"
@@ -796,15 +1168,16 @@
       ],
       "names": {},
       "types": {},
-      "note": "Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+      "note": "Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",
+      "populate": true
     },
     {
       "ref": "R3",
       "value": "150k_1%",
-      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
       "nets": {
         "1": "+3V3",
-        "2": "LOW_OUT_RC"
+        "2": "LOW_OUT_ADJ"
       },
       "pos": [
         89.5,
@@ -813,12 +1186,36 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "VR3",
+      "value": "3224W-1-104E",
+      "footprint": "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical",
+      "nets": {
+        "1": "LOW_OUT_ADJ",
+        "2": "LOW_OUT_RC",
+        "3": "LOW_OUT_RC"
+      },
+      "pos": [
+        77,
+        41,
+        0
+      ],
+      "names": {
+        "1": "CCW",
+        "2": "WIPER",
+        "3": "CW"
+      },
+      "types": {},
+      "note": "100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",
+      "populate": true
     },
     {
       "ref": "C3",
-      "value": "470nF_5%_FILM",
-      "footprint": "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4",
+      "value": "470nF_5%_X7R_50V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "nets": {
         "1": "LOW_OUT_CE",
         "2": "LOW_OUT_RC"
@@ -830,15 +1227,16 @@
       ],
       "names": {},
       "types": {},
-      "note": "Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+      "note": "Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",
+      "populate": true
     },
     {
       "ref": "R4",
       "value": "150k_1%",
-      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
       "nets": {
         "1": "+3V3",
-        "2": "LOW_IN_RC"
+        "2": "LOW_IN_ADJ"
       },
       "pos": [
         89.5,
@@ -847,12 +1245,36 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "VR4",
+      "value": "3224W-1-104E",
+      "footprint": "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical",
+      "nets": {
+        "1": "LOW_IN_ADJ",
+        "2": "LOW_IN_RC",
+        "3": "LOW_IN_RC"
+      },
+      "pos": [
+        98,
+        41,
+        0
+      ],
+      "names": {
+        "1": "CCW",
+        "2": "WIPER",
+        "3": "CW"
+      },
+      "types": {},
+      "note": "100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",
+      "populate": true
     },
     {
       "ref": "C4",
-      "value": "470nF_5%_FILM",
-      "footprint": "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4",
+      "value": "470nF_5%_X7R_50V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "nets": {
         "1": "LOW_IN_CE",
         "2": "LOW_IN_RC"
@@ -864,29 +1286,31 @@
       ],
       "names": {},
       "types": {},
-      "note": "Floating timing capacitor: CEXT to RCEXT, NOT CEXT to ground; use outer 7.5mm pins"
+      "note": "Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",
+      "populate": true
     },
     {
       "ref": "C5",
-      "value": "100nF",
-      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "nets": {
         "1": "+3V3",
         "2": "GND"
       },
       "pos": [
         59,
-        40,
+        53.5,
         0
       ],
       "names": {},
       "types": {},
-      "note": "IC bypass; keep close"
+      "note": "IC bypass; keep close",
+      "populate": true
     },
     {
       "ref": "C6",
-      "value": "100nF",
-      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "nets": {
         "1": "+3V3",
         "2": "GND"
@@ -898,29 +1322,31 @@
       ],
       "names": {},
       "types": {},
-      "note": "IC bypass; keep close"
+      "note": "IC bypass; keep close",
+      "populate": true
     },
     {
       "ref": "C7",
-      "value": "100nF",
-      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "nets": {
         "1": "+3V3",
         "2": "GND"
       },
       "pos": [
-        70,
-        100,
+        77,
+        99,
         0
       ],
       "names": {},
       "types": {},
-      "note": "IC bypass; keep close"
+      "note": "IC bypass; keep close",
+      "populate": true
     },
     {
       "ref": "C8",
-      "value": "100nF",
-      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "nets": {
         "1": "+3V3",
         "2": "GND"
@@ -932,12 +1358,13 @@
       ],
       "names": {},
       "types": {},
-      "note": "IC bypass; keep close"
+      "note": "IC bypass; keep close",
+      "populate": true
     },
     {
       "ref": "C9",
-      "value": "100nF",
-      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "nets": {
         "1": "+3V3",
         "2": "GND"
@@ -949,12 +1376,13 @@
       ],
       "names": {},
       "types": {},
-      "note": "IC bypass; keep close"
+      "note": "IC bypass; keep close",
+      "populate": true
     },
     {
       "ref": "C10",
-      "value": "100nF",
-      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "nets": {
         "1": "+3V3",
         "2": "GND"
@@ -966,12 +1394,13 @@
       ],
       "names": {},
       "types": {},
-      "note": "IC bypass; keep close"
+      "note": "IC bypass; keep close",
+      "populate": true
     },
     {
       "ref": "C11",
-      "value": "100nF",
-      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "nets": {
         "1": "+3V3",
         "2": "GND"
@@ -983,12 +1412,13 @@
       ],
       "names": {},
       "types": {},
-      "note": "IC bypass; keep close"
+      "note": "IC bypass; keep close",
+      "populate": true
     },
     {
       "ref": "C12",
-      "value": "100nF",
-      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "nets": {
         "1": "+3V3",
         "2": "GND"
@@ -1000,12 +1430,13 @@
       ],
       "names": {},
       "types": {},
-      "note": "ADC reference bypass"
+      "note": "ADC reference bypass",
+      "populate": true
     },
     {
       "ref": "C13",
-      "value": "10uF_16V",
-      "footprint": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+      "value": "10uF_X7R_25V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "nets": {
         "1": "+3V3",
         "2": "GND"
@@ -1017,12 +1448,13 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "Nonpolar MLCC bulk bypass; check effective capacitance",
+      "populate": true
     },
     {
       "ref": "R5",
-      "value": "10k",
-      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
       "nets": {
         "1": "+3V3",
         "2": "ADC_CS"
@@ -1034,12 +1466,13 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "",
+      "populate": true
     },
     {
       "ref": "J10",
-      "value": "UP_OUT_DRV",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "UP_OUT_IN1",
@@ -1056,12 +1489,13 @@
         "3": "IN2"
       },
       "types": {},
-      "note": "Logic only to separate DRV8871 module. NEVER connect turnout or 12V here"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J11",
-      "value": "UP_IN_DRV",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "UP_IN_IN1",
@@ -1078,12 +1512,13 @@
         "3": "IN2"
       },
       "types": {},
-      "note": "Logic only to separate DRV8871 module. NEVER connect turnout or 12V here"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J12",
-      "value": "LOW_OUT_DRV",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "LOW_OUT_IN1",
@@ -1100,12 +1535,13 @@
         "3": "IN2"
       },
       "types": {},
-      "note": "Logic only to separate DRV8871 module. NEVER connect turnout or 12V here"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J13",
-      "value": "LOW_IN_DRV",
-      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x03_P2.50",
       "nets": {
         "1": "GND",
         "2": "LOW_IN_IN1",
@@ -1122,12 +1558,13 @@
         "3": "IN2"
       },
       "types": {},
-      "note": "Logic only to separate DRV8871 module. NEVER connect turnout or 12V here"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "J14",
-      "value": "I2C_FUTURE",
-      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x04_P2.54",
       "nets": {
         "1": "GND",
         "2": "+3V3",
@@ -1141,46 +1578,49 @@
       ],
       "names": {},
       "types": {},
-      "note": "Reserved only; no signal/LED output circuitry fitted"
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "TP1",
-      "value": "CLEAR_N",
-      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x02_P2.54",
       "nets": {
         "1": "CLEAR_N",
         "2": "GND"
       },
       "pos": [
-        73,
+        81,
         113,
         0
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "TP2",
-      "value": "POWER_GOOD",
-      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x02_P2.54",
       "nets": {
         "1": "POWER_GOOD",
         "2": "GND"
       },
       "pos": [
-        80,
+        88,
         113,
         0
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "TP3",
-      "value": "UP_OUT_Q",
-      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x02_P2.54",
       "nets": {
         "1": "UP_OUT_Q",
         "2": "GND"
@@ -1192,12 +1632,13 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "TP4",
-      "value": "UP_IN_Q",
-      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x02_P2.54",
       "nets": {
         "1": "UP_IN_Q",
         "2": "GND"
@@ -1209,12 +1650,13 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "TP5",
-      "value": "LOW_OUT_Q",
-      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x02_P2.54",
       "nets": {
         "1": "LOW_OUT_Q",
         "2": "GND"
@@ -1226,12 +1668,13 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     },
     {
       "ref": "TP6",
-      "value": "LOW_IN_Q",
-      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "value": "WIRE_PADS_NO_COMPONENT",
+      "footprint": "TC_Wire:WirePads_1x02_P2.54",
       "nets": {
         "1": "LOW_IN_Q",
         "2": "GND"
@@ -1243,7 +1686,8 @@
       ],
       "names": {},
       "types": {},
-      "note": ""
+      "note": "Plated wire/test pads only. No connector or header component is fitted.",
+      "populate": false
     }
   ]
 }

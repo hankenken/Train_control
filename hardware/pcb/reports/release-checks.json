@@ -1,5 +1,5 @@
 {
-  "board": "TC_IO_REVB",
+  "board": "TC_IO_REVC",
   "status": "UNTESTED_PROTOTYPE_NOT_PRODUCTION_QUALIFIED",
   "size_mm": [
     100.0,
@@ -8,7 +8,11 @@
   "layers": 2,
   "thickness_mm": 1.6,
   "copper_oz": 1,
-  "assembly": "bare PCB, hand assembly",
+  "assembly": "50 top-side SMT parts including 4 VRs; no connectors fitted; LCSC sourcing unverified",
+  "pcba_order_ready": false,
+  "factory_assembly_components": 50,
+  "unpopulated_wire_pad_groups": 21,
+  "fiducials": 3,
   "included_function": "3.3V logic, 8 ADC channels, 4 pulse gates; separate DRV8871 modules required",
   "drc_violations": 0,
   "unconnected_items": 0,
@@ -16,22 +20,35 @@
   "schematic_pcb_netlist_match": true,
   "manufacturer_datasheet_review_complete": false,
   "physical_testing_complete": false,
+  "individual_pulse_adjustment": {
+    "trimmers": 4,
+    "fixed_resistance_ohms": 150000,
+    "variable_resistance_ohms": 100000,
+    "capacitance_farads": 4.7e-07,
+    "nominal_estimate_ms": [
+      49.35,
+      82.25
+    ],
+    "guaranteed_100ms_limit": false
+  },
   "source_sha256": {
-    "TC_IO_REVB.kicad_pcb": "64183ccb332354549c41f617817d056ff900d212656eacd6f6708704bad0e31a",
-    "TC_IO_REVB.kicad_sch": "58eafa7a8c5905d16715986d87320c76bc24b96d4af17d5e704712073544f155",
-    "TC.kicad_sym": "4dde40ab7ae079dcc8acfc44b611e3dd124faa68bd20a114b999f5bbff8379b3"
+    "TC_IO_REVC.kicad_pcb": "9e507af24f37403dea23d8618ea95e6c11796a0bca9d647fb38c7ded469ca7ef",
+    "TC_IO_REVC.kicad_sch": "716a40373a97dd53434c10ce93eaec5d03524e1f68bdc01b508f659ce06895c4",
+    "TC.kicad_sym": "788661bb926eb930449077458e58af11b8a16cf564d8d9394467929e3fe45216"
   },
   "fabrication_sha256": {
-    "TC_IO_REVB-B_Cu.gbl": "6c2f5008e4f2331557baf7e3f04874a51722149496f4cb7994aa315931a5aff7",
-    "TC_IO_REVB-B_Mask.gbs": "cde80514562f0201a621c2c1c38e533311df4703511421fab9ae02818f5ddbde",
-    "TC_IO_REVB-B_Silkscreen.gbo": "47a50198f91d523d39219652211a8056c10f0fc4c6e1c74ffeab761af7732244",
-    "TC_IO_REVB-Edge_Cuts.gm1": "7186ae14a1de987fecc2362590e7ba5e00c750d6b55bf8b4f21e848d2f3e91f1",
-    "TC_IO_REVB-F_Cu.gtl": "6e1dd1af56fe174e4d5207a213b298b941a8b3f9d382da55b6ac18f39043f8a7",
-    "TC_IO_REVB-F_Mask.gts": "7590bf415ed2f0d89dbb7c9aad0c3fb246961e9a134ee3632e841bd76062f034",
-    "TC_IO_REVB-F_Silkscreen.gto": "11194db03f3c64f7fb44060af637d17f91425131bcf1104651ba40423476a9d6",
-    "TC_IO_REVB-NPTH.drl": "6c63ffe3a8bb6734718c901ec6781710c09dae107437e438c1b51580ba85abc1",
-    "TC_IO_REVB-PTH.drl": "cf8cb4a7b9f005e4bcde1d8b827745eef02c99b53ba3231fb11a204d261c954a",
-    "TC_IO_REVB-job.gbrjob": "f38ae2ccd7b05d26bf72f602500184c198bcd1547d8a5b0f3c324069163607e2"
+    "TC_IO_REVC-B_Cu.gbl": "211e594cb6b59d05c8ed3fe609f77193a0e19c6aa77320195ccaf5f406b5b36e",
+    "TC_IO_REVC-B_Mask.gbs": "7956a3f6af0637705424898ada3e0bf34db0a6b20e0c63cb9a8d0eadc2198ac2",
+    "TC_IO_REVC-B_Paste.gbp": "665f553b8c63a113f95a28a7496ea5b449a7d65be197c1ea01ac9910b77ee43b",
+    "TC_IO_REVC-B_Silkscreen.gbo": "433d42ad70667b1f6debe62630c08d76f2be8ae385b92eb9b150458b7e6bc55d",
+    "TC_IO_REVC-Edge_Cuts.gm1": "326694e3e2328a4757fc21f5ef0094fa1ede135847200f0a78ebb9e05d83e1e0",
+    "TC_IO_REVC-F_Cu.gtl": "bfc32ae36949a6ecc12cbd1cc0e8631462a7571e89eb98e515b600b8d324ee47",
+    "TC_IO_REVC-F_Mask.gts": "9cbf372d401aa02d8e2525319452b2ceadeac8647bbe47703c46d32f7d7848b8",
+    "TC_IO_REVC-F_Paste.gtp": "26688fce2730fac527c4031d3136a1697e48eb2411f2880b3f44379c1d09c02f",
+    "TC_IO_REVC-F_Silkscreen.gto": "de1a874898cf538ee459495f18ffb3703e17604be5bce2f1677bb1914c96c872",
+    "TC_IO_REVC-NPTH.drl": "cd60547e6557c6d0d97bc62a2817c8d4963fe0d0fcc32d0b5b158008d3e78866",
+    "TC_IO_REVC-PTH.drl": "4c61cc6a566cf62a263046c984c5bfbd08500158ae10e9ca595cb829396c1fd9",
+    "TC_IO_REVC-job.gbrjob": "37b476b43980bfe3426413d8e558d45ddfd4f8c7768c891d49d2d6fc7011c617"
   },
-  "zip_sha256": "21c0a78bee062ad195f6e2f6ee814c1582aeac6c3247862d2e3667024b3f5410"
+  "zip_sha256": "0c66f426d542d9493bb42b2485942187874bc7da2c7e78d8fcb73cebd5a22498"
 }

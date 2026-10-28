@@ -1,0 +1,16 @@
+{
+  "model": "estimate_only_t=kRC",
+  "coefficient_assumed": 0.7,
+  "physical_measurement_performed": false,
+  "nominal_min_ms": 49.35,
+  "nominal_max_ms": 82.25,
+  "passive_tolerance_upper_estimate_ms": 93.789675,
+  "guaranteed_100ms_limit": false,
+  "excluded_variations": [
+    "IC coefficient",
+    "temperature including MLCC characteristic",
+    "MLCC DC bias",
+    "supply voltage",
+    "faults"
+  ]
+}
