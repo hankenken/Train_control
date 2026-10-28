@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/workspace/Train_control/hardware/pcb/source/TC_IO_REVA.kicad_sch</source>
-    <date>2026-10-28T05:30:40+0000</date>
+    <source>/workspace/Train_control/hardware/pcb/source/TC_IO_REVB.kicad_sch</source>
+    <date>2026-10-28T05:50:19+0000</date>
     <tool>Eeschema 9.0.2+dfsg-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>TC IO Rev A - REVIEW PROTOTYPE</title>
+        <title>TC IO Rev B - REVIEW PROTOTYPE</title>
         <company/>
-        <rev>A0-DRAFT</rev>
+        <rev>B0-DRAFT</rev>
         <date/>
-        <source>TC_IO_REVA.kicad_sch</source>
+        <source>TC_IO_REVB.kicad_sch</source>
         <comment number="1" value="3.3V logic only. Separate DRV8871 modules. No 12V/coil terminals."/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -34,9 +34,9 @@
       </fields>
       <libsource lib="TC" part="C1" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>c35645e4-413d-5ad8-b2de-f37350a62446</tstamps>
+      <tstamps>49a18301-474e-50bb-aa4d-601d34fe19aa</tstamps>
     </comp>
     <comp ref="C2">
       <value>470nF_5%_FILM</value>
@@ -48,9 +48,9 @@
       </fields>
       <libsource lib="TC" part="C2" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>f9584170-e9ea-5bcc-8c5d-c6df81dea412</tstamps>
+      <tstamps>cbd29e3c-0580-5fd5-ae4a-cd8a4722f5b1</tstamps>
     </comp>
     <comp ref="C3">
       <value>470nF_5%_FILM</value>
@@ -62,9 +62,9 @@
       </fields>
       <libsource lib="TC" part="C3" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>b3a1c825-c53f-5163-a894-9a1a3868ad1e</tstamps>
+      <tstamps>c80d8c29-382d-5234-8860-619b0ed76cd9</tstamps>
     </comp>
     <comp ref="C4">
       <value>470nF_5%_FILM</value>
@@ -76,9 +76,9 @@
       </fields>
       <libsource lib="TC" part="C4" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>ba86962d-6643-51ad-b53a-252104fde0a5</tstamps>
+      <tstamps>79609dc0-aa25-55b2-8d45-d7202772cf4d</tstamps>
     </comp>
     <comp ref="C5">
       <value>100nF</value>
@@ -90,9 +90,9 @@
       </fields>
       <libsource lib="TC" part="C5" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>f3c37fd2-81e2-52e1-974c-ccd802e164b2</tstamps>
+      <tstamps>72567d94-68dd-5027-b4e9-d7c3a091dac1</tstamps>
     </comp>
     <comp ref="C6">
       <value>100nF</value>
@@ -104,9 +104,9 @@
       </fields>
       <libsource lib="TC" part="C6" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>3fec2539-cf6e-5847-84b6-de32e444f626</tstamps>
+      <tstamps>20d0319e-c282-53ef-a0a4-dadedae6c00c</tstamps>
     </comp>
     <comp ref="C7">
       <value>100nF</value>
@@ -118,9 +118,9 @@
       </fields>
       <libsource lib="TC" part="C7" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>140d5435-59f5-565d-ac37-08cfc3608f07</tstamps>
+      <tstamps>354f5ee6-b057-5758-a16c-b4cf2f88e4a3</tstamps>
     </comp>
     <comp ref="C8">
       <value>100nF</value>
@@ -132,9 +132,9 @@
       </fields>
       <libsource lib="TC" part="C8" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>ef2f5e19-0567-5511-866c-28bdf420a8a6</tstamps>
+      <tstamps>a9d1e02b-d9da-51ed-bebd-1170d44abf56</tstamps>
     </comp>
     <comp ref="C9">
       <value>100nF</value>
@@ -146,9 +146,9 @@
       </fields>
       <libsource lib="TC" part="C9" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>aa974318-abd6-5bf3-9221-180fb410fd7a</tstamps>
+      <tstamps>6452afbd-7932-5d9a-a01b-00ffb95a6268</tstamps>
     </comp>
     <comp ref="C10">
       <value>100nF</value>
@@ -160,9 +160,9 @@
       </fields>
       <libsource lib="TC" part="C10" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>509f4b31-6983-566c-8a4c-c943135e1fca</tstamps>
+      <tstamps>02418ec7-f6ce-5b5e-b28d-cc376cfd8d39</tstamps>
     </comp>
     <comp ref="C11">
       <value>100nF</value>
@@ -174,9 +174,9 @@
       </fields>
       <libsource lib="TC" part="C11" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>cf3e9e16-090a-57a2-a502-3b1a3470bff7</tstamps>
+      <tstamps>71722760-c38f-57f1-a1a1-58d9b4bdee3e</tstamps>
     </comp>
     <comp ref="C12">
       <value>100nF</value>
@@ -188,9 +188,9 @@
       </fields>
       <libsource lib="TC" part="C12" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>f6326d3a-225f-5d5c-9030-e26efb786440</tstamps>
+      <tstamps>86464c8e-8d3c-5ff0-b8e2-cd0b671ee549</tstamps>
     </comp>
     <comp ref="C13">
       <value>10uF_16V</value>
@@ -202,9 +202,9 @@
       </fields>
       <libsource lib="TC" part="C13" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>7ce3b0b1-56a2-5d56-89bb-84a342961132</tstamps>
+      <tstamps>3ce7cad4-285b-5627-9475-190fdf63706c</tstamps>
     </comp>
     <comp ref="J1">
       <value>PI4_40PIN_CABLE</value>
@@ -216,9 +216,9 @@
       </fields>
       <libsource lib="TC" part="J1" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>b59dc03b-30c9-57c4-8b1d-a828ff5dff78</tstamps>
+      <tstamps>82516a10-d3e9-5e17-9d9e-ec248faf5fb2</tstamps>
     </comp>
     <comp ref="J2">
       <value>SENSOR_0</value>
@@ -230,9 +230,9 @@
       </fields>
       <libsource lib="TC" part="J2" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>9a351dc9-76d5-56ab-b341-b675e5363cbb</tstamps>
+      <tstamps>ede48fc5-1209-58a7-a9ef-28113e7577a6</tstamps>
     </comp>
     <comp ref="J3">
       <value>SENSOR_1</value>
@@ -244,9 +244,9 @@
       </fields>
       <libsource lib="TC" part="J3" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>44942834-8b86-5cd7-9bfd-ac0737713afc</tstamps>
+      <tstamps>94dc3851-478c-51fb-9f1b-2802910bb1dc</tstamps>
     </comp>
     <comp ref="J4">
       <value>SENSOR_2</value>
@@ -258,9 +258,9 @@
       </fields>
       <libsource lib="TC" part="J4" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>a49cfc85-b536-5691-9e66-187f46505530</tstamps>
+      <tstamps>e58ac337-61f9-5523-baf8-85d3764b30b8</tstamps>
     </comp>
     <comp ref="J5">
       <value>SENSOR_3</value>
@@ -272,9 +272,9 @@
       </fields>
       <libsource lib="TC" part="J5" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>ae0bd6a3-56b2-5fc7-a9ff-4ac82277589a</tstamps>
+      <tstamps>ef9768b5-c8bb-5a1c-b40c-a7584068f381</tstamps>
     </comp>
     <comp ref="J6">
       <value>SENSOR_4</value>
@@ -286,9 +286,9 @@
       </fields>
       <libsource lib="TC" part="J6" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>bc3c47a6-376f-58fc-b54b-97e4b322ae00</tstamps>
+      <tstamps>e2b3b411-e299-5f91-adf8-1230a2df16f4</tstamps>
     </comp>
     <comp ref="J7">
       <value>SENSOR_5</value>
@@ -300,9 +300,9 @@
       </fields>
       <libsource lib="TC" part="J7" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>06a35ed1-3d47-50c8-9527-35d2619da1c0</tstamps>
+      <tstamps>54c2fdcc-06ef-5366-9385-42a10b35965d</tstamps>
     </comp>
     <comp ref="J8">
       <value>SENSOR_6</value>
@@ -314,9 +314,9 @@
       </fields>
       <libsource lib="TC" part="J8" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>d13904c2-017f-50e8-971b-66bd1e5ac4e6</tstamps>
+      <tstamps>c49b8489-4bcb-5dc4-bb48-07407f4af4c3</tstamps>
     </comp>
     <comp ref="J9">
       <value>SENSOR_7</value>
@@ -328,9 +328,9 @@
       </fields>
       <libsource lib="TC" part="J9" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>19b68ea9-e4e9-5532-9a28-3843526bff79</tstamps>
+      <tstamps>7d10f982-344c-5977-9434-601600905ce5</tstamps>
     </comp>
     <comp ref="J10">
       <value>UP_OUT_DRV</value>
@@ -342,9 +342,9 @@
       </fields>
       <libsource lib="TC" part="J10" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>30c8e64c-8fef-5ed6-93a5-e7ae79965216</tstamps>
+      <tstamps>af56ca72-fc6d-5a64-a5cd-07b1b210f137</tstamps>
     </comp>
     <comp ref="J11">
       <value>UP_IN_DRV</value>
@@ -356,9 +356,9 @@
       </fields>
       <libsource lib="TC" part="J11" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>e030c850-d440-5c89-8b98-662fe126ef94</tstamps>
+      <tstamps>8026d8c7-1bce-59d0-a87f-ccdbe1e09fca</tstamps>
     </comp>
     <comp ref="J12">
       <value>LOW_OUT_DRV</value>
@@ -370,9 +370,9 @@
       </fields>
       <libsource lib="TC" part="J12" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>af56aa1b-52e9-5089-a40f-950395b3a311</tstamps>
+      <tstamps>aee602d3-4cc2-5752-8d59-eb50e4951643</tstamps>
     </comp>
     <comp ref="J13">
       <value>LOW_IN_DRV</value>
@@ -384,9 +384,9 @@
       </fields>
       <libsource lib="TC" part="J13" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>0b6e43bb-e9e4-50c7-b65f-f6e98bcaff96</tstamps>
+      <tstamps>e06dae28-f125-546c-b1c8-cd3ce43326bd</tstamps>
     </comp>
     <comp ref="J14">
       <value>I2C_FUTURE</value>
@@ -398,9 +398,9 @@
       </fields>
       <libsource lib="TC" part="J14" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>b33b410f-1243-5ff3-8655-fdc3a17fc659</tstamps>
+      <tstamps>ec6bb019-6e27-5e5c-b75c-ae6b39e87e8f</tstamps>
     </comp>
     <comp ref="JP1">
       <value>SENSOR_POWER_OFF_DEFAULT</value>
@@ -412,9 +412,9 @@
       </fields>
       <libsource lib="TC" part="JP1" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>898e4555-1b02-5737-a47b-594c059e4fbc</tstamps>
+      <tstamps>3c8aa7af-08a5-5cd7-ac6a-cbc0d07a62b1</tstamps>
     </comp>
     <comp ref="R1">
       <value>150k_1%</value>
@@ -426,9 +426,9 @@
       </fields>
       <libsource lib="TC" part="R1" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>d74c503a-b189-5e9d-9b0c-375cdef7fa63</tstamps>
+      <tstamps>01899ad5-cb81-5b1e-8e2a-0fedd349c1f7</tstamps>
     </comp>
     <comp ref="R2">
       <value>150k_1%</value>
@@ -440,9 +440,9 @@
       </fields>
       <libsource lib="TC" part="R2" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>0268705c-60f5-50d3-a9da-121f3c73e1e9</tstamps>
+      <tstamps>02a20dbb-cea3-53f5-9f6e-43758faf5a70</tstamps>
     </comp>
     <comp ref="R3">
       <value>150k_1%</value>
@@ -454,9 +454,9 @@
       </fields>
       <libsource lib="TC" part="R3" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>8375ebcd-7ea9-545d-a52f-f5fa8d395fda</tstamps>
+      <tstamps>4d8aabe6-e78e-576c-a90a-b1349a29b3ab</tstamps>
     </comp>
     <comp ref="R4">
       <value>150k_1%</value>
@@ -468,9 +468,9 @@
       </fields>
       <libsource lib="TC" part="R4" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>0526df31-8ed0-5746-a96a-e82f872407f7</tstamps>
+      <tstamps>bee593c0-d52b-5660-b2f1-33f3727a015a</tstamps>
     </comp>
     <comp ref="R5">
       <value>10k</value>
@@ -482,9 +482,9 @@
       </fields>
       <libsource lib="TC" part="R5" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>b02bb60b-40fe-5a42-8087-30209b0a56ca</tstamps>
+      <tstamps>a1c67bd8-9850-5e10-9697-9e9637ec3c57</tstamps>
     </comp>
     <comp ref="RN1">
       <value>4609X-101-103LF</value>
@@ -496,9 +496,9 @@
       </fields>
       <libsource lib="TC" part="RN1" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>33d89220-f4dc-53fc-a0f0-ff608493a291</tstamps>
+      <tstamps>453fd507-cce3-53ae-8ddf-3c588053c37b</tstamps>
     </comp>
     <comp ref="RN2">
       <value>4609X-101-103LF</value>
@@ -510,9 +510,9 @@
       </fields>
       <libsource lib="TC" part="RN2" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>eafb7640-272e-54c3-8c16-6596c5fc5f42</tstamps>
+      <tstamps>a16b31e2-ae6c-5ca9-9985-ce090199947a</tstamps>
     </comp>
     <comp ref="RN3">
       <value>4609X-101-103LF</value>
@@ -524,9 +524,9 @@
       </fields>
       <libsource lib="TC" part="RN3" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>8cc86d46-f5f6-5f17-aad1-129a99f60267</tstamps>
+      <tstamps>39e418c2-e1fb-5035-b4db-b85d6b7d0d3c</tstamps>
     </comp>
     <comp ref="TP1">
       <value>CLEAR_N</value>
@@ -538,9 +538,9 @@
       </fields>
       <libsource lib="TC" part="TP1" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>5c8fb22c-dbde-5353-a591-2a53fe91f5f0</tstamps>
+      <tstamps>fcde26d0-7af3-50a8-a499-ad418f3f42c8</tstamps>
     </comp>
     <comp ref="TP2">
       <value>POWER_GOOD</value>
@@ -552,9 +552,9 @@
       </fields>
       <libsource lib="TC" part="TP2" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>cfc57406-2bcc-544f-9542-e59879c67080</tstamps>
+      <tstamps>24b5b1ff-e2e3-553b-ab70-3d4368170e16</tstamps>
     </comp>
     <comp ref="TP3">
       <value>UP_OUT_Q</value>
@@ -566,9 +566,9 @@
       </fields>
       <libsource lib="TC" part="TP3" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>195a7ca8-1471-5975-8b5f-90fb547f620b</tstamps>
+      <tstamps>673ddc9d-0471-5214-a45f-8b640417932c</tstamps>
     </comp>
     <comp ref="TP4">
       <value>UP_IN_Q</value>
@@ -580,9 +580,9 @@
       </fields>
       <libsource lib="TC" part="TP4" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>ce803823-d1b3-53bd-a120-fe28c4b04e76</tstamps>
+      <tstamps>a43b5787-783b-53e8-b052-c3b7dd28145b</tstamps>
     </comp>
     <comp ref="TP5">
       <value>LOW_OUT_Q</value>
@@ -594,9 +594,9 @@
       </fields>
       <libsource lib="TC" part="TP5" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>e1e53f33-6fad-55ba-93f6-572b50b994f2</tstamps>
+      <tstamps>a42e51e8-5d65-5d97-9503-9ee025061bf8</tstamps>
     </comp>
     <comp ref="TP6">
       <value>LOW_IN_Q</value>
@@ -608,9 +608,9 @@
       </fields>
       <libsource lib="TC" part="TP6" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>fcde7266-ecf6-569e-8593-ffd4f3e77555</tstamps>
+      <tstamps>86456418-cbbe-5937-b380-7cc0a6d2772f</tstamps>
     </comp>
     <comp ref="U1">
       <value>MCP3008-I/P</value>
@@ -622,9 +622,9 @@
       </fields>
       <libsource lib="TC" part="U1" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>3a963d62-7091-5e35-83b2-a13e105808dd</tstamps>
+      <tstamps>d2f370c8-30ef-55bd-ac38-629e9c72e856</tstamps>
     </comp>
     <comp ref="U2">
       <value>SN74HC221N</value>
@@ -636,9 +636,9 @@
       </fields>
       <libsource lib="TC" part="U2" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>8f506e09-0ed6-5dec-9411-92a8ab31da1c</tstamps>
+      <tstamps>8b2d66c8-ce26-5a24-8025-fd1a2e88bf8e</tstamps>
     </comp>
     <comp ref="U3">
       <value>SN74HC221N</value>
@@ -650,9 +650,9 @@
       </fields>
       <libsource lib="TC" part="U3" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>2ef87539-be1b-5db6-912b-1c6490f8b842</tstamps>
+      <tstamps>209cb342-8b21-5711-9719-0b1d2cce0a25</tstamps>
     </comp>
     <comp ref="U4">
       <value>SN74HC08N</value>
@@ -664,9 +664,9 @@
       </fields>
       <libsource lib="TC" part="U4" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>b8329e0a-4683-50eb-a803-e510acee0ddd</tstamps>
+      <tstamps>cdc87371-b7d3-5d8c-9f8d-9dd6c08ce828</tstamps>
     </comp>
     <comp ref="U5">
       <value>SN74HC08N</value>
@@ -678,9 +678,9 @@
       </fields>
       <libsource lib="TC" part="U5" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>5ea28da6-3466-5fd4-b08d-7c8251afda9c</tstamps>
+      <tstamps>dbbe849c-f988-530f-ba4f-e803102a72ca</tstamps>
     </comp>
     <comp ref="U6">
       <value>SN74HC08N</value>
@@ -692,9 +692,9 @@
       </fields>
       <libsource lib="TC" part="U6" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>db55e60f-fae2-5909-9d9e-326d93aa0e7d</tstamps>
+      <tstamps>90e7bcdc-2976-5603-861f-d83240813902</tstamps>
     </comp>
     <comp ref="U7">
       <value>MCP100-300DI/TO</value>
@@ -706,9 +706,9 @@
       </fields>
       <libsource lib="TC" part="U7" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TC_IO_REVA.kicad_sch"/>
+      <property name="Sheetfile" value="TC_IO_REVB.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>225d3790-da16-5b2d-ae72-449d39dc268b</tstamps>
+      <tstamps>a68da764-610c-5ea5-8cbb-9ffaba0cf2be</tstamps>
     </comp>
   </components>
   <libparts>

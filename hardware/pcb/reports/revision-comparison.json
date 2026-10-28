@@ -1,0 +1,18 @@
+{
+  "previous_revision": "TC_IO_REVA",
+  "current_revision": "TC_IO_REVB",
+  "previous_size_mm": [
+    170,
+    120
+  ],
+  "current_size_mm": [
+    100,
+    100
+  ],
+  "baseline_commit": "5b03c2d29c89fd07735abcb9c7a2f86f286c13ef",
+  "electrical_netlist_unchanged": true,
+  "connected_pins_compared": 231,
+  "bom_unchanged": true,
+  "baseline_netlist_sha256": "c3b9c6b09369d6871869c162aafc9adc1decb8c589026ba992f90d46a2ef5fcc",
+  "current_netlist_sha256": "916e827c580b254765afa8792526f700cab3d456ae2af61453409eb08fc99f1e"
+}

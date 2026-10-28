@@ -9,9 +9,9 @@ import pcbnew as pcb
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / 'source'
 SRC.mkdir(parents=True, exist_ok=True)
-NAME = 'TC_IO_REVA'
+NAME = 'TC_IO_REVB'
 parts = []
-def uid(s): return str(uuid.uuid5(uuid.NAMESPACE_URL, 'train-control/pcb/reva/'+s))
+def uid(s): return str(uuid.uuid5(uuid.NAMESPACE_URL, 'train-control/pcb/revb/'+s))
 def q(s): return json.dumps(str(s), ensure_ascii=False)
 def add(ref, value, footprint, nets, pos, names=None, types=None, note=''):
     part = dict(ref=ref, value=value, footprint=footprint, nets={str(k):v for k,v in nets.items()},
@@ -105,6 +105,26 @@ add('TP2','POWER_GOOD',h2,{1:'POWER_GOOD',2:'GND'},(92,115,0))
 for i,ch in enumerate(channels):
     add('TP'+str(i+3),ch+'_Q',h2,{1:ch+'_Q',2:'GND'},(138,45+20*i,0))
 
+# Rev B: 100 x 100 mm. Electrical design, part types and connector pinouts
+# are unchanged; only mechanical placement and routing are revised.
+placements = {
+    'J1':(29,48,0), 'JP1':(23.5,36,0),
+    'U1':(45,46,0), 'U2':(68,46,0), 'U3':(68,77,0),
+    'U4':(95,46,0), 'U5':(95,77,0), 'U6':(45,77,0), 'U7':(101,111,0),
+    'RN1':(44,105,0), 'RN2':(73,105,0), 'RN3':(43,112,0),
+    'C1':(85,51,90), 'C2':(85,65,90), 'C3':(85,82,90), 'C4':(85,96,90),
+    'R1':(89.5,51,90), 'R2':(89.5,65,90), 'R3':(89.5,82,90), 'R4':(89.5,96,90),
+    'C5':(59,40,0), 'C6':(70,70,0), 'C7':(70,100,0), 'C8':(97,69,0),
+    'C9':(98,100,0), 'C10':(47,99,0), 'C11':(108,105,0), 'C12':(58,70,0),
+    'C13':(38.5,105.5,0), 'R5':(40,55,90), 'J14':(34,110,0),
+    'TP1':(73,113,0), 'TP2':(80,113,0),
+    'TP3':(60,47,0), 'TP4':(60,62,0), 'TP5':(60,78,0), 'TP6':(60,94,0),
+}
+for i in range(8): placements['J'+str(i+2)]=(29+11.2*i,34,0)
+for i in range(4): placements['J'+str(i+10)]=(113,49+16*i,90)
+assert {p['ref'] for p in parts} == set(placements)
+for p in parts: p['pos']=placements[p['ref']]
+
 root_id=uid('schematic')
 font='(effects (font (size 1.0 1.0)))'
 def symdef(p):
@@ -125,7 +145,7 @@ def symdef(p):
     return body+'))', pins, height
 
 schem=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {root_id}) (paper "A1")\n'
-schem+='(title_block (title "TC IO Rev A - REVIEW PROTOTYPE") (rev "A0-DRAFT") (comment 1 "3.3V logic only. Separate DRV8871 modules. No 12V/coil terminals."))\n(lib_symbols\n'
+schem+='(title_block (title "TC IO Rev B - REVIEW PROTOTYPE") (rev "B0-DRAFT") (comment 1 "3.3V logic only. Separate DRV8871 modules. No 12V/coil terminals."))\n(lib_symbols\n'
 defs=[]; library=[]
 for p in parts:
     d,pins,h=symdef(p); schem+=d+'\n'; defs.append((pins,h)); library.append(d.replace('"TC:'+p['ref']+'"',q(p['ref']),1))
@@ -163,6 +183,7 @@ for name in sorted({n for p in parts for n in p['nets'].values() if n}):
 
 def text(s,x,y,size=1.0):
     t=pcb.PCB_TEXT(board);t.SetText(s);t.SetPosition(point(x,y));t.SetTextSize(point(size,size));t.SetTextThickness(mm(.15));t.SetLayer(pcb.F_SilkS);board.Add(t)
+    return t
 for p in parts:
     lib,fpname=p['footprint'].split(':')
     fp=pcb.FootprintLoad('/usr/share/kicad/footprints/'+lib+'.pretty',fpname)
@@ -177,26 +198,27 @@ for p in parts:
     board.Add(fp)
     fp.Reference().SetPosition(point(p['pos'][0],p['pos'][1]-4))
     fp.Reference().SetTextAngle(pcb.EDA_ANGLE(0,pcb.DEGREES_T))
-    if p['ref']=='J1': fp.Reference().SetPosition(point(30,32))
+    if p['ref']=='J1': fp.Reference().SetPosition(point(29,41))
     if p['ref'] in ['J10','J11','J12','J13']:
-        fp.Reference().SetPosition(point(170,p['pos'][1]-4))
-    if p['ref']=='U7': fp.Reference().SetPosition(point(83,110))
+        fp.Reference().SetPosition(point(114,p['pos'][1]-10))
+    if p['ref']=='U7': fp.Reference().SetPosition(point(101,116))
+    reference_positions={'RN2':(87,109), 'C7':(79,100), 'C12':(57,73),
+                         'C13':(39,115), 'C5':(65.5,41)}
+    if p['ref'] in reference_positions:fp.Reference().SetPosition(point(*reference_positions[p['ref']]))
     fp.Reference().SetTextSize(point(1,1));fp.Reference().SetTextThickness(mm(.15))
-for i,(x,y) in enumerate([(24,24),(186,24),(24,136),(186,136)]):
+for i,(x,y) in enumerate([(24,24),(116,24),(24,116),(116,116)]):
     fp=pcb.FootprintLoad('/usr/share/kicad/footprints/MountingHole.pretty','MountingHole_3.2mm_M3')
     fp.SetReference('H'+str(i+1));fp.SetPosition(point(x,y));fp.Value().SetVisible(False);fp.Reference().SetVisible(False);board.Add(fp)
-for a,b in [((20,20),(190,20)),((190,20),(190,140)),((190,140),(20,140)),((20,140),(20,20))]:
+for a,b in [((20,20),(120,20)),((120,20),(120,120)),((120,120),(20,120)),((20,120),(20,20))]:
     line=pcb.PCB_SHAPE(board);line.SetShape(pcb.SHAPE_T_SEGMENT);line.SetStart(point(*a));line.SetEnd(point(*b));line.SetLayer(pcb.Edge_Cuts);line.SetWidth(mm(.05));board.Add(line)
-text('TC IO REV A - REVIEW PROTOTYPE',105,133,1.4)
-text('3.3V ONLY / NO 12V OR COIL CONNECTIONS',105,137,1)
-text('SENSORS: 1 GND  2 VCC  3 ANALOG',113,23,1)
-text('JP1: SENSOR POWER - OFF DEFAULT',73,37,.9)
-text('DRV LOGIC ONLY',173,37,.9)
-for i,ch in enumerate(channels):text(ch+' G/1/2',173,55+23*i,.8)
-text('I2C RESERVED',39,122,.8)
+text('TC IO REV B - 100x100',72,118.2,.9)
+text('3.3V ONLY / NO 12V',70,23,1)
+text('SENSORS: GND/VCC/AN',70,26,1)
+text('DRV LOGIC ONLY',118.5,75,.8).SetTextAngle(pcb.EDA_ANGLE(90,pcb.DEGREES_T))
+for i in range(4):text('G/1/2',114,53.2+16*i,.8)
 pcb.SaveBoard(str(SRC/(NAME+'.kicad_pcb')),board)
 pcb.ExportSpecctraDSN(board,str(SRC/(NAME+'.dsn')))
-(SRC/'design_manifest.json').write_text(json.dumps({'name':NAME,'status':'DRAFT_NOT_RELEASED','board_mm':[170,120], 'parts':parts},indent=2))
+(SRC/'design_manifest.json').write_text(json.dumps({'name':NAME,'status':'DRAFT_NOT_RELEASED','board_mm':[100,100], 'parts':parts},indent=2))
 with (SRC/'BOM_hand_assembly.csv').open('w',newline='') as f:
     w=csv.writer(f);w.writerow(['Reference','Value_or_MPN','Footprint','Quantity','Notes'])
     for p in parts:w.writerow([p['ref'],p['value'],p['footprint'],1,p['note']])

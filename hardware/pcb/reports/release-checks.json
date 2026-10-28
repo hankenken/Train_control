@@ -1,9 +1,9 @@
 {
-  "board": "TC_IO_REVA",
+  "board": "TC_IO_REVB",
   "status": "UNTESTED_PROTOTYPE_NOT_PRODUCTION_QUALIFIED",
   "size_mm": [
-    170,
-    120
+    100.0,
+    100.0
   ],
   "layers": 2,
   "thickness_mm": 1.6,
@@ -17,21 +17,21 @@
   "manufacturer_datasheet_review_complete": false,
   "physical_testing_complete": false,
   "source_sha256": {
-    "TC_IO_REVA.kicad_pcb": "70ee176d460d846014c1f3c5c5c080bd529d97e3f457a82ec422eb5ac932f33c",
-    "TC_IO_REVA.kicad_sch": "13b968faf5385797370ce72f03758c0fb898015da8991f1c7e48da817b6a5312",
+    "TC_IO_REVB.kicad_pcb": "64183ccb332354549c41f617817d056ff900d212656eacd6f6708704bad0e31a",
+    "TC_IO_REVB.kicad_sch": "58eafa7a8c5905d16715986d87320c76bc24b96d4af17d5e704712073544f155",
     "TC.kicad_sym": "4dde40ab7ae079dcc8acfc44b611e3dd124faa68bd20a114b999f5bbff8379b3"
   },
   "fabrication_sha256": {
-    "TC_IO_REVA-B_Cu.gbl": "c92cd738a97ffed5c76e99f6b94e93a7b691b6a46258198e4fa5ef9b1e7bc6b6",
-    "TC_IO_REVA-B_Mask.gbs": "e10481211c39bd7a9ad55bc3dc283fbbbf1a75de4007492f5a60ffce9d4fa7a7",
-    "TC_IO_REVA-B_Silkscreen.gbo": "564340a4a46be9b12292ff4a0ed095247502090b851a6bbe7e7069dd84378606",
-    "TC_IO_REVA-Edge_Cuts.gm1": "add1db4c249430ea5c7095ea2d7db42f1d40f3ff929d9144c18300aaf9383fef",
-    "TC_IO_REVA-F_Cu.gtl": "2f9f2cba281dc2b5a2a15ce0c4d3acedd0191b9863c0d33a47e684f2b0d6003d",
-    "TC_IO_REVA-F_Mask.gts": "ff8179136fe6e28537f2e21c6bab7de018ad176acc05fd93413b209a42deb5de",
-    "TC_IO_REVA-F_Silkscreen.gto": "9cd3b5035a62ba7106d41182092cfcbfdbc7dd31faf7bdbd2281e6bd03ea9cce",
-    "TC_IO_REVA-NPTH.drl": "6a8471ba68b87773bd1bdc5df1775c6e0c5a83c12680a40f223e732123245965",
-    "TC_IO_REVA-PTH.drl": "3aea8b3f77b71f5db811f12d71b1eb202ca8b95680f1d18108cbdf9f1c1b812b",
-    "TC_IO_REVA-job.gbrjob": "f0470236831d9dac5bbd9f59ca1896c751a35a368b205ccfb8e08b4e16e624b9"
+    "TC_IO_REVB-B_Cu.gbl": "6c2f5008e4f2331557baf7e3f04874a51722149496f4cb7994aa315931a5aff7",
+    "TC_IO_REVB-B_Mask.gbs": "cde80514562f0201a621c2c1c38e533311df4703511421fab9ae02818f5ddbde",
+    "TC_IO_REVB-B_Silkscreen.gbo": "47a50198f91d523d39219652211a8056c10f0fc4c6e1c74ffeab761af7732244",
+    "TC_IO_REVB-Edge_Cuts.gm1": "7186ae14a1de987fecc2362590e7ba5e00c750d6b55bf8b4f21e848d2f3e91f1",
+    "TC_IO_REVB-F_Cu.gtl": "6e1dd1af56fe174e4d5207a213b298b941a8b3f9d382da55b6ac18f39043f8a7",
+    "TC_IO_REVB-F_Mask.gts": "7590bf415ed2f0d89dbb7c9aad0c3fb246961e9a134ee3632e841bd76062f034",
+    "TC_IO_REVB-F_Silkscreen.gto": "11194db03f3c64f7fb44060af637d17f91425131bcf1104651ba40423476a9d6",
+    "TC_IO_REVB-NPTH.drl": "6c63ffe3a8bb6734718c901ec6781710c09dae107437e438c1b51580ba85abc1",
+    "TC_IO_REVB-PTH.drl": "cf8cb4a7b9f005e4bcde1d8b827745eef02c99b53ba3231fb11a204d261c954a",
+    "TC_IO_REVB-job.gbrjob": "f38ae2ccd7b05d26bf72f602500184c198bcd1547d8a5b0f3c324069163607e2"
   },
-  "zip_sha256": "d39d6186eb2add93053af0ac3d955335ae1846081d5ea33166fbaeb320b43029"
+  "zip_sha256": "21c0a78bee062ad195f6e2f6ee814c1582aeac6c3247862d2e3667024b3f5410"
 }
