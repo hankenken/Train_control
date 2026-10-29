@@ -10,7 +10,7 @@
     150000
   ],
   "candidate_k_values_are_guaranteed_bounds": false,
-  "baseline_10percent_cap_k_ceiling_for_100ms": 0.712426,
+  "baseline_10percent_cap_k_ceiling_for_100ms": 0.73967,
   "guaranteed_100ms_limit": false,
   "decision": "Do not adopt 10% capacitor or change R solely on assumed coefficient. Verify VR/capacitor data and bench 3.3V pulse width. Alternative R values are analysis only.",
   "physical_testing_performed": false

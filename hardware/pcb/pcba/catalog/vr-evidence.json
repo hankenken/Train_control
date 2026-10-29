@@ -1,0 +1,16 @@
+{
+  "mpn": "3224W-1-104E",
+  "lcsc_code": "C53229",
+  "observed_stock": 7899,
+  "stock_evidence": "User screenshot received 2026-10-29 Asia/Tokyo; stock observation time not independently known",
+  "resistance_ohms": 100000,
+  "standard_tolerance": 0.1,
+  "turns_nominal": 12,
+  "pin_assignment_verified": true,
+  "land_dimensions_verified": true,
+  "datasheet_sha256": "d8837a88dcb2b7c2c85bfb224c5656865ef183a5ff18c8fa2ebaaaadc595ad65",
+  "jlcpcb_eligibility_verified": false,
+  "supplier_rotation_verified": false,
+  "full_reflow_profile_verified": false,
+  "physical_testing_performed": false
+}

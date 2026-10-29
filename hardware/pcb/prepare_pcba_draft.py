@@ -48,6 +48,9 @@ with bom.open('w',newline='') as f:
         if mpn=='CD74HC221M96':
             code='C133954'
             sourcing_status='User screenshot matches MPN, SOIC-16 and LCSC code; stock shown 1761; JLCPCB eligibility and rotation pending'
+        elif mpn=='3224W-1-104E':
+            code='C53229'
+            sourcing_status='User screenshot: stock 7899; Bourns PDF verifies 100k 10%, pinout and land dimensions; JLCPCB eligibility/rotation/reflow profile pending'
         elif observation and mpn!='C1206C474J5RACTU':
             code=observation['LCSC Part #']
             sourcing_status='USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification'

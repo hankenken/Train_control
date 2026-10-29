@@ -4,7 +4,7 @@
   "physical_measurement_performed": false,
   "nominal_min_ms": 49.35,
   "nominal_max_ms": 82.25,
-  "passive_tolerance_upper_estimate_ms": 93.789675,
+  "passive_tolerance_upper_estimate_ms": 90.335175,
   "guaranteed_100ms_limit": false,
   "excluded_variations": [
     "IC coefficient",
@@ -16,5 +16,8 @@
   "timer_mpn": "CD74HC221M96",
   "datasheet": "TI SCHS166F",
   "coefficient_0_7_stated_supply_v": 4.5,
-  "three_v_three_timing_validated": false
+  "three_v_three_timing_validated": false,
+  "vr_tolerance": 0.1,
+  "vr_tolerance_source": "Bourns 3224 REV09/17, user supplied",
+  "passive_upper_with_10percent_cap_ms": 94.63685
 }
