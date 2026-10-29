@@ -74,3 +74,9 @@ LCSCコード9種類・在庫数8種類のユーザー記入情報を `catalog/u
 詳細は `catalog/README.md` と `catalog/review-report.json` を参照してください。
 SN74HC221DR未記入、VR在庫未記入、タイミングコンデンサJ品→K品の候補差分が残っています。
 JLCPCB実装対応は全行未記入です。調達・実装の独立確認が完了した状態ではありません。
+
+## ワンショットICの再選定
+
+ユーザーよりSN74HC221DRが検索で見つからなかったと連絡があり、調達候補を再検討しています。
+`catalog/one-shot-alternatives.md` に比較、`catalog/one-shot-search.csv` に候補検索リンクを記載しました。
+第一候補はCD74HC221系、第二候補はM74HC221系です。掲載・電気仕様はまだ未確認で、部品置換は未実施です。
