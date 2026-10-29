@@ -1,0 +1,20 @@
+{
+  "board_sha256": "741712e50599d95aabbd0d54d4e5ccd2a866a60ca883a75b85f6c0170822cd95",
+  "cpl_sha256": "03b6d06b8ced9d4e394cb196b5e7894fb6b7f9331c6be53ce019a68806899424",
+  "cpl_rows_checked": 50,
+  "unique_references": 50,
+  "all_top": true,
+  "all_anchors_match_board": true,
+  "all_angles_match_kicad": true,
+  "dnp_in_cpl": 0,
+  "ic_vr_parts_drawn": 11,
+  "pins_reviewed": 105,
+  "supplier_rotation_verified": false,
+  "supplier_pickup_center_verified": false,
+  "order_ready": false,
+  "remaining_manufacturer_documents": [
+    "MCP3008T-I/SL",
+    "SN74HC08DR",
+    "MCP100T-300I/TT"
+  ]
+}

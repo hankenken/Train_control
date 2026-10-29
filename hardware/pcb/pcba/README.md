@@ -113,3 +113,9 @@ C2167387の画面とKEMET資料により、K品（470nF・±10%・50V・X7R・12
 ただし容量の温度変化±15%を考慮すると、現在のRCの100ms上限は保証できません。元のJ品でも課題があります。
 `catalog/timing-cap-review.md`と`catalog/timing-cap-evidence.json`に記録し、PDFと感度計算へ反映しました。
 このためC1〜C4の置換は保留しています。
+
+## 実装座標と1番端子の照合資料
+
+`audit_assembly.py`で50点のCPLと基板の座標・角度・上面を照合しました。
+`reports/assembly-audit.json`、`pcba/IC_VR_pin-net-review.csv`、`review/IC_VR_pin1_review.pdf`へ出力しています。
+メーカー資料とJLCPCBモデルの照合が残る項目は `remaining-ic-review.md` を参照してください。
