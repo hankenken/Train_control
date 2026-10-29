@@ -1,0 +1,21 @@
+{
+  "evidence": "User supplied screenshot and manufacturer PDF",
+  "reported_lcsc_code": "C353994",
+  "screenshot_mpn": "CD74HC221E",
+  "package": "PDIP-16",
+  "observed_stock": 175,
+  "stock_time": "unknown; user screenshot received 2026-10-29 Asia/Tokyo",
+  "datasheet": "TI_CD74HC221_SCHS166F_user-supplied.pdf",
+  "datasheet_sha256": "64abda1591a5b4b0cf11bda8b89a6682136a3376703e2d757206ca9a33c124ac",
+  "hc_supply_range_v": [
+    2,
+    6
+  ],
+  "existing_pin_assignment_matches": true,
+  "existing_footprint_matches": false,
+  "assembly_eligibility_verified": false,
+  "timing_formula_0_7_condition_v": 4.5,
+  "timing_at_3v3_guaranteed": false,
+  "selected_for_production": false,
+  "preferred_smt_candidate": "CD74HC221M96"
+}

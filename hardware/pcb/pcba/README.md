@@ -80,3 +80,9 @@ JLCPCB実装対応は全行未記入です。調達・実装の独立確認が�
 ユーザーよりSN74HC221DRが検索で見つからなかったと連絡があり、調達候補を再検討しています。
 `catalog/one-shot-alternatives.md` に比較、`catalog/one-shot-search.csv` に候補検索リンクを記載しました。
 第一候補はCD74HC221系、第二候補はM74HC221系です。掲載・電気仕様はまだ未確認で、部品置換は未実施です。
+
+## 受領データシートの確認
+
+C353994の画面とTI SCHS166Fを確認しました。C353994はCD74HC221E（DIP16）で、既存SOIC基板には直接実装できません。
+詳細と端子照合は `catalog/cd74hc221-review.md`、資料とハッシュは `catalog/cd74hc221-evidence.json` を参照してください。
+SOIC版CD74HC221M96の記載をメーカー資料で確認できましたが、LCSCコードと実装対応は未確認です。
