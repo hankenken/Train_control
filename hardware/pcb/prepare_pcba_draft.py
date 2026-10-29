@@ -54,6 +54,9 @@ with bom.open('w',newline='') as f:
         elif mpn=='C1206C474K5RACTU':
             code='C2167387'
             sourcing_status='User selected 470nF 10% X7R after datasheet review; screenshot stock 460; strict 100ms accuracy not required; JLCPCB eligibility pending'
+        elif mpn in ['MCP3008T-I/SL','SN74HC08DR','MCP100T-300I/TT']:
+            code=observation['LCSC Part #'] if observation else ''
+            sourcing_status='Manufacturer PDF pin roles and 3.3V supply range reviewed; LCSC code from user CSV; supplier package/rotation/eligibility and bench checks pending'
         elif observation:
             code=observation['LCSC Part #']
             sourcing_status='USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification'

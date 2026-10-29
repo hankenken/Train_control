@@ -31,11 +31,11 @@ for f in selected:
   qx,qy=pos(xx,yy);color='#bd3030' if n=='1' else '#d4a94b'
   svg.append(f'<rect x="{qx-w/2}" y="{qy-h/2}" width="{w}" height="{h}" fill="{color}" stroke="#333" stroke-width=".6"/>')
   svg.append(f'<text x="{qx}" y="{qy+2.5}" text-anchor="middle" font-family="sans-serif" font-size="7">{html.escape(n)}</text>')
-  rows.append({'Reference':ref,'MPN':f.GetValue(),'Pin':n,'Net':pad.GetNetname(),'Pad X mm':round(xx,4),'Pad Y mm':round(yy,4),'Footprint rotation':f.GetOrientationDegrees(),'Verification':'CAD only; manufacturer review required except documented HC221/VR'})
+  rows.append({'Reference':ref,'MPN':f.GetValue(),'Pin':n,'Net':pad.GetNetname(),'Pad X mm':round(xx,4),'Pad Y mm':round(yy,4),'Footprint rotation':f.GetOrientationDegrees(),'Verification':'Pin roles reviewed against supplied manufacturer PDFs; supplier orientation pending'})
 svg+=['<text x="50" y="1025" font-family="sans-serif" font-size="16">Board outline 100 x 100 mm. Coordinates follow KiCad source.</text>','<text x="50" y="1050" font-family="sans-serif" font-size="16">Unpopulated wire pads and other components are omitted from this review drawing.</text>','</svg>']
 (root/'review/IC_VR_pin1_review.svg').write_text('\n'.join(svg)+'\n')
 with (root/'pcba/IC_VR_pin-net-review.csv').open('w',newline='') as f:
  w=csv.DictWriter(f,fieldnames=rows[0],lineterminator='\n');w.writeheader();w.writerows(rows)
-report={'board_sha256':hashlib.sha256(board.read_bytes()).hexdigest(),'cpl_sha256':hashlib.sha256((root/'pcba/TC_IO_REVC_CPL_DRAFT_NOT_FOR_ORDER.csv').read_bytes()).hexdigest(),'cpl_rows_checked':50,'unique_references':50,'all_top':True,'all_anchors_match_board':True,'all_angles_match_kicad':True,'dnp_in_cpl':0,'ic_vr_parts_drawn':11,'pins_reviewed':len(rows),'supplier_rotation_verified':False,'supplier_pickup_center_verified':False,'order_ready':False,'remaining_manufacturer_documents':['MCP3008T-I/SL','SN74HC08DR','MCP100T-300I/TT']}
+report={'board_sha256':hashlib.sha256(board.read_bytes()).hexdigest(),'cpl_sha256':hashlib.sha256((root/'pcba/TC_IO_REVC_CPL_DRAFT_NOT_FOR_ORDER.csv').read_bytes()).hexdigest(),'cpl_rows_checked':50,'unique_references':50,'all_top':True,'all_anchors_match_board':True,'all_angles_match_kicad':True,'dnp_in_cpl':0,'ic_vr_parts_drawn':11,'pins_reviewed':len(rows),'supplier_rotation_verified':False,'supplier_pickup_center_verified':False,'order_ready':False,'remaining_manufacturer_documents':[],'manufacturer_pin_review_report':'ic-datasheet-review.json'}
 (root/'reports/assembly-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 print('50 CPL rows match CAD; 11 IC/VR orientations and',len(rows),'pin/net assignments exported; supplier approval pending')

@@ -76,7 +76,7 @@ add('U6','SN74HC08DR',dip14,nets,(55,101,0),types={7:'power_in',14:'power_in',1:
 add('U7','MCP100T-300I/TT','Package_TO_SOT_SMD:SOT-23',
     {1:'POWER_GOOD',2:'+3V3',3:'GND'},(83,102,0),
     names={1:'RESET_N',2:'VDD',3:'VSS'},types={1:'output',2:'power_in',3:'power_in'},
-    note='RESET_N=pin1,VDD=pin2,VSS=pin3. Manufacturer/package pinout must be independently checked')
+    note='RESET_N=pin1,VDD=pin2,VSS=pin3 checked against user-supplied Microchip DS11187F; bench power-ramp testing pending')
 
 pulled=[ch+'_'+s for ch in channels for s in ['P','N','TRIG']]+['ARM']+[ch+'_IN'+str(i) for ch in channels for i in [1,2]]
 assert len(pulled)==21

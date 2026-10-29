@@ -119,3 +119,10 @@ C2167387の画面とKEMET資料により、K品（470nF・±10%・50V・X7R・12
 `audit_assembly.py`で50点のCPLと基板の座標・角度・上面を照合しました。
 `reports/assembly-audit.json`、`pcba/IC_VR_pin-net-review.csv`、`review/IC_VR_pin1_review.pdf`へ出力しています。
 メーカー資料とJLCPCBモデルの照合が残る項目は `remaining-ic-review.md` を参照してください。
+
+## 残るIC資料の照合結果
+
+MCP3008・SN74HC08・MCP100のメーカーPDFを受領し、U1/U4〜U7の61端子を実基板と照合して一致しました。
+電源監視は検出2.85〜3.00V、解除150〜700ms、ADCは3.3VでSPI 500kHzを初期設定とします。
+`remaining-ic-review.md`と`reports/ic-datasheet-review.json`へ根拠と未完了範囲を保存しました。
+ICメーカー資料の未受領という阻害要因は解消しています。JLCPCBモデルの実装方向・供給条件や実機試験は未完了です。

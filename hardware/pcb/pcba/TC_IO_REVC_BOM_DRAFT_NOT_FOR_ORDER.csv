@@ -1,8 +1,8 @@
 Comment,Designator,Footprint,LCSC Part #,Manufacturer,Manufacturer Part Number,Quantity,Status
-MCP3008T-I/SL,U1,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,C2651321,Microchip,MCP3008T-I/SL,1,USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification
+MCP3008T-I/SL,U1,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,C2651321,Microchip,MCP3008T-I/SL,1,Manufacturer PDF pin roles and 3.3V supply range reviewed; LCSC code from user CSV; supplier package/rotation/eligibility and bench checks pending
 CD74HC221M96,"U2,U3",Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,C133954,Texas Instruments,CD74HC221M96,2,"User screenshot matches MPN, SOIC-16 and LCSC code; stock shown 1761; JLCPCB eligibility and rotation pending"
-SN74HC08DR,"U4,U5,U6",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,C337768,Texas Instruments,SN74HC08DR,3,USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification
-MCP100T-300I/TT,U7,Package_TO_SOT_SMD:SOT-23,C625122,Microchip,MCP100T-300I/TT,1,USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification
+SN74HC08DR,"U4,U5,U6",Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,C337768,Texas Instruments,SN74HC08DR,3,Manufacturer PDF pin roles and 3.3V supply range reviewed; LCSC code from user CSV; supplier package/rotation/eligibility and bench checks pending
+MCP100T-300I/TT,U7,Package_TO_SOT_SMD:SOT-23,C625122,Microchip,MCP100T-300I/TT,1,Manufacturer PDF pin roles and 3.3V supply range reviewed; LCSC code from user CSV; supplier package/rotation/eligibility and bench checks pending
 10k_1%,"R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R5",Resistor_SMD:R_0805_2012Metric,C84376,Yageo,RC0805FR-0710KL,22,USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification
 150k_1%,"R1,R2,R3,R4",Resistor_SMD:R_0805_2012Metric,C114558,Yageo,RC0805FR-07150KL,4,USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification
 3224W-1-104E,"VR1,VR2,VR3,VR4",Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,C53229,Bourns,3224W-1-104E,4,"User screenshot: stock 7899; Bourns PDF verifies 100k 10%, pinout and land dimensions; JLCPCB eligibility/rotation/reflow profile pending"

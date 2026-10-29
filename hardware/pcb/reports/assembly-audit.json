@@ -12,9 +12,6 @@
   "supplier_rotation_verified": false,
   "supplier_pickup_center_verified": false,
   "order_ready": false,
-  "remaining_manufacturer_documents": [
-    "MCP3008T-I/SL",
-    "SN74HC08DR",
-    "MCP100T-300I/TT"
-  ]
+  "remaining_manufacturer_documents": [],
+  "manufacturer_pin_review_report": "ic-datasheet-review.json"
 }

@@ -14,7 +14,7 @@
     },
     "TC_IO_REVC_BOM.pdf": {
       "pages": 2,
-      "sha256": "55482f12834bdbad3974b2f0187c483f9afbeebaa28d2fd003d77ae4ebc13411"
+      "sha256": "76e2ae9d4d5f95230180853c4b3cf84560223a58972bc2caf5c90da51d0db9ab"
     },
     "TC_IO_REVC_assembly.pdf": {
       "pages": 3,
@@ -22,7 +22,7 @@
     },
     "TC_IO_REVC_documents.pdf": {
       "pages": 7,
-      "sha256": "c4995a515046a099a7670a4f60739eeee22f26ab8112a4d8f48bc3719459b3d6"
+      "sha256": "7307d06366991c58e772a017161bb6f47d9132ec6cea339e2a3f7a8ae2fa729d"
     }
   }
 }
