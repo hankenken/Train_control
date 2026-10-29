@@ -31,6 +31,9 @@ def catalog_identity(row):
         number=int(ref[1:]);mpn='C1206C474J5RACTU' if number<=4 else 'C0805C104K5RACTU' if number<=12 else 'C1206C106K3RACTU'
         return row['Value_or_MPN'],'KEMET',mpn
     return row['Value_or_MPN'],'',''
+# Keep user observations distinct from independent manufacturer verification.
+observations=list(csv.DictReader((OUT/'catalog/user-observations.csv').open()))
+observed_by_mpn={r['Manufacturer Part Number']:r for r in observations}
 groups=defaultdict(list)
 for row in rows:
     comment,mfr,mpn=catalog_identity(row)
@@ -39,8 +42,17 @@ bom=OUT/(NAME+'_BOM_DRAFT_NOT_FOR_ORDER.csv')
 with bom.open('w',newline='') as f:
     w=csv.writer(f,lineterminator="\n");w.writerow(['Comment','Designator','Footprint','LCSC Part #','Manufacturer','Manufacturer Part Number','Quantity','Status'])
     for (comment,footprint,mfr,mpn),items in groups.items():
-        code='C133954' if mpn=='CD74HC221M96' else ''
-        sourcing_status=('User screenshot matches MPN, SOIC-16 and LCSC code; stock shown 1761; JLCPCB eligibility and rotation pending' if code else 'CANDIDATE ONLY: LCSC listing, datasheet, stock and assembly eligibility not verified')
+        observation=observed_by_mpn.get(mpn)
+        code=''
+        sourcing_status='CANDIDATE ONLY: LCSC listing, datasheet, stock and assembly eligibility not verified'
+        if mpn=='CD74HC221M96':
+            code='C133954'
+            sourcing_status='User screenshot matches MPN, SOIC-16 and LCSC code; stock shown 1761; JLCPCB eligibility and rotation pending'
+        elif observation and mpn!='C1206C474J5RACTU':
+            code=observation['LCSC Part #']
+            sourcing_status='USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification'
+        elif mpn=='C1206C474J5RACTU':
+            sourcing_status='HOLD: user reported C2167387 for K (10%) alternative, not the J (5%) design; do not assign code'
         w.writerow([comment,','.join(r['Reference'] for r in items),footprint,code,mfr,mpn,
                     sum(int(r['Quantity']) for r in items),sourcing_status])
 

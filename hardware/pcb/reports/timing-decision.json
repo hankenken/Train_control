@@ -1,0 +1,17 @@
+{
+  "timer": "CD74HC221M96",
+  "datasheet": "TI SCHS166F",
+  "supply_v": 3.3,
+  "formula_0_7_datasheet_supply_v": 4.5,
+  "existing_rc_retained": true,
+  "candidate_fixed_resistors_ohms": [
+    120000,
+    130000,
+    150000
+  ],
+  "candidate_k_values_are_guaranteed_bounds": false,
+  "baseline_10percent_cap_k_ceiling_for_100ms": 0.712426,
+  "guaranteed_100ms_limit": false,
+  "decision": "Do not adopt 10% capacitor or change R solely on assumed coefficient. Verify VR/capacitor data and bench 3.3V pulse width. Alternative R values are analysis only.",
+  "physical_testing_performed": false
+}
