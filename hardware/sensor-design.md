@@ -1,3 +1,5 @@
+> 更新：センサ第一候補をQTRX-HD-01A（Pololu 4401、最適10mm）へ具体化し、出力源インピーダンスを考慮した[8入力バッファ基板](sensor-buffer/README.md)を追加設計しています。下記の直結構成は初期案です。最新の取付・電源条件は[sensor-module](sensor-module/README.md)を参照。
+
 # センサ・Raspberry Pi設計 Rev.1
 
 ## 決定した条件

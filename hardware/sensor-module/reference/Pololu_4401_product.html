@@ -1,0 +1,2144 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_32x32-f40058cd34e1fec5906522ec0c9eb39b303192067c0e353a30796e859ce41106.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_192x192-52532413e1c353491bfa0a2dd977aacf020e8ca4104064094121739bad21c4bf.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_96x96-fcf7f6d6568f76d479e5ae1822ded335e0bbd75ab7efd0de7e010bb41fd83e41.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_16x16-13632635dc6dd0e11ba9a38071e8218d26d62e71f8ebafacd9929c3136117372.png" sizes="16x16" />
+<link rel="apple-touch-icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_96x96-fcf7f6d6568f76d479e5ae1822ded335e0bbd75ab7efd0de7e010bb41fd83e41.png" />
+<link crossorigin='anonymous' href='https://a.pololu-files.com/mirror/maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' integrity='sha256-AIodEDkC8V/bHBkfyxzolUMw57jeQ9CauwhVW6YJ9CA=' media='all' rel='stylesheet'>
+<link crossorigin='anonymous' href='https://a.pololu-files.com/mirror/cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css' integrity='sha256-2RdmDD1veq0y68SwASxtC7hKE+IBoBLjNLzKS59Ghsk=' media='all' rel='stylesheet'>
+<link crossorigin='anonymous' href='https://a.pololu-files.com/mirror/cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css' integrity='sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=' media='all' rel='stylesheet'>
+<link rel="stylesheet" crossorigin="anonymous" href="https://a.pololu-files.com/assets/application-6c47e7bbf8b1d7a9273536f8219c3ef577a02e79df7e2ff8ba23d96132a74463.css" media="all" integrity="sha256-BhRmp00yDGd0h0qY3chly5KMMh6pKFhr4dCg9F/+SnM=" />
+<script crossorigin='anonymous' integrity='sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=' src='https://a.pololu-files.com/mirror/code.jquery.com/jquery-1.12.4.min.js'></script>
+<script crossorigin='anonymous' integrity='sha256-4Cr335oZDYg4Di3OwgUOyqSTri0jUm2+7Gf2kH3zp1I=' src='https://a.pololu-files.com/mirror/cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+<script crossorigin='anonymous' integrity='sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=' src='https://a.pololu-files.com/mirror/code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
+<link crossorigin='anonymous' href='https://a.pololu-files.com/mirror/code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' integrity='sha256-RPilbUJ5F7X6DdeTO6VFZ5vl5rO5MJnmSk4pwhWfV8A' media='all' rel='stylesheet'>
+<script class='braintree-gateway' src='https://js.braintreegateway.com/web/3.88.4/js/client.min.js'></script>
+<script class='braintree-gateway' src='https://js.braintreegateway.com/web/3.88.4/js/hosted-fields.min.js'></script>
+<script src="https://a.pololu-files.com/assets/application-e7b04321302c7b1cd29ca6232c9f00526fecf7e6f46a7ac51612c2f93c60ac63.js" crossorigin="anonymous" integrity="sha256-BU4VCJxbUORyOkyc5zk/oZBh8QNcA9rlggAmD7jCqkE="></script>
+<script type="importmap" data-turbo-track="reload">{
+  "integrity":
+{"https://a.pololu-files.com/assets/application_module-765f0f526c59caa9c9857c01889e68833710c17121ab6f9093f3a0a809af7bd4.js":"sha256-s+WZHcA06TsuXtPz2xeDSGgG6j+QSXvT2ghPYhJLLow=","https://a.pololu-files.com/assets/price_notification-e46ad505e4a01eb1a311cfc2e3e1bcc1fb6b1df47904cd3266d1c604e186aeef.js":"sha256-dMqQKgrJg+aoe44ZPYCTOrmXPQmzk+4dG1qmmdt6iSA=","https://a.pololu-files.com/assets/stock_notification-f27d00b99405c410cf3c23f1f151c5701276c2577449e2123ab34938e82d92d6.js":"sha256-TXG5Dvr05BAeQMNdQcyJS5Z5IQtw4aqM0HM1/m/QxoE=","https://a.pololu-files.com/assets/email_verification_send_handler-c06bf3ee7010809c6f7e62c9ae106d071a9373dce8c9e6c324c07aeacd069db2.js":"sha256-Rjuw+y6QuyfBGxpXeTICO2/PJRg4iMfzzleu7n7XUz8=","https://a.pololu-files.com/assets/payment_handler-49a20512068cb88565bc275464d6002af52baec06430fbdc9480f530a2c5b9a7.js":"sha256-PmVdEt5BorGjsZxOo7BfGw8aes3BCxnDQvw55paraHo="},
+  "imports": {
+    "application": "https://a.pololu-files.com/assets/application_module-765f0f526c59caa9c9857c01889e68833710c17121ab6f9093f3a0a809af7bd4.js",
+    "price_notification": "https://a.pololu-files.com/assets/price_notification-e46ad505e4a01eb1a311cfc2e3e1bcc1fb6b1df47904cd3266d1c604e186aeef.js",
+    "stock_notification": "https://a.pololu-files.com/assets/stock_notification-f27d00b99405c410cf3c23f1f151c5701276c2577449e2123ab34938e82d92d6.js",
+    "email_verification_send_handler": "https://a.pololu-files.com/assets/email_verification_send_handler-c06bf3ee7010809c6f7e62c9ae106d071a9373dce8c9e6c324c07aeacd069db2.js",
+    "payment_handler": "https://a.pololu-files.com/assets/payment_handler-49a20512068cb88565bc275464d6002af52baec06430fbdc9480f530a2c5b9a7.js",
+    "braintree": "https://js.braintreegateway.com/web/dropin/1.46.1/js/dropin.js"
+  }
+}</script>
+
+<script type="module">import "application"</script>
+<script>
+  if(document.domain.indexOf("pololu-files.com") == -1) {
+    $.ajax({
+    url: "https://www.googletagmanager.com/gtag/js?id=G-G4ENPJ5RV1",
+    dataType: "script"
+    });
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', "G-G4ENPJ5RV1");
+  }
+</script>
+
+<link rel="stylesheet" href="https://a.pololu-files.com/assets/print-ac5d562ac93a31ac3e5c942e261bf17032bf5da61b940dea46300fe83f1e72dc.css" media="print" />
+
+<title>Pololu - QTRX-HD-01A Reflectance Sensor: 1-Channel, 5mm Wide, Analog Output, Low Current</title>
+
+<meta name="description" content="
+	
+		sensors
+		size(mm)
+		output
+		max current
+		optimalrange
+	
+	
+		LED
+		board
+	
+	
+		1
+		5.0 × 20.0
+		analog
+		3.5 mA
+		5 mA
+		10 mm
+	
+
+This IR LED/phototransistor pair is great for precisely identifying changes in reflectance (like line detection).  It operates from 2.9 V to 5.5 V and offers dimmable brightness control independent of the supply voltage.  In general, the closer the object, the higher the contrast between light and dark readings, but high-reflectance objects are generally detectable out to around 30 mm.  This version features a high-performance, low-current QTRX sensor with lenses." />
+<meta name="keywords" content="Pololu,robotics,robot electronics,robot kits,robot parts,ir beacon,servo controller,motor controller,robot sensors,robot chassis,robot gearboxes,robot tires, ball casters, tamiya parts,elenco kits" />
+<meta property="og:url" content="https://www.pololu.com/product/4401" />
+<meta property="og:title" content="Pololu - QTRX-HD-01A Reflectance Sensor: 1-Channel, 5mm Wide, Analog Output, Low Current" />
+<meta property="og:description" content="
+	
+		sensors
+		size(mm)
+		output
+		max current
+		optimalrange
+	
+	
+		LED
+		board
+	
+	
+		1
+		5.0 × 20.0
+		analog
+		3.5 mA
+		5 mA
+		10 mm
+	
+
+This IR LED/phototransistor pair is great for precisely identifying changes in reflectance (like line detection).  It operates from 2.9 V to 5.5 V and offers dimmable brightness control independent of the supply voltage.  In general, the closer the object, the higher the contrast between light and dark readings, but high-reflectance objects are generally detectable out to around 30 mm.  This version features a high-performance, low-current QTRX sensor with lenses." />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="627" />
+<meta property="og:image" content="https://a.pololu-files.com/picture/0J9195.1200x627.jpg?36a5d567c01379329550881bf0811a0e" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Pololu" />
+<meta name="twitter:title" content="Pololu - QTRX-HD-01A Reflectance Sensor: 1-Channel, 5mm Wide, Analog Output, Low Current" />
+<meta name="twitter:description" content="
+	
+		sensors
+		size(mm)
+		output
+		max current
+		optimalrange
+	
+	
+		LED
+		board
+	
+	
+		1
+		5.0 × 20.0
+		analog
+		3.5 mA
+		5 mA
+		10 mm
+	
+
+This IR LED/phototransistor pair is great for precisely identifying changes in reflectance (like line detection).  It operates from 2.9 V to 5.5 V and offers dimmable brightness control independent of the supply voltage.  In general, the closer the object, the higher the contrast between light and dark readings, but high-reflectance objects are generally detectable out to around 30 mm.  This version features a high-performance, low-current QTRX sensor with lenses." />
+<meta name="twitter:image" content="https://a.pololu-files.com/picture/0J9195.1200x627.jpg?36a5d567c01379329550881bf0811a0e" />
+<script class='structured_data' type='application/ld+json'>
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Sensors","item":"https://www.pololu.com/category/7/sensors"},{"@type":"ListItem","position":2,"name":"Pololu QTR Reflectance Sensors","item":"https://www.pololu.com/category/123/pololu-qtr-reflectance-sensors"},{"@type":"ListItem","position":3,"name":"High-Density (HD) QTR Arrays","item":"https://www.pololu.com/category/244/high-density-hd-qtr-arrays"}]}
+</script>
+<script class='structured_data' type='application/ld+json'>
+{"@context":"https://schema.org","@type":"Product","image":"https://a.pololu-files.com/picture/0J9195.600x480.jpg?36a5d567c01379329550881bf0811a0e","name":"QTRX-HD-01A Reflectance Sensor: 1-Channel, 5mm Wide, Analog Output, Low Current","description":"\n\t\n\t\tsensors\n\t\tsize(mm)\n\t\toutput\n\t\tmax current\n\t\toptimalrange\n\t\n\t\n\t\tLED\n\t\tboard\n\t\n\t\n\t\t1\n\t\t5.0 × 20.0\n\t\tanalog\n\t\t3.5 mA\n\t\t5 mA\n\t\t10 mm\n\t\n\nThis IR LED/phototransistor pair is great for precisely identifying changes in reflectance (like line detection).  It operates from 2.9 V to 5.5 V and offers dimmable brightness control independent of the supply voltage.  In general, the closer the object, the higher the contrast between light and dark readings, but high-reflectance objects are generally detectable out to around 30 mm.  This version features a high-performance, low-current QTRX sensor with lenses.","sku":4401,"brand":"Pololu","offers":{"@type":"Offer","price":"3.75","priceCurrency":"USD","URL":"https://www.pololu.com/product/4401","availability":"InStock"}}
+</script>
+
+<script src="https://a.pololu-files.com/assets/syntaxhighlight-91017fb9868118fd42306075e0164112dd3d3e16331dc462f55ad4497e7fca3d.js" defer="defer"></script>
+</head>
+
+<body class='math_ignore' onload='externalLinksNewWindow(); if(document.onLoadHandler){document.onLoadHandler();}  productInit(&#39;/product/4401&#39;);'>
+
+<div id='main'>
+<h2 id="breadcrumbs"><a href="/category/7/sensors">Sensors</a> &raquo; <a href="/category/123/pololu-qtr-reflectance-sensors">Pololu QTR Reflectance Sensors</a> &raquo; <a href="/category/244/high-density-hd-qtr-arrays">High-Density (HD) QTR Arrays</a> &raquo;</h2>
+<h1 id="page_title">QTRX-HD-01A Reflectance Sensor: 1-Channel, 5mm Wide, Analog Output, Low Current</h1>
+<div data-url='/product/4401' id='contents'>
+<!-- CONTENTS_BEGIN /product/4401 -->
+<div data-javascript-not-loaded-message='&lt;!-- javascript_not_loaded_message --&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Your browser failed to load our JavaScript files, which are required for checkout.  Please check that you are not blocking or disabling our scripts and &lt;a href=&quot;/contact&quot;&gt;contact us&lt;/a&gt; if you are still unable to proceed.' id='javascript_not_loaded_message' style='display:none;'></div>
+<div data-braintree-not-loaded-message='&lt;!-- braintree_not_loaded_message --&gt;&lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Your browser failed to connect to our secure payment processor, Braintree Payments.  You will be unable to enter your credit card information at  the payment step of checkout unless this is fixed.&lt;/p&gt;
+&lt;p&gt;Some things to try:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Check for network problems or things like script blockers that could be blocking &lt;a href=&quot;https://js.braintreegateway.com/web/3.58.0/js/client.min.js&quot;&gt;this file&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;Try completing checkout on a device on a different network, such as a phone with Wi-Fi disabled.&lt;/li&gt;
+	&lt;li&gt;Select the option to pay with PayPal and enter your credit card on their site. (You don&amp;#8217;t need a PayPal account.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please &lt;a href=&quot;/contact&quot;&gt;contact us&lt;/a&gt; if you continue to have trouble with checkout!&lt;/p&gt;' id='braintree_not_loaded_message' style='display:none;'></div>
+
+<div class='product_top'><span class='product_top_pictures'>
+<div>
+<a class="noscript-fallback" href="https://a.pololu-files.com/picture/0J9195.1200.jpg?36a5d567c01379329550881bf0811a0e"><img alt="" title="Click to zoom" id="main_picture_img" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J9195&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTRX/QTRXL-HD-01A Reflectance Sensor.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9195.98x98.jpg?36a5d567c01379329550881bf0811a0e&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9195.600x480.jpg?36a5d567c01379329550881bf0811a0e&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9195.1200.jpg?36a5d567c01379329550881bf0811a0e&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J9196&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTRX-HD-01A Reflectance Sensor, front and back views.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9196.98x98.jpg?82380b2136963d92548753c796c9f0c0&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9196.600x480.jpg?82380b2136963d92548753c796c9f0c0&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9196.1200.jpg?82380b2136963d92548753c796c9f0c0&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J9197&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTRX/QTRXL-HD-01A Reflectance Sensor dimensions.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9197.98x98.jpg?d0bd093235f9b96adcf72b1f07c3587d&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9197.600x480.jpg?d0bd093235f9b96adcf72b1f07c3587d&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9197.1200.jpg?d0bd093235f9b96adcf72b1f07c3587d&quot;,&quot;longest_side&quot;:844},{&quot;id&quot;:&quot;0J9206&quot;,&quot;caption&quot;:&quot;\u003cp\u003ePinout diagram of the QTRX/QTRXL-HD-01A Reflectance Sensor Array.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9206.98x98.jpg?a9ebcad7ea38cb082023ecbfee4ec0cf&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9206.600x480.jpg?a9ebcad7ea38cb082023ecbfee4ec0cf&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9206.1200.jpg?a9ebcad7ea38cb082023ecbfee4ec0cf&quot;,&quot;longest_side&quot;:400},{&quot;id&quot;:&quot;0J8981&quot;,&quot;caption&quot;:&quot;\u003cp\u003eDemo of IR LED dimming and independent even/odd control on the QTRX-HD-07x (as seen through an old digital camera that can see IR).\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J8981.98x98.jpg?63aeb0315cdcb0491cdc8e455011af2d&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J8981.600x480.jpg?63aeb0315cdcb0491cdc8e455011af2d&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J8981.1200.gif?63aeb0315cdcb0491cdc8e455011af2d&quot;,&quot;longest_side&quot;:275},{&quot;id&quot;:&quot;0J8950&quot;,&quot;caption&quot;:&quot;\u003cp\u003eSchematic diagrams of individual QTR sensor channels for A version (left) and RC version (right).  This applies only to the newer QTRs with dimmable emitters.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J8950.98x98.jpg?d7c8996705fe7a021a292596ce045770&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J8950.600x480.jpg?d7c8996705fe7a021a292596ce045770&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J8950.1200.png?d7c8996705fe7a021a292596ce045770&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J9063&quot;,&quot;caption&quot;:&quot;\u003cp\u003eThe QTR Reflectance Sensor Arrays are available in many different sizes.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9063.98x98.jpg?5f8e4ae88d8769cdd787c5ea1f6725f6&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9063.600x480.jpg?5f8e4ae88d8769cdd787c5ea1f6725f6&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9063.1200.jpg?5f8e4ae88d8769cdd787c5ea1f6725f6&quot;,&quot;longest_side&quot;:1199}]" data-picture-id="0J9195" data-picture-longest-side="1200" data-gallery-id="main-pictures" src="https://a.pololu-files.com/picture/0J9195.600x480.jpg?36a5d567c01379329550881bf0811a0e" /></a>
+<div id='related_pictures_gallery'></div>
+</div>
+
+</span><span class='order_form_section'>
+<div class='order_form_with_price_notification'>
+<form action='/cart/add' data-product-id='4401' data-product-ui='short_order_form' enctype='multipart/form-data' method='post'>
+<fieldset class='hidden'>
+<input type="hidden" name="session_id" value="b6ad62844b170d0fd8f38ace4985a59a" />
+<input name='product[id]' type='hidden' value='4401'>
+</fieldset>
+<div>
+<div>
+<span data-product-ui='short_order_form_on_sale' style='display: none'></span>
+<span class='message_positive' data-product-ui='short_order_form_new' style='display: none'>
+<!-- product_recently_added_to_website -->New!
+</span>
+</div>
+<table class='part_number_and_stock text_left'>
+<tr>
+<td class='part_number' style='white-space: nowrap'>
+<span class='label'>Pololu item #:</span>
+<span class='value'>4401</span>
+</td>
+<td class="td_right" data-product-ui="order_form_stock"><span></span></td>
+</tr>
+<tr>
+<td style='white-space: nowrap'>
+<span class='label'>Brand:</span>
+<span class='value'><a href="/brands/pololu">Pololu</a></span>
+</td>
+<td class='td_right'>
+<a data-lightbox-link="true" data-lightbox-height="25rem" data-lightbox-width="34rem" href="/product/4401/supply-outlook">supply outlook</a>
+</td>
+</tr>
+<tr>
+<td colspan='2'>
+<div class='stock-notification-display-div'>
+<div class='stock-notification-label-and-button-div' data-available-stock='328' data-product-id='0J4401'>
+<span class='label'>
+</span>
+<button class='enable-stock-notification-button btn-small btn-link' data-logged-in='false' type='button'>
+Get stock notification
+</button>
+<a class="fa fa-question-circle" data-lightbox-link="true" data-lightbox-height="21rem" data-lightbox-width="27rem" href="/ordering/stock-notifications"></a>
+</div>
+</div>
+
+<tr>
+<td colspan='2'>
+<div class='stock-notification-form-div' style='display: none;'>
+<hr>
+<div class='spaced-row'>
+<div>
+<label>Notify me when stock is at least</label>
+<input class='stock_quantity' name='wishlist_product[notify_stock_quantity]' size='2' type='text'>
+</div>
+<button class='disable-stock-notification-button btn-small btn-link' style='display: none; margin-left: 8px;' type='button'>Cancel</button>
+</div>
+<div>
+<label>Optional: desired quantity</label>
+<input class='desired_quantity' name='wishlist_product[quantity_desired]' size='2' type='text'>
+</div>
+<div class='spaced-row'>
+<div>
+<button class='remove-stock-notification-button btn-small btn-red' type='button'>Remove</button>
+</div>
+<button class='save-stock-notification-button btn-small btn-green' type='button'>Save</button>
+</div>
+<hr>
+</div>
+
+</td>
+</tr>
+
+</td>
+</tr>
+<tr>
+<td colspan='2'>
+<span class='label'>Status:</span>
+<span class='value'>Active and Preferred&nbsp;<a class="fa fa-question-circle" data-lightbox-link="true" data-lightbox-height="21rem" data-lightbox-width="27rem" href="/product-status-overview"></a></span>
+</td>
+</tr>
+<tr>
+<td>
+<a title="RoHS 3 compliant" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/compliance/rohs3-compliant"><img style="width: 76px; height: 16px; min-width: 76px;" alt="RoHS 3 compliant" src="https://a.pololu-files.com/assets/rohs3_compliant_yes-cde9d1a22538fcb174660dfa52f6fb93f93fcdfcf99e282ad9cf792ffa8f3124.png" /></a>
+</td>
+<td class='td_right'></td>
+</tr>
+<tr class='free_shipping_info' style='display: none'>
+<td colspan='2'>
+<a class="shipping_info_popup_link " title="Free add-on shipping in USA" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/ordering/free-add-on-shipping-usa"><img style="width: 16px; height: 16px; min-width: 16px;" alt="" src="https://a.pololu-files.com/assets/free_add_on_shipping_usa-6090726d172668d9cb8985f6e646312e37d8bde4dafc6dddbdc77aff8069a03a.png" /></a>&nbsp;Free add-on shipping in USA&nbsp;<a class="shipping_info_popup_link " title="Free add-on shipping in USA" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/ordering/free-add-on-shipping-usa"><span class="fa fa-question-circle" /></a>
+</td>
+</tr>
+
+<tr class='free_shipping_info' style='display: none'>
+<td colspan='2'>
+<a class="shipping_info_popup_link " title="This item could qualify for free shipping" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/ordering/potential-free-shipping-usa"><img style="width: 16px; height: 11px; min-width: 16px;" alt="This item could qualify for free shipping" src="https://a.pololu-files.com/assets/free_shipping_usa_gray-7c9ae1b4621ead73c8493cff1b11345529bb7604d4584577749f53b7c7a0628f.png" /></a>&nbsp;Free shipping in USA over $75&nbsp;<a class="shipping_info_popup_link " title="This item could qualify for free shipping" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/ordering/potential-free-shipping-usa"><span class="fa fa-question-circle" /></a>
+</td>
+</tr>
+
+</table>
+
+
+</div>
+<hr>
+<table class='pricing'>
+<tr>
+<th>
+Price break
+</th>
+<th>
+Unit price (US$)
+</th>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td class=''>
+3.75
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td class=''>
+3.45
+</td>
+</tr>
+<tr>
+<td>
+25
+</td>
+<td class=''>
+3.17
+</td>
+</tr>
+<tr>
+<td>
+100
+</td>
+<td class=''>
+2.92
+</td>
+</tr>
+</table>
+<hr>
+
+<table class='add_to_cart'>
+<tr>
+<td class='add_to_cart'>
+<label for='product_quantity'>Quantity:</label>
+<input id='product_quantity' name='product[quantity]' size='2' type='text' value='1'>
+<br>
+<span class='allow_backorders'><!-- allow_backorders --><a href="/ordering#backorders">backorders</a> allowed</span>
+</td>
+<td class='td_right'>
+<div>
+<button alt="Add to cart" name="submit" value="add_to_cart" title="Adds QTRX-HD-01A Reflectance Sensor: 1-Channel, 5mm Wide, Analog Output, Low Current to your cart." data-add-to-cart="true" data-freeze-cart="false" class="btn-medium btn-green">Add to cart</button><br/>
+<button alt="Add to list" name="submit" value="add_to_list" title="Adds QTRX-HD-01A Reflectance Sensor: 1-Channel, 5mm Wide, Analog Output, Low Current to your list." class="btn-small btn-link">Add to list</button>
+</div>
+</td>
+
+</tr>
+</table>
+</form>
+<div>
+<div class='price-notification-container'>
+<div class='price-notification-display-div' style='display: flex; align-items: center;
+margin-top: 0.3em; margin-bottom: 0.3em;'>
+<span class='label price-notification-label'>
+</span>
+<span class='right-span'>
+<button class='enable-price-notification-button btn-small btn-link' data-logged-in='false' type='button'>
+Get price notification
+</button>
+<a class="fa fa-question-circle" data-lightbox-link="true" data-lightbox-height="21rem" data-lightbox-width="27rem" href="/ordering/price-change-notifications"></a>
+</span>
+</div>
+<div class='price-notification-form-div' style='display: none;'>
+<form action='https://www.pololu.com/wishlist_product/set_price_notification' enctype='multipart/form-data' method='post' style='width: 100%'>
+<input type="hidden" name="wishlist_product[id]" id="wishlist_product_id" autocomplete="off" />
+<input type="hidden" name="product_id" id="product_id" value="0J4401" autocomplete="off" />
+<input type="hidden" name="session_id" value="b6ad62844b170d0fd8f38ace4985a59a" />
+<hr>
+<div class='spaced-row'>
+<label>Notify me</label>
+<button class='disable-price-notification-button btn-small btn-link' type='button'>Cancel</button>
+</div>
+<div class='align-center indent-radio'>
+<input checked class='notify-any-price-change' id='notify-any-price-change' name='wishlist_product[price_notification]' type='radio' value='notify-any-price-change'>
+<label for='notify-any-price-change'>&nbspon any price change</label>
+</div>
+<div class='align-center indent-radio'>
+<input class='notify-any-price-drop' id='notify-any-price-drop' name='wishlist_product[price_notification]' type='radio' value='notify-any-price-drop'>
+<label for='notify-any-price-drop'>&nbspon any price drop</label>
+</div>
+<div class='align-center indent-radio'>
+<input class='notify-at-target-price' id='notify-at-target-price' name='wishlist_product[price_notification]' type='radio' value='notify-at-target-price'>
+<label for='notify-at-target-price'>&nbspat or below $</label>
+<input class='target-price' name='wishlist_product[target_price]' placeholder='price' size='3' type='text' value=''>
+<label for='notify-at-target-price'>&nbspat qty&nbsp</label>
+<input class='quantity' name='wishlist_product[target_quantity]' placeholder='qty' size='2' type='text' value=''>
+</div>
+<div class='spaced-row'>
+<div>
+</div>
+<button class='save-price-notification-button btn-small btn-green' type='submit'>Save</button>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+<script type='module'>
+import {PriceNotification} from 'price_notification'
+new PriceNotification();
+import {StockNotification} from 'stock_notification'
+new StockNotification();
+</script>
+
+</span>
+<div id='short_description'>
+<table class="reference center">
+	<tr>
+		<th rowspan="2">sensors</th>
+		<th rowspan="2">size<br>(mm)</th>
+		<th rowspan="2">output</th>
+		<th colspan="2">max current</th>
+		<th rowspan="2">optimal<br>range</th>
+	</tr>
+	<tr>
+		<th>LED</th>
+		<th>board</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>5.0 × 20.0</td>
+		<td>analog</td>
+		<td>3.5&nbsp;mA</td>
+		<td>5&nbsp;mA</td>
+		<td>10&nbsp;mm</td>
+	</tr>
+</table>
+<p>This IR LED/phototransistor pair is great for precisely identifying changes in reflectance (like line detection).  It operates from 2.9&nbsp;V to 5.5&nbsp;V and offers dimmable brightness control independent of the supply voltage.  In general, the closer the object, the higher the contrast between light and dark readings, but high-reflectance objects are generally detectable out to around <strong>30&nbsp;mm</strong>.  This version features a high-performance, low-current <strong>QTRX</strong> sensor with lenses.</p>
+
+</div>
+<p>Alternatives available with variations in these parameter(s):
+<a class="select_by_specification_link" data-lightbox-link="true" data-lightbox-height="20rem" data-lightbox-width="50rem" href="/catalog/select-by-specification?parameters=0J187%2C0J189%2C0J188%2C0J145&amp;product=4401&amp;products=4102"><span class='select_by_specification_parameter'>sensor type</span> <span class='select_by_specification_parameter'>sensor count</span> <span class='select_by_specification_parameter'>sensor pitch</span> <span class='select_by_specification_parameter'>output type</span>
+<span class="select_by_specification_main_link">Select variant&#8230;</span>
+</a></p><p class='compare_link'>
+<span class="compare"><a href="/search/compare/244"><img alt="" src="https://a.pololu-files.com/assets/compare-cd658e4a1effbb8bf041401c86b9bef3949f6946b740d13b04703d381ec5594b.png" /></a><a title="Compare all products in High-Density (HD) QTR Arrays" href="/search/compare/244">Compare all products in High-Density (HD) QTR Arrays</a></span> or <span class="compare"><a href="/search/compare/330"><img alt="" src="https://a.pololu-files.com/assets/compare-cd658e4a1effbb8bf041401c86b9bef3949f6946b740d13b04703d381ec5594b.png" /></a><a title="Compare all products in Single-Channel QTR Reflectance Sensors" href="/search/compare/330">Single-Channel QTR Reflectance Sensors</a></span>.
+</p></div>
+
+<a name="tabs"></a><table class="tabs"><tr><td>&nbsp;</td><th class="selected "><span id="name">Description</span></th><td>&nbsp;</td><th class=""><a onclick="saveScrollPosition(&#39;/product/4401/specs&#39;);" href="/product/4401/specs"><span id="name">Specs</span> <span id="count">(14)</span></a></th><td>&nbsp;</td><th class=""><a onclick="saveScrollPosition(&#39;/product/4401/pictures&#39;);" href="/product/4401/pictures"><span id="name">Pictures</span> <span id="count">(7)</span></a></th><td>&nbsp;</td><th class=""><a onclick="saveScrollPosition(&#39;/product/4401/resources&#39;);" href="/product/4401/resources"><span id="name">Resources</span> <span id="count">(6)</span></a></th><td>&nbsp;</td><th class="empty"><span id="name">FAQs</span> <span id="count">(0)</span></th><td>&nbsp;</td><th class=""><a onclick="saveScrollPosition(&#39;/product/4401/blog&#39;);" href="/product/4401/blog"><span id="name">On the blog</span> <span id="count">(1)</span></a></th><td>&nbsp;</td><th class=""><a onclick="saveScrollPosition(&#39;/product/4401/distributors&#39;);" href="/product/4401/distributors"><span id="name">Distributors</span> <span id="count">(58)</span></a></th><td class="last">&nbsp;</td></tr></table><div class="tab_page"><h2>
+Details for item #4401
+</h2>
+<table class="side_by_side_pics">
+	<tr>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 250px"><a href="https://a.pololu-files.com/picture/0J9206.1200.jpg?a9ebcad7ea38cb082023ecbfee4ec0cf" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J9206&quot;,&quot;caption&quot;:&quot;\u003cp\u003ePinout diagram of the QTRX/QTRXL-HD-01A Reflectance Sensor Array.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9206.98x98.jpg?a9ebcad7ea38cb082023ecbfee4ec0cf&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9206.600x480.jpg?a9ebcad7ea38cb082023ecbfee4ec0cf&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9206.1200.jpg?a9ebcad7ea38cb082023ecbfee4ec0cf&quot;,&quot;longest_side&quot;:400}]" data-picture-id="0J9206" data-picture-longest_side="400" src="https://a.pololu-files.com/picture/0J9206.250x250.jpg?a9ebcad7ea38cb082023ecbfee4ec0cf" /></a></td></tr><tr><th style="max-width: 250px"><p>Pinout diagram of the QTRX/QTRXL-HD-01A Reflectance Sensor Array.</p></th></tr></table></td>
+		<td style="vertical-align: top;"><table class="picture_with_caption center"><tr><td style="max-width: 250px"><a href="https://a.pololu-files.com/picture/0J9196.1200.jpg?82380b2136963d92548753c796c9f0c0" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J9196&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTRX-HD-01A Reflectance Sensor, front and back views.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9196.98x98.jpg?82380b2136963d92548753c796c9f0c0&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9196.600x480.jpg?82380b2136963d92548753c796c9f0c0&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9196.1200.jpg?82380b2136963d92548753c796c9f0c0&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J9196" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J9196.250h.jpg?82380b2136963d92548753c796c9f0c0" /></a></td></tr><tr><th style="max-width: 250px"><p>QTRX-HD-01A Reflectance Sensor, front and back views.</p></th></tr></table></td>
+	</tr>
+</table>
+<table class="picture_with_caption right"><tr><td style="max-width: 300px"><a href="https://a.pololu-files.com/picture/0J9197.1200.jpg?d0bd093235f9b96adcf72b1f07c3587d" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J9197&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTRX/QTRXL-HD-01A Reflectance Sensor dimensions.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9197.98x98.jpg?d0bd093235f9b96adcf72b1f07c3587d&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9197.600x480.jpg?d0bd093235f9b96adcf72b1f07c3587d&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9197.1200.jpg?d0bd093235f9b96adcf72b1f07c3587d&quot;,&quot;longest_side&quot;:844}]" data-picture-id="0J9197" data-picture-longest_side="844" src="https://a.pololu-files.com/picture/0J9197.300.jpg?d0bd093235f9b96adcf72b1f07c3587d" /></a></td><p></tr><tr><th style="max-width: 300px"><p>QTRX/QTRXL-HD-01A Reflectance Sensor dimensions.</p></th></tr></table></p>
+<h2>Specifications</h2>
+<ul>
+	<li>Dimensions: 5.0 × 20.0 × 4.4 mm (see the <a href="/file/0J1552/qtr-qtrx-dimensions.pdf">dimension diagram</a> (2MB pdf) for more details)</li>
+	<li>Operating voltage: 2.9&nbsp;V to 5.5&nbsp;V</li>
+	<li>Sensor type: QTRX</li>
+	<li>Sensor count: 1</li>
+	<li>Full-brightness LED current: 3.5&nbsp;mA (independent of supply voltage)</li>
+	<li>Max board current: 5&nbsp;mA</li>
+	<li>Output format: analog voltage (0&nbsp;V to VCC)</li>
+	<li>Optimal sensing distance: 10&nbsp;mm</li>
+	<li>Maximum recommended sensing distance: 30&nbsp;mm</li>
+	<li>Weight: 0.25&nbsp;g</li>
+</ul>
+<h2>All available QTR/QTRX/QTRXL versions with dimmable LEDs (older QTR sensors can be found <a href="/category/246/older-qtr-sensors">here</a>)</h2>
+<style type="text/css">
+table.qtr_selection_guide td.footnotes {
+  border: none; background: white;
+  text-align: left;
+  padding-top: 0.7em;
+}
+
+table.qtr_selection_guide td.qtr_section {
+  padding-top: 0.7em;
+  border: none;
+}
+
+table.qtr_selection_guide {
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: Verdana, sans-serif;
+  line-height: 1.1em;
+  border-collapse: collapse;
+  background-color: white;
+  margin-bottom: 1.5em;
+}
+
+table.qtr_selection_guide sup {
+  font-weight: bold;
+}
+
+table.qtr_selection_guide td.hidden {
+  display: none;
+}
+
+table.qtr_selection_guide > tbody > tr > th, table.qtr_selection_guide > tbody > tr > td {
+  padding: 0.2em;
+  border: 1px solid #aaa;
+}
+
+table.qtr_selection_guide > tbody > tr:nth-child(4n+3),
+table.qtr_selection_guide > tbody > tr:nth-child(4n+4) {
+  background-color: #eee;
+}
+
+table.qtr_selection_guide > tbody > tr > td:nth-child(1) {
+  background-color: white;
+}
+
+.qtr, .qtr td, .qtr th {
+  border none;
+  padding: 0;
+  margin: 0.2em 0 0.2em 0;
+  border-collapse: collapse;
+}
+.qtr td {
+  width: 8px;
+  height: 16px;
+  vertical-align: middle;
+  text-align: center;
+}
+.qtr td:first-child {
+  padding-left: 2px;
+}
+.qtr td:last-child {
+  padding-right: 2px;
+}
+.qtr.narrow td {
+  padding: 0;
+}
+.qtr {
+  background-color: #333;
+  margin-left: auto;
+  margin-right: auto;
+}
+.qtr div {
+  display: inline-block;
+  background-color: #ff7fff;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+}
+</style>
+<table class="qtr_selection_guide center">
+	<tr>
+		<td class="qtr_section" colspan="7"><strong>QTR sensors</strong><br>2.9&nbsp;V to 5.5&nbsp;V; 30&nbsp;mA max LED current<sup>(1)</sup>; 5&nbsp;mm optimal range </td>
+	</tr>
+	<tr>
+		<th>Board<br>width</th>
+		<th>Configuration </th>
+		<th>Max board<br>current<sup>(2)</sup> </th>
+		<th>Max range </th>
+		<th>Output<br>type</th>
+		<th>Name</th>
+		<th class="price">1-piece<br>price</th>
+	</tr>
+	<tr>
+		<td rowspan="2">5.0 mm</td>
+		<td rowspan="2">1 sensor (HD)<br><table class='qtr narrow'><tr><td><div></div></td></tr></table></td>
+		<td rowspan="2">32 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4201">QTR-HD-01A</a></td>
+		<td><span class="price">$3.25</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4101">QTR-HD-01RC</a></td>
+		<td><span class="price">$3.25</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">7.5 mm</td>
+		<td rowspan="2">1 sensor (MD)<br><table class='qtr'><tr><td><div></div></td></tr></table></td>
+		<td rowspan="2">32 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4241">QTR-MD-01A</a></td>
+		<td><span class="price">$2.75</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4141">QTR-MD-01RC</a></td>
+		<td><span class="price">$2.75</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">8.1 mm</td>
+		<td rowspan="2">1 sensor with connector (MD-S)<br><table class='qtr'><tr><td><div></div></td></tr></table></td>
+		<td rowspan="2">32 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4240">QTR-MD-01A-S</a></td>
+		<td><span class="price">$3.95</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4140">QTR-MD-01RC-S</a></td>
+		<td><span class="price">$3.95</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">10.2 mm</td>
+		<td rowspan="2">4&nbsp;mm × 2<br><table class='qtr'><tr><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">32 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4202">QTR-HD-02A</a></td>
+		<td><span class="price">$3.33</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4102">QTR-HD-02RC</a></td>
+		<td><span class="price">$3.33</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">13.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 2<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">32 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4242">QTR-MD-02A</a></td>
+		<td><span class="price">$3.44</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4142">QTR-MD-02RC</a></td>
+		<td><span class="price">$3.44</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 3<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">62 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4203">QTR-HD-03A</a></td>
+		<td><span class="price">$4.15</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4103">QTR-HD-03RC</a></td>
+		<td><span class="price">$4.15</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">17.0 mm</td>
+		<td rowspan="2">4&nbsp;mm × 4<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">62 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4204">QTR-HD-04A</a></td>
+		<td><span class="price">$4.97</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4104">QTR-HD-04RC</a></td>
+		<td><span class="price">$4.97</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">21.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 3<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">62 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4243">QTR-MD-03A</a></td>
+		<td><span class="price">$4.25</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4143">QTR-MD-03RC</a></td>
+		<td><span class="price">$4.25</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 5<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">93 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4205">QTR-HD-05A</a></td>
+		<td><span class="price">$6.75</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4105">QTR-HD-05RC</a></td>
+		<td><span class="price">$6.75</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">25.0 mm</td>
+		<td rowspan="2">4&nbsp;mm × 6<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">93 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4206">QTR-HD-06A</a></td>
+		<td><span class="price">$7.60</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4106">QTR-HD-06RC</a></td>
+		<td><span class="price">$7.60</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">29.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 4<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">62 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4244">QTR-MD-04A</a></td>
+		<td><span class="price">$5.26</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4144">QTR-MD-04RC</a></td>
+		<td><span class="price">$5.26</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 7<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">125 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4207">QTR-HD-07A</a></td>
+		<td><span class="price">$8.31</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4107">QTR-HD-07RC</a></td>
+		<td><span class="price">$8.31</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">37.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 5<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">93 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4245">QTR-MD-05A</a></td>
+		<td><span class="price">$7.02</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4145">QTR-MD-05RC</a></td>
+		<td><span class="price">$7.02</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 9<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">155 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4209">QTR-HD-09A</a></td>
+		<td><span class="price">$11.12</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4109">QTR-HD-09RC</a></td>
+		<td><span class="price">$11.12</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">45.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 6<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">93 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4246">QTR-MD-06A</a></td>
+		<td><span class="price">$8.01</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4146">QTR-MD-06RC</a></td>
+		<td><span class="price">$8.01</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 11<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">185 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4211">QTR-HD-11A</a></td>
+		<td><span class="price">$13.73</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4111">QTR-HD-11RC</a></td>
+		<td><span class="price">$13.73</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">53.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 7<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">125 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4247">QTR-MD-07A</a></td>
+		<td><span class="price">$8.90</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4147">QTR-MD-07RC</a></td>
+		<td><span class="price">$8.90</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 13<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">220 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4213">QTR-HD-13A</a></td>
+		<td><span class="price">$15.21</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4113">QTR-HD-13RC</a></td>
+		<td><span class="price">$15.21</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">61.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 8<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">125 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4248">QTR-MD-08A</a></td>
+		<td><span class="price">$9.90</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4148">QTR-MD-08RC</a></td>
+		<td><span class="price">$9.90</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 15<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">250 mA</td>
+		<td rowspan="2">50 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4215">QTR-HD-15A</a></td>
+		<td><span class="price">$16.88</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4115">QTR-HD-15RC</a></td>
+		<td><span class="price">$16.88</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">101.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 13<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">220 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4253">QTR-MD-13A</a></td>
+		<td><span class="price">$16.43</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4153">QTR-MD-13RC</a></td>
+		<td><span class="price">$16.43</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 25<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">405 mA</td>
+		<td rowspan="2">50 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4225">QTR-HD-25A</a></td>
+		<td><span class="price">$30.09</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4125">QTR-HD-25RC</a></td>
+		<td><span class="price">$30.09</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">125.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 16<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">250 mA</td>
+		<td rowspan="2">50 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4256">QTR-MD-16A</a></td>
+		<td><span class="price">$19.21</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4156">QTR-MD-16RC</a></td>
+		<td><span class="price">$19.21</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 31<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">495 mA</td>
+		<td rowspan="2">50 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4231">QTR-HD-31A</a></td>
+		<td><span class="price">$35.11</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4131">QTR-HD-31RC</a></td>
+		<td><span class="price">$35.11</span></td>
+	</tr>
+	<tr>
+		<td class="qtr_section" colspan="7"><strong>QTRX sensors</strong><br>2.9&nbsp;V to 5.5&nbsp;V; 3.5&nbsp;mA max LED current<sup>(1)</sup>; 10&nbsp;mm optimal range </td>
+	</tr>
+	<tr>
+		<th>Board<br>width</th>
+		<th>Configuration </th>
+		<th>Max board<br>current<sup>(2)</sup> </th>
+		<th>Max range </th>
+		<th>Output<br>type</th>
+		<th>Name</th>
+		<th class="price">1-piece<br>price</th>
+	</tr>
+	<tr>
+		<td rowspan="2">5.0 mm</td>
+		<td rowspan="2">1 sensor (HD)<br><table class='qtr narrow'><tr><td><div></div></td></tr></table></td>
+		<td rowspan="2">5 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4401">QTRX-HD-01A</a></td>
+		<td><span class="price">$3.75</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4301">QTRX-HD-01RC</a></td>
+		<td><span class="price">$3.75</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">7.5 mm</td>
+		<td rowspan="2">1 sensor (MD)<br><table class='qtr'><tr><td><div></div></td></tr></table></td>
+		<td rowspan="2">5 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4441">QTRX-MD-01A</a></td>
+		<td><span class="price">$3.25</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4341">QTRX-MD-01RC</a></td>
+		<td><span class="price">$3.25</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">8.1 mm</td>
+		<td rowspan="2">1 sensor with connector (MD-S)<br><table class='qtr'><tr><td><div></div></td></tr></table></td>
+		<td rowspan="2">5 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4440">QTRX-MD-01A-S</a></td>
+		<td><span class="price">$4.29</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4340">QTRX-MD-01RC-S</a></td>
+		<td><span class="price">$4.29</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">10.2 mm</td>
+		<td rowspan="2">4&nbsp;mm × 2<br><table class='qtr'><tr><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">5 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4402">QTRX-HD-02A</a></td>
+		<td><span class="price">$4.99</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4302">QTRX-HD-02RC</a></td>
+		<td><span class="price">$4.99</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">13.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 2<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">5 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4442">QTRX-MD-02A</a></td>
+		<td><span class="price">$4.99</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4342">QTRX-MD-02RC</a></td>
+		<td><span class="price">$4.99</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 3<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">9 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4403">QTRX-HD-03A</a></td>
+		<td><span class="price">$6.51</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4303">QTRX-HD-03RC</a></td>
+		<td><span class="price">$6.51</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">17.0 mm</td>
+		<td rowspan="2">4&nbsp;mm × 4<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">9 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4404">QTRX-HD-04A</a></td>
+		<td><span class="price">$8.25</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4304">QTRX-HD-04RC</a></td>
+		<td><span class="price">$8.25</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">21.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 3<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">9 mA</td>
+		<td rowspan="2">30 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4443">QTRX-MD-03A</a></td>
+		<td><span class="price">$6.74</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4343">QTRX-MD-03RC</a></td>
+		<td><span class="price">$6.74</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 5<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">14 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4405">QTRX-HD-05A</a></td>
+		<td><span class="price">$10.76</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4305">QTRX-HD-05RC</a></td>
+		<td><span class="price">$10.76</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">25.0 mm</td>
+		<td rowspan="2">4&nbsp;mm × 6<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">14 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4406">QTRX-HD-06A</a></td>
+		<td><span class="price">$12.47</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4306">QTRX-HD-06RC</a></td>
+		<td><span class="price">$12.47</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">29.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 4<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">9 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4444">QTRX-MD-04A</a></td>
+		<td><span class="price">$8.41</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4344">QTRX-MD-04RC</a></td>
+		<td><span class="price">$8.41</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 7<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">17 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4407">QTRX-HD-07A</a></td>
+		<td><span class="price">$14.05</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4307">QTRX-HD-07RC</a></td>
+		<td><span class="price">$14.05</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">37.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 5<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">14 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4445">QTRX-MD-05A</a></td>
+		<td><span class="price">$11.08</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4345">QTRX-MD-05RC</a></td>
+		<td><span class="price">$11.08</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 9<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">22 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4409">QTRX-HD-09A</a></td>
+		<td><span class="price">$18.17</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4309">QTRX-HD-09RC</a></td>
+		<td><span class="price">$18.17</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">45.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 6<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">14 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4446">QTRX-MD-06A</a></td>
+		<td><span class="price">$12.80</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4346">QTRX-MD-06RC</a></td>
+		<td><span class="price">$12.80</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 11<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">26 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4411">QTRX-HD-11A</a></td>
+		<td><span class="price">$22.40</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4311">QTRX-HD-11RC</a></td>
+		<td><span class="price">$22.40</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">53.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 7<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">17 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4447">QTRX-MD-07A</a></td>
+		<td><span class="price">$14.44</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4347">QTRX-MD-07RC</a></td>
+		<td><span class="price">$14.44</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 13<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">31 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4413">QTRX-HD-13A</a></td>
+		<td><span class="price">$26.03</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4313">QTRX-HD-13RC</a></td>
+		<td><span class="price">$26.03</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">61.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 8<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">17 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4448">QTRX-MD-08A</a></td>
+		<td><span class="price">$16.22</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4348">QTRX-MD-08RC</a></td>
+		<td><span class="price">$16.22</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 15<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">34 mA</td>
+		<td rowspan="2">50 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4415">QTRX-HD-15A</a></td>
+		<td><span class="price">$29.10</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4315">QTRX-HD-15RC</a></td>
+		<td><span class="price">$29.10</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">101.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 13<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">31 mA</td>
+		<td rowspan="2">40 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4453">QTRX-MD-13A</a></td>
+		<td><span class="price">$26.87</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4353">QTRX-MD-13RC</a></td>
+		<td><span class="price">$26.87</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 25<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">56 mA</td>
+		<td rowspan="2">50 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4425">QTRX-HD-25A</a></td>
+		<td><span class="price">$50.62</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4325">QTRX-HD-25RC</a></td>
+		<td><span class="price">$50.62</span></td>
+	</tr>
+	<tr>
+		<td rowspan="4">125.0 mm</td>
+		<td rowspan="2">8&nbsp;mm × 16<br><table class='qtr'><tr><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td><td></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">34 mA</td>
+		<td rowspan="2">50 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4456">QTRX-MD-16A</a></td>
+		<td><span class="price">$31.95</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="3"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4356">QTRX-MD-16RC</a></td>
+		<td><span class="price">$31.95</span></td>
+	</tr>
+	<tr>
+		<td class="hidden" rowspan="2"></td>
+		<td rowspan="2">4&nbsp;mm × 31<br><table class='qtr'><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr></table></td>
+		<td rowspan="2">68 mA</td>
+		<td rowspan="2">50 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4431">QTRX-HD-31A</a></td>
+		<td><span class="price">$60.01</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4331">QTRX-HD-31RC</a></td>
+		<td><span class="price">$60.01</span></td>
+	</tr>
+	<tr>
+		<td class="qtr_section" colspan="7"><strong>QTRXL sensors</strong><br>2.9&nbsp;V to 5.5&nbsp;V; 30&nbsp;mA max LED current<sup>(1)</sup>; 20&nbsp;mm optimal range </td>
+	</tr>
+	<tr>
+		<th>Board<br>width</th>
+		<th>Configuration </th>
+		<th>Max board<br>current<sup>(2)</sup> </th>
+		<th>Max range </th>
+		<th>Output<br>type</th>
+		<th>Name</th>
+		<th class="price">1-piece<br>price</th>
+	</tr>
+	<tr>
+		<td rowspan="2">5.0 mm</td>
+		<td rowspan="2">1 sensor (HD)<br><table class='qtr narrow'><tr><td><div></div></td></tr></table></td>
+		<td rowspan="2">32 mA</td>
+		<td rowspan="2">80 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4601">QTRXL-HD-01A</a></td>
+		<td><span class="price">$3.75</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4501">QTRXL-HD-01RC</a></td>
+		<td><span class="price">$3.75</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">7.5 mm</td>
+		<td rowspan="2">1 sensor (MD)<br><table class='qtr'><tr><td><div></div></td></tr></table></td>
+		<td rowspan="2">32 mA</td>
+		<td rowspan="2">80 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4641">QTRXL-MD-01A</a></td>
+		<td><span class="price">$3.37</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4541">QTRXL-MD-01RC</a></td>
+		<td><span class="price">$3.37</span></td>
+	</tr>
+	<tr>
+		<td rowspan="2">8.1 mm</td>
+		<td rowspan="2">1 sensor with connector (MD-S)<br><table class='qtr'><tr><td><div></div></td></tr></table></td>
+		<td rowspan="2">32 mA</td>
+		<td rowspan="2">80 mm</td>
+		<td>analog</td>
+		<td style="text-align:left;"><a href="/product/4640">QTRXL-MD-01A-S</a></td>
+		<td><span class="price">$4.29</span></td>
+	</tr>
+	<tr>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td class="hidden"></td>
+		<td>RC (digital)</td>
+		<td style="text-align:left;"><a href="/product/4540">QTRXL-MD-01RC-S</a></td>
+		<td><span class="price">$4.29</span></td>
+	</tr>
+	<tr>
+		<td class="footnotes" colspan="7"><strong>1</strong> Can be dynamically reduced to any of 32 available dimming levels.<br><strong>2</strong> With all LEDs on at max brightness setting.</td>
+	</tr>
+</table>
+<h2>QTR family overview</h2>
+<p>These reflectance sensors feature a linear array of infrared emitter/phototransistor pair modules in a high-density (4&nbsp;mm pitch) or medium-density (8&nbsp;mm pitch) arrangement, which makes them well suited for applications that require detection of changes in reflectivity.  This change in reflectivity can be due to a color change at a fixed distance, such as when sensing a black line on a white background, as well as due to a change in the distance to or presence of an object in front of the sensor.  A variety of sensor counts and densities is available so you can pick the ideal arrangement for your application.  Since the outputs are all independent, you can connect just some of the channels to attain an irregular or non-standard sensor spacing.</p>
+<table class="picture_with_caption center wide"><tr><td><a href="https://a.pololu-files.com/picture/0J9063.1200.jpg?5f8e4ae88d8769cdd787c5ea1f6725f6" class="noscript-fallback"><img alt="" class="wide zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J9063&quot;,&quot;caption&quot;:&quot;\u003cp\u003eThe QTR Reflectance Sensor Arrays are available in many different sizes.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9063.98x98.jpg?5f8e4ae88d8769cdd787c5ea1f6725f6&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9063.600x480.jpg?5f8e4ae88d8769cdd787c5ea1f6725f6&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9063.1200.jpg?5f8e4ae88d8769cdd787c5ea1f6725f6&quot;,&quot;longest_side&quot;:1199}]" data-picture-id="0J9063" data-picture-longest_side="1199" src="https://a.pololu-files.com/picture/0J9063.600.jpg?5f8e4ae88d8769cdd787c5ea1f6725f6" /></a></td><p></tr></table></p>
+<p>Unlike our original QTR sensor modules, these units have integrated LED drivers that provide brightness control independent of the supply voltage, which can be anywhere from 2.9&nbsp;V to 5.5&nbsp;V, while enabling optional dimming to any of 32 possible brightness settings.  For high-density (HD) modules with five or more sensors and medium-density (MD) modules with eleven or more sensors, there are separate controls for the odd-numbered and even-numbered LEDs, which gives you extra options for detecting light reflected at various angles.  See the &#8220;Emitter control&#8221; section below for more information on using this feature.</p>
+<p>Two different sensor options are available, denoted by &#8220;QTR&#8221; or &#8220;QTRX&#8221; in the product name.  The &#8220;QTR&#8221; versions feature lower-cost sensor modules without lenses while the &#8220;QTRX&#8221; versions feature higher-performance sensor modules with lenses, which allow similar performance at a much lower IR LED current.  You can see the two different sensor styles in the pictures below of the 4-channel modules:</p>
+<table class="side_by_side_pics">
+	<tr>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 275px"><a href="https://a.pololu-files.com/picture/0J9037.1200.jpg?98ec6276b8f56802d77baedf7b5ef63e" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J9037&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTR-HD-04A Reflectance Sensor Array.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9037.98x98.jpg?98ec6276b8f56802d77baedf7b5ef63e&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9037.600x480.jpg?98ec6276b8f56802d77baedf7b5ef63e&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9037.1200.jpg?98ec6276b8f56802d77baedf7b5ef63e&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J9037" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J9037.275.jpg?98ec6276b8f56802d77baedf7b5ef63e" /></a></td></tr><tr><th style="max-width: 275px"><p>QTR-HD-04A Reflectance Sensor Array.</p></th></tr></table></td>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 275px"><a href="https://a.pololu-files.com/picture/0J9050.1200.jpg?cf88b603fefb827dc05787def0350c66" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J9050&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTRX-HD-04RC Reflectance Sensor Array.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J9050.98x98.jpg?cf88b603fefb827dc05787def0350c66&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J9050.600x480.jpg?cf88b603fefb827dc05787def0350c66&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J9050.1200.jpg?cf88b603fefb827dc05787def0350c66&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J9050" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J9050.275.jpg?cf88b603fefb827dc05787def0350c66" /></a></td></tr><tr><th style="max-width: 275px"><p>QTRX-HD-04RC Reflectance Sensor Array.</p></th></tr></table></td>
+	</tr>
+</table>
+<p>We also have several single-channel modules with the &#8220;QTRXL&#8221; designator that offer extra-long range by using the QTRX-style sensor module with higher current through the emitter.</p>
+<p>Each sensor option is available in two output types: an &#8220;A&#8221; version with analog voltage outputs between 0&nbsp;V and VCC, and an &#8220;RC&#8221; version with outputs that can be read with a digital I/O line on a microcontroller by first setting the lines high and then releasing them and timing how long it takes them to read as low (typically anywhere from a few microseconds to a few milliseconds).  The lower the output voltage or shorter the voltage decay time, the higher the reflectance. The following simplified schematic diagrams show the circuits for the individual channels:</p>
+<table class="picture_with_caption center"><tr><td style="max-width: 450px"><a href="https://a.pololu-files.com/picture/0J8950.1200.png?d7c8996705fe7a021a292596ce045770" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J8950&quot;,&quot;caption&quot;:&quot;\u003cp\u003eSchematic diagrams of individual QTR sensor channels for A version (left) and RC version (right).  This applies only to the newer QTRs with dimmable emitters.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J8950.98x98.jpg?d7c8996705fe7a021a292596ce045770&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J8950.600x480.jpg?d7c8996705fe7a021a292596ce045770&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J8950.1200.png?d7c8996705fe7a021a292596ce045770&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J8950" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J8950.450.jpg?d7c8996705fe7a021a292596ce045770" /></a></td><p></tr><tr><th style="max-width: 450px"><p>Schematic diagrams of individual QTR sensor channels for A version (left) and RC version (right).  This applies only to the newer QTRs with dimmable emitters.</p></th></tr></table></p>
+<p>Our <a href="/docs/0J19">Arduino library</a> makes it easy to use these sensor modules with an <a href="/category/125/arduino-compatible">Arduino or compatible controller</a> by providing methods for controlling the emitters, calibrating the module, and reading the individual sensor values from either the A or RC versions.  It also has a method specifically for line-following applications to compute the location of the line under the array.</p>
+<p class="note_warning"><strong>Note:</strong> With the exception of the 1-channel QTR/QTRX/QTRXL-MD-01x-S versions with side-entry connectors, these QTR modules do not ship with any headers or connectors included, so you will need to supply your own or solder wires directly to the board to use them.  See our selection of <a href="/category/134/0.1-2.54-mm-male-headers">male headers</a>, <a href="/category/50/0.1-2.54-mm-female-headers">female headers</a>, and <a href="/category/71/wires-with-pre-crimped-terminals">pre-crimped wires</a> for various connector options.</p>
+<h2>Interfacing with the outputs of the A versions</h2>
+<p>Each sensor on the A versions outputs its reflectance measurement as an analog voltage that can range from 0&nbsp;V when the reflectance is very strong to VCC when the reflectance is very weak. There are several ways you can interface with the analog output:</p>
+<ul>
+	<li>Use a microcontroller&#8217;s analog-to-digital converter (ADC) to measure the voltages.</li>
+	<li>Use a comparator with an adjustable threshold to convert each analog voltage into a digital (i.e. black/white) signal that can be read by the digital I/O line of a microcontroller.</li>
+	<li>Connect each output directly to a digital I/O line of a microcontroller and rely upon its logic threshold.</li>
+</ul>
+<p>This last method will work if you are able to get high reflectance from your white surface as depicted in the left image, but will probably fail if you have a lower-reflectance signal profile like the one on the right.</p>
+<table class="side_by_side_pics">
+	<tr>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 300px"><a href="https://a.pololu-files.com/picture/0J638.1200.png?25e328bebc696eac190e4b40f70e1d06" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J638&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTR-1A output 1/8\u0026quot; away from a spinning white disk with a black line on it.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J638.98x98.jpg?25e328bebc696eac190e4b40f70e1d06&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J638.600x480.jpg?25e328bebc696eac190e4b40f70e1d06&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J638.1200.png?25e328bebc696eac190e4b40f70e1d06&quot;,&quot;longest_side&quot;:1024}]" data-picture-id="0J638" data-picture-longest_side="1024" src="https://a.pololu-files.com/picture/0J638.300.jpg?25e328bebc696eac190e4b40f70e1d06" /></a></td></tr><tr><th style="max-width: 300px"><p>QTR-1A output 1/8&quot; away from a spinning white disk with a black line on it.</p></th></tr></table></td>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 300px"><a href="https://a.pololu-files.com/picture/0J640.1200.png?8f9afe41d5408ff1438c62379e599c5a" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J640&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTR-1A output 3/8\u0026quot; away from a spinning white disk with a black line on it.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J640.98x98.jpg?8f9afe41d5408ff1438c62379e599c5a&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J640.600x480.jpg?8f9afe41d5408ff1438c62379e599c5a&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J640.1200.png?8f9afe41d5408ff1438c62379e599c5a&quot;,&quot;longest_side&quot;:1024}]" data-picture-id="0J640" data-picture-longest_side="1024" src="https://a.pololu-files.com/picture/0J640.300.jpg?8f9afe41d5408ff1438c62379e599c5a" /></a></td></tr><tr><th style="max-width: 300px"><p>QTR-1A output 3/8&quot; away from a spinning white disk with a black line on it.</p></th></tr></table></td>
+	</tr>
+</table>
+<h2>Interfacing with the outputs of the RC versions</h2>
+<p>Each sensor on the RC versions requires a digital I/O line capable of driving the output line high and then measuring the time for the output voltage to decay.  The typical sequence for reading a sensor is:</p>
+<table class="side_by_side_pics right">
+	<tr>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 250px"><a href="https://a.pololu-files.com/picture/0J632.1200.png?5b1e274b8d9da6f434b2673cfbfbd2fe" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J632&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTR-1RC output (yellow) when 1/8\u0026quot; above a black line and microcontroller timing of that output (blue).\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J632.98x98.jpg?5b1e274b8d9da6f434b2673cfbfbd2fe&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J632.600x480.jpg?5b1e274b8d9da6f434b2673cfbfbd2fe&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J632.1200.png?5b1e274b8d9da6f434b2673cfbfbd2fe&quot;,&quot;longest_side&quot;:1024}]" data-picture-id="0J632" data-picture-longest_side="1024" src="https://a.pololu-files.com/picture/0J632.250.jpg?5b1e274b8d9da6f434b2673cfbfbd2fe" /></a></td></tr><tr><th style="max-width: 250px"><p>QTR-1RC output (yellow) when 1/8&quot; above a black line and microcontroller timing of that output (blue).</p></th></tr></table></td>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 250px"><a href="https://a.pololu-files.com/picture/0J634.1200.png?94eda2dc67dbdf8a5b0eadeec7bf1ee8" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J634&quot;,&quot;caption&quot;:&quot;\u003cp\u003eQTR-1RC output (yellow) when 1/8\u0026quot; above a white surface and microcontroller timing of that output (blue).\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J634.98x98.jpg?94eda2dc67dbdf8a5b0eadeec7bf1ee8&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J634.600x480.jpg?94eda2dc67dbdf8a5b0eadeec7bf1ee8&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J634.1200.png?94eda2dc67dbdf8a5b0eadeec7bf1ee8&quot;,&quot;longest_side&quot;:1024}]" data-picture-id="0J634" data-picture-longest_side="1024" src="https://a.pololu-files.com/picture/0J634.250.jpg?94eda2dc67dbdf8a5b0eadeec7bf1ee8" /></a></td></tr><tr><th style="max-width: 250px"><p>QTR-1RC output (yellow) when 1/8&quot; above a white surface and microcontroller timing of that output (blue).</p></th></tr></table></td>
+	</tr>
+</table>
+<ol>
+	<li>Turn on IR LEDs (optional).</li>
+	<li>Set the I/O line to an output and drive it high.</li>
+	<li>Allow at least 10&nbsp;&mu;s for the sensor output to rise.</li>
+	<li>Make the I/O line an input (high impedance).</li>
+	<li>Measure the time for the voltage to decay by waiting for the I/O line to go low.</li>
+	<li>Turn off IR LEDs (optional).</li>
+</ol>
+<p>These steps can typically be executed in parallel on multiple I/O lines.</p>
+<p>With a strong reflectance, the decay time can be as low as a few microseconds; with no reflectance, the decay time can be up to a few milliseconds.  The exact time of the decay depends on your microcontroller&#8217;s I/O line characteristics.  Meaningful results can be available within 1&nbsp;ms in typical cases (i.e. when not trying to measure subtle differences in low-reflectance scenarios), allowing up to 1&nbsp;kHz sampling of all sensors.  If lower-frequency sampling is sufficient, you can achieve substantial power savings by turning off the LEDs.  For example, if a 100&nbsp;Hz sampling rate is acceptable, the LEDs can be off 90% of the time, lowering average current consumption from 125&nbsp;mA to 13&nbsp;mA.</p>
+<h2>Emitter control</h2>
+<p>These reflectance sensor arrays maintain a constant current through their IR emitters, keeping the emitters&#8217; brightness constant, independent of the supply voltage (2.9&nbsp;V to 5.5&nbsp;V). The emitters can be controlled with the board&#8217;s CTRL pins, and the details of the control depends on the array size and density:</p>
+<ul>
+	<li><strong>HD units with 5 or more sensors</strong> and <strong>MD units with 11 or more sensors</strong> have two emitter control pins: <strong>CTRL ODD</strong> and <strong>CTRL EVEN</strong>. By default, these are connected together with a 1&nbsp;kΩ resistor and pulled up, turning on all the emitters by default and allowing them to be controlled with a signal on either pin, but the CTRL ODD and CTRL EVEN pins can be driven separately for independent control of the odd-numbered and even-numbered emitters.</li>
+</ul>
+<ul>
+	<li><strong>MD units with 3-10 sensors</strong> also have two emitter control pins since these are made by only populating every other sensor on an HD board, but only the <strong>CTRL ODD</strong> pin will have an effect on these versions (it is not possible to independently control alternate emitters).</li>
+</ul>
+<ul>
+	<li><strong>HD units with 4 or fewer sensors</strong> and <strong>MD units with 2 or fewer sensors</strong> have a single <strong>CTRL</strong> pin that controls all of the emitters.</li>
+</ul>
+<p>Driving a CTRL pin low for at least 1&nbsp;ms turns off the associated emitter LEDs, while driving it high (or allowing the board to pull it high) turns on the emitters with the board&#8217;s default (full) LED current, which is <strong>30&nbsp;mA</strong> for &#8220;QTR&#8221; versions and <strong>3.5&nbsp;mA</strong> for &#8220;QTRX&#8221; versions. (The emitter LEDs are generally driven in pairs, with the two emitters in each pair connected in series, so the total board current is <em>not</em> the LED current times the number of LEDs as you might otherwise expect; it is usually closer to half that.)</p>
+<table class="side_by_side_pics">
+	<tr>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 275px"><a href="https://a.pololu-files.com/picture/0J8956.1200.gif?aee3d14041edeece148fd4fd2d6af3ad" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J8956&quot;,&quot;caption&quot;:&quot;\u003cp\u003eDemo of IR LED dimming and independent even/odd control on the QTR-HD-07x (as seen through an old digital camera that can see IR).\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J8956.98x98.jpg?aee3d14041edeece148fd4fd2d6af3ad&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J8956.600x480.jpg?aee3d14041edeece148fd4fd2d6af3ad&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J8956.1200.gif?aee3d14041edeece148fd4fd2d6af3ad&quot;,&quot;longest_side&quot;:275}]" data-picture-id="0J8956" data-picture-longest_side="275" src="https://a.pololu-files.com/picture/0J8956.275.gif?aee3d14041edeece148fd4fd2d6af3ad" /></a></td></tr><tr><th style="max-width: 275px"><p>Demo of IR LED dimming and independent even/odd control on the QTR-HD-07x (as seen through an old digital camera that can see IR).</p></th></tr></table></td>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 275px"><a href="https://a.pololu-files.com/picture/0J8981.1200.gif?63aeb0315cdcb0491cdc8e455011af2d" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J8981&quot;,&quot;caption&quot;:&quot;\u003cp\u003eDemo of IR LED dimming and independent even/odd control on the QTRX-HD-07x (as seen through an old digital camera that can see IR).\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J8981.98x98.jpg?63aeb0315cdcb0491cdc8e455011af2d&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J8981.600x480.jpg?63aeb0315cdcb0491cdc8e455011af2d&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J8981.1200.gif?63aeb0315cdcb0491cdc8e455011af2d&quot;,&quot;longest_side&quot;:275}]" data-picture-id="0J8981" data-picture-longest_side="275" src="https://a.pololu-files.com/picture/0J8981.275.gif?63aeb0315cdcb0491cdc8e455011af2d" /></a></td></tr><tr><th style="max-width: 275px"><p>Demo of IR LED dimming and independent even/odd control on the QTRX-HD-07x (as seen through an old digital camera that can see IR).</p></th></tr></table></td>
+	</tr>
+</table>
+<p>For more advanced use, the CTRL pin can be pulsed low to cycle the associated emitters through 32 dimming levels. To send a pulse, drive the CTRL pin low for at least 0.5&nbsp;μs (but no more than 300&nbsp;μs), then high for at least 0.5&nbsp;μs; (it should remain high after the last pulse). Each pulse causes the driver to advance to the next dimming level, wrapping around to 100% after the lowest-current level. Each dimming level corresponds to a 3.33% reduction in current, except for the last three levels, which represent a 1.67% reduction, as shown in the table below. Note that turning the LEDs off with a &gt;1&nbsp;ms pulse and then back on resets them to full current.</p>
+<style>
+table#dimming-levels-general
+{
+  text-align: center;
+}
+table#dimming-levels-general tr td:nth-child(3)
+{
+  border: none;
+}
+</style><table class="reference center " id="dimming-levels-general">
+	<tr>
+		<th>Dimming<br>level<br>(pulses)</th>
+		<th>Emitter<br>current<br>(%)</th>
+		<td></td>
+		<th>Dimming<br>level<br>(pulses)</th>
+		<th>Emitter<br>current<br>(%)</th>
+	</tr>
+	<tr>
+		<td> 0</td>
+		<td><strong>100.00%</strong></td>
+		<td></td>
+		<td>16</td>
+		<td>  46.67% </td>
+	</tr>
+	<tr>
+		<td> 1</td>
+		<td>  96.67% </td>
+		<td></td>
+		<td>17</td>
+		<td>  43.33% </td>
+	</tr>
+	<tr>
+		<td> 2</td>
+		<td>  93.33% </td>
+		<td></td>
+		<td>18</td>
+		<td> <strong>40.00%</strong></td>
+	</tr>
+	<tr>
+		<td> 3</td>
+		<td> <strong>90.00%</strong></td>
+		<td></td>
+		<td>19</td>
+		<td>  36.67% </td>
+	</tr>
+	<tr>
+		<td> 4</td>
+		<td>  86.67% </td>
+		<td></td>
+		<td>20</td>
+		<td>  33.33% </td>
+	</tr>
+	<tr>
+		<td> 5</td>
+		<td>  83.33% </td>
+		<td></td>
+		<td>21</td>
+		<td> <strong>30.00%</strong></td>
+	</tr>
+	<tr>
+		<td> 6</td>
+		<td> <strong>80.00%</strong></td>
+		<td></td>
+		<td>22</td>
+		<td>  26.67% </td>
+	</tr>
+	<tr>
+		<td> 7</td>
+		<td>  76.67% </td>
+		<td></td>
+		<td>23</td>
+		<td>  23.33% </td>
+	</tr>
+	<tr>
+		<td> 8</td>
+		<td>  73.33% </td>
+		<td></td>
+		<td>24</td>
+		<td> <strong>20.00%</strong></td>
+	</tr>
+	<tr>
+		<td> 9</td>
+		<td> <strong>70.00%</strong></td>
+		<td></td>
+		<td>25</td>
+		<td>  16.67% </td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>  66.67% </td>
+		<td></td>
+		<td>26</td>
+		<td>  13.33% </td>
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>  63.33% </td>
+		<td></td>
+		<td>27</td>
+		<td> <strong>10.00%</strong></td>
+	</tr>
+	<tr>
+		<td>12</td>
+		<td> <strong>60.00%</strong></td>
+		<td></td>
+		<td>28</td>
+		<td>   6.67% </td>
+	</tr>
+	<tr>
+		<td>13</td>
+		<td>  56.67% </td>
+		<td></td>
+		<td>29</td>
+		<td>   5.00% </td>
+	</tr>
+	<tr>
+		<td>14</td>
+		<td>  53.33% </td>
+		<td></td>
+		<td>30</td>
+		<td>   3.33% </td>
+	</tr>
+	<tr>
+		<td>15</td>
+		<td> <strong>50.00%</strong></td>
+		<td></td>
+		<td>31</td>
+		<td>   1.67% </td>
+	</tr>
+</table>
+<p>For example, to reduce the emitter current to 50%, apply 15 low pulses to the CTRL pin and then keep it high after the last pulse.</p>
+
+</div>
+
+
+<div id="small_related_items"><div><h2>Related categories</h2>
+<div>
+<table class='linkable_item_list'>
+<tr>
+<td class='img'>
+<a href="/category/244/high-density-hd-qtr-arrays"><img alt="" src="https://a.pololu-files.com/picture/0J9130.50x40.jpg?049e3a3d5e3f326efb91242c15e3d86c" /></a>
+</td>
+<td><a href="/category/244/high-density-hd-qtr-arrays">High-Density (HD) QTR Arrays</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/330/single-channel-qtr-reflectance-sensors"><img alt="" src="https://a.pololu-files.com/picture/0J13830.50x40.jpg?e88b9d237a01762e980115cb4526a383" /></a>
+</td>
+<td><a href="/category/330/single-channel-qtr-reflectance-sensors">Single-Channel QTR Reflectance Sensors</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/245/medium-density-md-qtr-arrays"><img alt="" src="https://a.pololu-files.com/picture/0J9148.50x40.jpg?ff043685a3681ac0b44cdf073115c229" /></a>
+</td>
+<td><a href="/category/245/medium-density-md-qtr-arrays">Medium-Density (MD) QTR Arrays</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/246/older-qtr-sensors"><img alt="" src="https://a.pololu-files.com/picture/0J615.50x40.jpg?ef5903b25450c25de151ed9b43d1fce3" /></a>
+</td>
+<td><a href="/category/246/older-qtr-sensors">Older QTR Sensors</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/189/proximity-sensors-and-range-finders"><img alt="" src="https://a.pololu-files.com/picture/0J1126.50x40.jpg?2991e29d334ea5e7d9b4a953236c6041" /></a>
+</td>
+<td><a href="/category/189/proximity-sensors-and-range-finders">Proximity Sensors and Range Finders</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/7/sensors"><img alt="" src="https://a.pololu-files.com/picture/0J5352.50x40.jpg?3404535b0b27743f58a48c46f40b3351" /></a>
+</td>
+<td><a href="/category/7/sensors">Sensors</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/134/0.1-2.54-mm-male-headers"><img alt="" src="https://a.pololu-files.com/picture/0J6364.50x40.jpg?b92e2c6bfb49aca0b3331cce41b7f230" /></a>
+</td>
+<td><a href="/category/134/0.1-2.54-mm-male-headers">0.1″ (2.54 mm) Male Headers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/50/0.1-2.54-mm-female-headers"><img alt="" src="https://a.pololu-files.com/picture/0J5966.50x40.jpg?26e92f39ef46f99e5d642f9fa718b551" /></a>
+</td>
+<td><a href="/category/50/0.1-2.54-mm-female-headers">0.1″ (2.54 mm) Female Headers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/65/premium-jumper-wires"><img alt="" src="https://a.pololu-files.com/picture/0J11599.50x40.jpg?7f829c2badab1ad82f4da395e4a46cb8" /></a>
+</td>
+<td><a href="/category/65/premium-jumper-wires">Premium Jumper Wires</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/71/wires-with-pre-crimped-terminals"><img alt="" src="https://a.pololu-files.com/picture/0J11614.50x40.jpg?0c44e46f7c16b54a162ac2f0a59b3c6f" /></a>
+</td>
+<td><a href="/category/71/wires-with-pre-crimped-terminals">Wires with Pre-Crimped Terminals</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/92/male-female-standoffs"><img alt="" src="https://a.pololu-files.com/picture/0J2777.50x40.jpg?35ff9012ec981e8e887a074ed1cf556d" /></a>
+</td>
+<td><a href="/category/92/male-female-standoffs">Male-Female Standoffs</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/93/spacers"><img alt="" src="https://a.pololu-files.com/picture/0J2843.50x40.jpg?a583c9db1354c19229557c77712593a8" /></a>
+</td>
+<td><a href="/category/93/spacers">Spacers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/101/nuts-and-screws"><img alt="" src="https://a.pololu-files.com/picture/0J2952.50x40.jpg?cc2f516c252305a7bb6d9201835c0708" /></a>
+</td>
+<td><a href="/category/101/nuts-and-screws">Nuts and Screws</a></td>
+</tr>
+</table>
+</div>
+</div></div>
+<script>
+product_ui.update();
+</script>
+
+
+<!-- CONTENTS_END -->
+<div id='footer'>
+<p class='share'>
+<span class="image_text_link"><a href="/product/4401?print=1"><img alt="" src="https://a.pololu-files.com/assets/printer-448cebb2a5016700db2565421ada6e98f90fabe5885d8cd3cca1a3854748e146.png" /></a><a href="/product/4401?print=1">Print</a></span>
+<span class="image_text_link"><a href="mailto:?body=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F4401&amp;subject"><img alt="" src="https://a.pololu-files.com/assets/email-f2957b324fa09a7d81ed64679a6b9454647ad40514cd7b1ce501aefd946f5593.png" /></a><a href="mailto:?body=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F4401&amp;subject">Email a friend</a></span>
+<span class="image_text_link"><a href="/feeds"><img alt="" src="https://a.pololu-files.com/assets/feed-icon-12x12-ad0e7f1965647f9414a76a1f32fb46dc73c1b2d295201b0abb56f2b2cf88bfb2.png" /></a><a href="/feeds">Feeds</a></span>
+</p>
+<p class='links'>
+<a href="/">Home</a>
+|
+<a href="https://forum.pololu.com/">Forum</a>
+|
+<a href="/blog">Blog</a>
+|
+<a href="/support">Support</a>
+|
+<a href="/ordering">Ordering Information</a>
+|
+<a href="/list">Lists</a>
+|
+<a href="/distributors">Distributors</a>
+|
+<a href="/catalog/bigorderform">BIG Order Form</a>
+|
+<a href="/about">About</a>
+|
+<a href="/contact">Contact</a>
+</p>
+<p id='copyright'>&copy; 2001<a rel="nofollow" style="text-decoration: none; color: inherit;" href="/pot/0?from=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F4401">–</a>2026 Pololu Corporation</p>
+</div>
+</div>
+</div>
+<div id='right_col'>
+<div class='menu' data-my-quotes='1'></div>
+<script>quote.display_list()</script>
+<div class='menu' data-mini-cart='1'></div>
+<script>cart.display_mini_cart_content()</script>
+<div><h2>Related Categories</h2>
+<div>
+<table class='linkable_item_list'>
+<tr>
+<td class='img'>
+<a href="/category/244/high-density-hd-qtr-arrays"><img alt="" src="https://a.pololu-files.com/picture/0J9130.50x40.jpg?049e3a3d5e3f326efb91242c15e3d86c" /></a>
+</td>
+<td><a href="/category/244/high-density-hd-qtr-arrays">High-Density (HD) QTR Arrays</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/330/single-channel-qtr-reflectance-sensors"><img alt="" src="https://a.pololu-files.com/picture/0J13830.50x40.jpg?e88b9d237a01762e980115cb4526a383" /></a>
+</td>
+<td><a href="/category/330/single-channel-qtr-reflectance-sensors">Single-Channel QTR Reflectance Sensors</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/245/medium-density-md-qtr-arrays"><img alt="" src="https://a.pololu-files.com/picture/0J9148.50x40.jpg?ff043685a3681ac0b44cdf073115c229" /></a>
+</td>
+<td><a href="/category/245/medium-density-md-qtr-arrays">Medium-Density (MD) QTR Arrays</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/246/older-qtr-sensors"><img alt="" src="https://a.pololu-files.com/picture/0J615.50x40.jpg?ef5903b25450c25de151ed9b43d1fce3" /></a>
+</td>
+<td><a href="/category/246/older-qtr-sensors">Older QTR Sensors</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/189/proximity-sensors-and-range-finders"><img alt="" src="https://a.pololu-files.com/picture/0J1126.50x40.jpg?2991e29d334ea5e7d9b4a953236c6041" /></a>
+</td>
+<td><a href="/category/189/proximity-sensors-and-range-finders">Proximity Sensors and Range Finders</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/7/sensors"><img alt="" src="https://a.pololu-files.com/picture/0J5352.50x40.jpg?3404535b0b27743f58a48c46f40b3351" /></a>
+</td>
+<td><a href="/category/7/sensors">Sensors</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/134/0.1-2.54-mm-male-headers"><img alt="" src="https://a.pololu-files.com/picture/0J6364.50x40.jpg?b92e2c6bfb49aca0b3331cce41b7f230" /></a>
+</td>
+<td><a href="/category/134/0.1-2.54-mm-male-headers">0.1″ (2.54 mm) Male Headers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/50/0.1-2.54-mm-female-headers"><img alt="" src="https://a.pololu-files.com/picture/0J5966.50x40.jpg?26e92f39ef46f99e5d642f9fa718b551" /></a>
+</td>
+<td><a href="/category/50/0.1-2.54-mm-female-headers">0.1″ (2.54 mm) Female Headers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/65/premium-jumper-wires"><img alt="" src="https://a.pololu-files.com/picture/0J11599.50x40.jpg?7f829c2badab1ad82f4da395e4a46cb8" /></a>
+</td>
+<td><a href="/category/65/premium-jumper-wires">Premium Jumper Wires</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/71/wires-with-pre-crimped-terminals"><img alt="" src="https://a.pololu-files.com/picture/0J11614.50x40.jpg?0c44e46f7c16b54a162ac2f0a59b3c6f" /></a>
+</td>
+<td><a href="/category/71/wires-with-pre-crimped-terminals">Wires with Pre-Crimped Terminals</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/92/male-female-standoffs"><img alt="" src="https://a.pololu-files.com/picture/0J2777.50x40.jpg?35ff9012ec981e8e887a074ed1cf556d" /></a>
+</td>
+<td><a href="/category/92/male-female-standoffs">Male-Female Standoffs</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/93/spacers"><img alt="" src="https://a.pololu-files.com/picture/0J2843.50x40.jpg?a583c9db1354c19229557c77712593a8" /></a>
+</td>
+<td><a href="/category/93/spacers">Spacers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/101/nuts-and-screws"><img alt="" src="https://a.pololu-files.com/picture/0J2952.50x40.jpg?cc2f516c252305a7bb6d9201835c0708" /></a>
+</td>
+<td><a href="/category/101/nuts-and-screws">Nuts and Screws</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div id='lightbox_holder'>
+<div id='lightbox_gray_screen'></div>
+<div id='lightbox'>
+<div id='lightbox_gallery'></div>
+<div id='lightbox_content'></div>
+<div id='lightbox_right'><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+<div id='lightbox_left'><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+<div id='lightbox_close'>
+<a href='#' title='Close'><i class="fa fa-times" aria-hidden="true"></i></a>
+</div>
+<div id='lightbox_full'>
+<a href='#' title='View image'><i class="fa fa-expand" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+
+<div id='header_small_top'>
+<!-- / this has to go first since it takes up 100% of the width and would block clicking on other parts -->
+<div id='header_center_right'>
+<span data-login-ui='login'>
+<a href="/account/login?account%5Burl%5D=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F4401">Log In</a>
+</span>
+<span data-login-ui='my_account'>
+<a title="My account" data-login-ui="my_account_link" href="/account"></a>
+</span>
+
+</div>
+<div id='header_small_left'>
+<a href="/"><img width="118" height="30" alt="Pololu Robotics &amp; Electronics" class="logo_pololu_only" src="https://a.pololu-files.com/assets/header_pololu_only-fff6349c8769e6b2e59624d6dceacac4422156c5ac8b8b23532f0e93678bb981.png" /></a>
+</div>
+<div id='header_small_right'>
+<a href="/cart"><img width="30" height="30" alt="Shopping cart" src="https://a.pololu-files.com/assets/cart-bf4bf66669c9b9288e6e972718067855ecdcdfc80622cfea29ac04b29478f873.png" /></a>
+</div>
+</div>
+<div id='header_small_bottom'>
+<div id='header_small_right'>
+(702) 262-6648<br/>
+<a href="/ordering">Same-day shipping, worldwide</a>
+</div>
+<div id='header_small_left'>
+<a id="menu_button" onclick="return false;" href="/catalog/menu"><img width="30" height="30" alt="Menu" src="https://a.pololu-files.com/assets/menu-2023bba099d8fd2a25d8e1803c5bdf0aa0a024d9d585000ff9aec2c8a436b29a.png" /></a>
+</div>
+</div>
+<div id='header_small_menu'>
+<div class='header_small_menu_columns'>
+<a href="/catalog/menu">Shop</a>
+<a href="/blog">Blog</a>
+<a href="https://forum.pololu.com/">Forum</a>
+<a href="/support">Support</a>
+</div>
+<!-- / specify local variable id to set an id for the form, mainly for use with testing -->
+<form action='/search' id='header_small_search'>
+<div class='search'><input autocomplete='off' class='search_input mini_search_input' data-autocomplete-search='true' id='header_small_search_input' name='query' placeholder='Search' type='text'><input alt='' class='search_button' src='https://a.pololu-files.com/assets/magglass-d28c6b7b9d1f35858a702b71e13b678bfdee962d795c7ad2426ed9b19ccac5e8.png' type='image' value='go'>
+</div>
+</form>
+
+<a title="My account" href="/account">My account</a>
+<a data-feedback="true" href="/feedback/new?account%5Burl%5D=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F4401">Comments or questions?</a>
+<a href="/about">About Pololu</a>
+<a href="/contact">Contact</a>
+<a href="/ordering">Ordering information</a>
+<a href="/distributors">Distributors</a>
+</div>
+<div id='gray_screen'></div>
+<script>
+menuInit();
+</script>
+
+<div id='header_holder'>
+<table id='header'>
+<tr id='header_top'>
+<td id='header_logo' rowspan='2'>
+<a href="/"><img width="219" height="69" alt="Pololu Robotics and Electronics" class="logo" style="max-width: 230px;" src="https://a.pololu-files.com/assets/header_pololu_no_padding-e37eb899d2ec2ded9153a53ad9e0e6e12861f762e2c3bafb4ca40e79a85d149e.png" /></a>
+</td>
+<td colspan='16' id='header_address'>
+<div id='header_account_links'>
+<span data-login-ui='login'>
+<a href="/account/login?account%5Burl%5D=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F4401">Log In</a>
+</span>
+<span data-login-ui='my_account'>
+<a title="My account" data-login-ui="my_account_link" href="/account"></a>
+|
+<a href="/account">My Account</a>
+|
+</span>
+<div data-login-ui='logout'>
+<form data-login-ui="logout" action="https://www.pololu.com/account/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="session_id" value="**SESSION_ID_STUB**" /><button class="btn-link" name="log-out-button">Log Out</button></form>
+</div>
+
+|
+<a href="/cart">Shopping Cart <img width="16" height="16" alt="" src="https://a.pololu-files.com/assets/cart-bf4bf66669c9b9288e6e972718067855ecdcdfc80622cfea29ac04b29478f873.png" /></a>
+<script>dynamic_user_login.init()</script>
+</div>
+<p class='phone_number'>
+US toll free: 1-877-7-POLOLU ~
+(702) 262-6648<br/>
+<a href="/ordering">Same-day shipping, worldwide</a>
+</p>
+</td>
+</tr>
+<tr id='header_links'>
+<th class='selected'>
+<a href="/">Catalog</a>
+</th>
+<td>&nbsp;</td>
+<th>
+<a href="https://forum.pololu.com/">Forum</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/blog">Blog</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/support">Support</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/ordering">Ordering</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/distributors">Distributors</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/about">About</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/contact">Contact</a>
+</th>
+<td class='last'></td>
+</tr>
+</table>
+</div>
+<div id='left_col'>
+<div class='menu' id='menu_search'>
+<div>
+<!-- / specify local variable id to set an id for the form, mainly for use with testing -->
+<form action='/search' id='sidebar_search'>
+<div class='search'><input autocomplete='off' class='search_input mini_search_input' data-autocomplete-search='true' id='sidebar_search_input' name='query' placeholder='Search' type='text'><input alt='' class='search_button' src='https://a.pololu-files.com/assets/magglass-d28c6b7b9d1f35858a702b71e13b678bfdee962d795c7ad2426ed9b19ccac5e8.png' type='image' value='go'>
+</div>
+</form>
+
+</div>
+</div>
+<div class='menu'>
+<h2><a data-feedback="true" href="">Feedback</a></h2>
+<div>
+<a class="menu_visible_link" data-feedback="true" href="">Comments or questions?</a>
+</div>
+</div>
+<div class='menu'>
+<h2><a href="/category/31/services">Services</a></h2>
+<div>
+<ul>
+<li>
+<a href="/product/749">Custom Laser Cutting</a>
+</li>
+<li>
+<a href="/product/446">SMT Stencils</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='menu'>
+<h2><a href="/">Products</a></h2>
+<div>
+<!-- sidebar_categories --><h3><a href="/category/42/new-products">New Products</a></h3>
+<h3><span class="specials_category"><a href="/specials">Specials!</a></span></h3>
+<hr />
+<h3><a href="/category/2/robot-kits">Robots</a></h3>
+<ul>
+	<li><a href="/category/76/3pi-robots-and-accessories">3pi</a></li>
+	<li><a href="/category/210/balboa-robot-and-accessories">Balboa</a></li>
+	<li><a href="/category/327/collaborative-robots">Cobot</a></li>
+	<li><a href="/category/202/romi-chassis-and-accessories">Romi</a></li>
+	<li><a href="/category/129/zumo-robots-and-accessories">Zumo</a></li>
+	<li><a href="/category/3/robot-kits-with-soldering">Kits, Soldering</a></li>
+	<li><a href="/category/4/robot-kits-without-soldering">Kits, No Soldering</a></li>
+</ul>
+<h3><a href="/category/6/electronics">Electronics</a></h3>
+<ul>
+	<li><a href="/category/125/arduino-compatible">Arduino</a></li>
+	<li><a href="/category/39/cables-and-wire">Cables and Wires</a></li>
+	<li><a href="/category/13/computer-interface">Computer Interface</a></li>
+	<li><a href="/category/19/connectors">Connectors</a></li>
+	<li><a href="/category/64/development-boards-programmable-controllers">Development Boards</a></li>
+	<li><a href="/category/334/isolation">Isolation</a></li>
+	<li><a href="/category/20/leds">LEDs</a></li>
+	<li><a href="/category/9/motion-control-modules">Motor Control</a></li>
+	<li><a href="/category/321/power">Power</a></li>
+	<li><a href="/category/14/electronics-prototyping">Prototyping</a></li>
+	<li><a href="/category/150/raspberry-pi">Raspberry Pi</a></li>
+	<li><a href="/category/135/relay-modules">Relays</a></li>
+	<li><a href="/category/7/sensors">Sensors</a></li>
+	<li><a href="/category/102/maestro-usb-servo-controllers">Servo Control</a></li>
+	<li><a href="/category/136/voltage-regulators">Voltage Regulators</a></li>
+</ul>
+<h3><a href="/category/21/mechanical-components">Mechanical</a></h3>
+<ul>
+	<li><a href="/category/231/ball-casters">Ball Casters</a></li>
+	<li><a href="/category/230/brackets">Brackets</a></li>
+	<li><a href="/category/26/chassis">Chassis</a></li>
+	<li><a href="/category/25/hardware">Hardware</a></li>
+	<li><a href="/category/127/linear-actuators">Linear Actuators</a></li>
+	<li><a href="/category/22/motors-and-gearboxes">Motors</a></li>
+	<li><a href="/category/179/motor-shaft-adapters">Motor Shaft Adapters</a></li>
+	<li><a href="/category/205/servos">Servos</a></li>
+	<li><a href="/category/87/stepper-motors">Stepper Motors</a></li>
+	<li><a href="/category/61/tamiya-products">Tamiya Products</a></li>
+	<li><a href="/category/5/tools">Tools</a></li>
+	<li><a href="/category/232/tracks">Tracks</a></li>
+	<li><a href="/category/234/wheels">Wheels</a></li>
+</ul>
+<h3><a href="/category/109/shirts">Shirts</a></h3>
+<ul>
+	<li><a href="/category/237/pololu-balboa-t-shirts">Balboa T-Shirts</a></li>
+	<li><a href="/category/194/pololu-zumo-t-shirts">Zumo T-Shirts</a></li>
+	<li><a href="/category/193/pololu-circuit-logo-t-shirts">Logo T-Shirts</a></li>
+</ul>
+</div>
+</div>
+
+<div class='menu'>
+<h2>Community</h2>
+<div>
+<ul>
+<li>
+<a data-lightbox-link="true" data-lightbox-height="34rem" data-lightbox-width="36rem" href="/account/communication-preferences">Mailing list</a>
+</li>
+<li>
+<a href="/blog">Pololu Blog</a>
+</li>
+<li>
+<a href="/blog/engage-your-brain">Engage Your Brain</a>
+</li>
+<li>
+<a href="/blog/community-projects">Community Projects</a>
+</li>
+<li>
+<span class="image_text_link"><a href="/feeds"><img alt="" src="https://a.pololu-files.com/assets/feed-icon-12x12-ad0e7f1965647f9414a76a1f32fb46dc73c1b2d295201b0abb56f2b2cf88bfb2.png" /></a><a href="/feeds">Feeds</a></span>
+</li>
+<li>
+<span class="image_text_link"><a href="mailto:?body=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F4401&amp;subject"><img alt="" src="https://a.pololu-files.com/assets/email-f2957b324fa09a7d81ed64679a6b9454647ad40514cd7b1ce501aefd946f5593.png" /></a><a href="mailto:?body=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F4401&amp;subject">Email a friend</a></span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='mathjax'></div>
+</body>
+</html>

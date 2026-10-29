@@ -1,0 +1,24 @@
+{
+  "board": "TC_DRIVE_REVA",
+  "status": "UNROUTED_NOT_FOR_FABRICATION",
+  "populated_parts": 35,
+  "board_mm": [
+    100,
+    100
+  ],
+  "net_assignment_count": 120,
+  "schematic_board_net_match": true,
+  "erc_violations": 0,
+  "pcb_drc_violations": 58,
+  "unconnected_items": 89,
+  "copper_tracks": 0,
+  "routing_complete": false,
+  "thermal_validation_complete": false,
+  "physical_testing_complete": false,
+  "supplier_sourcing_verified": false,
+  "order_ready": false,
+  "source_sha256": {
+    "TC_DRIVE_REVA.kicad_pcb": "2b230050f42037cb49e7bcc4683f32ae7d557331d9dc1137ca7c35a8db8792eb",
+    "TC_DRIVE_REVA.kicad_sch": "a4594e32f9eb56726dd0a733a6e36e0e6a5845aaa8f11931db92645893909011"
+  }
+}

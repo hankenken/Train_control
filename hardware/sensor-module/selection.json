@@ -1,0 +1,33 @@
+{
+  "status": "CANDIDATE_NOT_PHYSICALLY_VERIFIED",
+  "module": "Pololu QTRX-HD-01A",
+  "product_id": 4401,
+  "manufacturer_url": "https://www.pololu.com/product/4401/specs",
+  "access_date_utc": "2026-10-29",
+  "supply_v": 3.3,
+  "optimal_distance_mm": 10,
+  "max_current_per_module_ma": 5,
+  "modules": 8,
+  "module_current_total_ma": 40,
+  "analog_buffer": "MCP6004T-I/SL x2, separate board",
+  "mount_slide_target_mm": [
+    5,
+    25
+  ],
+  "vehicle_roof_validation_complete": false,
+  "sensor_pcb_custom_fabrication_required": false,
+  "reference_hashes": [
+    {
+      "file": "Pololu_4401_product.html",
+      "sha256": "8397f5a856096e453c120afd077c4defd66275b13489bfe7f0a34af2b2af012d"
+    },
+    {
+      "file": "Pololu_dimensions.pdf",
+      "sha256": "43b52ad6a4b2fdba65dfa177fb362c80cbc7efaf8223322b1015ea12bda7f0c1"
+    },
+    {
+      "file": "Pololu_schematic.pdf",
+      "sha256": "03e7b218e9266ed7251c87c11e750a021876b6fe8d62447765e3e348ec0199d0"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+(fp_lib_table
+(lib (name "Capacitor_SMD") (type "KiCad") (uri "${KICAD9_FOOTPRINT_DIR}/Capacitor_SMD.pretty") (options "") (descr ""))
+(lib (name "Fiducial") (type "KiCad") (uri "${KICAD9_FOOTPRINT_DIR}/Fiducial.pretty") (options "") (descr ""))
+(lib (name "MountingHole") (type "KiCad") (uri "${KICAD9_FOOTPRINT_DIR}/MountingHole.pretty") (options "") (descr ""))
+(lib (name "Package_SO") (type "KiCad") (uri "${KICAD9_FOOTPRINT_DIR}/Package_SO.pretty") (options "") (descr ""))
+(lib (name "Resistor_SMD") (type "KiCad") (uri "${KICAD9_FOOTPRINT_DIR}/Resistor_SMD.pretty") (options "") (descr ""))
+(lib (name "TC_Wire") (type "KiCad") (uri "${KIPRJMOD}/TC_Wire.pretty") (options "") (descr "Unpopulated wire pads")))

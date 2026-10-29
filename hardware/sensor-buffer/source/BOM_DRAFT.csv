@@ -1,0 +1,39 @@
+Reference,MPN_or_value,Footprint,Populate,Notes
+J1,3V3_FROM_TC_IO,TC_Wire:Power2,False,"Same 3.3V as ADC, no independent external power and no 5V"
+U1,MCP6004T-I/SL,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,True,Unity-gain buffers. 1.8-6V RRIO; operate at 3.3V. Datasheet DS20001733L
+C9,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,
+U2,MCP6004T-I/SL,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,True,Unity-gain buffers. 1.8-6V RRIO; operate at 3.3V. Datasheet DS20001733L
+C10,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,
+J2,SENSOR_0,TC_Wire:Control3,False,"Wire by sensor signal names, NOT pin-number matching; Pololu HD pin order differs"
+J10,ADC_CH0,TC_Wire:Power2,False,To TC IO J2..J9 GND and analog pin respectively; star distribution of 3.3V
+R1,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Initial output isolation; verify ADC settling and capacitive cable load
+C1,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,"Initial analog filter, NOT timing capacitor or overvoltage protection"
+J3,SENSOR_1,TC_Wire:Control3,False,"Wire by sensor signal names, NOT pin-number matching; Pololu HD pin order differs"
+J11,ADC_CH1,TC_Wire:Power2,False,To TC IO J2..J9 GND and analog pin respectively; star distribution of 3.3V
+R2,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Initial output isolation; verify ADC settling and capacitive cable load
+C2,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,"Initial analog filter, NOT timing capacitor or overvoltage protection"
+J4,SENSOR_2,TC_Wire:Control3,False,"Wire by sensor signal names, NOT pin-number matching; Pololu HD pin order differs"
+J12,ADC_CH2,TC_Wire:Power2,False,To TC IO J2..J9 GND and analog pin respectively; star distribution of 3.3V
+R3,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Initial output isolation; verify ADC settling and capacitive cable load
+C3,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,"Initial analog filter, NOT timing capacitor or overvoltage protection"
+J5,SENSOR_3,TC_Wire:Control3,False,"Wire by sensor signal names, NOT pin-number matching; Pololu HD pin order differs"
+J13,ADC_CH3,TC_Wire:Power2,False,To TC IO J2..J9 GND and analog pin respectively; star distribution of 3.3V
+R4,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Initial output isolation; verify ADC settling and capacitive cable load
+C4,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,"Initial analog filter, NOT timing capacitor or overvoltage protection"
+J6,SENSOR_4,TC_Wire:Control3,False,"Wire by sensor signal names, NOT pin-number matching; Pololu HD pin order differs"
+J14,ADC_CH4,TC_Wire:Power2,False,To TC IO J2..J9 GND and analog pin respectively; star distribution of 3.3V
+R5,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Initial output isolation; verify ADC settling and capacitive cable load
+C5,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,"Initial analog filter, NOT timing capacitor or overvoltage protection"
+J7,SENSOR_5,TC_Wire:Control3,False,"Wire by sensor signal names, NOT pin-number matching; Pololu HD pin order differs"
+J15,ADC_CH5,TC_Wire:Power2,False,To TC IO J2..J9 GND and analog pin respectively; star distribution of 3.3V
+R6,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Initial output isolation; verify ADC settling and capacitive cable load
+C6,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,"Initial analog filter, NOT timing capacitor or overvoltage protection"
+J8,SENSOR_6,TC_Wire:Control3,False,"Wire by sensor signal names, NOT pin-number matching; Pololu HD pin order differs"
+J16,ADC_CH6,TC_Wire:Power2,False,To TC IO J2..J9 GND and analog pin respectively; star distribution of 3.3V
+R7,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Initial output isolation; verify ADC settling and capacitive cable load
+C7,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,"Initial analog filter, NOT timing capacitor or overvoltage protection"
+J9,SENSOR_7,TC_Wire:Control3,False,"Wire by sensor signal names, NOT pin-number matching; Pololu HD pin order differs"
+J17,ADC_CH7,TC_Wire:Power2,False,To TC IO J2..J9 GND and analog pin respectively; star distribution of 3.3V
+R8,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Initial output isolation; verify ADC settling and capacitive cable load
+C8,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,"Initial analog filter, NOT timing capacitor or overvoltage protection"
+C11,10uF_10V_X7R,Capacitor_SMD:C_1206_3216Metric,True,

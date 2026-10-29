@@ -1,0 +1,957 @@
+{
+  "board": "TC_DRIVE_REVA",
+  "status": "UNROUTED_NOT_FOR_FABRICATION",
+  "board_mm": [
+    100,
+    100
+  ],
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "12V_IN_AFTER_EXTERNAL_FUSE_AND_STOP",
+      "footprint": "TC_Wire:Power2",
+      "nets": {
+        "1": "VIN_12V",
+        "2": "GND"
+      },
+      "pos": [
+        28,
+        33,
+        0
+      ],
+      "names": {},
+      "types": {
+        "1": "power_out",
+        "2": "power_out"
+      },
+      "note": "",
+      "populate": false
+    },
+    {
+      "ref": "D1",
+      "value": "SS34_CANDIDATE",
+      "footprint": "Diode_SMD:D_SMA",
+      "nets": {
+        "1": "VM",
+        "2": "VIN_12V"
+      },
+      "pos": [
+        41,
+        33,
+        0
+      ],
+      "names": {
+        "1": "K",
+        "2": "A"
+      },
+      "types": {},
+      "note": "Series reverse polarity diode. Verify selected manufacturer forward loss and pulse current.",
+      "populate": true
+    },
+    {
+      "ref": "D2",
+      "value": "SMBJ18A_CANDIDATE",
+      "footprint": "Diode_SMD:D_SMB",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        54,
+        33,
+        90
+      ],
+      "names": {
+        "1": "K",
+        "2": "A"
+      },
+      "types": {},
+      "note": "Local rail clamp; pulse energy and fuse coordination not validated",
+      "populate": true
+    },
+    {
+      "ref": "C1",
+      "value": "470uF_35V_SMD_CANDIDATE",
+      "footprint": "Capacitor_SMD:CP_Elec_10x10.5",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        68,
+        33,
+        0
+      ],
+      "names": {
+        "1": "PLUS",
+        "2": "MINUS"
+      },
+      "types": {},
+      "note": "Bulk after polarity diode; ESR/ripple/energy verification pending",
+      "populate": true
+    },
+    {
+      "ref": "U1",
+      "value": "DRV8871DDAR",
+      "footprint": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias",
+      "nets": {
+        "1": "GND",
+        "2": "UP_OUT_B",
+        "3": "UP_OUT_A",
+        "4": "UP_OUT_ILIM",
+        "5": "VM",
+        "6": "UP_OUT_BLUE",
+        "7": "GND",
+        "8": "UP_OUT_WHITE",
+        "9": "GND"
+      },
+      "pos": [
+        48,
+        57,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "IN2",
+        "3": "IN1",
+        "4": "ILIM",
+        "5": "VM",
+        "6": "OUT1",
+        "7": "PGND",
+        "8": "OUT2",
+        "9": "EP_GND"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "input",
+        "3": "input",
+        "4": "passive",
+        "5": "power_in",
+        "6": "output",
+        "7": "power_in",
+        "8": "output",
+        "9": "power_in"
+      },
+      "note": "TI SLVSCY9B pinout. DDA exposed pad MUST be soldered and heat-spread. Layout unrouted.",
+      "populate": true
+    },
+    {
+      "ref": "R1",
+      "value": "53.6k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_ILIM",
+        "2": "GND"
+      },
+      "pos": [
+        41,
+        61,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Itrip nominal 64/53.6=1.194A; 59..69kV plus resistor 1% gives 1.090..1.300A",
+      "populate": true
+    },
+    {
+      "ref": "C2",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        55,
+        61,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Place directly at VM/PGND during final layout",
+      "populate": true
+    },
+    {
+      "ref": "C3",
+      "value": "100uF_35V_SMD_CANDIDATE",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x7.7",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        62,
+        57,
+        0
+      ],
+      "names": {
+        "1": "PLUS",
+        "2": "MINUS"
+      },
+      "types": {},
+      "note": "Local bulk; candidate footprint, specific supplier part not fixed",
+      "populate": true
+    },
+    {
+      "ref": "J2",
+      "value": "CONTROL_UP_OUT",
+      "footprint": "TC_Wire:Control3",
+      "nets": {
+        "1": "GND",
+        "2": "UP_OUT_IN1",
+        "3": "UP_OUT_IN2"
+      },
+      "pos": [
+        26,
+        46,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Matches TC IO J10-J13 GND/IN1/IN2",
+      "populate": false
+    },
+    {
+      "ref": "J6",
+      "value": "TURNOUT_UP_OUT",
+      "footprint": "TC_Wire:Power2",
+      "nets": {
+        "1": "UP_OUT_BLUE",
+        "2": "UP_OUT_WHITE"
+      },
+      "pos": [
+        54,
+        69,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Two-wire turnout only. Blue/white polarity not yet mapped to route.",
+      "populate": false
+    },
+    {
+      "ref": "R5",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_IN1",
+        "2": "UP_OUT_A"
+      },
+      "pos": [
+        35,
+        52,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R6",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_A",
+        "2": "GND"
+      },
+      "pos": [
+        41,
+        52,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Input pulldown; driver also has internal pulldown",
+      "populate": true
+    },
+    {
+      "ref": "R7",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_IN2",
+        "2": "UP_OUT_B"
+      },
+      "pos": [
+        35,
+        56,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R8",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_B",
+        "2": "GND"
+      },
+      "pos": [
+        41,
+        56,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Input pulldown; driver also has internal pulldown",
+      "populate": true
+    },
+    {
+      "ref": "U2",
+      "value": "DRV8871DDAR",
+      "footprint": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias",
+      "nets": {
+        "1": "GND",
+        "2": "UP_IN_B",
+        "3": "UP_IN_A",
+        "4": "UP_IN_ILIM",
+        "5": "VM",
+        "6": "UP_IN_BLUE",
+        "7": "GND",
+        "8": "UP_IN_WHITE",
+        "9": "GND"
+      },
+      "pos": [
+        91,
+        57,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "IN2",
+        "3": "IN1",
+        "4": "ILIM",
+        "5": "VM",
+        "6": "OUT1",
+        "7": "PGND",
+        "8": "OUT2",
+        "9": "EP_GND"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "input",
+        "3": "input",
+        "4": "passive",
+        "5": "power_in",
+        "6": "output",
+        "7": "power_in",
+        "8": "output",
+        "9": "power_in"
+      },
+      "note": "TI SLVSCY9B pinout. DDA exposed pad MUST be soldered and heat-spread. Layout unrouted.",
+      "populate": true
+    },
+    {
+      "ref": "R2",
+      "value": "53.6k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_ILIM",
+        "2": "GND"
+      },
+      "pos": [
+        84,
+        61,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Itrip nominal 64/53.6=1.194A; 59..69kV plus resistor 1% gives 1.090..1.300A",
+      "populate": true
+    },
+    {
+      "ref": "C4",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        98,
+        61,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Place directly at VM/PGND during final layout",
+      "populate": true
+    },
+    {
+      "ref": "C5",
+      "value": "100uF_35V_SMD_CANDIDATE",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x7.7",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        105,
+        57,
+        0
+      ],
+      "names": {
+        "1": "PLUS",
+        "2": "MINUS"
+      },
+      "types": {},
+      "note": "Local bulk; candidate footprint, specific supplier part not fixed",
+      "populate": true
+    },
+    {
+      "ref": "J3",
+      "value": "CONTROL_UP_IN",
+      "footprint": "TC_Wire:Control3",
+      "nets": {
+        "1": "GND",
+        "2": "UP_IN_IN1",
+        "3": "UP_IN_IN2"
+      },
+      "pos": [
+        72,
+        46,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Matches TC IO J10-J13 GND/IN1/IN2",
+      "populate": false
+    },
+    {
+      "ref": "J7",
+      "value": "TURNOUT_UP_IN",
+      "footprint": "TC_Wire:Power2",
+      "nets": {
+        "1": "UP_IN_BLUE",
+        "2": "UP_IN_WHITE"
+      },
+      "pos": [
+        97,
+        69,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Two-wire turnout only. Blue/white polarity not yet mapped to route.",
+      "populate": false
+    },
+    {
+      "ref": "R9",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_IN1",
+        "2": "UP_IN_A"
+      },
+      "pos": [
+        78,
+        52,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R10",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_A",
+        "2": "GND"
+      },
+      "pos": [
+        84,
+        52,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Input pulldown; driver also has internal pulldown",
+      "populate": true
+    },
+    {
+      "ref": "R11",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_IN2",
+        "2": "UP_IN_B"
+      },
+      "pos": [
+        78,
+        56,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R12",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_B",
+        "2": "GND"
+      },
+      "pos": [
+        84,
+        56,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Input pulldown; driver also has internal pulldown",
+      "populate": true
+    },
+    {
+      "ref": "U3",
+      "value": "DRV8871DDAR",
+      "footprint": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias",
+      "nets": {
+        "1": "GND",
+        "2": "LOW_OUT_B",
+        "3": "LOW_OUT_A",
+        "4": "LOW_OUT_ILIM",
+        "5": "VM",
+        "6": "LOW_OUT_BLUE",
+        "7": "GND",
+        "8": "LOW_OUT_WHITE",
+        "9": "GND"
+      },
+      "pos": [
+        48,
+        91,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "IN2",
+        "3": "IN1",
+        "4": "ILIM",
+        "5": "VM",
+        "6": "OUT1",
+        "7": "PGND",
+        "8": "OUT2",
+        "9": "EP_GND"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "input",
+        "3": "input",
+        "4": "passive",
+        "5": "power_in",
+        "6": "output",
+        "7": "power_in",
+        "8": "output",
+        "9": "power_in"
+      },
+      "note": "TI SLVSCY9B pinout. DDA exposed pad MUST be soldered and heat-spread. Layout unrouted.",
+      "populate": true
+    },
+    {
+      "ref": "R3",
+      "value": "53.6k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_ILIM",
+        "2": "GND"
+      },
+      "pos": [
+        41,
+        95,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Itrip nominal 64/53.6=1.194A; 59..69kV plus resistor 1% gives 1.090..1.300A",
+      "populate": true
+    },
+    {
+      "ref": "C6",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        55,
+        95,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Place directly at VM/PGND during final layout",
+      "populate": true
+    },
+    {
+      "ref": "C7",
+      "value": "100uF_35V_SMD_CANDIDATE",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x7.7",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        62,
+        91,
+        0
+      ],
+      "names": {
+        "1": "PLUS",
+        "2": "MINUS"
+      },
+      "types": {},
+      "note": "Local bulk; candidate footprint, specific supplier part not fixed",
+      "populate": true
+    },
+    {
+      "ref": "J4",
+      "value": "CONTROL_LOW_OUT",
+      "footprint": "TC_Wire:Control3",
+      "nets": {
+        "1": "GND",
+        "2": "LOW_OUT_IN1",
+        "3": "LOW_OUT_IN2"
+      },
+      "pos": [
+        26,
+        80,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Matches TC IO J10-J13 GND/IN1/IN2",
+      "populate": false
+    },
+    {
+      "ref": "J8",
+      "value": "TURNOUT_LOW_OUT",
+      "footprint": "TC_Wire:Power2",
+      "nets": {
+        "1": "LOW_OUT_BLUE",
+        "2": "LOW_OUT_WHITE"
+      },
+      "pos": [
+        54,
+        103,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Two-wire turnout only. Blue/white polarity not yet mapped to route.",
+      "populate": false
+    },
+    {
+      "ref": "R13",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_IN1",
+        "2": "LOW_OUT_A"
+      },
+      "pos": [
+        35,
+        86,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R14",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_A",
+        "2": "GND"
+      },
+      "pos": [
+        41,
+        86,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Input pulldown; driver also has internal pulldown",
+      "populate": true
+    },
+    {
+      "ref": "R15",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_IN2",
+        "2": "LOW_OUT_B"
+      },
+      "pos": [
+        35,
+        90,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R16",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_B",
+        "2": "GND"
+      },
+      "pos": [
+        41,
+        90,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Input pulldown; driver also has internal pulldown",
+      "populate": true
+    },
+    {
+      "ref": "U4",
+      "value": "DRV8871DDAR",
+      "footprint": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias",
+      "nets": {
+        "1": "GND",
+        "2": "LOW_IN_B",
+        "3": "LOW_IN_A",
+        "4": "LOW_IN_ILIM",
+        "5": "VM",
+        "6": "LOW_IN_BLUE",
+        "7": "GND",
+        "8": "LOW_IN_WHITE",
+        "9": "GND"
+      },
+      "pos": [
+        91,
+        91,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "IN2",
+        "3": "IN1",
+        "4": "ILIM",
+        "5": "VM",
+        "6": "OUT1",
+        "7": "PGND",
+        "8": "OUT2",
+        "9": "EP_GND"
+      },
+      "types": {
+        "1": "power_in",
+        "2": "input",
+        "3": "input",
+        "4": "passive",
+        "5": "power_in",
+        "6": "output",
+        "7": "power_in",
+        "8": "output",
+        "9": "power_in"
+      },
+      "note": "TI SLVSCY9B pinout. DDA exposed pad MUST be soldered and heat-spread. Layout unrouted.",
+      "populate": true
+    },
+    {
+      "ref": "R4",
+      "value": "53.6k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_ILIM",
+        "2": "GND"
+      },
+      "pos": [
+        84,
+        95,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Itrip nominal 64/53.6=1.194A; 59..69kV plus resistor 1% gives 1.090..1.300A",
+      "populate": true
+    },
+    {
+      "ref": "C8",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        98,
+        95,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Place directly at VM/PGND during final layout",
+      "populate": true
+    },
+    {
+      "ref": "C9",
+      "value": "100uF_35V_SMD_CANDIDATE",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x7.7",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "pos": [
+        105,
+        91,
+        0
+      ],
+      "names": {
+        "1": "PLUS",
+        "2": "MINUS"
+      },
+      "types": {},
+      "note": "Local bulk; candidate footprint, specific supplier part not fixed",
+      "populate": true
+    },
+    {
+      "ref": "J5",
+      "value": "CONTROL_LOW_IN",
+      "footprint": "TC_Wire:Control3",
+      "nets": {
+        "1": "GND",
+        "2": "LOW_IN_IN1",
+        "3": "LOW_IN_IN2"
+      },
+      "pos": [
+        72,
+        80,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Matches TC IO J10-J13 GND/IN1/IN2",
+      "populate": false
+    },
+    {
+      "ref": "J9",
+      "value": "TURNOUT_LOW_IN",
+      "footprint": "TC_Wire:Power2",
+      "nets": {
+        "1": "LOW_IN_BLUE",
+        "2": "LOW_IN_WHITE"
+      },
+      "pos": [
+        97,
+        103,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Two-wire turnout only. Blue/white polarity not yet mapped to route.",
+      "populate": false
+    },
+    {
+      "ref": "R17",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_IN1",
+        "2": "LOW_IN_A"
+      },
+      "pos": [
+        78,
+        86,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R18",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_A",
+        "2": "GND"
+      },
+      "pos": [
+        84,
+        86,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Input pulldown; driver also has internal pulldown",
+      "populate": true
+    },
+    {
+      "ref": "R19",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_IN2",
+        "2": "LOW_IN_B"
+      },
+      "pos": [
+        78,
+        90,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R20",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_B",
+        "2": "GND"
+      },
+      "pos": [
+        84,
+        90,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Input pulldown; driver also has internal pulldown",
+      "populate": true
+    },
+    {
+      "ref": "#FLG01",
+      "value": "PWR_FLAG_VM",
+      "footprint": "",
+      "nets": {
+        "1": "VM"
+      },
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "names": {},
+      "types": {
+        "1": "power_out"
+      },
+      "note": "Schematic-only annotation: VM is supplied through D1, not a physical source",
+      "populate": false
+    }
+  ]
+}

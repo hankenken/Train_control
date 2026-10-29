@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/workspace/Train_control/hardware/sensor-buffer/source/TC_SENSOR_BUFFER_REVA.kicad_sch</source>
+    <date>2026-10-29T08:16:50+0000</date>
+    <tool>Eeschema 9.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>TC SENSOR BUFFER Rev A - UNROUTED DRAFT</title>
+        <company/>
+        <rev>A0-UNROUTED</rev>
+        <date/>
+        <source>TC_SENSOR_BUFFER_REVA.kicad_sch</source>
+        <comment number="1" value="3.3V only. Eight voltage followers. UNROUTED: NOT FOR FABRICATION."/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>1nF_5%_C0G</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>160bf88d-3186-5cee-98a8-a3ed2a066b45</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1nF_5%_C0G</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eddd0e4b-9a09-554c-bf00-da168c448eac</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1nF_5%_C0G</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdd87f25-5f23-52c9-bb93-42c189b3334f</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>1nF_5%_C0G</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa75d15a-b677-5a0c-93de-2af776a347d2</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1nF_5%_C0G</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>02d0497f-bad2-52f6-ad56-a9b020b174a6</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>1nF_5%_C0G</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca9538b8-9c8a-565f-a927-cd83feda59ab</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>1nF_5%_C0G</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>24125d4a-d10b-5b05-ac06-83278f49b14a</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>1nF_5%_C0G</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>16146c41-5e15-539f-beec-160a15287b07</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100nF_50V_X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C9" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>999190e6-e281-589d-979b-e3adfb60a9bf</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>100nF_50V_X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C10" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09fc5b51-014d-5ec2-b61d-9c0ec55f75b9</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>10uF_10V_X7R</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C11" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7bddd52a-48ee-5007-94c6-0656ba3aba38</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>3V3_FROM_TC_IO</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>049510f2-a8bc-567f-a849-883f2e03502d</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>SENSOR_0</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5c1a008-18bc-51d1-a4bb-e7757095b911</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>SENSOR_1</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>64abe0ce-e93f-5369-87d5-d27c7302c9a1</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>SENSOR_2</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7b4f852a-5862-577e-9f28-548f62f3f3e0</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>SENSOR_3</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30a7f76e-4e39-5cb7-87af-b7cc07ee4f9f</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>SENSOR_4</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6e6a91f2-5e14-5850-a3ad-6ec08b8ab512</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>SENSOR_5</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47cd3948-87f0-5363-92e5-a0eaa38fbc59</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>SENSOR_6</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e391a07-55e5-500b-bde2-9f70e6f1f2fa</tstamps>
+    </comp>
+    <comp ref="J9">
+      <value>SENSOR_7</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J9" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c89a9546-f719-550e-8ab7-55ac1d5b39b7</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>ADC_CH0</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J10" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e151049d-f86f-528f-88d1-3e972e1fd6b4</tstamps>
+    </comp>
+    <comp ref="J11">
+      <value>ADC_CH1</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J11" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8baa7584-6b01-5b56-81a4-7caa6c7c7672</tstamps>
+    </comp>
+    <comp ref="J12">
+      <value>ADC_CH2</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J12" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72b42222-251c-587a-9824-fe93a7f4dfba</tstamps>
+    </comp>
+    <comp ref="J13">
+      <value>ADC_CH3</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J13" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7846382-12a3-5c05-916e-12f84d3fe1ea</tstamps>
+    </comp>
+    <comp ref="J14">
+      <value>ADC_CH4</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J14" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec2851a4-d7cb-59cb-95dc-1bd8b5869b60</tstamps>
+    </comp>
+    <comp ref="J15">
+      <value>ADC_CH5</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J15" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95bbb52f-1b45-5750-98cf-4b80d174245d</tstamps>
+    </comp>
+    <comp ref="J16">
+      <value>ADC_CH6</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J16" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e78a13f-569f-5745-b154-8e2bc813c4d1</tstamps>
+    </comp>
+    <comp ref="J17">
+      <value>ADC_CH7</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J17" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43eb4adc-3628-57bf-950a-8fe79c407724</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f299745-aaa1-59a7-b575-e64c2700dcea</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>27682bad-14ca-5a9e-b7c9-7ee949f75caa</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4df51c5-45d7-528d-a15d-5f5f11261d29</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>378c51fe-da51-5026-96a2-e08dcb8338bb</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1fad4b36-9521-56e7-ab1d-f16392e5c9b7</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b31bc35-77bb-5334-ad45-ed489c5dcf35</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0d0a6d42-2a10-5392-8e90-c250e6a55e8e</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6fffbe9e-81ea-5f02-9e95-4d6c32753c7d</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>MCP6004T-I/SL</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <fields>
+        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="U1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4b366c6-d88f-51d4-b87c-a30b69821654</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>MCP6004T-I/SL</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <fields>
+        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="U2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_SENSOR_BUFFER_REVA.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46e5455d-4de2-57d3-8b05-0999f60cae60</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="TC" part="C1">
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">1nF_5%_C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C10">
+      <fields>
+        <field name="Reference">C10</field>
+        <field name="Value">100nF_50V_X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C11">
+      <fields>
+        <field name="Reference">C11</field>
+        <field name="Value">10uF_10V_X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C2">
+      <fields>
+        <field name="Reference">C2</field>
+        <field name="Value">1nF_5%_C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C3">
+      <fields>
+        <field name="Reference">C3</field>
+        <field name="Value">1nF_5%_C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C4">
+      <fields>
+        <field name="Reference">C4</field>
+        <field name="Value">1nF_5%_C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C5">
+      <fields>
+        <field name="Reference">C5</field>
+        <field name="Value">1nF_5%_C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C6">
+      <fields>
+        <field name="Reference">C6</field>
+        <field name="Value">1nF_5%_C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C7">
+      <fields>
+        <field name="Reference">C7</field>
+        <field name="Value">1nF_5%_C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C8">
+      <fields>
+        <field name="Reference">C8</field>
+        <field name="Value">1nF_5%_C0G</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C9">
+      <fields>
+        <field name="Reference">C9</field>
+        <field name="Value">100nF_50V_X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J1">
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">3V3_FROM_TC_IO</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="power_out"/>
+        <pin num="2" name="2" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J10">
+      <fields>
+        <field name="Reference">J10</field>
+        <field name="Value">ADC_CH0</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J11">
+      <fields>
+        <field name="Reference">J11</field>
+        <field name="Value">ADC_CH1</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J12">
+      <fields>
+        <field name="Reference">J12</field>
+        <field name="Value">ADC_CH2</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J13">
+      <fields>
+        <field name="Reference">J13</field>
+        <field name="Value">ADC_CH3</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J14">
+      <fields>
+        <field name="Reference">J14</field>
+        <field name="Value">ADC_CH4</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J15">
+      <fields>
+        <field name="Reference">J15</field>
+        <field name="Value">ADC_CH5</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J16">
+      <fields>
+        <field name="Reference">J16</field>
+        <field name="Value">ADC_CH6</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J17">
+      <fields>
+        <field name="Reference">J17</field>
+        <field name="Value">ADC_CH7</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J2">
+      <fields>
+        <field name="Reference">J2</field>
+        <field name="Value">SENSOR_0</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J3">
+      <fields>
+        <field name="Reference">J3</field>
+        <field name="Value">SENSOR_1</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J4">
+      <fields>
+        <field name="Reference">J4</field>
+        <field name="Value">SENSOR_2</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J5">
+      <fields>
+        <field name="Reference">J5</field>
+        <field name="Value">SENSOR_3</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J6">
+      <fields>
+        <field name="Reference">J6</field>
+        <field name="Value">SENSOR_4</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J7">
+      <fields>
+        <field name="Reference">J7</field>
+        <field name="Value">SENSOR_5</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J8">
+      <fields>
+        <field name="Reference">J8</field>
+        <field name="Value">SENSOR_6</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J9">
+      <fields>
+        <field name="Reference">J9</field>
+        <field name="Value">SENSOR_7</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R1">
+      <fields>
+        <field name="Reference">R1</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R2">
+      <fields>
+        <field name="Reference">R2</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R3">
+      <fields>
+        <field name="Reference">R3</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R4">
+      <fields>
+        <field name="Reference">R4</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R5">
+      <fields>
+        <field name="Reference">R5</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R6">
+      <fields>
+        <field name="Reference">R6</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R7">
+      <fields>
+        <field name="Reference">R7</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R8">
+      <fields>
+        <field name="Reference">R8</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="U1">
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">MCP6004T-I/SL</field>
+        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT0" type="output"/>
+        <pin num="2" name="IN0-" type="input"/>
+        <pin num="3" name="IN0+" type="input"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="IN1+" type="input"/>
+        <pin num="6" name="IN1-" type="input"/>
+        <pin num="7" name="OUT1" type="output"/>
+        <pin num="8" name="OUT2" type="output"/>
+        <pin num="9" name="IN2-" type="input"/>
+        <pin num="10" name="IN2+" type="input"/>
+        <pin num="11" name="VSS" type="power_in"/>
+        <pin num="12" name="IN3+" type="input"/>
+        <pin num="13" name="IN3-" type="input"/>
+        <pin num="14" name="OUT3" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="U2">
+      <fields>
+        <field name="Reference">U2</field>
+        <field name="Value">MCP6004T-I/SL</field>
+        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT0" type="output"/>
+        <pin num="2" name="IN0-" type="input"/>
+        <pin num="3" name="IN0+" type="input"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="IN1+" type="input"/>
+        <pin num="6" name="IN1-" type="input"/>
+        <pin num="7" name="OUT1" type="output"/>
+        <pin num="8" name="OUT2" type="output"/>
+        <pin num="9" name="IN2-" type="input"/>
+        <pin num="10" name="IN2+" type="input"/>
+        <pin num="11" name="VSS" type="power_in"/>
+        <pin num="12" name="IN3+" type="input"/>
+        <pin num="13" name="IN3-" type="input"/>
+        <pin num="14" name="OUT3" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="TC">
+      <uri>/workspace/Train_control/hardware/sensor-buffer/source/TC.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/+3V3" class="Default">
+      <node ref="C10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1" pintype="power_out"/>
+      <node ref="J2" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="J9" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="4" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="2" name="/ADC0" class="Default">
+      <node ref="C1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J10" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="3" name="/ADC1" class="Default">
+      <node ref="C2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J11" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="4" name="/ADC2" class="Default">
+      <node ref="C3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J12" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/ADC3" class="Default">
+      <node ref="C4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J13" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="6" name="/ADC4" class="Default">
+      <node ref="C5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J14" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="7" name="/ADC5" class="Default">
+      <node ref="C6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J15" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="8" name="/ADC6" class="Default">
+      <node ref="C7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J16" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="9" name="/ADC7" class="Default">
+      <node ref="C8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J17" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="10" name="/BUF0" class="Default">
+      <node ref="R1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="OUT0" pintype="output"/>
+      <node ref="U1" pin="2" pinfunction="IN0-" pintype="input"/>
+    </net>
+    <net code="11" name="/BUF1" class="Default">
+      <node ref="R2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="IN1-" pintype="input"/>
+      <node ref="U1" pin="7" pinfunction="OUT1" pintype="output"/>
+    </net>
+    <net code="12" name="/BUF2" class="Default">
+      <node ref="R3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="OUT2" pintype="output"/>
+      <node ref="U1" pin="9" pinfunction="IN2-" pintype="input"/>
+    </net>
+    <net code="13" name="/BUF3" class="Default">
+      <node ref="R4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="IN3-" pintype="input"/>
+      <node ref="U1" pin="14" pinfunction="OUT3" pintype="output"/>
+    </net>
+    <net code="14" name="/BUF4" class="Default">
+      <node ref="R5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="OUT0" pintype="output"/>
+      <node ref="U2" pin="2" pinfunction="IN0-" pintype="input"/>
+    </net>
+    <net code="15" name="/BUF5" class="Default">
+      <node ref="R6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="IN1-" pintype="input"/>
+      <node ref="U2" pin="7" pinfunction="OUT1" pintype="output"/>
+    </net>
+    <net code="16" name="/BUF6" class="Default">
+      <node ref="R7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="OUT2" pintype="output"/>
+      <node ref="U2" pin="9" pinfunction="IN2-" pintype="input"/>
+    </net>
+    <net code="17" name="/BUF7" class="Default">
+      <node ref="R8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="IN3-" pintype="input"/>
+      <node ref="U2" pin="14" pinfunction="OUT3" pintype="output"/>
+    </net>
+    <net code="18" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2" pintype="power_out"/>
+      <node ref="J10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J15" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J16" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J17" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="J9" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U2" pin="11" pinfunction="VSS" pintype="power_in"/>
+    </net>
+    <net code="19" name="/SENSOR0" class="Default">
+      <node ref="J2" pin="3" pinfunction="OUT" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="IN0+" pintype="input"/>
+    </net>
+    <net code="20" name="/SENSOR1" class="Default">
+      <node ref="J3" pin="3" pinfunction="OUT" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="IN1+" pintype="input"/>
+    </net>
+    <net code="21" name="/SENSOR2" class="Default">
+      <node ref="J4" pin="3" pinfunction="OUT" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="IN2+" pintype="input"/>
+    </net>
+    <net code="22" name="/SENSOR3" class="Default">
+      <node ref="J5" pin="3" pinfunction="OUT" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="IN3+" pintype="input"/>
+    </net>
+    <net code="23" name="/SENSOR4" class="Default">
+      <node ref="J6" pin="3" pinfunction="OUT" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="IN0+" pintype="input"/>
+    </net>
+    <net code="24" name="/SENSOR5" class="Default">
+      <node ref="J7" pin="3" pinfunction="OUT" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="IN1+" pintype="input"/>
+    </net>
+    <net code="25" name="/SENSOR6" class="Default">
+      <node ref="J8" pin="3" pinfunction="OUT" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="IN2+" pintype="input"/>
+    </net>
+    <net code="26" name="/SENSOR7" class="Default">
+      <node ref="J9" pin="3" pinfunction="OUT" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="IN3+" pintype="input"/>
+    </net>
+  </nets>
+</export>

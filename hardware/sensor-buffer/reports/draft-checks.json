@@ -1,0 +1,24 @@
+{
+  "board": "TC_SENSOR_BUFFER_REVA",
+  "status": "UNROUTED_NOT_FOR_FABRICATION",
+  "populated_parts": 21,
+  "board_mm": [
+    100,
+    100
+  ],
+  "net_assignment_count": 108,
+  "schematic_board_net_match": true,
+  "erc_violations": 0,
+  "pcb_drc_violations": 13,
+  "unconnected_items": 81,
+  "copper_tracks": 0,
+  "routing_complete": false,
+  "thermal_validation_complete": false,
+  "physical_testing_complete": false,
+  "supplier_sourcing_verified": false,
+  "order_ready": false,
+  "source_sha256": {
+    "TC_SENSOR_BUFFER_REVA.kicad_pcb": "9168136b479d41f467deeaca7c1c4b8b59bb0be7f6eb4dc3d6277ee7dcab1577",
+    "TC_SENSOR_BUFFER_REVA.kicad_sch": "39860f16f38f2b1cc5f0d0df5297cdf07771b0e9f5332d4ef055dc2c62b2e5ba"
+  }
+}
