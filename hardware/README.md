@@ -1,3 +1,5 @@
+> 最新方針：センサはユーザー指定のToF方式。[VL53L4CD選定資料](tof-sensor-selection/README.md)を参照。小型制御基板は[50×40mm案](control-board-mini/README.md)、駆動基板は[60×45mm案](driver-board-mini/README.md)。アナログセンサとバッファは今回の採用対象外です。
+
 # Nゲージ実機制御回路 — 設計案 Rev.2
 
 対象：KATO 40-231、Raspberry Pi、車両の加工を必要としない光学式検知。

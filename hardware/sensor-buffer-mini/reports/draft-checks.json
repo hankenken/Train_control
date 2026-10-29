@@ -1,0 +1,41 @@
+{
+  "name": "TC_SENSOR_BUFFER_REVB_MINI",
+  "status": "PLACEMENT_DRAFT_UNROUTED_NOT_FOR_ORDER",
+  "board_mm": [
+    45.0,
+    32.0
+  ],
+  "area_mm2": 1440,
+  "previous_area_mm2": 10000,
+  "area_reduction_percent": 85.6,
+  "populated_smt": 21,
+  "unpopulated_wire_groups": 9,
+  "wire_drill_mm": 0.8,
+  "wire_pad_size_mm": 1.6,
+  "wire_pitch_mm": 2,
+  "wire_pad_edge_gap_mm": 0.4,
+  "minimum_clearance_rule_mm": 0.2,
+  "mounting_holes": {
+    "count": 4,
+    "diameter_mm": 2.2,
+    "hardware": "M2"
+  },
+  "electrical_parity_with_rev_a_smt": true,
+  "schematic_board_net_match": true,
+  "connected_pad_assignments": 100,
+  "erc_violations": 0,
+  "placement_drc_violations": 0,
+  "unconnected_items": 74,
+  "copper_tracks": 0,
+  "routing_complete": false,
+  "board_dimensions_final_after_routing": false,
+  "supplier_sourcing_verified": false,
+  "supplier_orientation_verified": false,
+  "physical_testing_complete": false,
+  "order_ready": false,
+  "source_sha256": {
+    "TC_SENSOR_BUFFER_REVB_MINI.kicad_pcb": "fc4e33a8974daa3c29dd6f7d2b7a95e4f78afd1187c6315d428537a0c4f2cec1",
+    "TC_SENSOR_BUFFER_REVB_MINI.kicad_sch": "a3dbd97a7105f6dfb98a32f279de633118ef3517f505923bb16fab457b470cad"
+  },
+  "selection_status": "SUPERSEDED_NOT_SELECTED_USER_REQUESTED_TOF"
+}

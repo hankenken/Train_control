@@ -1,0 +1,31 @@
+{
+  "board": "TC_IO_REVD_MINI",
+  "status": "UNROUTED_NOT_FOR_FABRICATION",
+  "board_mm": [
+    50.0,
+    40.0
+  ],
+  "area_reduction_from_100_square_percent": 80,
+  "parts_populated": 46,
+  "retained_smt_net_values_unchanged": true,
+  "adc_removed_refs": [
+    "U1",
+    "R5",
+    "C5",
+    "C12"
+  ],
+  "pi_used_pads": 17,
+  "pi_nc_pad": 18,
+  "erc_violations": 0,
+  "placement_drc_violations": 0,
+  "net_assignment_count": 191,
+  "schematic_board_net_match": true,
+  "unconnected_items": 148,
+  "copper_tracks": 0,
+  "order_ready": false,
+  "tof_software_implemented": false,
+  "source_sha256": {
+    "TC_IO_REVD_MINI.kicad_sch": "43d19646b38efd894d9c89aa7c5412bf4f7ca1d8bf4046148beee6ae767ecb07",
+    "TC_IO_REVD_MINI.kicad_pcb": "30995aadb5f5d8337d77a7354e1c5b45648538cce61af6f5be3c053cfc369b30"
+  }
+}

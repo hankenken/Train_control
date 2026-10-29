@@ -1,0 +1,47 @@
+{
+  "status": "DATASHEET_REVIEW_ONLY_NOT_HARDWARE_RELEASE",
+  "preferred_sensor": "ST VL53L4CD",
+  "sensor_supply_v": [
+    2.6,
+    3.5
+  ],
+  "io_supply_v": [
+    1.6,
+    3.5
+  ],
+  "sensor_package_mm": [
+    4.4,
+    2.4,
+    1.0
+  ],
+  "target_roof_distance_mm": 10,
+  "datasheet_short_distance_linearity_mm": 1,
+  "one_mm_accuracy_guaranteed": false,
+  "sensor_i2c_7bit_addr": "0x29",
+  "proposed_switch": "TI TCA9548A",
+  "switch_i2c_7bit_addr_all_address_pins_low": "0x70",
+  "switch_speed_max_hz": 400000,
+  "sensor_current_typ_ma_datasheet_condition": 22,
+  "sensor_current_max_average_ma_datasheet_condition": 24,
+  "sensor_peak_ma": 40,
+  "eight_sensor_max_average_ma_nominal_condition": 192,
+  "eight_sensor_peak_overlap_scenario_ma": 320,
+  "roof_detection_test_complete": false,
+  "bus_cable_validation_complete": false,
+  "physical_design_complete": false,
+  "source_date_utc": "2026-10-29",
+  "reference_hashes": [
+    {
+      "file": "ST_VL53L4CD.pdf",
+      "sha256": "0beb3bb5e958f6e463d919c3ac9226e5f3bdfa15fd09b009208a24d791e7707c"
+    },
+    {
+      "file": "ST_VL6180X.pdf",
+      "sha256": "87e1b09668160d714276cdb093a41e7bf18120c81c25888a309e8fcfdc6a6724"
+    },
+    {
+      "file": "TI_TCA9548A.pdf",
+      "sha256": "2137822fd7128945ea44e83f4e100a932b30964d763715eeffe217ee6080a2dc"
+    }
+  ]
+}

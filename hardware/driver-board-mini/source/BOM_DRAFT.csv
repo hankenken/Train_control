@@ -1,0 +1,46 @@
+Reference,MPN_or_value,Footprint,Populate,Notes
+J1,12V_IN_AFTER_EXTERNAL_FUSE_AND_STOP,TC_Wire:Power2,False,
+D1,SS34_CANDIDATE,Diode_SMD:D_SMA,True,Series reverse polarity diode. Verify selected manufacturer forward loss and pulse current.
+D2,SMBJ18A_CANDIDATE,Diode_SMD:D_SMB,True,Local rail clamp; pulse energy and fuse coordination not validated
+C1,470uF_35V_SMD_CANDIDATE,Capacitor_SMD:CP_Elec_10x10.5,True,Bulk after polarity diode; ESR/ripple/energy verification pending
+U1,DRV8871DDAR,TC_Wire:DRV8871_DDA_ThermalVias_0p3,True,TI SLVSCY9B pinout. DDA exposed pad MUST be soldered and heat-spread. Layout unrouted.
+R1,53.6k_1%,Resistor_SMD:R_0805_2012Metric,True,Itrip nominal 64/53.6=1.194A; 59..69kV plus resistor 1% gives 1.090..1.300A
+C2,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Place directly at VM/PGND during final layout
+C3,100uF_35V_SMD_CANDIDATE,Capacitor_SMD:CP_Elec_6.3x7.7,True,"Local bulk; candidate footprint, specific supplier part not fixed"
+J2,CONTROL_UP_OUT,TC_Wire:Control3,False,Matches TC IO J10-J13 GND/IN1/IN2
+J6,TURNOUT_UP_OUT,TC_Wire:Power2,False,Two-wire turnout only. Blue/white polarity not yet mapped to route.
+R5,100R_1%,Resistor_SMD:R_0805_2012Metric,True,
+R6,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Input pulldown; driver also has internal pulldown
+R7,100R_1%,Resistor_SMD:R_0805_2012Metric,True,
+R8,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Input pulldown; driver also has internal pulldown
+U2,DRV8871DDAR,TC_Wire:DRV8871_DDA_ThermalVias_0p3,True,TI SLVSCY9B pinout. DDA exposed pad MUST be soldered and heat-spread. Layout unrouted.
+R2,53.6k_1%,Resistor_SMD:R_0805_2012Metric,True,Itrip nominal 64/53.6=1.194A; 59..69kV plus resistor 1% gives 1.090..1.300A
+C4,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Place directly at VM/PGND during final layout
+C5,100uF_35V_SMD_CANDIDATE,Capacitor_SMD:CP_Elec_6.3x7.7,True,"Local bulk; candidate footprint, specific supplier part not fixed"
+J3,CONTROL_UP_IN,TC_Wire:Control3,False,Matches TC IO J10-J13 GND/IN1/IN2
+J7,TURNOUT_UP_IN,TC_Wire:Power2,False,Two-wire turnout only. Blue/white polarity not yet mapped to route.
+R9,100R_1%,Resistor_SMD:R_0805_2012Metric,True,
+R10,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Input pulldown; driver also has internal pulldown
+R11,100R_1%,Resistor_SMD:R_0805_2012Metric,True,
+R12,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Input pulldown; driver also has internal pulldown
+U3,DRV8871DDAR,TC_Wire:DRV8871_DDA_ThermalVias_0p3,True,TI SLVSCY9B pinout. DDA exposed pad MUST be soldered and heat-spread. Layout unrouted.
+R3,53.6k_1%,Resistor_SMD:R_0805_2012Metric,True,Itrip nominal 64/53.6=1.194A; 59..69kV plus resistor 1% gives 1.090..1.300A
+C6,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Place directly at VM/PGND during final layout
+C7,100uF_35V_SMD_CANDIDATE,Capacitor_SMD:CP_Elec_6.3x7.7,True,"Local bulk; candidate footprint, specific supplier part not fixed"
+J4,CONTROL_LOW_OUT,TC_Wire:Control3,False,Matches TC IO J10-J13 GND/IN1/IN2
+J8,TURNOUT_LOW_OUT,TC_Wire:Power2,False,Two-wire turnout only. Blue/white polarity not yet mapped to route.
+R13,100R_1%,Resistor_SMD:R_0805_2012Metric,True,
+R14,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Input pulldown; driver also has internal pulldown
+R15,100R_1%,Resistor_SMD:R_0805_2012Metric,True,
+R16,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Input pulldown; driver also has internal pulldown
+U4,DRV8871DDAR,TC_Wire:DRV8871_DDA_ThermalVias_0p3,True,TI SLVSCY9B pinout. DDA exposed pad MUST be soldered and heat-spread. Layout unrouted.
+R4,53.6k_1%,Resistor_SMD:R_0805_2012Metric,True,Itrip nominal 64/53.6=1.194A; 59..69kV plus resistor 1% gives 1.090..1.300A
+C8,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Place directly at VM/PGND during final layout
+C9,100uF_35V_SMD_CANDIDATE,Capacitor_SMD:CP_Elec_6.3x7.7,True,"Local bulk; candidate footprint, specific supplier part not fixed"
+J5,CONTROL_LOW_IN,TC_Wire:Control3,False,Matches TC IO J10-J13 GND/IN1/IN2
+J9,TURNOUT_LOW_IN,TC_Wire:Power2,False,Two-wire turnout only. Blue/white polarity not yet mapped to route.
+R17,100R_1%,Resistor_SMD:R_0805_2012Metric,True,
+R18,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Input pulldown; driver also has internal pulldown
+R19,100R_1%,Resistor_SMD:R_0805_2012Metric,True,
+R20,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Input pulldown; driver also has internal pulldown
+#FLG01,PWR_FLAG_VM,,False,"Schematic-only annotation: VM is supplied through D1, not a physical source"

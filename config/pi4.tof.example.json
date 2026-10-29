@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "status": "tof_design_example_not_loaded_by_app",
+  "platform": "Raspberry Pi 4 Model B",
+  "hardware_outputs_enabled": false,
+  "i2c": {
+    "bus": 1,
+    "sda_bcm": 2,
+    "scl_bcm": 3,
+    "initial_bus_hz": 100000,
+    "mux_candidate": "TCA9548A",
+    "mux_7bit_address": "0x70",
+    "max_enabled_channels": 1
+  },
+  "sensor_candidate": "VL53L4CDV0DH/1",
+  "sensor_7bit_address": "0x29",
+  "sensor_power": "dedicated regulated3.3V; not directly from Pi sensor rail",
+  "scheduling": "not implemented; select after optical-interference and detection-latency measurements",
+  "sensors": [
+    {
+      "id": "upper_outer_a",
+      "mux_channel": 0,
+      "enabled": false,
+      "calibration": {
+        "empty_mm": null,
+        "roof_mm": null
+      },
+      "invalid_status_handling": "fault; do not treat as clear"
+    },
+    {
+      "id": "upper_outer_b",
+      "mux_channel": 1,
+      "enabled": false,
+      "calibration": {
+        "empty_mm": null,
+        "roof_mm": null
+      },
+      "invalid_status_handling": "fault; do not treat as clear"
+    },
+    {
+      "id": "upper_inner_a",
+      "mux_channel": 2,
+      "enabled": false,
+      "calibration": {
+        "empty_mm": null,
+        "roof_mm": null
+      },
+      "invalid_status_handling": "fault; do not treat as clear"
+    },
+    {
+      "id": "upper_inner_b",
+      "mux_channel": 3,
+      "enabled": false,
+      "calibration": {
+        "empty_mm": null,
+        "roof_mm": null
+      },
+      "invalid_status_handling": "fault; do not treat as clear"
+    },
+    {
+      "id": "lower_outer_a",
+      "mux_channel": 4,
+      "enabled": false,
+      "calibration": {
+        "empty_mm": null,
+        "roof_mm": null
+      },
+      "invalid_status_handling": "fault; do not treat as clear"
+    },
+    {
+      "id": "lower_outer_b",
+      "mux_channel": 5,
+      "enabled": false,
+      "calibration": {
+        "empty_mm": null,
+        "roof_mm": null
+      },
+      "invalid_status_handling": "fault; do not treat as clear"
+    },
+    {
+      "id": "lower_inner_a",
+      "mux_channel": 6,
+      "enabled": false,
+      "calibration": {
+        "empty_mm": null,
+        "roof_mm": null
+      },
+      "invalid_status_handling": "fault; do not treat as clear"
+    },
+    {
+      "id": "lower_inner_b",
+      "mux_channel": 7,
+      "enabled": false,
+      "calibration": {
+        "empty_mm": null,
+        "roof_mm": null
+      },
+      "invalid_status_handling": "fault; do not treat as clear"
+    }
+  ]
+}

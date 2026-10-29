@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T08:26:04+0000",
+    "kicad_version": "9.0.2",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/90e03426-7873-5763-9646-1d1d0000a745",
+            "violations": []
+        }
+    ],
+    "source": "TC_SENSOR_BUFFER_REVB_MINI.kicad_sch"
+}

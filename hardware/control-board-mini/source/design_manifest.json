@@ -1,0 +1,1214 @@
+{
+  "board": "TC_IO_REVD_MINI",
+  "status": "UNROUTED_NOT_FOR_FABRICATION",
+  "board_mm": [
+    50,
+    40
+  ],
+  "parts": [
+    {
+      "ref": "U2",
+      "value": "CD74HC221M96",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "nets": {
+        "8": "GND",
+        "16": "+3V3",
+        "1": "GND",
+        "2": "UP_OUT_TRIG",
+        "3": "CLEAR_N",
+        "14": "UP_OUT_CE",
+        "15": "UP_OUT_RC",
+        "13": "UP_OUT_Q",
+        "4": null,
+        "9": "GND",
+        "10": "UP_IN_TRIG",
+        "11": "CLEAR_N",
+        "6": "UP_IN_CE",
+        "7": "UP_IN_RC",
+        "5": "UP_IN_Q",
+        "12": null
+      },
+      "pos": [
+        25,
+        18,
+        0
+      ],
+      "names": {
+        "8": "GND",
+        "16": "VCC",
+        "1": "A_N",
+        "2": "B",
+        "3": "CLR_N",
+        "14": "CEXT",
+        "15": "RCEXT",
+        "13": "Q",
+        "4": "Q_N",
+        "9": "A_N",
+        "10": "B",
+        "11": "CLR_N",
+        "6": "CEXT",
+        "7": "RCEXT",
+        "5": "Q",
+        "12": "Q_N"
+      },
+      "types": {
+        "8": "power_in",
+        "16": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "input",
+        "14": "passive",
+        "15": "passive",
+        "13": "output",
+        "4": "output",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "6": "passive",
+        "7": "passive",
+        "5": "output",
+        "12": "output"
+      },
+      "note": "HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",
+      "populate": true
+    },
+    {
+      "ref": "U3",
+      "value": "CD74HC221M96",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "nets": {
+        "8": "GND",
+        "16": "+3V3",
+        "1": "GND",
+        "2": "LOW_OUT_TRIG",
+        "3": "CLEAR_N",
+        "14": "LOW_OUT_CE",
+        "15": "LOW_OUT_RC",
+        "13": "LOW_OUT_Q",
+        "4": null,
+        "9": "GND",
+        "10": "LOW_IN_TRIG",
+        "11": "CLEAR_N",
+        "6": "LOW_IN_CE",
+        "7": "LOW_IN_RC",
+        "5": "LOW_IN_Q",
+        "12": null
+      },
+      "pos": [
+        39,
+        18,
+        0
+      ],
+      "names": {
+        "8": "GND",
+        "16": "VCC",
+        "1": "A_N",
+        "2": "B",
+        "3": "CLR_N",
+        "14": "CEXT",
+        "15": "RCEXT",
+        "13": "Q",
+        "4": "Q_N",
+        "9": "A_N",
+        "10": "B",
+        "11": "CLR_N",
+        "6": "CEXT",
+        "7": "RCEXT",
+        "5": "Q",
+        "12": "Q_N"
+      },
+      "types": {
+        "8": "power_in",
+        "16": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "input",
+        "14": "passive",
+        "15": "passive",
+        "13": "output",
+        "4": "output",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "6": "passive",
+        "7": "passive",
+        "5": "output",
+        "12": "output"
+      },
+      "note": "HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",
+      "populate": true
+    },
+    {
+      "ref": "U4",
+      "value": "SN74HC08DR",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "nets": {
+        "7": "GND",
+        "14": "+3V3",
+        "1": "UP_OUT_P",
+        "2": "UP_OUT_Q",
+        "3": "UP_OUT_IN1",
+        "4": "UP_OUT_N",
+        "5": "UP_OUT_Q",
+        "6": "UP_OUT_IN2",
+        "9": "UP_IN_P",
+        "10": "UP_IN_Q",
+        "8": "UP_IN_IN1",
+        "12": "UP_IN_N",
+        "13": "UP_IN_Q",
+        "11": "UP_IN_IN2"
+      },
+      "pos": [
+        25,
+        32,
+        0
+      ],
+      "names": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "1A",
+        "2": "1B",
+        "3": "1Y",
+        "4": "2A",
+        "5": "2B",
+        "6": "2Y",
+        "9": "3A",
+        "10": "3B",
+        "8": "3Y",
+        "12": "4A",
+        "13": "4B",
+        "11": "4Y"
+      },
+      "types": {
+        "7": "power_in",
+        "14": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "10": "input",
+        "8": "output",
+        "12": "input",
+        "13": "input",
+        "11": "output"
+      },
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "U5",
+      "value": "SN74HC08DR",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "nets": {
+        "7": "GND",
+        "14": "+3V3",
+        "1": "LOW_OUT_P",
+        "2": "LOW_OUT_Q",
+        "3": "LOW_OUT_IN1",
+        "4": "LOW_OUT_N",
+        "5": "LOW_OUT_Q",
+        "6": "LOW_OUT_IN2",
+        "9": "LOW_IN_P",
+        "10": "LOW_IN_Q",
+        "8": "LOW_IN_IN1",
+        "12": "LOW_IN_N",
+        "13": "LOW_IN_Q",
+        "11": "LOW_IN_IN2"
+      },
+      "pos": [
+        39,
+        32,
+        0
+      ],
+      "names": {
+        "7": "GND",
+        "14": "VCC",
+        "1": "1A",
+        "2": "1B",
+        "3": "1Y",
+        "4": "2A",
+        "5": "2B",
+        "6": "2Y",
+        "9": "3A",
+        "10": "3B",
+        "8": "3Y",
+        "12": "4A",
+        "13": "4B",
+        "11": "4Y"
+      },
+      "types": {
+        "7": "power_in",
+        "14": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "10": "input",
+        "8": "output",
+        "12": "input",
+        "13": "input",
+        "11": "output"
+      },
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "U6",
+      "value": "SN74HC08DR",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "nets": {
+        "7": "GND",
+        "14": "+3V3",
+        "1": "ARM",
+        "2": "POWER_GOOD",
+        "3": "CLEAR_N",
+        "4": "GND",
+        "5": "GND",
+        "6": null,
+        "9": "GND",
+        "10": "GND",
+        "8": null,
+        "12": "GND",
+        "13": "GND",
+        "11": null
+      },
+      "pos": [
+        11,
+        18,
+        0
+      ],
+      "names": {},
+      "types": {
+        "7": "power_in",
+        "14": "power_in",
+        "1": "input",
+        "2": "input",
+        "3": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "9": "input",
+        "10": "input",
+        "8": "output",
+        "12": "input",
+        "13": "input",
+        "11": "output"
+      },
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "U7",
+      "value": "MCP100T-300I/TT",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "nets": {
+        "1": "POWER_GOOD",
+        "2": "+3V3",
+        "3": "GND"
+      },
+      "pos": [
+        11,
+        33,
+        0
+      ],
+      "names": {
+        "1": "RESET_N",
+        "2": "VDD",
+        "3": "VSS"
+      },
+      "types": {
+        "1": "output",
+        "2": "power_in",
+        "3": "power_in"
+      },
+      "note": "RESET_N=pin1,VDD=pin2,VSS=pin3 checked against user-supplied Microchip DS11187F; bench power-ramp testing pending",
+      "populate": true
+    },
+    {
+      "ref": "R6",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_P",
+        "2": "GND"
+      },
+      "pos": [
+        18,
+        13.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R7",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_N",
+        "2": "GND"
+      },
+      "pos": [
+        18,
+        15.4,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R8",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_TRIG",
+        "2": "GND"
+      },
+      "pos": [
+        18,
+        17.8,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R9",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_P",
+        "2": "GND"
+      },
+      "pos": [
+        18,
+        20.2,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R10",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_N",
+        "2": "GND"
+      },
+      "pos": [
+        18,
+        22.6,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R11",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_TRIG",
+        "2": "GND"
+      },
+      "pos": [
+        18,
+        25.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R12",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_P",
+        "2": "GND"
+      },
+      "pos": [
+        18,
+        27.4,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R13",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_N",
+        "2": "GND"
+      },
+      "pos": [
+        18,
+        29.8,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R14",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_TRIG",
+        "2": "GND"
+      },
+      "pos": [
+        18,
+        32.2,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R15",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_P",
+        "2": "GND"
+      },
+      "pos": [
+        32,
+        24.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R16",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_N",
+        "2": "GND"
+      },
+      "pos": [
+        32,
+        26.7,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R17",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_TRIG",
+        "2": "GND"
+      },
+      "pos": [
+        32,
+        28.9,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R18",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "ARM",
+        "2": "GND"
+      },
+      "pos": [
+        32,
+        31.1,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R19",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_IN1",
+        "2": "GND"
+      },
+      "pos": [
+        32,
+        33.3,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R20",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_OUT_IN2",
+        "2": "GND"
+      },
+      "pos": [
+        32,
+        35.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R21",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_IN1",
+        "2": "GND"
+      },
+      "pos": [
+        32,
+        37.7,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R22",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "UP_IN_IN2",
+        "2": "GND"
+      },
+      "pos": [
+        6,
+        31.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R23",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_IN1",
+        "2": "GND"
+      },
+      "pos": [
+        6,
+        34,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R24",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_OUT_IN2",
+        "2": "GND"
+      },
+      "pos": [
+        14.5,
+        9,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R25",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_IN1",
+        "2": "GND"
+      },
+      "pos": [
+        14.5,
+        11.2,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R26",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LOW_IN_IN2",
+        "2": "GND"
+      },
+      "pos": [
+        14.5,
+        29,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Individual SMT pulldown replacing the former SIP resistor networks",
+      "populate": true
+    },
+    {
+      "ref": "R1",
+      "value": "150k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "UP_OUT_ADJ"
+      },
+      "pos": [
+        33.5,
+        14,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "VR1",
+      "value": "3224W-1-104E",
+      "footprint": "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical",
+      "nets": {
+        "1": "UP_OUT_ADJ",
+        "2": "UP_OUT_RC",
+        "3": "UP_OUT_RC"
+      },
+      "pos": [
+        19,
+        5,
+        0
+      ],
+      "names": {
+        "1": "CCW",
+        "2": "WIPER",
+        "3": "CW"
+      },
+      "types": {},
+      "note": "100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",
+      "populate": true
+    },
+    {
+      "ref": "C1",
+      "value": "470nF_10%_X7R_50V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "nets": {
+        "1": "UP_OUT_CE",
+        "2": "UP_OUT_RC"
+      },
+      "pos": [
+        31,
+        14,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",
+      "populate": true
+    },
+    {
+      "ref": "R2",
+      "value": "150k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "UP_IN_ADJ"
+      },
+      "pos": [
+        33.5,
+        21,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "VR2",
+      "value": "3224W-1-104E",
+      "footprint": "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical",
+      "nets": {
+        "1": "UP_IN_ADJ",
+        "2": "UP_IN_RC",
+        "3": "UP_IN_RC"
+      },
+      "pos": [
+        27,
+        5,
+        0
+      ],
+      "names": {
+        "1": "CCW",
+        "2": "WIPER",
+        "3": "CW"
+      },
+      "types": {},
+      "note": "100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",
+      "populate": true
+    },
+    {
+      "ref": "C2",
+      "value": "470nF_10%_X7R_50V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "nets": {
+        "1": "UP_IN_CE",
+        "2": "UP_IN_RC"
+      },
+      "pos": [
+        31,
+        21,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",
+      "populate": true
+    },
+    {
+      "ref": "R3",
+      "value": "150k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "LOW_OUT_ADJ"
+      },
+      "pos": [
+        44.2,
+        18,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "VR3",
+      "value": "3224W-1-104E",
+      "footprint": "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical",
+      "nets": {
+        "1": "LOW_OUT_ADJ",
+        "2": "LOW_OUT_RC",
+        "3": "LOW_OUT_RC"
+      },
+      "pos": [
+        35,
+        5,
+        0
+      ],
+      "names": {
+        "1": "CCW",
+        "2": "WIPER",
+        "3": "CW"
+      },
+      "types": {},
+      "note": "100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",
+      "populate": true
+    },
+    {
+      "ref": "C3",
+      "value": "470nF_10%_X7R_50V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "nets": {
+        "1": "LOW_OUT_CE",
+        "2": "LOW_OUT_RC"
+      },
+      "pos": [
+        44,
+        14,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",
+      "populate": true
+    },
+    {
+      "ref": "R4",
+      "value": "150k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "LOW_IN_ADJ"
+      },
+      "pos": [
+        47,
+        24,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "VR4",
+      "value": "3224W-1-104E",
+      "footprint": "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical",
+      "nets": {
+        "1": "LOW_IN_ADJ",
+        "2": "LOW_IN_RC",
+        "3": "LOW_IN_RC"
+      },
+      "pos": [
+        42,
+        5,
+        0
+      ],
+      "names": {
+        "1": "CCW",
+        "2": "WIPER",
+        "3": "CW"
+      },
+      "types": {},
+      "note": "100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",
+      "populate": true
+    },
+    {
+      "ref": "C4",
+      "value": "470nF_10%_X7R_50V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "nets": {
+        "1": "LOW_IN_CE",
+        "2": "LOW_IN_RC"
+      },
+      "pos": [
+        44,
+        22,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",
+      "populate": true
+    },
+    {
+      "ref": "C6",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        27.5,
+        10.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close",
+      "populate": true
+    },
+    {
+      "ref": "C7",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        42,
+        10.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close",
+      "populate": true
+    },
+    {
+      "ref": "C8",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        28,
+        25,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close",
+      "populate": true
+    },
+    {
+      "ref": "C9",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        42,
+        25.8,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close",
+      "populate": true
+    },
+    {
+      "ref": "C10",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        14,
+        25,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close",
+      "populate": true
+    },
+    {
+      "ref": "C11",
+      "value": "100nF_X7R_50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        14.5,
+        36.2,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "IC bypass; keep close",
+      "populate": true
+    },
+    {
+      "ref": "C13",
+      "value": "10uF_X7R_25V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        12,
+        6,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Nonpolar MLCC bulk bypass; check effective capacitance",
+      "populate": true
+    },
+    {
+      "ref": "J1",
+      "value": "PI_DIRECT_RENUMBERED",
+      "footprint": "TC_Wire:Pads2x09",
+      "nets": {
+        "1": "+3V3",
+        "2": "SDA",
+        "3": "SCL",
+        "4": "GND",
+        "5": "LOW_IN_P",
+        "6": "LOW_IN_N",
+        "7": "LOW_IN_TRIG",
+        "8": "ARM",
+        "9": "UP_OUT_P",
+        "10": "UP_OUT_N",
+        "11": "UP_OUT_TRIG",
+        "12": "UP_IN_P",
+        "13": "UP_IN_TRIG",
+        "14": "UP_IN_N",
+        "15": "LOW_OUT_TRIG",
+        "16": "LOW_OUT_P",
+        "17": "LOW_OUT_N",
+        "18": null
+      },
+      "pos": [
+        4,
+        12,
+        0
+      ],
+      "names": {
+        "1": "PI_PHYS_1",
+        "2": "PI_PHYS_3",
+        "3": "PI_PHYS_5",
+        "4": "PI_PHYS_6",
+        "5": "PI_PHYS_11",
+        "6": "PI_PHYS_13",
+        "7": "PI_PHYS_15",
+        "8": "PI_PHYS_16",
+        "9": "PI_PHYS_29",
+        "10": "PI_PHYS_31",
+        "11": "PI_PHYS_32",
+        "12": "PI_PHYS_33",
+        "13": "PI_PHYS_35",
+        "14": "PI_PHYS_36",
+        "15": "PI_PHYS_37",
+        "16": "PI_PHYS_38",
+        "17": "PI_PHYS_40",
+        "18": "NC"
+      },
+      "types": {
+        "1": "power_out",
+        "2": "bidirectional",
+        "3": "bidirectional",
+        "4": "power_out",
+        "5": "output",
+        "6": "output",
+        "7": "output",
+        "8": "output",
+        "9": "output",
+        "10": "output",
+        "11": "output",
+        "12": "output",
+        "13": "output",
+        "14": "output",
+        "15": "output",
+        "16": "output",
+        "17": "output"
+      },
+      "note": "NEW NUMBERING: 17 used Pi signals plus NC18, see pi-wiring.csv. NOT a 40-pin Pi connector.",
+      "populate": false
+    },
+    {
+      "ref": "J3",
+      "value": "DRIVER_BUS",
+      "footprint": "TC_Wire:Pads2x05",
+      "nets": {
+        "1": "GND",
+        "2": "UP_OUT_IN1",
+        "3": "UP_OUT_IN2",
+        "4": "UP_IN_IN1",
+        "5": "UP_IN_IN2",
+        "6": "LOW_OUT_IN1",
+        "7": "LOW_OUT_IN2",
+        "8": "LOW_IN_IN1",
+        "9": "LOW_IN_IN2",
+        "10": null
+      },
+      "pos": [
+        46,
+        12,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "1 GND,2..9 channel IN1/IN2 pairs;10 NC. No 12V here.",
+      "populate": false
+    },
+    {
+      "ref": "J4",
+      "value": "I2C_BUS",
+      "footprint": "TC_Wire:Pads2x02",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SDA",
+        "4": "SCL"
+      },
+      "pos": [
+        7,
+        3.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": false
+    },
+    {
+      "ref": "TP1",
+      "value": "TEST_BUS",
+      "footprint": "TC_Wire:Probe1x07",
+      "nets": {
+        "1": "GND",
+        "2": "CLEAR_N",
+        "3": "POWER_GOOD",
+        "4": "UP_OUT_Q",
+        "5": "UP_IN_Q",
+        "6": "LOW_OUT_Q",
+        "7": "LOW_IN_Q"
+      },
+      "pos": [
+        17,
+        38,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": false
+    }
+  ]
+}

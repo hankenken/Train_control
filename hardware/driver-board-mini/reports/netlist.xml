@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/workspace/Train_control/hardware/driver-board-mini/source/TC_DRIVE_REVB.kicad_sch</source>
+    <date>2026-10-29T08:29:35+0000</date>
+    <tool>Eeschema 9.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>TC DRIVE Rev B - UNROUTED DRAFT</title>
+        <company/>
+        <rev>B0-MINI-UNROUTED</rev>
+        <date/>
+        <source>TC_DRIVE_REVB.kicad_sch</source>
+        <comment number="1" value="12V ONLY. 4 H-bridges. UNROUTED: NOT FOR FABRICATION."/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>470uF_35V_SMD_CANDIDATE</value>
+      <footprint>Capacitor_SMD:CP_Elec_10x10.5</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_10x10.5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a7c723a7-9e91-5061-8189-85bfe2ebd29f</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100nF_50V_X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>915e80df-a14d-5b79-8bca-0a40be880e43</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100uF_35V_SMD_CANDIDATE</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x7.7</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x7.7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0893ffa5-21b3-5440-90a0-e80d13650c91</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF_50V_X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a05b7a7c-ff18-5af2-a3ec-aac1fb2da45a</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100uF_35V_SMD_CANDIDATE</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x7.7</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x7.7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2214728d-887c-5502-a914-a94472c1b638</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100nF_50V_X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7c9df9d-337f-5f4d-8500-019fcab38643</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100uF_35V_SMD_CANDIDATE</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x7.7</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x7.7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>200767bf-0ba0-5389-8909-4d14a2b73dd2</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100nF_50V_X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>929dfde7-74b2-57ae-9cba-2e47442d3209</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100uF_35V_SMD_CANDIDATE</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x7.7</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x7.7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="C9" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38cfbb0b-6543-5dae-9537-5e80d7b39ae9</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>SS34_CANDIDATE</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SMA</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="D1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>460b46cc-145e-5012-970d-171f72038cb0</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>SMBJ18A_CANDIDATE</value>
+      <footprint>Diode_SMD:D_SMB</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SMB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="D2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eea2e920-a829-5644-bbe2-7bdfb3b7d20c</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>12V_IN_AFTER_EXTERNAL_FUSE_AND_STOP</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48b6cf46-75f9-5ec2-a7ef-5318478d2164</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>CONTROL_UP_OUT</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32a38460-e098-5a45-a5d3-93ada7da6f2f</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>CONTROL_UP_IN</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4dd799f1-ee01-5c04-b51a-dd4ee8244a09</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>CONTROL_LOW_OUT</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3e4a376-8653-562d-9f93-344244386c29</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>CONTROL_LOW_IN</value>
+      <footprint>TC_Wire:Control3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72ad92e0-85e6-5312-bd43-446d770ccb8f</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>TURNOUT_UP_OUT</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2e3aedb-9402-55ac-8b58-4e56971e1eff</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>TURNOUT_UP_IN</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a292a33-206f-5246-8dcc-c3f7f4c6a5be</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>TURNOUT_LOW_OUT</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffec3f14-2d76-562a-b52c-6cc9c90ae85d</tstamps>
+    </comp>
+    <comp ref="J9">
+      <value>TURNOUT_LOW_IN</value>
+      <footprint>TC_Wire:Power2</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="J9" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>870527fb-b52c-52eb-86a8-efa95f6d3adc</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>53.6k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a7bc635-67ee-5bca-87c4-01630646bedf</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>53.6k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ad87e518-8a38-5399-ad43-ad094768b39a</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>53.6k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43c3f351-647a-508f-9cb5-07d801dda4b3</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>53.6k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>488000e0-124e-54a4-9cee-bb48b79414da</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92a46563-7d7b-582b-8849-d6653fc7953a</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>10k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d41299f0-1285-5730-ae61-18f2f3680eb3</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a45454f6-8af6-5338-8f34-c54758edb3eb</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>10k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de66cfdb-c2ea-5944-babd-4ec03d19b241</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R9" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11b3c18d-2f1b-552d-8aa2-f01220beb178</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>10k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R10" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fd2b070-f04c-54cf-9b74-285e6dcc960e</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R11" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b63ef22-1a02-5aa5-8d8c-24a1e45c9989</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>10k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R12" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d9854ab-1d1b-5d8c-8506-286d54cd3703</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R13" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a22c2db-ee57-5571-9792-539a4903c67b</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>10k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R14" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6443a1b1-3233-5618-80f5-0ebccb872059</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R15" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b8b7ee6-20de-58ed-9246-a3fb7431510a</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>10k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R16" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ead9c58f-d4d5-57be-9f22-bf511fe64d42</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R17" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d8d249bf-f861-5744-8a05-9fa99f634640</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>10k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R18" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>62a1e31a-0dd5-517d-90d9-2c6a565d3862</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>100R_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R19" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33eeb1f0-298f-556e-9711-08237c212e09</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>10k_1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="R20" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91c452f7-ed50-5324-9487-249d9c73878b</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>DRV8871DDAR</value>
+      <footprint>TC_Wire:DRV8871_DDA_ThermalVias_0p3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:DRV8871_DDA_ThermalVias_0p3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="U1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c392bb55-a585-56d3-84fc-222ab9fe5e1b</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>DRV8871DDAR</value>
+      <footprint>TC_Wire:DRV8871_DDA_ThermalVias_0p3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:DRV8871_DDA_ThermalVias_0p3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="U2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30e04d1d-0fba-5d43-a008-b30dee20d26e</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>DRV8871DDAR</value>
+      <footprint>TC_Wire:DRV8871_DDA_ThermalVias_0p3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:DRV8871_DDA_ThermalVias_0p3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="U3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f78ecf3-06bc-55cc-8b8d-c1eb2f29a38d</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>DRV8871DDAR</value>
+      <footprint>TC_Wire:DRV8871_DDA_ThermalVias_0p3</footprint>
+      <fields>
+        <field name="Footprint">TC_Wire:DRV8871_DDA_ThermalVias_0p3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC" part="U4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TC_DRIVE_REVB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>afca7dc6-d60f-51e1-8c0b-336715b115c3</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="TC" part="C1">
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">470uF_35V_SMD_CANDIDATE</field>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_10x10.5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PLUS" type="passive"/>
+        <pin num="2" name="MINUS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C2">
+      <fields>
+        <field name="Reference">C2</field>
+        <field name="Value">100nF_50V_X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C3">
+      <fields>
+        <field name="Reference">C3</field>
+        <field name="Value">100uF_35V_SMD_CANDIDATE</field>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x7.7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PLUS" type="passive"/>
+        <pin num="2" name="MINUS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C4">
+      <fields>
+        <field name="Reference">C4</field>
+        <field name="Value">100nF_50V_X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C5">
+      <fields>
+        <field name="Reference">C5</field>
+        <field name="Value">100uF_35V_SMD_CANDIDATE</field>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x7.7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PLUS" type="passive"/>
+        <pin num="2" name="MINUS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C6">
+      <fields>
+        <field name="Reference">C6</field>
+        <field name="Value">100nF_50V_X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C7">
+      <fields>
+        <field name="Reference">C7</field>
+        <field name="Value">100uF_35V_SMD_CANDIDATE</field>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x7.7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PLUS" type="passive"/>
+        <pin num="2" name="MINUS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C8">
+      <fields>
+        <field name="Reference">C8</field>
+        <field name="Value">100nF_50V_X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="C9">
+      <fields>
+        <field name="Reference">C9</field>
+        <field name="Value">100uF_35V_SMD_CANDIDATE</field>
+        <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x7.7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PLUS" type="passive"/>
+        <pin num="2" name="MINUS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="D1">
+      <fields>
+        <field name="Reference">D1</field>
+        <field name="Value">SS34_CANDIDATE</field>
+        <field name="Footprint">Diode_SMD:D_SMA</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="D2">
+      <fields>
+        <field name="Reference">D2</field>
+        <field name="Value">SMBJ18A_CANDIDATE</field>
+        <field name="Footprint">Diode_SMD:D_SMB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J1">
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">12V_IN_AFTER_EXTERNAL_FUSE_AND_STOP</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="power_out"/>
+        <pin num="2" name="2" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J2">
+      <fields>
+        <field name="Reference">J2</field>
+        <field name="Value">CONTROL_UP_OUT</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J3">
+      <fields>
+        <field name="Reference">J3</field>
+        <field name="Value">CONTROL_UP_IN</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J4">
+      <fields>
+        <field name="Reference">J4</field>
+        <field name="Value">CONTROL_LOW_OUT</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J5">
+      <fields>
+        <field name="Reference">J5</field>
+        <field name="Value">CONTROL_LOW_IN</field>
+        <field name="Footprint">TC_Wire:Control3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J6">
+      <fields>
+        <field name="Reference">J6</field>
+        <field name="Value">TURNOUT_UP_OUT</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J7">
+      <fields>
+        <field name="Reference">J7</field>
+        <field name="Value">TURNOUT_UP_IN</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J8">
+      <fields>
+        <field name="Reference">J8</field>
+        <field name="Value">TURNOUT_LOW_OUT</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="J9">
+      <fields>
+        <field name="Reference">J9</field>
+        <field name="Value">TURNOUT_LOW_IN</field>
+        <field name="Footprint">TC_Wire:Power2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R1">
+      <fields>
+        <field name="Reference">R1</field>
+        <field name="Value">53.6k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R10">
+      <fields>
+        <field name="Reference">R10</field>
+        <field name="Value">10k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R11">
+      <fields>
+        <field name="Reference">R11</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R12">
+      <fields>
+        <field name="Reference">R12</field>
+        <field name="Value">10k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R13">
+      <fields>
+        <field name="Reference">R13</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R14">
+      <fields>
+        <field name="Reference">R14</field>
+        <field name="Value">10k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R15">
+      <fields>
+        <field name="Reference">R15</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R16">
+      <fields>
+        <field name="Reference">R16</field>
+        <field name="Value">10k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R17">
+      <fields>
+        <field name="Reference">R17</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R18">
+      <fields>
+        <field name="Reference">R18</field>
+        <field name="Value">10k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R19">
+      <fields>
+        <field name="Reference">R19</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R2">
+      <fields>
+        <field name="Reference">R2</field>
+        <field name="Value">53.6k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R20">
+      <fields>
+        <field name="Reference">R20</field>
+        <field name="Value">10k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R3">
+      <fields>
+        <field name="Reference">R3</field>
+        <field name="Value">53.6k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R4">
+      <fields>
+        <field name="Reference">R4</field>
+        <field name="Value">53.6k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R5">
+      <fields>
+        <field name="Reference">R5</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R6">
+      <fields>
+        <field name="Reference">R6</field>
+        <field name="Value">10k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R7">
+      <fields>
+        <field name="Reference">R7</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R8">
+      <fields>
+        <field name="Reference">R8</field>
+        <field name="Value">10k_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="R9">
+      <fields>
+        <field name="Reference">R9</field>
+        <field name="Value">100R_1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="U1">
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">DRV8871DDAR</field>
+        <field name="Footprint">TC_Wire:DRV8871_DDA_ThermalVias_0p3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="IN2" type="input"/>
+        <pin num="3" name="IN1" type="input"/>
+        <pin num="4" name="ILIM" type="passive"/>
+        <pin num="5" name="VM" type="power_in"/>
+        <pin num="6" name="OUT1" type="output"/>
+        <pin num="7" name="PGND" type="power_in"/>
+        <pin num="8" name="OUT2" type="output"/>
+        <pin num="9" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="U2">
+      <fields>
+        <field name="Reference">U2</field>
+        <field name="Value">DRV8871DDAR</field>
+        <field name="Footprint">TC_Wire:DRV8871_DDA_ThermalVias_0p3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="IN2" type="input"/>
+        <pin num="3" name="IN1" type="input"/>
+        <pin num="4" name="ILIM" type="passive"/>
+        <pin num="5" name="VM" type="power_in"/>
+        <pin num="6" name="OUT1" type="output"/>
+        <pin num="7" name="PGND" type="power_in"/>
+        <pin num="8" name="OUT2" type="output"/>
+        <pin num="9" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="U3">
+      <fields>
+        <field name="Reference">U3</field>
+        <field name="Value">DRV8871DDAR</field>
+        <field name="Footprint">TC_Wire:DRV8871_DDA_ThermalVias_0p3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="IN2" type="input"/>
+        <pin num="3" name="IN1" type="input"/>
+        <pin num="4" name="ILIM" type="passive"/>
+        <pin num="5" name="VM" type="power_in"/>
+        <pin num="6" name="OUT1" type="output"/>
+        <pin num="7" name="PGND" type="power_in"/>
+        <pin num="8" name="OUT2" type="output"/>
+        <pin num="9" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC" part="U4">
+      <fields>
+        <field name="Reference">U4</field>
+        <field name="Value">DRV8871DDAR</field>
+        <field name="Footprint">TC_Wire:DRV8871_DDA_ThermalVias_0p3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="IN2" type="input"/>
+        <pin num="3" name="IN1" type="input"/>
+        <pin num="4" name="ILIM" type="passive"/>
+        <pin num="5" name="VM" type="power_in"/>
+        <pin num="6" name="OUT1" type="output"/>
+        <pin num="7" name="PGND" type="power_in"/>
+        <pin num="8" name="OUT2" type="output"/>
+        <pin num="9" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="TC">
+      <uri>/workspace/Train_control/hardware/driver-board-mini/source/TC.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="MINUS" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="MINUS" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="MINUS" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="MINUS" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="MINUS" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2" pintype="power_out"/>
+      <node ref="J2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R10" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R12" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R14" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R16" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R18" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R20" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="7" pinfunction="PGND" pintype="power_in"/>
+      <node ref="U1" pin="9" pinfunction="EP_GND" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="PGND" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="EP_GND" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="PGND" pintype="power_in"/>
+      <node ref="U3" pin="9" pinfunction="EP_GND" pintype="power_in"/>
+      <node ref="U4" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="7" pinfunction="PGND" pintype="power_in"/>
+      <node ref="U4" pin="9" pinfunction="EP_GND" pintype="power_in"/>
+    </net>
+    <net code="2" name="/LOW_IN_A" class="Default">
+      <node ref="R17" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R18" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="IN1" pintype="input"/>
+    </net>
+    <net code="3" name="/LOW_IN_B" class="Default">
+      <node ref="R19" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R20" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="IN2" pintype="input"/>
+    </net>
+    <net code="4" name="/LOW_IN_BLUE" class="Default">
+      <node ref="J9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="OUT1" pintype="output"/>
+    </net>
+    <net code="5" name="/LOW_IN_ILIM" class="Default">
+      <node ref="R4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="6" name="/LOW_IN_IN1" class="Default">
+      <node ref="J5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R17" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="7" name="/LOW_IN_IN2" class="Default">
+      <node ref="J5" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R19" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="8" name="/LOW_IN_WHITE" class="Default">
+      <node ref="J9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="OUT2" pintype="output"/>
+    </net>
+    <net code="9" name="/LOW_OUT_A" class="Default">
+      <node ref="R13" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="IN1" pintype="input"/>
+    </net>
+    <net code="10" name="/LOW_OUT_B" class="Default">
+      <node ref="R15" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R16" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="IN2" pintype="input"/>
+    </net>
+    <net code="11" name="/LOW_OUT_BLUE" class="Default">
+      <node ref="J8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="OUT1" pintype="output"/>
+    </net>
+    <net code="12" name="/LOW_OUT_ILIM" class="Default">
+      <node ref="R3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="13" name="/LOW_OUT_IN1" class="Default">
+      <node ref="J4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R13" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="14" name="/LOW_OUT_IN2" class="Default">
+      <node ref="J4" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R15" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="15" name="/LOW_OUT_WHITE" class="Default">
+      <node ref="J8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="OUT2" pintype="output"/>
+    </net>
+    <net code="16" name="/UP_IN_A" class="Default">
+      <node ref="R10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="IN1" pintype="input"/>
+    </net>
+    <net code="17" name="/UP_IN_B" class="Default">
+      <node ref="R11" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="IN2" pintype="input"/>
+    </net>
+    <net code="18" name="/UP_IN_BLUE" class="Default">
+      <node ref="J7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="OUT1" pintype="output"/>
+    </net>
+    <net code="19" name="/UP_IN_ILIM" class="Default">
+      <node ref="R2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="20" name="/UP_IN_IN1" class="Default">
+      <node ref="J3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="21" name="/UP_IN_IN2" class="Default">
+      <node ref="J3" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="22" name="/UP_IN_WHITE" class="Default">
+      <node ref="J7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="OUT2" pintype="output"/>
+    </net>
+    <net code="23" name="/UP_OUT_A" class="Default">
+      <node ref="R5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="IN1" pintype="input"/>
+    </net>
+    <net code="24" name="/UP_OUT_B" class="Default">
+      <node ref="R7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="IN2" pintype="input"/>
+    </net>
+    <net code="25" name="/UP_OUT_BLUE" class="Default">
+      <node ref="J6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="OUT1" pintype="output"/>
+    </net>
+    <net code="26" name="/UP_OUT_ILIM" class="Default">
+      <node ref="R1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="27" name="/UP_OUT_IN1" class="Default">
+      <node ref="J2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R5" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="28" name="/UP_OUT_IN2" class="Default">
+      <node ref="J2" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="29" name="/UP_OUT_WHITE" class="Default">
+      <node ref="J6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="OUT2" pintype="output"/>
+    </net>
+    <net code="30" name="/VIN_12V" class="Default">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1" pintype="power_out"/>
+    </net>
+    <net code="31" name="/VM" class="Default">
+      <node ref="C1" pin="1" pinfunction="PLUS" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="PLUS" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="PLUS" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="PLUS" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="PLUS" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VM" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="VM" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="VM" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="VM" pintype="power_in"/>
+    </net>
+  </nets>
+</export>

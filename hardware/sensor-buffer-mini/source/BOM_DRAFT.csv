@@ -1,0 +1,31 @@
+Reference,MPN_or_value,Footprint,Populate,Notes
+J10,TC_IO_POWER_AND_ADC0_7,TC_Wire:Output10_2x5_P2mm,False,"NO connector. Direct-wire harness:1=3V3,2=GND,3..10=ADC0..7. One common ground replaces eight duplicate output grounds. Verify wire capacity and strain relief."
+U1,MCP6004T-I/SL,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,True,Unity-gain buffers retained from Rev A. DS20001733L pin roles reviewed. Layout and ADC settling validation pending.
+C9,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Bypass. Final traces must minimize supply loop.
+U2,MCP6004T-I/SL,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,True,Unity-gain buffers retained from Rev A. DS20001733L pin roles reviewed. Layout and ADC settling validation pending.
+C10,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Bypass. Final traces must minimize supply loop.
+J2,SENSOR_0,TC_Wire:Sensor3_P2mm,False,"Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number."
+R1,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Output isolation retained; final route and cable load test required
+C1,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,Initial analog filter. Not an overvoltage protector
+J3,SENSOR_1,TC_Wire:Sensor3_P2mm,False,"Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number."
+R2,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Output isolation retained; final route and cable load test required
+C2,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,Initial analog filter. Not an overvoltage protector
+J4,SENSOR_2,TC_Wire:Sensor3_P2mm,False,"Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number."
+R3,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Output isolation retained; final route and cable load test required
+C3,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,Initial analog filter. Not an overvoltage protector
+J5,SENSOR_3,TC_Wire:Sensor3_P2mm,False,"Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number."
+R4,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Output isolation retained; final route and cable load test required
+C4,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,Initial analog filter. Not an overvoltage protector
+J6,SENSOR_4,TC_Wire:Sensor3_P2mm,False,"Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number."
+R5,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Output isolation retained; final route and cable load test required
+C5,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,Initial analog filter. Not an overvoltage protector
+J7,SENSOR_5,TC_Wire:Sensor3_P2mm,False,"Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number."
+R6,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Output isolation retained; final route and cable load test required
+C6,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,Initial analog filter. Not an overvoltage protector
+J8,SENSOR_6,TC_Wire:Sensor3_P2mm,False,"Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number."
+R7,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Output isolation retained; final route and cable load test required
+C7,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,Initial analog filter. Not an overvoltage protector
+J9,SENSOR_7,TC_Wire:Sensor3_P2mm,False,"Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number."
+R8,100R_1%,Resistor_SMD:R_0805_2012Metric,True,Output isolation retained; final route and cable load test required
+C8,1nF_5%_C0G,Capacitor_SMD:C_0805_2012Metric,True,Initial analog filter. Not an overvoltage protector
+C11,10uF_10V_X7R,Capacitor_SMD:C_1206_3216Metric,True,

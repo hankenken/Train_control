@@ -1,0 +1,700 @@
+{
+  "board": "TC_SENSOR_BUFFER_REVB_MINI",
+  "status": "UNROUTED_NOT_FOR_FABRICATION",
+  "board_mm": [
+    45,
+    32
+  ],
+  "area_mm2": 1440,
+  "old_area_mm2": 10000,
+  "area_reduction_percent": 85.6,
+  "parts": [
+    {
+      "ref": "J10",
+      "value": "TC_IO_POWER_AND_ADC0_7",
+      "footprint": "TC_Wire:Output10_2x5_P2mm",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND",
+        "3": "ADC0",
+        "4": "ADC1",
+        "5": "ADC2",
+        "6": "ADC3",
+        "7": "ADC4",
+        "8": "ADC5",
+        "9": "ADC6",
+        "10": "ADC7"
+      },
+      "pos": [
+        39.5,
+        10,
+        0
+      ],
+      "names": {
+        "1": "3V3",
+        "2": "GND",
+        "3": "ADC0",
+        "4": "ADC1",
+        "5": "ADC2",
+        "6": "ADC3",
+        "7": "ADC4",
+        "8": "ADC5",
+        "9": "ADC6",
+        "10": "ADC7"
+      },
+      "types": {
+        "1": "power_out",
+        "2": "power_out"
+      },
+      "note": "NO connector. Direct-wire harness:1=3V3,2=GND,3..10=ADC0..7. One common ground replaces eight duplicate output grounds. Verify wire capacity and strain relief.",
+      "populate": false
+    },
+    {
+      "ref": "U1",
+      "value": "MCP6004T-I/SL",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "nets": {
+        "4": "+3V3",
+        "11": "GND",
+        "1": "BUF0",
+        "2": "BUF0",
+        "3": "SENSOR0",
+        "7": "BUF1",
+        "6": "BUF1",
+        "5": "SENSOR1",
+        "8": "BUF2",
+        "9": "BUF2",
+        "10": "SENSOR2",
+        "14": "BUF3",
+        "13": "BUF3",
+        "12": "SENSOR3"
+      },
+      "pos": [
+        14,
+        16,
+        0
+      ],
+      "names": {
+        "4": "VDD",
+        "11": "VSS",
+        "1": "OUT0",
+        "2": "IN0-",
+        "3": "IN0+",
+        "7": "OUT1",
+        "6": "IN1-",
+        "5": "IN1+",
+        "8": "OUT2",
+        "9": "IN2-",
+        "10": "IN2+",
+        "14": "OUT3",
+        "13": "IN3-",
+        "12": "IN3+"
+      },
+      "types": {
+        "4": "power_in",
+        "11": "power_in",
+        "1": "output",
+        "2": "input",
+        "3": "input",
+        "7": "output",
+        "6": "input",
+        "5": "input",
+        "8": "output",
+        "9": "input",
+        "10": "input",
+        "14": "output",
+        "13": "input",
+        "12": "input"
+      },
+      "note": "Unity-gain buffers retained from Rev A. DS20001733L pin roles reviewed. Layout and ADC settling validation pending.",
+      "populate": true
+    },
+    {
+      "ref": "C9",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        21,
+        10,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Bypass. Final traces must minimize supply loop.",
+      "populate": true
+    },
+    {
+      "ref": "U2",
+      "value": "MCP6004T-I/SL",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "nets": {
+        "4": "+3V3",
+        "11": "GND",
+        "1": "BUF4",
+        "2": "BUF4",
+        "3": "SENSOR4",
+        "7": "BUF5",
+        "6": "BUF5",
+        "5": "SENSOR5",
+        "8": "BUF6",
+        "9": "BUF6",
+        "10": "SENSOR6",
+        "14": "BUF7",
+        "13": "BUF7",
+        "12": "SENSOR7"
+      },
+      "pos": [
+        29,
+        16,
+        0
+      ],
+      "names": {
+        "4": "VDD",
+        "11": "VSS",
+        "1": "OUT0",
+        "2": "IN0-",
+        "3": "IN0+",
+        "7": "OUT1",
+        "6": "IN1-",
+        "5": "IN1+",
+        "8": "OUT2",
+        "9": "IN2-",
+        "10": "IN2+",
+        "14": "OUT3",
+        "13": "IN3-",
+        "12": "IN3+"
+      },
+      "types": {
+        "4": "power_in",
+        "11": "power_in",
+        "1": "output",
+        "2": "input",
+        "3": "input",
+        "7": "output",
+        "6": "input",
+        "5": "input",
+        "8": "output",
+        "9": "input",
+        "10": "input",
+        "14": "output",
+        "13": "input",
+        "12": "input"
+      },
+      "note": "Unity-gain buffers retained from Rev A. DS20001733L pin roles reviewed. Layout and ADC settling validation pending.",
+      "populate": true
+    },
+    {
+      "ref": "C10",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        21,
+        14,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Bypass. Final traces must minimize supply loop.",
+      "populate": true
+    },
+    {
+      "ref": "J2",
+      "value": "SENSOR_0",
+      "footprint": "TC_Wire:Sensor3_P2mm",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SENSOR0"
+      },
+      "pos": [
+        7,
+        4,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number.",
+      "populate": false
+    },
+    {
+      "ref": "R1",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "BUF0",
+        "2": "ADC0"
+      },
+      "pos": [
+        6,
+        9.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Output isolation retained; final route and cable load test required",
+      "populate": true
+    },
+    {
+      "ref": "C1",
+      "value": "1nF_5%_C0G",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "ADC0",
+        "2": "GND"
+      },
+      "pos": [
+        6,
+        11.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Initial analog filter. Not an overvoltage protector",
+      "populate": true
+    },
+    {
+      "ref": "J3",
+      "value": "SENSOR_1",
+      "footprint": "TC_Wire:Sensor3_P2mm",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SENSOR1"
+      },
+      "pos": [
+        15,
+        4,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number.",
+      "populate": false
+    },
+    {
+      "ref": "R2",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "BUF1",
+        "2": "ADC1"
+      },
+      "pos": [
+        6,
+        13.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Output isolation retained; final route and cable load test required",
+      "populate": true
+    },
+    {
+      "ref": "C2",
+      "value": "1nF_5%_C0G",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "ADC1",
+        "2": "GND"
+      },
+      "pos": [
+        6,
+        15.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Initial analog filter. Not an overvoltage protector",
+      "populate": true
+    },
+    {
+      "ref": "J4",
+      "value": "SENSOR_2",
+      "footprint": "TC_Wire:Sensor3_P2mm",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SENSOR2"
+      },
+      "pos": [
+        23,
+        4,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number.",
+      "populate": false
+    },
+    {
+      "ref": "R3",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "BUF2",
+        "2": "ADC2"
+      },
+      "pos": [
+        6,
+        18.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Output isolation retained; final route and cable load test required",
+      "populate": true
+    },
+    {
+      "ref": "C3",
+      "value": "1nF_5%_C0G",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "ADC2",
+        "2": "GND"
+      },
+      "pos": [
+        6,
+        20.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Initial analog filter. Not an overvoltage protector",
+      "populate": true
+    },
+    {
+      "ref": "J5",
+      "value": "SENSOR_3",
+      "footprint": "TC_Wire:Sensor3_P2mm",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SENSOR3"
+      },
+      "pos": [
+        31,
+        4,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number.",
+      "populate": false
+    },
+    {
+      "ref": "R4",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "BUF3",
+        "2": "ADC3"
+      },
+      "pos": [
+        6,
+        22.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Output isolation retained; final route and cable load test required",
+      "populate": true
+    },
+    {
+      "ref": "C4",
+      "value": "1nF_5%_C0G",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "ADC3",
+        "2": "GND"
+      },
+      "pos": [
+        6,
+        24.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Initial analog filter. Not an overvoltage protector",
+      "populate": true
+    },
+    {
+      "ref": "J6",
+      "value": "SENSOR_4",
+      "footprint": "TC_Wire:Sensor3_P2mm",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SENSOR4"
+      },
+      "pos": [
+        7,
+        28,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number.",
+      "populate": false
+    },
+    {
+      "ref": "R5",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "BUF4",
+        "2": "ADC4"
+      },
+      "pos": [
+        35.5,
+        9.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Output isolation retained; final route and cable load test required",
+      "populate": true
+    },
+    {
+      "ref": "C5",
+      "value": "1nF_5%_C0G",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "ADC4",
+        "2": "GND"
+      },
+      "pos": [
+        35.5,
+        11.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Initial analog filter. Not an overvoltage protector",
+      "populate": true
+    },
+    {
+      "ref": "J7",
+      "value": "SENSOR_5",
+      "footprint": "TC_Wire:Sensor3_P2mm",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SENSOR5"
+      },
+      "pos": [
+        15,
+        28,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number.",
+      "populate": false
+    },
+    {
+      "ref": "R6",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "BUF5",
+        "2": "ADC5"
+      },
+      "pos": [
+        35.5,
+        13.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Output isolation retained; final route and cable load test required",
+      "populate": true
+    },
+    {
+      "ref": "C6",
+      "value": "1nF_5%_C0G",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "ADC5",
+        "2": "GND"
+      },
+      "pos": [
+        35.5,
+        15.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Initial analog filter. Not an overvoltage protector",
+      "populate": true
+    },
+    {
+      "ref": "J8",
+      "value": "SENSOR_6",
+      "footprint": "TC_Wire:Sensor3_P2mm",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SENSOR6"
+      },
+      "pos": [
+        23,
+        28,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number.",
+      "populate": false
+    },
+    {
+      "ref": "R7",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "BUF6",
+        "2": "ADC6"
+      },
+      "pos": [
+        35.5,
+        18.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Output isolation retained; final route and cable load test required",
+      "populate": true
+    },
+    {
+      "ref": "C7",
+      "value": "1nF_5%_C0G",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "ADC6",
+        "2": "GND"
+      },
+      "pos": [
+        35.5,
+        20.0,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Initial analog filter. Not an overvoltage protector",
+      "populate": true
+    },
+    {
+      "ref": "J9",
+      "value": "SENSOR_7",
+      "footprint": "TC_Wire:Sensor3_P2mm",
+      "nets": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "SENSOR7"
+      },
+      "pos": [
+        31,
+        28,
+        0
+      ],
+      "names": {
+        "1": "GND",
+        "2": "3V3",
+        "3": "OUT"
+      },
+      "types": {},
+      "note": "Direct wires, .8mm drill /1.6mm pad /2mm pitch. Suggested 26AWG class signal wire; confirm tinned bundle fits. Match Pololu by signal name, not pin number.",
+      "populate": false
+    },
+    {
+      "ref": "R8",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "BUF7",
+        "2": "ADC7"
+      },
+      "pos": [
+        35.5,
+        22.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Output isolation retained; final route and cable load test required",
+      "populate": true
+    },
+    {
+      "ref": "C8",
+      "value": "1nF_5%_C0G",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "ADC7",
+        "2": "GND"
+      },
+      "pos": [
+        35.5,
+        24.5,
+        0
+      ],
+      "names": {},
+      "types": {},
+      "note": "Initial analog filter. Not an overvoltage protector",
+      "populate": true
+    },
+    {
+      "ref": "C11",
+      "value": "10uF_10V_X7R",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        21,
+        21,
+        90
+      ],
+      "names": {},
+      "types": {},
+      "note": "",
+      "populate": true
+    }
+  ],
+  "selection_status": "SUPERSEDED_NOT_SELECTED_USER_REQUESTED_TOF"
+}

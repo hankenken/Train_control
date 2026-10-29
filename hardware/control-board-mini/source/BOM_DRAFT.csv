@@ -1,0 +1,51 @@
+Reference,MPN_or_value,Footprint,Populate,Notes
+U2,CD74HC221M96,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,True,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
+U3,CD74HC221M96,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,True,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection"
+U4,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,True,
+U5,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,True,
+U6,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,True,
+U7,MCP100T-300I/TT,Package_TO_SOT_SMD:SOT-23,True,"RESET_N=pin1,VDD=pin2,VSS=pin3 checked against user-supplied Microchip DS11187F; bench power-ramp testing pending"
+R6,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R7,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R8,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R9,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R10,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R11,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R12,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R13,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R14,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R15,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R16,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R17,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R18,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R19,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R20,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R21,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R22,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R23,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R24,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R25,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R26,10k_1%,Resistor_SMD:R_0805_2012Metric,True,Individual SMT pulldown replacing the former SIP resistor networks
+R1,150k_1%,Resistor_SMD:R_0805_2012Metric,True,
+VR1,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,True,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench"
+C1,470nF_10%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,True,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit"
+R2,150k_1%,Resistor_SMD:R_0805_2012Metric,True,
+VR2,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,True,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench"
+C2,470nF_10%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,True,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit"
+R3,150k_1%,Resistor_SMD:R_0805_2012Metric,True,
+VR3,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,True,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench"
+C3,470nF_10%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,True,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit"
+R4,150k_1%,Resistor_SMD:R_0805_2012Metric,True,
+VR4,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,True,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench"
+C4,470nF_10%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,True,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit"
+C6,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,True,IC bypass; keep close
+C7,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,True,IC bypass; keep close
+C8,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,True,IC bypass; keep close
+C9,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,True,IC bypass; keep close
+C10,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,True,IC bypass; keep close
+C11,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,True,IC bypass; keep close
+C13,10uF_X7R_25V,Capacitor_SMD:C_1206_3216Metric,True,Nonpolar MLCC bulk bypass; check effective capacitance
+J1,PI_DIRECT_RENUMBERED,TC_Wire:Pads2x09,False,"NEW NUMBERING: 17 used Pi signals plus NC18, see pi-wiring.csv. NOT a 40-pin Pi connector."
+J3,DRIVER_BUS,TC_Wire:Pads2x05,False,"1 GND,2..9 channel IN1/IN2 pairs;10 NC. No 12V here."
+J4,I2C_BUS,TC_Wire:Pads2x02,False,
+TP1,TEST_BUS,TC_Wire:Probe1x07,False,
