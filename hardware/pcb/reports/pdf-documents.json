@@ -1,8 +1,8 @@
 {
   "board": "TC_IO_REVC",
   "pcba_order_ready": false,
-  "board_source_sha256": "9e507af24f37403dea23d8618ea95e6c11796a0bca9d647fb38c7ded469ca7ef",
-  "bom_source_sha256": "3bd7bc945a7d8567cec2c125addf276fac88fad4eb1c68470b45c987dfbb3bf9",
+  "board_source_sha256": "672a97486852d4bd3a94a00efe839037df5a357996a79ae4137eef40c008ef01",
+  "bom_source_sha256": "b048d071a4f134e3c09c5e61b9fd696fc699ab2fb927a8c20b67d9ab266aed40",
   "grouped_components": 10,
   "board_component_quantity": 50,
   "unpopulated_wire_groups": 21,
@@ -10,19 +10,19 @@
   "pdfs": {
     "TC_IO_REVC_schematic.pdf": {
       "pages": 1,
-      "sha256": "3bfe54dcebb85cdcf43336cf08aa4cccd28d03fd7a4b5c3d3bc192f8ca9698c1"
+      "sha256": "53155a8e95ac5bb74831e739f381e991f971db99b69cdd224bbf46caef6abc26"
     },
     "TC_IO_REVC_BOM.pdf": {
       "pages": 2,
-      "sha256": "a1db4ff0d72e4337f2c8c3c11df8a78465c5bddab28b2d435f9081e4fabd52c6"
+      "sha256": "55c1b4bf055cc5dd34983fe4438a42ac7e97f5d70b5625aa67c78b967c82a74f"
     },
     "TC_IO_REVC_assembly.pdf": {
       "pages": 3,
-      "sha256": "56d52c0427de936f7efb9df1d3cc09bd9b140e1295c7b0e924b742a37d207ca2"
+      "sha256": "455e677423088fc5f0fe3d60b404226e2a9a548db3b828c1319a08235e0d5672"
     },
     "TC_IO_REVC_documents.pdf": {
       "pages": 7,
-      "sha256": "d966c4b686a5873f1fd5f0fb1f89b1055593e728c034d861d9027c2e24bc2a44"
+      "sha256": "f2a360492286a339a7fb9f89cc83fa7e6bee7e86a258167509a4a6151d77b822"
     }
   }
 }

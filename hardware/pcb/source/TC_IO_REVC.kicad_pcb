@@ -3800,7 +3800,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74HC221DR"
+		(property "Value" "CD74HC221M96"
 			(at 0 5.9 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11121,7 +11121,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74HC221DR"
+		(property "Value" "CD74HC221M96"
 			(at 0 5.9 0)
 			(layer "F.Fab")
 			(hide yes)

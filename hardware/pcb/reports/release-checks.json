@@ -32,23 +32,23 @@
     "guaranteed_100ms_limit": false
   },
   "source_sha256": {
-    "TC_IO_REVC.kicad_pcb": "9e507af24f37403dea23d8618ea95e6c11796a0bca9d647fb38c7ded469ca7ef",
-    "TC_IO_REVC.kicad_sch": "716a40373a97dd53434c10ce93eaec5d03524e1f68bdc01b508f659ce06895c4",
-    "TC.kicad_sym": "788661bb926eb930449077458e58af11b8a16cf564d8d9394467929e3fe45216"
+    "TC_IO_REVC.kicad_pcb": "672a97486852d4bd3a94a00efe839037df5a357996a79ae4137eef40c008ef01",
+    "TC_IO_REVC.kicad_sch": "98925466fae12d019f83cb871ac2b9a6fe1624cc51d95240f6b392ffb292a7dd",
+    "TC.kicad_sym": "623bd6f6fd6bab103cfb253e004a752a09fcd65b9bd23abd6c736b7579de5931"
   },
   "fabrication_sha256": {
-    "TC_IO_REVC-B_Cu.gbl": "211e594cb6b59d05c8ed3fe609f77193a0e19c6aa77320195ccaf5f406b5b36e",
-    "TC_IO_REVC-B_Mask.gbs": "7956a3f6af0637705424898ada3e0bf34db0a6b20e0c63cb9a8d0eadc2198ac2",
-    "TC_IO_REVC-B_Paste.gbp": "665f553b8c63a113f95a28a7496ea5b449a7d65be197c1ea01ac9910b77ee43b",
-    "TC_IO_REVC-B_Silkscreen.gbo": "433d42ad70667b1f6debe62630c08d76f2be8ae385b92eb9b150458b7e6bc55d",
-    "TC_IO_REVC-Edge_Cuts.gm1": "326694e3e2328a4757fc21f5ef0094fa1ede135847200f0a78ebb9e05d83e1e0",
-    "TC_IO_REVC-F_Cu.gtl": "bfc32ae36949a6ecc12cbd1cc0e8631462a7571e89eb98e515b600b8d324ee47",
-    "TC_IO_REVC-F_Mask.gts": "9cbf372d401aa02d8e2525319452b2ceadeac8647bbe47703c46d32f7d7848b8",
-    "TC_IO_REVC-F_Paste.gtp": "26688fce2730fac527c4031d3136a1697e48eb2411f2880b3f44379c1d09c02f",
-    "TC_IO_REVC-F_Silkscreen.gto": "de1a874898cf538ee459495f18ffb3703e17604be5bce2f1677bb1914c96c872",
-    "TC_IO_REVC-NPTH.drl": "cd60547e6557c6d0d97bc62a2817c8d4963fe0d0fcc32d0b5b158008d3e78866",
-    "TC_IO_REVC-PTH.drl": "4c61cc6a566cf62a263046c984c5bfbd08500158ae10e9ca595cb829396c1fd9",
-    "TC_IO_REVC-job.gbrjob": "37b476b43980bfe3426413d8e558d45ddfd4f8c7768c891d49d2d6fc7011c617"
+    "TC_IO_REVC-B_Cu.gbl": "39bf87d621c5995f08114ab9b495fe96bf92c468134fb103f2cd7c9386d0a5ab",
+    "TC_IO_REVC-B_Mask.gbs": "21b2381c179c620c0e925cca54e412415c40e604c81789d8c56844faf42e6d4f",
+    "TC_IO_REVC-B_Paste.gbp": "2cc65d95c28216e9f5cdbd9c933b80c87e9cab2a558a069f45a26b5b34f8b182",
+    "TC_IO_REVC-B_Silkscreen.gbo": "f466e1a26ebd7f72737f4307da0630f16e15efe3d5d343d9178e48dc49c6406e",
+    "TC_IO_REVC-Edge_Cuts.gm1": "c878df3f37bdfcb7885edf66a057d4d16e1cf10b8c532cb269669295166d9934",
+    "TC_IO_REVC-F_Cu.gtl": "2388050d27826eb4ed08c17ad431692ce5b781576bb99b95f494f30adceb5a47",
+    "TC_IO_REVC-F_Mask.gts": "af953832e1d6d5802043e707e76b708b9fed49194ed010c70fa6c6ba8f0d92e2",
+    "TC_IO_REVC-F_Paste.gtp": "ce3859de2fe2a260b0519360b008d1c99e3ee2a65db6262d3d8a6ad3aa73a7a6",
+    "TC_IO_REVC-F_Silkscreen.gto": "dc59ca9ee904d3872bb325329a1b21fc502b312307db504b606bfae83bb028d5",
+    "TC_IO_REVC-NPTH.drl": "e486f81b7035cbd928c39887c2e55d8ce3c5b9820d504fc7b67b94540e6963bd",
+    "TC_IO_REVC-PTH.drl": "c69e64aac3b2bbd309d9c001b14f4959fb9b73aa0dbb1430a5217248aafb3894",
+    "TC_IO_REVC-job.gbrjob": "b81650027aebe749706d1276f34aa1aa7e624895a83d3f0df5ccebb70b237a7f"
   },
-  "zip_sha256": "0c66f426d542d9493bb42b2485942187874bc7da2c7e78d8fcb73cebd5a22498"
+  "zip_sha256": "64fc3ad1d234bc5f2b119f88d7ad115749170fb24dc8f56fce4d7356a5d220c5"
 }

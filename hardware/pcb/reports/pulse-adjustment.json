@@ -12,5 +12,9 @@
     "MLCC DC bias",
     "supply voltage",
     "faults"
-  ]
+  ],
+  "timer_mpn": "CD74HC221M96",
+  "datasheet": "TI SCHS166F",
+  "coefficient_0_7_stated_supply_v": 4.5,
+  "three_v_three_timing_validated": false
 }

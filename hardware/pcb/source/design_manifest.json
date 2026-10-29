@@ -353,7 +353,7 @@
     },
     {
       "ref": "U2",
-      "value": "SN74HC221DR",
+      "value": "CD74HC221M96",
       "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
       "nets": {
         "8": "GND",
@@ -419,7 +419,7 @@
     },
     {
       "ref": "U3",
-      "value": "SN74HC221DR",
+      "value": "CD74HC221M96",
       "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
       "nets": {
         "8": "GND",

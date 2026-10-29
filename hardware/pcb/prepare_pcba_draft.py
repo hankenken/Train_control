@@ -39,8 +39,10 @@ bom=OUT/(NAME+'_BOM_DRAFT_NOT_FOR_ORDER.csv')
 with bom.open('w',newline='') as f:
     w=csv.writer(f,lineterminator="\n");w.writerow(['Comment','Designator','Footprint','LCSC Part #','Manufacturer','Manufacturer Part Number','Quantity','Status'])
     for (comment,footprint,mfr,mpn),items in groups.items():
-        w.writerow([comment,','.join(r['Reference'] for r in items),footprint,'',mfr,mpn,
-                    sum(int(r['Quantity']) for r in items),'CANDIDATE ONLY: LCSC listing, datasheet, stock and assembly eligibility not verified'])
+        code='C133954' if mpn=='CD74HC221M96' else ''
+        sourcing_status=('User screenshot matches MPN, SOIC-16 and LCSC code; stock shown 1761; JLCPCB eligibility and rotation pending' if code else 'CANDIDATE ONLY: LCSC listing, datasheet, stock and assembly eligibility not verified')
+        w.writerow([comment,','.join(r['Reference'] for r in items),footprint,code,mfr,mpn,
+                    sum(int(r['Quantity']) for r in items),sourcing_status])
 
 # Candidate coordinates use the standard SMT footprint origin, in the SAME
 # absolute coordinate system as the Gerbers, with Y negated. Supplier pickup
@@ -69,6 +71,7 @@ status={
  'board_source_sha256':hashlib.sha256((ROOT/'source'/(NAME+'.kicad_pcb')).read_bytes()).hexdigest(),
  'component_count':50,'bom_designator_count':50,'cpl_rows':50,'omitted_wire_groups':21,
  'catalog_access':'JLCPCB and LCSC HTTPS CONNECT 403 at preparation time',
+ 'one_shot_part':{'mpn':'CD74HC221M96','lcsc_code':'C133954','evidence':'User screenshot and TI SCHS166F','observed_stock':1761,'jlcpcb_eligibility_verified':False},
  'lcsc_codes_verified':False,'stock_verified':False,'assembly_eligibility_verified':False,
  'pickup_centers_verified':False,'rotations_verified':False,
  'paste_layers_exported':all((ROOT/'manufacturing'/(NAME+s)).exists() for s in ['-F_Paste.gtp','-B_Paste.gbp']),

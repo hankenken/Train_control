@@ -10,8 +10,8 @@ J8,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads on
 J9,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x03_P2.50,0,Plated wire/test pads only. No connector or header component is fitted.,no
 JP1,WIRE_PADS_NO_COMPONENT,TC_Wire:WirePads_1x02_P2.54,0,Plated wire/test pads only. No connector or header component is fitted.,no
 U1,MCP3008T-I/SL,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,1,"10-bit ADC, 3.3V supply/reference; sensor outputs must stay within 0..3.3V",yes
-U2,SN74HC221DR,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",yes
-U3,SN74HC221DR,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",yes
+U2,CD74HC221M96,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",yes
+U3,CD74HC221M96,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,1,"HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection",yes
 U4,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,1,,yes
 U5,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,1,,yes
 U6,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,1,,yes

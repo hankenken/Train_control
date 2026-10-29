@@ -160,7 +160,7 @@
 ))
 (symbol "U2" (pin_names (offset 0.5)) (in_bom yes) (on_board yes)
 (property "Reference" "U2" (at 0 0 0) (effects (font (size 1 1))))
-(property "Value" "SN74HC221DR" (at 0 0 0) (effects (font (size 1 1))))
+(property "Value" "CD74HC221M96" (at 0 0 0) (effects (font (size 1 1))))
 (property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 (symbol "U2_0_1" (rectangle (start -10.16 10.16) (end 10.16 -10.16) (stroke (width 0.254) (type default)) (fill (type background))))
 (symbol "U2_1_1"
@@ -183,7 +183,7 @@
 ))
 (symbol "U3" (pin_names (offset 0.5)) (in_bom yes) (on_board yes)
 (property "Reference" "U3" (at 0 0 0) (effects (font (size 1 1))))
-(property "Value" "SN74HC221DR" (at 0 0 0) (effects (font (size 1 1))))
+(property "Value" "CD74HC221M96" (at 0 0 0) (effects (font (size 1 1))))
 (property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 (symbol "U3_0_1" (rectangle (start -10.16 10.16) (end 10.16 -10.16) (stroke (width 0.254) (type default)) (fill (type background))))
 (symbol "U3_1_1"

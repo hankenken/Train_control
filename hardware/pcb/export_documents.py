@@ -71,7 +71,7 @@ byref={row['Reference']:row for row in rows}
 assert len(byref)==50
 groups=[
  ('U1','MCP3008T-I/SL','SOIC16','8ch ADC。LCSC掲載・端子図照合待ち。'),
- ('U2 U3','SN74HC221DR','SOIC16','非再トリガ型。採用品の仕様確認待ち。'),
+ ('U2 U3','CD74HC221M96','SOIC16','非再トリガ型。C133954掲載を提供画面で確認。3.3Vの時間特性は評価待ち。'),
  ('U4 U5 U6','SN74HC08DR','SOIC14','4回路AND。表面実装。'),
  ('U7','MCP100T-300I/TT','SOT-23','電源監視。実部品のピン順を照合。'),
  ('R1 R2 R3 R4','150 kΩ ±1%','0805','各VRと直列の固定抵抗。'),

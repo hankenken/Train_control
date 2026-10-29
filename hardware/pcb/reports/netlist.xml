@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/workspace/Train_control/hardware/pcb/source/TC_IO_REVC.kicad_sch</source>
-    <date>2026-10-28T06:56:39+0000</date>
+    <date>2026-10-29T01:29:24+0000</date>
     <tool>Eeschema 9.0.2+dfsg-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -921,7 +921,7 @@
       <tstamps>384b1619-2c55-53bd-88e4-c715e7738012</tstamps>
     </comp>
     <comp ref="U2">
-      <value>SN74HC221DR</value>
+      <value>CD74HC221M96</value>
       <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
       <fields>
         <field name="Footprint">Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</field>
@@ -935,7 +935,7 @@
       <tstamps>ee3901fc-c891-53e3-b1e8-f079041ba431</tstamps>
     </comp>
     <comp ref="U3">
-      <value>SN74HC221DR</value>
+      <value>CD74HC221M96</value>
       <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
       <fields>
         <field name="Footprint">Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</field>
@@ -1924,7 +1924,7 @@
     <libpart lib="TC" part="U2">
       <fields>
         <field name="Reference">U2</field>
-        <field name="Value">SN74HC221DR</field>
+        <field name="Value">CD74HC221M96</field>
         <field name="Footprint">Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1951,7 +1951,7 @@
     <libpart lib="TC" part="U3">
       <fields>
         <field name="Reference">U3</field>
-        <field name="Value">SN74HC221DR</field>
+        <field name="Value">CD74HC221M96</field>
         <field name="Footprint">Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>

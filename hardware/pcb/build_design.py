@@ -57,7 +57,7 @@ for timer_index in range(2):
         nets.update({a:'GND',b:ch+'_TRIG',clr:'CLEAR_N',ce:ch+'_CE',rc:ch+'_RC',qp:ch+'_Q',qn:None})
         names.update({a:'A_N',b:'B',clr:'CLR_N',ce:'CEXT',rc:'RCEXT',qp:'Q',qn:'Q_N'})
         types.update({a:'input',b:'input',clr:'input',ce:'passive',rc:'passive',qp:'output',qn:'output'})
-    add('U'+str(2+timer_index),'SN74HC221DR',dip16,nets,(117,53+36*timer_index,0),names,types,
+    add('U'+str(2+timer_index),'CD74HC221M96',dip16,nets,(117,53+36*timer_index,0),names,types,
         note='HC, NOT LS/HCT. Timing RC unverified at 3.3V: measure before load connection')
 
 gatepins=[(1,2,3),(4,5,6),(9,10,8),(12,13,11)]

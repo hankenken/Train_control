@@ -17,5 +17,14 @@
   "timing_formula_0_7_condition_v": 4.5,
   "timing_at_3v3_guaranteed": false,
   "selected_for_production": false,
-  "preferred_smt_candidate": "CD74HC221M96"
+  "preferred_smt_candidate": "CD74HC221M96",
+  "smt_screenshot": {
+    "mpn": "CD74HC221M96",
+    "lcsc_code": "C133954",
+    "package": "SOIC-16",
+    "observed_stock": 1761,
+    "badge": "SMT Extended",
+    "assembly_eligibility_verified": false
+  },
+  "design_selection": "CD74HC221M96 selected for U2/U3 in review draft; not cleared for production"
 }
