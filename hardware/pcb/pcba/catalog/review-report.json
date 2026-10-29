@@ -1,0 +1,39 @@
+{
+  "source_sha256": "647ceb5e6293ce659fd10a476a7269f4efddea01671058b2f982ffc47782bf38",
+  "evidence": "User-entered CSV; not independently verified; observation time unknown",
+  "bom_groups": 10,
+  "components": 50,
+  "groups_with_reported_code": 9,
+  "groups_with_reported_stock": 8,
+  "assembly_confirmed_groups": 0,
+  "missing_codes": [
+    "U2,U3"
+  ],
+  "missing_stock": [
+    "U2,U3",
+    "VR1,VR2,VR3,VR4"
+  ],
+  "discrepancies": [
+    {
+      "designators": "C1,C2,C3,C4",
+      "design_mpn": "C1206C474J5RACTU",
+      "reported_alternative": "C1206C474K5RACTU",
+      "reported_code": "C2167387",
+      "effect": "J=5% versus K=10% initial capacitance tolerance; alternative not adopted"
+    }
+  ],
+  "timing_alternative_analysis": {
+    "assumed_coefficient": 0.7,
+    "nominal_ms": [
+      49.35,
+      82.25
+    ],
+    "passive_upper_ms_5percent": 93.789675,
+    "passive_upper_ms_10percent": 98.25585000000001,
+    "guaranteed_upper_limit": false,
+    "excluded": "IC coefficient, DC bias, temperature, supply, aging, faults"
+  },
+  "pcb_modified": false,
+  "production_bom_modified": false,
+  "order_ready": false
+}

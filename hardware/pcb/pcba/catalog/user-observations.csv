@@ -1,0 +1,11 @@
+Designator,Quantity,Manufacturer,Manufacturer Part Number,Footprint,LCSC Part #,Stock,JLCPCB assembly,URL / notes
+U1,1,Microchip,MCP3008T-I/SL,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,C2651321,2059,,https://jlcpcb.com/parts/componentSearch?searchTxt=MCP3008T-I%2FSL
+"U2,U3",2,Texas Instruments,SN74HC221DR,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,,,,https://www.lcsc.com/search?q=SN74HC221DR
+"U4,U5,U6",3,Texas Instruments,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,C337768,29416,,https://jlcpcb.com/parts/componentSearch?searchTxt=SN74HC08DR
+U7,1,Microchip,MCP100T-300I/TT,Package_TO_SOT_SMD:SOT-23,C625122,653,,https://jlcpcb.com/parts/componentSearch?searchTxt=MCP100T-300I%2FTT
+"R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R5",22,Yageo,RC0805FR-0710KL,Resistor_SMD:R_0805_2012Metric,C84376,1862682,,https://jlcpcb.com/parts/componentSearch?searchTxt=RC0805FR-0710KL
+"R1,R2,R3,R4",4,Yageo,RC0805FR-07150KL,Resistor_SMD:R_0805_2012Metric,C114558,462700,,https://www.lcsc.com/product-detail/C114558.html?s_z=n_q_RC0805FR-07150KL
+"VR1,VR2,VR3,VR4",4,Bourns,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,C53229,,,https://www.lcsc.com/category/1195.html?scene=FULL_MATCH&globalKeyword=3224W-1-104E&s_z=n_q_3224W-1-104E
+"C1,C2,C3,C4",4,KEMET,C1206C474J5RACTU,Capacitor_SMD:C_1206_3216Metric,C2167387,460,,C1206C474K5RACTU
+"C5,C6,C7,C8,C9,C10,C11,C12",8,KEMET,C0805C104K5RACTU,Capacitor_SMD:C_0805_2012Metric,C3018562,6640,,https://www.lcsc.com/product-detail/C3018562.html?s_z=n_q_C0805C104K5RACTU
+C13,1,KEMET,C1206C106K3RACTU,Capacitor_SMD:C_1206_3216Metric,C2168111,1971,,https://www.lcsc.com/product-detail/C2168111.html?s_z=n_q_C1206C106K3RACTU
