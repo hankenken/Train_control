@@ -1,0 +1,22 @@
+{
+  "purpose": "JLCPCB quote and placement preview ONLY; not approved for purchase",
+  "bom_groups": 10,
+  "parts_per_board": 50,
+  "side": "Top",
+  "board_mm": [
+    100,
+    100
+  ],
+  "strict_100ms_required": false,
+  "assembly_eligibility_verified": false,
+  "supplier_rotation_verified": false,
+  "supplier_pickup_centers_verified": false,
+  "hashes": {
+    "BOM_PREVIEW_ONLY.csv": "810eeb25e2468c579bc49b62dcc839e4bd2bc7113519fdbc04e607c3567946f7",
+    "CPL_PREVIEW_ONLY.csv": "03b6d06b8ced9d4e394cb196b5e7894fb6b7f9331c6be53ce019a68806899424",
+    "TC_IO_REVC_JLCPCB_prototype.zip": "abdaaa318d39f3f756a583a0d2d531cde5f80dedf8a163d07607506f6f321bf4",
+    "README_JA.md": "7bf503825d9a5e174f9a4b92f457fe9102bcc23d80c8da04a48befd74ddb8f48",
+    "IC_VR_pin1_review.pdf": "9136efa01199f39376bc3e47d76a2d314b8bd7d624b33dd46dcf792a5e15e915"
+  },
+  "archive_sha256": "8e2b7ec7529a4017655b3566eb08813f2edcb207ab4dad1b256226fad0dd7213"
+}

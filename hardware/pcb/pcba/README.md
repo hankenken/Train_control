@@ -126,3 +126,10 @@ MCP3008・SN74HC08・MCP100のメーカーPDFを受領し、U1/U4〜U7の61端�
 電源監視は検出2.85〜3.00V、解除150〜700ms、ADCは3.3VでSPI 500kHzを初期設定とします。
 `remaining-ic-review.md`と`reports/ic-datasheet-review.json`へ根拠と未完了範囲を保存しました。
 ICメーカー資料の未受領という阻害要因は解消しています。JLCPCBモデルの実装方向・供給条件や実機試験は未完了です。
+
+## JLCPCB見積もり・実装プレビュー用セット
+
+`TC_IO_REVC_JLCPCB_QUOTE_PREVIEW_ONLY.zip`を展開し、中のガーバーZIP・最小列BOM・CPLを使います。
+手順は `jlcpcb-preview-guide.md` を参照。部品10種類・実装50点・上面のみ、コネクタは実装しません。
+このセットは見積もりとプレビューのためのもので、発注承認済みではありません。
+`prepare_quote_preview.py`で生成し、部品番号・数量・座標形式・元ソースのハッシュとZIP内容を検査しています。
