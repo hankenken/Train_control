@@ -19,5 +19,8 @@
   "three_v_three_timing_validated": false,
   "vr_tolerance": 0.1,
   "vr_tolerance_source": "Bourns 3224 REV09/17, user supplied",
-  "passive_upper_with_10percent_cap_ms": 94.63685
+  "passive_upper_with_10percent_cap_ms": 94.63685,
+  "upper_10percent_cap_with_15percent_temperature_sensitivity_ms": 108.83237749999999,
+  "upper_5percent_cap_with_15percent_temperature_sensitivity_ms": 103.88545125,
+  "temperature_analysis_not_complete_guarantee": true
 }

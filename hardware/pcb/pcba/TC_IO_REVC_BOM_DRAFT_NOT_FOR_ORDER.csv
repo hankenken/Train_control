@@ -6,6 +6,6 @@ MCP100T-300I/TT,U7,Package_TO_SOT_SMD:SOT-23,C625122,Microchip,MCP100T-300I/TT,1
 10k_1%,"R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R5",Resistor_SMD:R_0805_2012Metric,C84376,Yageo,RC0805FR-0710KL,22,USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification
 150k_1%,"R1,R2,R3,R4",Resistor_SMD:R_0805_2012Metric,C114558,Yageo,RC0805FR-07150KL,4,USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification
 3224W-1-104E,"VR1,VR2,VR3,VR4",Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,C53229,Bourns,3224W-1-104E,4,"User screenshot: stock 7899; Bourns PDF verifies 100k 10%, pinout and land dimensions; JLCPCB eligibility/rotation/reflow profile pending"
-470nF_5%_X7R_50V,"C1,C2,C3,C4",Capacitor_SMD:C_1206_3216Metric,,KEMET,C1206C474J5RACTU,4,"HOLD: user reported C2167387 for K (10%) alternative, not the J (5%) design; do not assign code"
+470nF_5%_X7R_50V,"C1,C2,C3,C4",Capacitor_SMD:C_1206_3216Metric,,KEMET,C1206C474J5RACTU,4,HOLD: screenshot/PDF confirm C2167387 = K 10% X7R; not J 5%; temperature sensitivity may exceed 100ms; timing redesign needed
 100nF_X7R_50V,"C5,C6,C7,C8,C9,C10,C11,C12",Capacitor_SMD:C_0805_2012Metric,C3018562,KEMET,C0805C104K5RACTU,8,USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification
 10uF_X7R_25V,C13,Capacitor_SMD:C_1206_3216Metric,C2168111,KEMET,C1206C106K3RACTU,1,USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification

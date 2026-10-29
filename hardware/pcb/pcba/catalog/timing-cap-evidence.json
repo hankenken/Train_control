@@ -1,0 +1,23 @@
+{
+  "mpn": "C1206C474K5RACTU",
+  "lcsc_code": "C2167387",
+  "screenshot_stock": 460,
+  "stock_evidence": "User screenshot received 2026-10-29 Asia/Tokyo; not a live stock guarantee",
+  "capacitance_f": 4.7e-07,
+  "initial_tolerance": 0.1,
+  "dielectric": "X7R",
+  "voltage_rating_v": 50,
+  "package": "1206",
+  "temperature_capacitance_change": 0.15,
+  "temperature_range_c": [
+    -55,
+    125
+  ],
+  "datasheet": "KEMET C1002_X7R_SMD 3/12/2021 family document",
+  "datasheet_sha256": "68ff24d50f5fa474c61c3150962bdd8ef715a177488f1d274b1aa05f0037111f",
+  "exact_part_dc_bias_curve_available": false,
+  "exact_part_aging_rate_available": false,
+  "timing_adoption": "HOLD: not proven to meet 100ms timing condition",
+  "jlcpcb_eligibility_verified": false,
+  "existing_source_capacitor_unchanged": true
+}

@@ -14,15 +14,15 @@
     },
     "TC_IO_REVC_BOM.pdf": {
       "pages": 2,
-      "sha256": "3fcac70df179dbc30b4230432c0b62635818e807a3248b8dfa2358711d40f9f4"
+      "sha256": "49dfefcb2bb5a23fd01c61df55dfb4c688ae28a9839f2a30ef7cef323713ea2e"
     },
     "TC_IO_REVC_assembly.pdf": {
       "pages": 3,
-      "sha256": "e0bb9d199d89b5526b3d5e115bb2c87be830b99f3c985f28dcf55be7ae6216ab"
+      "sha256": "fb87cf82478b1656ac2b20c458037ae90625204f7f0b410e35f16d8888704c26"
     },
     "TC_IO_REVC_documents.pdf": {
       "pages": 7,
-      "sha256": "fd7568b90b90d88e2f199e5c054542810486b0206b13966e17c71e0e5a725041"
+      "sha256": "72a67890482d06c6593d1c6fdc455d820311bffb3cad7d9a9a0fd20bc725dae3"
     }
   }
 }

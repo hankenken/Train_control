@@ -55,7 +55,7 @@ with bom.open('w',newline='') as f:
             code=observation['LCSC Part #']
             sourcing_status='USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification'
         elif mpn=='C1206C474J5RACTU':
-            sourcing_status='HOLD: user reported C2167387 for K (10%) alternative, not the J (5%) design; do not assign code'
+            sourcing_status='HOLD: screenshot/PDF confirm C2167387 = K 10% X7R; not J 5%; temperature sensitivity may exceed 100ms; timing redesign needed'
         w.writerow([comment,','.join(r['Reference'] for r in items),footprint,code,mfr,mpn,
                     sum(int(r['Quantity']) for r in items),sourcing_status])
 
