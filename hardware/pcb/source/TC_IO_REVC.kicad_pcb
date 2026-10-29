@@ -3020,7 +3020,7 @@
 				)
 			)
 		)
-		(property "Value" "470nF_5%_X7R_50V"
+		(property "Value" "470nF_10%_X7R_50V"
 			(at 0 1.85 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7583,7 +7583,7 @@
 				)
 			)
 		)
-		(property "Value" "470nF_5%_X7R_50V"
+		(property "Value" "470nF_10%_X7R_50V"
 			(at 0 1.85 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12930,7 +12930,7 @@
 				)
 			)
 		)
-		(property "Value" "470nF_5%_X7R_50V"
+		(property "Value" "470nF_10%_X7R_50V"
 			(at 0 1.85 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13782,7 +13782,7 @@
 				)
 			)
 		)
-		(property "Value" "470nF_5%_X7R_50V"
+		(property "Value" "470nF_10%_X7R_50V"
 			(at 0 1.85 90)
 			(layer "F.Fab")
 			(hide yes)

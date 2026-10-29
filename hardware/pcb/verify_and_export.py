@@ -90,7 +90,7 @@ manifest={
   'drc_violations':0,'unconnected_items':0,'erc_violations':0,'schematic_pcb_netlist_match':True,
   'manufacturer_datasheet_review_complete':False,'physical_testing_complete':False,
   'individual_pulse_adjustment':{'trimmers':4,'fixed_resistance_ohms':150000,'variable_resistance_ohms':100000,
-    'capacitance_farads':470e-9,'nominal_estimate_ms':[49.35,82.25],'guaranteed_100ms_limit':False},
+    'capacitance_farads':470e-9,'capacitance_tolerance':0.10,'timing_requirement':'Approximate timing, user accepted; individual VR calibration','nominal_estimate_ms':[49.35,82.25],'guaranteed_100ms_limit':False},
   'source_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [BOARD,SCH,SRC/'TC.kicad_sym']},
   'fabrication_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
   'zip_sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),

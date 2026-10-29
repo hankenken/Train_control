@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/workspace/Train_control/hardware/pcb/source/TC_IO_REVC.kicad_sch</source>
-    <date>2026-10-29T01:29:24+0000</date>
+    <date>2026-10-29T02:01:42+0000</date>
     <tool>Eeschema 9.0.2+dfsg-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -25,7 +25,7 @@
   </design>
   <components>
     <comp ref="C1">
-      <value>470nF_5%_X7R_50V</value>
+      <value>470nF_10%_X7R_50V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
@@ -39,7 +39,7 @@
       <tstamps>2238c784-1a73-5856-a7e2-7161887c09e5</tstamps>
     </comp>
     <comp ref="C2">
-      <value>470nF_5%_X7R_50V</value>
+      <value>470nF_10%_X7R_50V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
@@ -53,7 +53,7 @@
       <tstamps>7373cd8d-4d2b-5e86-a9f6-384f917a2ca5</tstamps>
     </comp>
     <comp ref="C3">
-      <value>470nF_5%_X7R_50V</value>
+      <value>470nF_10%_X7R_50V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
@@ -67,7 +67,7 @@
       <tstamps>6422f717-ed35-59e0-8a0c-034a8e134c26</tstamps>
     </comp>
     <comp ref="C4">
-      <value>470nF_5%_X7R_50V</value>
+      <value>470nF_10%_X7R_50V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
@@ -1065,7 +1065,7 @@
     <libpart lib="TC" part="C1">
       <fields>
         <field name="Reference">C1</field>
-        <field name="Value">470nF_5%_X7R_50V</field>
+        <field name="Value">470nF_10%_X7R_50V</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1130,7 +1130,7 @@
     <libpart lib="TC" part="C2">
       <fields>
         <field name="Reference">C2</field>
-        <field name="Value">470nF_5%_X7R_50V</field>
+        <field name="Value">470nF_10%_X7R_50V</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1143,7 +1143,7 @@
     <libpart lib="TC" part="C3">
       <fields>
         <field name="Reference">C3</field>
-        <field name="Value">470nF_5%_X7R_50V</field>
+        <field name="Value">470nF_10%_X7R_50V</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1156,7 +1156,7 @@
     <libpart lib="TC" part="C4">
       <fields>
         <field name="Reference">C4</field>
-        <field name="Value">470nF_5%_X7R_50V</field>
+        <field name="Value">470nF_10%_X7R_50V</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>

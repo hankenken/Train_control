@@ -90,7 +90,7 @@ for i,ch in enumerate(channels):
         {1:ch+'_ADJ',2:ch+'_RC',3:ch+'_RC'},(51+14*i,40.5,0),
         names={1:'CCW',2:'WIPER',3:'CW'},
         note='100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench')
-    add('C'+str(i+1),'470nF_5%_X7R_50V','Capacitor_SMD:C_1206_3216Metric',
+    add('C'+str(i+1),'470nF_10%_X7R_50V','Capacitor_SMD:C_1206_3216Metric',
         {1:ch+'_CE',2:ch+'_RC'},(x-8,y+1,90),note='Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit')
 for i,(ref,x,y) in enumerate([('U1',85,76),('U2',130,73),('U3',130,109),('U4',164,72),('U5',164,108),('U6',69,120),('U7',83,96)]):
     add('C'+str(5+i),'100nF_X7R_50V',cap,{1:'+3V3',2:'GND'},(x,y,0),note='IC bypass; keep close')

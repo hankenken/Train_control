@@ -28,7 +28,7 @@ def catalog_identity(row):
     if ref.startswith('R'):
         return row['Value_or_MPN'],'Yageo','RC0805FR-07150KL' if ref in ['R1','R2','R3','R4'] else 'RC0805FR-0710KL'
     if ref.startswith('C'):
-        number=int(ref[1:]);mpn='C1206C474J5RACTU' if number<=4 else 'C0805C104K5RACTU' if number<=12 else 'C1206C106K3RACTU'
+        number=int(ref[1:]);mpn='C1206C474K5RACTU' if number<=4 else 'C0805C104K5RACTU' if number<=12 else 'C1206C106K3RACTU'
         return row['Value_or_MPN'],'KEMET',mpn
     return row['Value_or_MPN'],'',''
 # Keep user observations distinct from independent manufacturer verification.
@@ -51,11 +51,12 @@ with bom.open('w',newline='') as f:
         elif mpn=='3224W-1-104E':
             code='C53229'
             sourcing_status='User screenshot: stock 7899; Bourns PDF verifies 100k 10%, pinout and land dimensions; JLCPCB eligibility/rotation/reflow profile pending'
-        elif observation and mpn!='C1206C474J5RACTU':
+        elif mpn=='C1206C474K5RACTU':
+            code='C2167387'
+            sourcing_status='User selected 470nF 10% X7R after datasheet review; screenshot stock 460; strict 100ms accuracy not required; JLCPCB eligibility pending'
+        elif observation:
             code=observation['LCSC Part #']
             sourcing_status='USER CSV ONLY: reported code; MPN/package/datasheet and JLCPCB eligibility need verification'
-        elif mpn=='C1206C474J5RACTU':
-            sourcing_status='HOLD: screenshot/PDF confirm C2167387 = K 10% X7R; not J 5%; temperature sensitivity may exceed 100ms; timing redesign needed'
         w.writerow([comment,','.join(r['Reference'] for r in items),footprint,code,mfr,mpn,
                     sum(int(r['Quantity']) for r in items),sourcing_status])
 
@@ -87,7 +88,8 @@ status={
  'component_count':50,'bom_designator_count':50,'cpl_rows':50,'omitted_wire_groups':21,
  'catalog_access':'JLCPCB and LCSC HTTPS CONNECT 403 at preparation time',
  'one_shot_part':{'mpn':'CD74HC221M96','lcsc_code':'C133954','evidence':'User screenshot and TI SCHS166F','observed_stock':1761,'jlcpcb_eligibility_verified':False},
- 'lcsc_codes_verified':False,'stock_verified':False,'assembly_eligibility_verified':False,
+ 'lcsc_codes_verified':False,'timing_requirement':'User accepts approximate timing with individual VR calibration; no strict 100ms guarantee',
+ 'stock_verified':False,'assembly_eligibility_verified':False,
  'pickup_centers_verified':False,'rotations_verified':False,
  'paste_layers_exported':all((ROOT/'manufacturing'/(NAME+s)).exists() for s in ['-F_Paste.gtp','-B_Paste.gbp']),
  'sockets_included':False,

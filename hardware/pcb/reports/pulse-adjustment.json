@@ -4,7 +4,7 @@
   "physical_measurement_performed": false,
   "nominal_min_ms": 49.35,
   "nominal_max_ms": 82.25,
-  "passive_tolerance_upper_estimate_ms": 90.335175,
+  "passive_tolerance_upper_estimate_ms": 94.63685,
   "guaranteed_100ms_limit": false,
   "excluded_variations": [
     "IC coefficient",
@@ -22,5 +22,10 @@
   "passive_upper_with_10percent_cap_ms": 94.63685,
   "upper_10percent_cap_with_15percent_temperature_sensitivity_ms": 108.83237749999999,
   "upper_5percent_cap_with_15percent_temperature_sensitivity_ms": 103.88545125,
-  "temperature_analysis_not_complete_guarantee": true
+  "temperature_analysis_not_complete_guarantee": true,
+  "capacitance_tolerance": 0.1,
+  "capacitor_mpn": "C1206C474K5RACTU",
+  "lcsc_code": "C2167387",
+  "strict_100ms_requirement": false,
+  "selection_basis": "User explicitly accepts approximate timing and selects this component"
 }

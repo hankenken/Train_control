@@ -3,7 +3,7 @@
   "status": "BLOCKED_NOT_FOR_PCBA_ORDER",
   "intended_scope": "50 SMT parts including all ICs, resistors, capacitors and four VRs; connectors omitted",
   "assembly_technology": "Top-side SMT only; 21 plated wire/test-pad groups carry no components",
-  "board_source_sha256": "672a97486852d4bd3a94a00efe839037df5a357996a79ae4137eef40c008ef01",
+  "board_source_sha256": "741712e50599d95aabbd0d54d4e5ccd2a866a60ca883a75b85f6c0170822cd95",
   "component_count": 50,
   "bom_designator_count": 50,
   "cpl_rows": 50,
@@ -17,6 +17,7 @@
     "jlcpcb_eligibility_verified": false
   },
   "lcsc_codes_verified": false,
+  "timing_requirement": "User accepts approximate timing with individual VR calibration; no strict 100ms guarantee",
   "stock_verified": false,
   "assembly_eligibility_verified": false,
   "pickup_centers_verified": false,

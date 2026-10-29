@@ -39,16 +39,16 @@ R25,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing th
 R26,10k_1%,Resistor_SMD:R_0805_2012Metric,1,Individual SMT pulldown replacing the former SIP resistor networks,yes
 R1,150k_1%,Resistor_SMD:R_0805_2012Metric,1,,yes
 VR1,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,1,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",yes
-C1,470nF_5%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
+C1,470nF_10%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
 R2,150k_1%,Resistor_SMD:R_0805_2012Metric,1,,yes
 VR2,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,1,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",yes
-C2,470nF_5%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
+C2,470nF_10%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
 R3,150k_1%,Resistor_SMD:R_0805_2012Metric,1,,yes
 VR3,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,1,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",yes
-C3,470nF_5%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
+C3,470nF_10%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
 R4,150k_1%,Resistor_SMD:R_0805_2012Metric,1,,yes
 VR4,3224W-1-104E,Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical,1,"100k multi-turn trimmer, series with 150k. Wiper pin2 tied to pin3; verify CW direction and pulse width on bench",yes
-C4,470nF_5%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
+C4,470nF_10%_X7R_50V,Capacitor_SMD:C_1206_3216Metric,1,"Floating timing MLCC: CEXT to RCEXT. Verify DC bias, temperature and actual pulse width; no guaranteed timing limit",yes
 C5,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes
 C6,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes
 C7,100nF_X7R_50V,Capacitor_SMD:C_0805_2012Metric,1,IC bypass; keep close,yes

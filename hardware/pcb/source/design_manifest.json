@@ -1096,7 +1096,7 @@
     },
     {
       "ref": "C1",
-      "value": "470nF_5%_X7R_50V",
+      "value": "470nF_10%_X7R_50V",
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "nets": {
         "1": "UP_OUT_CE",
@@ -1155,7 +1155,7 @@
     },
     {
       "ref": "C2",
-      "value": "470nF_5%_X7R_50V",
+      "value": "470nF_10%_X7R_50V",
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "nets": {
         "1": "UP_IN_CE",
@@ -1214,7 +1214,7 @@
     },
     {
       "ref": "C3",
-      "value": "470nF_5%_X7R_50V",
+      "value": "470nF_10%_X7R_50V",
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "nets": {
         "1": "LOW_OUT_CE",
@@ -1273,7 +1273,7 @@
     },
     {
       "ref": "C4",
-      "value": "470nF_5%_X7R_50V",
+      "value": "470nF_10%_X7R_50V",
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "nets": {
         "1": "LOW_IN_CE",

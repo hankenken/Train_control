@@ -25,6 +25,8 @@
     "fixed_resistance_ohms": 150000,
     "variable_resistance_ohms": 100000,
     "capacitance_farads": 4.7e-07,
+    "capacitance_tolerance": 0.1,
+    "timing_requirement": "Approximate timing, user accepted; individual VR calibration",
     "nominal_estimate_ms": [
       49.35,
       82.25
@@ -32,23 +34,23 @@
     "guaranteed_100ms_limit": false
   },
   "source_sha256": {
-    "TC_IO_REVC.kicad_pcb": "672a97486852d4bd3a94a00efe839037df5a357996a79ae4137eef40c008ef01",
-    "TC_IO_REVC.kicad_sch": "98925466fae12d019f83cb871ac2b9a6fe1624cc51d95240f6b392ffb292a7dd",
-    "TC.kicad_sym": "623bd6f6fd6bab103cfb253e004a752a09fcd65b9bd23abd6c736b7579de5931"
+    "TC_IO_REVC.kicad_pcb": "741712e50599d95aabbd0d54d4e5ccd2a866a60ca883a75b85f6c0170822cd95",
+    "TC_IO_REVC.kicad_sch": "6fdc99de1ff94fcd004df92e5bdd3429d47de85351e50b25eae32c73971337df",
+    "TC.kicad_sym": "b67ab95ea908b0a8362d976325635676883f88bd9a8b883152a02d499c247981"
   },
   "fabrication_sha256": {
-    "TC_IO_REVC-B_Cu.gbl": "39bf87d621c5995f08114ab9b495fe96bf92c468134fb103f2cd7c9386d0a5ab",
-    "TC_IO_REVC-B_Mask.gbs": "21b2381c179c620c0e925cca54e412415c40e604c81789d8c56844faf42e6d4f",
-    "TC_IO_REVC-B_Paste.gbp": "2cc65d95c28216e9f5cdbd9c933b80c87e9cab2a558a069f45a26b5b34f8b182",
-    "TC_IO_REVC-B_Silkscreen.gbo": "f466e1a26ebd7f72737f4307da0630f16e15efe3d5d343d9178e48dc49c6406e",
-    "TC_IO_REVC-Edge_Cuts.gm1": "c878df3f37bdfcb7885edf66a057d4d16e1cf10b8c532cb269669295166d9934",
-    "TC_IO_REVC-F_Cu.gtl": "2388050d27826eb4ed08c17ad431692ce5b781576bb99b95f494f30adceb5a47",
-    "TC_IO_REVC-F_Mask.gts": "af953832e1d6d5802043e707e76b708b9fed49194ed010c70fa6c6ba8f0d92e2",
-    "TC_IO_REVC-F_Paste.gtp": "ce3859de2fe2a260b0519360b008d1c99e3ee2a65db6262d3d8a6ad3aa73a7a6",
-    "TC_IO_REVC-F_Silkscreen.gto": "dc59ca9ee904d3872bb325329a1b21fc502b312307db504b606bfae83bb028d5",
-    "TC_IO_REVC-NPTH.drl": "e486f81b7035cbd928c39887c2e55d8ce3c5b9820d504fc7b67b94540e6963bd",
-    "TC_IO_REVC-PTH.drl": "c69e64aac3b2bbd309d9c001b14f4959fb9b73aa0dbb1430a5217248aafb3894",
-    "TC_IO_REVC-job.gbrjob": "b81650027aebe749706d1276f34aa1aa7e624895a83d3f0df5ccebb70b237a7f"
+    "TC_IO_REVC-B_Cu.gbl": "776e4d48921ded683e2e7ec59ac11e35e09a9348c3a676139a1d287e1638910d",
+    "TC_IO_REVC-B_Mask.gbs": "333918d27f586f6e7c163d3eb8bdbe717ca794b80fc921ced56253349079623d",
+    "TC_IO_REVC-B_Paste.gbp": "3f9cc479e2003d7b747f39fc80b627f786cc5826d4bbd5d636a2ecdb31116b9e",
+    "TC_IO_REVC-B_Silkscreen.gbo": "ddaa5ad937eab930d04dca0653bce607fd7b3181df10e992781caa14c8a24cf5",
+    "TC_IO_REVC-Edge_Cuts.gm1": "56c211f2ef641492b2c8eb3739f7d0fc5cb4fe1c3d75025cd74cb0fb46d2d3f4",
+    "TC_IO_REVC-F_Cu.gtl": "303dbdbcb23a8622185352d84c1f6262be7d923a91d0455d4c63abeb43937dac",
+    "TC_IO_REVC-F_Mask.gts": "4fb2befacf1a6a0a848760c00d4db1983d0fe4850f39ff55728ea86e085a22a8",
+    "TC_IO_REVC-F_Paste.gtp": "5fcb81bde0bcfcf7ab8b88ad5a814b1b770051ae01d072e8fa616af85b23373f",
+    "TC_IO_REVC-F_Silkscreen.gto": "b1f4a5daeefdba4e8865376a8510a8fe44d91961fbf61d4635a6496c6c75d042",
+    "TC_IO_REVC-NPTH.drl": "21cec35d86edba8044c6acb4c47498a90b8d6a657389a13abfc101ae199134bb",
+    "TC_IO_REVC-PTH.drl": "d68e9a605197a3efa223ed40d659bc77098fee9939f0a737b00e46147beb46b3",
+    "TC_IO_REVC-job.gbrjob": "da8980ef93013640d58603fe7a92e4a2962d18d11d2a149bed3e981c81ea5285"
   },
-  "zip_sha256": "64fc3ad1d234bc5f2b119f88d7ad115749170fb24dc8f56fce4d7356a5d220c5"
+  "zip_sha256": "abdaaa318d39f3f756a583a0d2d531cde5f80dedf8a163d07607506f6f321bf4"
 }

@@ -15,6 +15,6 @@
   "baseline_10percent_cap_plus_temperature_ms": 108.832378,
   "temperature_model": "Conservative multiplicative sensitivity, not a complete vendor guarantee",
   "guaranteed_100ms_limit": false,
-  "decision": "Do not adopt 10% capacitor or change R solely on assumed coefficient. VR/capacitor basic data reviewed; stable timing or RC redesign and 3.3V characterization still needed. Alternative R values are analysis only.",
+  "decision": "User accepts approximate timing; adopt C2167387 470nF 10% and retain existing R/VR. Calibrate each channel by measurement. No strict 100ms guarantee. Alternative R values remain analysis only.",
   "physical_testing_performed": false
 }

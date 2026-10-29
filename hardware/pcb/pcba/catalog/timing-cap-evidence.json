@@ -17,7 +17,8 @@
   "datasheet_sha256": "68ff24d50f5fa474c61c3150962bdd8ef715a177488f1d274b1aa05f0037111f",
   "exact_part_dc_bias_curve_available": false,
   "exact_part_aging_rate_available": false,
-  "timing_adoption": "HOLD: not proven to meet 100ms timing condition",
+  "timing_adoption": "Selected by user with approximate timing and VR calibration; no strict 100ms guarantee",
   "jlcpcb_eligibility_verified": false,
-  "existing_source_capacitor_unchanged": true
+  "existing_source_capacitor_unchanged": false,
+  "strict_100ms_requirement": false
 }
