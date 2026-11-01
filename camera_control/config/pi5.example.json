@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "outputs_enabled": false,
+  "layout_note": "実機用のひな形。映像で撮影範囲とピントを確認し、vision.lanesを登録するまで検知しません。座標はprocessing_sizeの画素単位です。",
+  "routes": {
+    "lanes": [
+      {
+        "id": "upper_outer",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "upper_inner",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "lower_outer",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "lower_inner",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      }
+    ]
+  },
+  "vision": {
+    "lanes": [],
+    "threshold": 25,
+    "min_area": 100,
+    "max_match_distance": 100,
+    "lost_timeout": 1.0,
+    "max_tracks": 4,
+    "morph_kernel": 3
+  },
+  "cameras": [
+    {
+      "id": "cam0",
+      "name": "上半分 Camera Module3 Wide",
+      "index": 0,
+      "fps": 15,
+      "main_size": [
+        1920,
+        1080
+      ],
+      "processing_size": [
+        1280,
+        720
+      ],
+      "controls": {
+        "AfMode": 0,
+        "LensPosition": 2.0
+      }
+    },
+    {
+      "id": "cam1",
+      "name": "下半分 Camera Module3 Wide",
+      "index": 1,
+      "fps": 15,
+      "main_size": [
+        1920,
+        1080
+      ],
+      "processing_size": [
+        1280,
+        720
+      ],
+      "controls": {
+        "AfMode": 0,
+        "LensPosition": 2.0
+      }
+    }
+  ],
+  "stale_frame_s": 0.75,
+  "preview_fps": 4
+}

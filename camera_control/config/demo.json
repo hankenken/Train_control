@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "outputs_enabled": false,
+  "layout_note": "デモ専用。実際の線路配置・A/B位置ではありません。",
+  "routes": {
+    "lanes": [
+      {
+        "id": "upper_outer",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "upper_inner",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "lower_outer",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "lower_inner",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      }
+    ]
+  },
+  "vision": {
+    "lanes": [
+      {
+        "id": "upper_outer",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2,
+        "camera": "cam0",
+        "polygon": [
+          [
+            15,
+            68
+          ],
+          [
+            625,
+            68
+          ],
+          [
+            625,
+            132
+          ],
+          [
+            15,
+            132
+          ]
+        ],
+        "gate_a": [
+          [
+            220,
+            70
+          ],
+          [
+            220,
+            130
+          ]
+        ],
+        "gate_b": [
+          [
+            430,
+            70
+          ],
+          [
+            430,
+            130
+          ]
+        ],
+        "direction": [
+          1,
+          0
+        ]
+      },
+      {
+        "id": "upper_inner",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2,
+        "camera": "cam0",
+        "polygon": [
+          [
+            15,
+            228
+          ],
+          [
+            625,
+            228
+          ],
+          [
+            625,
+            292
+          ],
+          [
+            15,
+            292
+          ]
+        ],
+        "gate_a": [
+          [
+            220,
+            230
+          ],
+          [
+            220,
+            290
+          ]
+        ],
+        "gate_b": [
+          [
+            430,
+            230
+          ],
+          [
+            430,
+            290
+          ]
+        ],
+        "direction": [
+          1,
+          0
+        ]
+      },
+      {
+        "id": "lower_outer",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2,
+        "camera": "cam1",
+        "polygon": [
+          [
+            15,
+            68
+          ],
+          [
+            625,
+            68
+          ],
+          [
+            625,
+            132
+          ],
+          [
+            15,
+            132
+          ]
+        ],
+        "gate_a": [
+          [
+            220,
+            70
+          ],
+          [
+            220,
+            130
+          ]
+        ],
+        "gate_b": [
+          [
+            430,
+            70
+          ],
+          [
+            430,
+            130
+          ]
+        ],
+        "direction": [
+          1,
+          0
+        ]
+      },
+      {
+        "id": "lower_inner",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2,
+        "camera": "cam1",
+        "polygon": [
+          [
+            15,
+            228
+          ],
+          [
+            625,
+            228
+          ],
+          [
+            625,
+            292
+          ],
+          [
+            15,
+            292
+          ]
+        ],
+        "gate_a": [
+          [
+            220,
+            230
+          ],
+          [
+            220,
+            290
+          ]
+        ],
+        "gate_b": [
+          [
+            430,
+            230
+          ],
+          [
+            430,
+            290
+          ]
+        ],
+        "direction": [
+          1,
+          0
+        ]
+      }
+    ],
+    "threshold": 25,
+    "min_area": 100,
+    "max_match_distance": 100,
+    "lost_timeout": 1.0,
+    "max_tracks": 4,
+    "morph_kernel": 3
+  },
+  "cameras": [
+    {
+      "id": "cam0",
+      "name": "デモ 上側2線",
+      "fps": 15,
+      "processing_size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "cam1",
+      "name": "デモ 下側2線",
+      "fps": 15,
+      "processing_size": [
+        640,
+        360
+      ]
+    }
+  ],
+  "stale_frame_s": 0.75,
+  "preview_fps": 4
+}

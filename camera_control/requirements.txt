@@ -1,0 +1,4 @@
+# Pi camera/OpenCV/NumPy are installed through Raspberry Pi OS apt packages.
+# Use a venv created with --system-site-packages. Do not pip-replace cv2 or numpy.
+fastapi>=0.115,<1.0
+uvicorn>=0.30,<1.0

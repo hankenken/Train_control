@@ -1,0 +1,28 @@
+{
+  "scope": "Pi-only camera prototype; synthetic validation on cloud Linux",
+  "python": "3.12.14",
+  "platform": "x86_64",
+  "dependencies": {
+    "opencv": "5.0.0",
+    "numpy": "2.3.5",
+    "fastapi": "0.141.1",
+    "uvicorn": "0.52.1"
+  },
+  "new_python_tests_passed": 37,
+  "existing_node_tests_passed": 10,
+  "synthetic_four_object_gate_decisions_passed": true,
+  "stationary_object_detection_test_passed": true,
+  "paused_gap_does_not_infer_crossing": true,
+  "pi_capture_api_test": "mock Picamera2 request/mode selection only",
+  "browser": {
+    "engine": "headless Chromium",
+    "javascript_errors": 0,
+    "two_640x360_previews": true,
+    "pause_resume_controls_passed": true
+  },
+  "pi_scripts_refuse_non_pi_before_installation": true,
+  "hardware_outputs_implemented": false,
+  "pi5_hardware_tested": false,
+  "real_two_camera_rate_measured": false,
+  "real_train_detection_tested": false
+}

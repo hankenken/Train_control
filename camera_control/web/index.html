@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>路面電車 カメラ進路選択</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <div><p class="eyebrow">鉄道模型・手動運転</p><h1>カメラ進路選択</h1></div>
+    <div class="connection"><span id="connection-dot" class="status-dot"></span><span id="connection-label">サーバーへ接続中</span></div>
+  </header>
+  <main>
+    <section class="simulation-banner" aria-label="動作範囲">
+      <strong>実機出力なし · シミュレーション専用</strong>
+      <p>進路の要求を画面に記録します。ポイント・信号・列車の電源は操作しません。</p>
+    </section>
+    <section class="toolbar" aria-label="動作状態">
+      <div class="mode-info"><span id="mode-label" class="badge">モード確認中</span><span id="running-label">状態取得待ち</span></div>
+      <div class="toolbar-buttons"><button type="button" id="pause-button" disabled>検出を一時停止</button><button type="button" id="retry-previews">映像を再接続</button></div>
+    </section>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <div id="warnings" class="warnings" role="status" hidden></div>
+    <section aria-labelledby="camera-heading">
+      <div class="section-heading"><h2 id="camera-heading">カメラ映像</h2><p>車両を取り除いてから背景を登録してください。</p></div>
+      <div id="cameras" class="camera-grid"></div>
+      <p class="help">映像は表示用640×360です。デモの線区・A/B位置は例です。実際の位置は設定JSONで設置映像に合わせます。</p>
+    </section>
+    <section aria-labelledby="routes-heading">
+      <div class="section-heading"><h2 id="routes-heading">線区ごとの進路</h2><p>Bの判定で進路を確定し、編成全体の通過確認後に解除します。</p></div>
+      <div id="lanes" class="lane-grid"><p class="empty-state" id="lanes-empty">サーバーから線区の状態を取得しています。</p></div>
+    </section>
+    <section class="lower-grid">
+      <div aria-labelledby="tracks-heading"><h2 id="tracks-heading">検出した車両</h2><div id="tracks" class="track-list"><p class="empty-state">状態取得待ち</p></div></div>
+      <div aria-labelledby="events-heading"><h2 id="events-heading">最近の記録</h2><ol id="events" class="event-list"><li class="empty-state">記録はありません。</li></ol></div>
+    </section>
+    <details class="config-panel"><summary>現在の設定を確認</summary><p class="help">ここでは編集しません。位置・時間の変更は設定JSONを編集し、サーバーを再起動してください。</p><button type="button" id="load-config">設定を読み込む</button><pre id="config-content">「設定を読み込む」を押してください。</pre></details>
+    <footer>運転・停止・発車は手動です。映像の遮蔽や誤検出を含む実機試験前の試作です。</footer>
+  </main>
+  <template id="camera-template">
+    <article class="camera-card">
+      <div class="card-heading"><h3></h3><span class="calibration-state badge">背景未確認</span></div>
+      <div class="preview-frame"><img width="640" height="360" alt="カメラのプレビュー"><span class="preview-state">接続中</span></div>
+      <p class="camera-meta"></p>
+      <p class="camera-error" hidden></p>
+      <div class="background-controls"><label><input type="checkbox" class="empty-confirm">この映像の範囲に車両がいないことを確認</label><button type="button" class="background-button" disabled>空の背景を登録</button></div>
+    </article>
+  </template>
+  <template id="lane-template">
+    <article class="lane-card">
+      <div class="card-heading"><h3></h3><span class="lane-phase badge">未確認</span></div>
+      <dl><div><dt>車両ID</dt><dd class="lane-track">—</dd></div><div><dt>最後の進路要求</dt><dd class="lane-route">—</dd></div><div><dt>選択LED相当</dt><dd class="lane-indication">—</dd></div></dl>
+      <p class="lane-reason" hidden></p>
+      <label class="clear-confirm-label"><input type="checkbox" class="clear-confirm">編成全体が通過したことを確認</label>
+      <button type="button" class="release-button" disabled>通過完了・ロック解除</button>
+    </article>
+  </template>
+</body>
+</html>

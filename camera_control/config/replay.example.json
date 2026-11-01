@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "outputs_enabled": false,
+  "layout_note": "録画再生用の例。pathはconfigファイルからの相対パスまたは絶対パス。映像ごとにvision.lanesと背景を登録します。",
+  "routes": {
+    "lanes": [
+      {
+        "id": "upper_outer",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "upper_inner",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "lower_outer",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "lower_inner",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      }
+    ]
+  },
+  "vision": {
+    "lanes": [],
+    "threshold": 25,
+    "min_area": 100,
+    "max_match_distance": 100,
+    "lost_timeout": 1.0,
+    "max_tracks": 4,
+    "morph_kernel": 3
+  },
+  "cameras": [
+    {
+      "id": "cam0",
+      "name": "録画0",
+      "path": "../recordings/cam0.mp4",
+      "processing_size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "cam1",
+      "name": "録画1",
+      "path": "../recordings/cam1.mp4",
+      "processing_size": [
+        640,
+        360
+      ]
+    }
+  ],
+  "stale_frame_s": 0.75,
+  "preview_fps": 4
+}
