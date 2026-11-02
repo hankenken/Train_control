@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-02T08:37:41+0000",
+    "kicad_version": "9.0.2",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/ee89036e-a75a-57e1-9a55-2de7498fc9ce",
+            "violations": []
+        }
+    ],
+    "source": "TC_I2C_DRIVE_REVA.kicad_sch"
+}

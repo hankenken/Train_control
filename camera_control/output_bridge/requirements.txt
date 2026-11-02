@@ -1,0 +1,2 @@
+# Bench tools only; camera installation does not open serial or flash firmware.
+pyserial>=3.5,<4

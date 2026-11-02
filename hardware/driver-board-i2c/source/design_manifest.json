@@ -1,0 +1,994 @@
+{
+  "status": "CIRCUIT_DRAFT_NO_PCB_NO_FABRICATION",
+  "target_board_mm": [
+    50,
+    40
+  ],
+  "target_is_not_validated_layout": true,
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "LATTEPANDA_CONTROL_WIRES",
+      "footprint": "",
+      "nets": {
+        "1": "GND",
+        "2": "+5V_LOGIC",
+        "3": "SDA",
+        "4": "SCL",
+        "5": "SLEEP_REQ_D4",
+        "6": "TRIG_D5",
+        "7": "PERMIT_D6",
+        "8": "FAULT_N_D7",
+        "9": "VM_ADC_A0"
+      },
+      "names": {
+        "1": "GND",
+        "2": "5V",
+        "3": "D2_SDA",
+        "4": "D3_SCL",
+        "5": "D4",
+        "6": "D5",
+        "7": "D6",
+        "8": "D7",
+        "9": "A0"
+      },
+      "types": {
+        "1": "power_out",
+        "2": "power_out",
+        "3": "bidirectional",
+        "4": "output",
+        "5": "output",
+        "6": "output",
+        "7": "input",
+        "8": "input",
+        "9": "input"
+      },
+      "populate": false,
+      "note": "Wire holes only; board physical header mapping must be checked. Never connect VM to logic 5V."
+    },
+    {
+      "ref": "J2",
+      "value": "12V_AFTER_EXTERNAL_FUSE_AND_LATCHING_STOP",
+      "footprint": "",
+      "nets": {
+        "1": "VIN_12V",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {
+        "1": "power_out"
+      },
+      "populate": false,
+      "note": "External 2A fuse initial candidate; verify fault clearing vs wiring and supply current limit."
+    },
+    {
+      "ref": "D1",
+      "value": "SS34_CANDIDATE",
+      "footprint": "Diode_SMD:D_SMA",
+      "nets": {
+        "1": "VM",
+        "2": "VIN_12V"
+      },
+      "names": {
+        "1": "K",
+        "2": "A"
+      },
+      "types": {},
+      "populate": true,
+      "note": "Series reverse polarity protection; forward loss and surge rating need selected datasheet."
+    },
+    {
+      "ref": "D2",
+      "value": "SMBJ18A_CANDIDATE",
+      "footprint": "Diode_SMD:D_SMB",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "names": {
+        "1": "K",
+        "2": "A"
+      },
+      "types": {},
+      "populate": true,
+      "note": "Regeneration clamp. Inductive energy and overshoot not yet measured; no generic flyback diode across bipolar load."
+    },
+    {
+      "ref": "C1",
+      "value": "470uF_35V_BULK_CANDIDATE",
+      "footprint": "Capacitor_SMD:CP_Elec_10x10.5",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "names": {
+        "1": "PLUS",
+        "2": "MINUS"
+      },
+      "types": {},
+      "populate": true,
+      "note": "Specific manufacturer/ESR/ripple ratings unresolved."
+    },
+    {
+      "ref": "U1",
+      "value": "DRV8235RTER",
+      "footprint": "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+      "nets": {
+        "1": "CH0_IPROPI",
+        "2": null,
+        "3": null,
+        "4": "FAULT_N_D7",
+        "5": "VM",
+        "6": "CH0_OUT1",
+        "7": "GND",
+        "8": "CH0_OUT2",
+        "9": "GND",
+        "10": "GND",
+        "11": "NSLEEP_ALL",
+        "12": "GND",
+        "13": "GND",
+        "14": "SDA",
+        "15": "SCL",
+        "16": "CH0_VREF",
+        "17": "GND"
+      },
+      "names": {
+        "1": "IPROPI",
+        "2": "RSVD_NC",
+        "3": "RSVD_NC",
+        "4": "nFAULT",
+        "5": "VM",
+        "6": "OUT1",
+        "7": "GND",
+        "8": "OUT2",
+        "9": "A1",
+        "10": "A0",
+        "11": "nSLEEP",
+        "12": "IN2",
+        "13": "IN1",
+        "14": "SDA",
+        "15": "SCL",
+        "16": "VREF",
+        "17": "EP_GND"
+      },
+      "types": {
+        "1": "passive",
+        "4": "open_collector",
+        "5": "power_in",
+        "6": "output",
+        "7": "power_in",
+        "8": "output",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "12": "input",
+        "13": "input",
+        "14": "bidirectional",
+        "15": "input",
+        "16": "input",
+        "17": "power_in"
+      },
+      "populate": true,
+      "note": "TI SLVSHO3. 7bit address 0x30. RTE0016C exact land/thermal via review required, not old Texas_RTE footprint with smaller EP."
+    },
+    {
+      "ref": "R1",
+      "value": "1.69k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "CH0_IPROPI",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Itrip nominal 1.183A with internal3V; not forced current. No direct electrical relation to old DRV8871 ILIM."
+    },
+    {
+      "ref": "C2",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Place immediately VM to GND; no long common trace."
+    },
+    {
+      "ref": "C6",
+      "value": "100nF_16V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "CH0_VREF",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "VREF input bypass, internal3V selected in CONFIG3. Never tie to5V."
+    },
+    {
+      "ref": "J3",
+      "value": "TURNOUT_0_BLUE_WHITE_WIRES",
+      "footprint": "",
+      "nets": {
+        "1": "CH0_OUT1",
+        "2": "CH0_OUT2"
+      },
+      "names": {
+        "1": "BLUE_CANDIDATE",
+        "2": "WHITE_CANDIDATE"
+      },
+      "types": {},
+      "populate": false,
+      "note": "Blue/white to physical route P/N must be measured; no connector installed."
+    },
+    {
+      "ref": "U2",
+      "value": "DRV8235RTER",
+      "footprint": "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+      "nets": {
+        "1": "CH1_IPROPI",
+        "2": null,
+        "3": null,
+        "4": "FAULT_N_D7",
+        "5": "VM",
+        "6": "CH1_OUT1",
+        "7": "GND",
+        "8": "CH1_OUT2",
+        "9": "GND",
+        "10": "+5V_LOGIC",
+        "11": "NSLEEP_ALL",
+        "12": "GND",
+        "13": "GND",
+        "14": "SDA",
+        "15": "SCL",
+        "16": "CH1_VREF",
+        "17": "GND"
+      },
+      "names": {
+        "1": "IPROPI",
+        "2": "RSVD_NC",
+        "3": "RSVD_NC",
+        "4": "nFAULT",
+        "5": "VM",
+        "6": "OUT1",
+        "7": "GND",
+        "8": "OUT2",
+        "9": "A1",
+        "10": "A0",
+        "11": "nSLEEP",
+        "12": "IN2",
+        "13": "IN1",
+        "14": "SDA",
+        "15": "SCL",
+        "16": "VREF",
+        "17": "EP_GND"
+      },
+      "types": {
+        "1": "passive",
+        "4": "open_collector",
+        "5": "power_in",
+        "6": "output",
+        "7": "power_in",
+        "8": "output",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "12": "input",
+        "13": "input",
+        "14": "bidirectional",
+        "15": "input",
+        "16": "input",
+        "17": "power_in"
+      },
+      "populate": true,
+      "note": "TI SLVSHO3. 7bit address 0x32. RTE0016C exact land/thermal via review required, not old Texas_RTE footprint with smaller EP."
+    },
+    {
+      "ref": "R2",
+      "value": "1.69k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "CH1_IPROPI",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Itrip nominal 1.183A with internal3V; not forced current. No direct electrical relation to old DRV8871 ILIM."
+    },
+    {
+      "ref": "C3",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Place immediately VM to GND; no long common trace."
+    },
+    {
+      "ref": "C7",
+      "value": "100nF_16V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "CH1_VREF",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "VREF input bypass, internal3V selected in CONFIG3. Never tie to5V."
+    },
+    {
+      "ref": "J4",
+      "value": "TURNOUT_1_BLUE_WHITE_WIRES",
+      "footprint": "",
+      "nets": {
+        "1": "CH1_OUT1",
+        "2": "CH1_OUT2"
+      },
+      "names": {
+        "1": "BLUE_CANDIDATE",
+        "2": "WHITE_CANDIDATE"
+      },
+      "types": {},
+      "populate": false,
+      "note": "Blue/white to physical route P/N must be measured; no connector installed."
+    },
+    {
+      "ref": "U3",
+      "value": "DRV8235RTER",
+      "footprint": "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+      "nets": {
+        "1": "CH2_IPROPI",
+        "2": null,
+        "3": null,
+        "4": "FAULT_N_D7",
+        "5": "VM",
+        "6": "CH2_OUT1",
+        "7": "GND",
+        "8": "CH2_OUT2",
+        "9": "+5V_LOGIC",
+        "10": "GND",
+        "11": "NSLEEP_ALL",
+        "12": "GND",
+        "13": "GND",
+        "14": "SDA",
+        "15": "SCL",
+        "16": "CH2_VREF",
+        "17": "GND"
+      },
+      "names": {
+        "1": "IPROPI",
+        "2": "RSVD_NC",
+        "3": "RSVD_NC",
+        "4": "nFAULT",
+        "5": "VM",
+        "6": "OUT1",
+        "7": "GND",
+        "8": "OUT2",
+        "9": "A1",
+        "10": "A0",
+        "11": "nSLEEP",
+        "12": "IN2",
+        "13": "IN1",
+        "14": "SDA",
+        "15": "SCL",
+        "16": "VREF",
+        "17": "EP_GND"
+      },
+      "types": {
+        "1": "passive",
+        "4": "open_collector",
+        "5": "power_in",
+        "6": "output",
+        "7": "power_in",
+        "8": "output",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "12": "input",
+        "13": "input",
+        "14": "bidirectional",
+        "15": "input",
+        "16": "input",
+        "17": "power_in"
+      },
+      "populate": true,
+      "note": "TI SLVSHO3. 7bit address 0x36. RTE0016C exact land/thermal via review required, not old Texas_RTE footprint with smaller EP."
+    },
+    {
+      "ref": "R3",
+      "value": "1.69k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "CH2_IPROPI",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Itrip nominal 1.183A with internal3V; not forced current. No direct electrical relation to old DRV8871 ILIM."
+    },
+    {
+      "ref": "C4",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Place immediately VM to GND; no long common trace."
+    },
+    {
+      "ref": "C8",
+      "value": "100nF_16V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "CH2_VREF",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "VREF input bypass, internal3V selected in CONFIG3. Never tie to5V."
+    },
+    {
+      "ref": "J5",
+      "value": "TURNOUT_2_BLUE_WHITE_WIRES",
+      "footprint": "",
+      "nets": {
+        "1": "CH2_OUT1",
+        "2": "CH2_OUT2"
+      },
+      "names": {
+        "1": "BLUE_CANDIDATE",
+        "2": "WHITE_CANDIDATE"
+      },
+      "types": {},
+      "populate": false,
+      "note": "Blue/white to physical route P/N must be measured; no connector installed."
+    },
+    {
+      "ref": "U4",
+      "value": "DRV8235RTER",
+      "footprint": "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+      "nets": {
+        "1": "CH3_IPROPI",
+        "2": null,
+        "3": null,
+        "4": "FAULT_N_D7",
+        "5": "VM",
+        "6": "CH3_OUT1",
+        "7": "GND",
+        "8": "CH3_OUT2",
+        "9": "+5V_LOGIC",
+        "10": "+5V_LOGIC",
+        "11": "NSLEEP_ALL",
+        "12": "GND",
+        "13": "GND",
+        "14": "SDA",
+        "15": "SCL",
+        "16": "CH3_VREF",
+        "17": "GND"
+      },
+      "names": {
+        "1": "IPROPI",
+        "2": "RSVD_NC",
+        "3": "RSVD_NC",
+        "4": "nFAULT",
+        "5": "VM",
+        "6": "OUT1",
+        "7": "GND",
+        "8": "OUT2",
+        "9": "A1",
+        "10": "A0",
+        "11": "nSLEEP",
+        "12": "IN2",
+        "13": "IN1",
+        "14": "SDA",
+        "15": "SCL",
+        "16": "VREF",
+        "17": "EP_GND"
+      },
+      "types": {
+        "1": "passive",
+        "4": "open_collector",
+        "5": "power_in",
+        "6": "output",
+        "7": "power_in",
+        "8": "output",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "12": "input",
+        "13": "input",
+        "14": "bidirectional",
+        "15": "input",
+        "16": "input",
+        "17": "power_in"
+      },
+      "populate": true,
+      "note": "TI SLVSHO3. 7bit address 0x38. RTE0016C exact land/thermal via review required, not old Texas_RTE footprint with smaller EP."
+    },
+    {
+      "ref": "R4",
+      "value": "1.69k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "CH3_IPROPI",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Itrip nominal 1.183A with internal3V; not forced current. No direct electrical relation to old DRV8871 ILIM."
+    },
+    {
+      "ref": "C5",
+      "value": "100nF_50V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Place immediately VM to GND; no long common trace."
+    },
+    {
+      "ref": "C9",
+      "value": "100nF_16V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "CH3_VREF",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "VREF input bypass, internal3V selected in CONFIG3. Never tie to5V."
+    },
+    {
+      "ref": "J6",
+      "value": "TURNOUT_3_BLUE_WHITE_WIRES",
+      "footprint": "",
+      "nets": {
+        "1": "CH3_OUT1",
+        "2": "CH3_OUT2"
+      },
+      "names": {
+        "1": "BLUE_CANDIDATE",
+        "2": "WHITE_CANDIDATE"
+      },
+      "types": {},
+      "populate": false,
+      "note": "Blue/white to physical route P/N must be measured; no connector installed."
+    },
+    {
+      "ref": "U5",
+      "value": "CD74HC221M96",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "nets": {
+        "1": "GND",
+        "2": "TRIG_D5",
+        "3": "POWER_GOOD",
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": "GND",
+        "9": "GND",
+        "10": "GND",
+        "11": "GND",
+        "12": null,
+        "13": "PERMIT_D6",
+        "14": "TIMER_CX",
+        "15": "TIMER_RXCX",
+        "16": "+5V_LOGIC"
+      },
+      "names": {
+        "1": "1A",
+        "2": "1B",
+        "3": "1RESET_N",
+        "4": "1Q_N",
+        "5": "2Q",
+        "6": "2CX_UNUSED",
+        "7": "2RXCX_UNUSED",
+        "8": "GND",
+        "9": "2A",
+        "10": "2B",
+        "11": "2RESET_N",
+        "12": "2Q_N",
+        "13": "1Q",
+        "14": "1CX",
+        "15": "1RXCX",
+        "16": "VCC"
+      },
+      "types": {
+        "1": "input",
+        "2": "input",
+        "3": "input",
+        "4": "output",
+        "5": "output",
+        "8": "power_in",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "12": "output",
+        "13": "output",
+        "16": "power_in"
+      },
+      "populate": true,
+      "note": "Non-retriggerable one-shot. Unused half reset low and inputs low. Cext is between14 and15, NOT toGND. Existing LCSC C133954 evidence is historical, not fresh availability."
+    },
+    {
+      "ref": "R5",
+      "value": "620k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "+5V_LOGIC",
+        "2": "TIMER_RXCX"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "0.7RC at4.5V with470nF gives204ms nominal; NOT guaranteed worst-case bound."
+    },
+    {
+      "ref": "C10",
+      "value": "470nF_50V_X7R_10%",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "nets": {
+        "1": "TIMER_CX",
+        "2": "TIMER_RXCX"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "C2167387 historical selected KEMET; fresh stock unverified. Timer tolerance and supply/temp must be measured."
+    },
+    {
+      "ref": "U6",
+      "value": "SN74HC08DR",
+      "footprint": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "nets": {
+        "1": "SLEEP_REQ_D4",
+        "2": "PERMIT_D6",
+        "3": "SLEEP_PRE",
+        "4": "SLEEP_PRE",
+        "5": "POWER_GOOD",
+        "6": "SLEEP_GATED",
+        "7": "GND",
+        "8": null,
+        "9": "GND",
+        "10": "GND",
+        "11": null,
+        "12": "GND",
+        "13": "GND",
+        "14": "+5V_LOGIC"
+      },
+      "names": {
+        "1": "1A",
+        "2": "1B",
+        "3": "1Y",
+        "4": "2A",
+        "5": "2B",
+        "6": "2Y",
+        "7": "GND",
+        "8": "3Y_NC",
+        "9": "3A",
+        "10": "3B",
+        "11": "4Y_NC",
+        "12": "4A",
+        "13": "4B",
+        "14": "VCC"
+      },
+      "types": {
+        "1": "input",
+        "2": "input",
+        "3": "output",
+        "4": "input",
+        "5": "input",
+        "6": "output",
+        "7": "power_in",
+        "8": "output",
+        "9": "input",
+        "10": "input",
+        "11": "output",
+        "12": "input",
+        "13": "input",
+        "14": "power_in"
+      },
+      "populate": true,
+      "note": "nSLEEP = D4 AND one-shotQ AND powergood; pinout TI HC08 SOIC14, unused inputs grounded."
+    },
+    {
+      "ref": "U7",
+      "value": "MCP100T-450I/TT_CANDIDATE",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "nets": {
+        "1": "POWER_GOOD",
+        "2": "+5V_LOGIC",
+        "3": "GND"
+      },
+      "names": {
+        "1": "RESET_N",
+        "2": "VDD",
+        "3": "VSS"
+      },
+      "types": {
+        "1": "output",
+        "2": "power_in",
+        "3": "power_in"
+      },
+      "populate": true,
+      "note": "DS11187F SOT23 pinout1reset2VDD3VSS. 4.5V grade proposed for5V; not previous3.0V grade. Exact ordercode/threshold/supply range pending purchasing review."
+    },
+    {
+      "ref": "C11",
+      "value": "100nF_16V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+5V_LOGIC",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "One at each U5/U6/U7."
+    },
+    {
+      "ref": "C12",
+      "value": "100nF_16V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+5V_LOGIC",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "One at each U5/U6/U7."
+    },
+    {
+      "ref": "C13",
+      "value": "100nF_16V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "+5V_LOGIC",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "One at each U5/U6/U7."
+    },
+    {
+      "ref": "R6",
+      "value": "4.7k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "+5V_LOGIC",
+        "2": "SDA"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "One shared pullup. Account for pullups already on host/bus."
+    },
+    {
+      "ref": "R7",
+      "value": "4.7k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "+5V_LOGIC",
+        "2": "SCL"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "One shared pullup. Account for pullups already on host/bus."
+    },
+    {
+      "ref": "R8",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "+5V_LOGIC",
+        "2": "FAULT_N_D7"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "One shared pullup. Account for pullups already on host/bus."
+    },
+    {
+      "ref": "R9",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "SLEEP_REQ_D4",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "External default-low; no floating permit/bypass jumper."
+    },
+    {
+      "ref": "R10",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "TRIG_D5",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "External default-low; no floating permit/bypass jumper."
+    },
+    {
+      "ref": "R11",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "PERMIT_D6",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "External default-low; no floating permit/bypass jumper."
+    },
+    {
+      "ref": "R12",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "NSLEEP_ALL",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "External default-low; no floating permit/bypass jumper."
+    },
+    {
+      "ref": "R13",
+      "value": "100R_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "SLEEP_GATED",
+        "2": "NSLEEP_ALL"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": ""
+    },
+    {
+      "ref": "R14",
+      "value": "100k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "VM",
+        "2": "VM_DIV"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": ""
+    },
+    {
+      "ref": "R15",
+      "value": "10k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "VM_DIV",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": ""
+    },
+    {
+      "ref": "Q1",
+      "value": "BSS138_CANDIDATE",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "nets": {
+        "1": "+5V_LOGIC",
+        "2": "VM_ADC_A0",
+        "3": "VM_DIV"
+      },
+      "names": {
+        "1": "GATE",
+        "2": "SOURCE",
+        "3": "DRAIN"
+      },
+      "types": {},
+      "populate": true,
+      "note": "Analog isolation when logic power is OFF: body diode anode=A0, cathode=VM_DIV. Source/drain orientation critical. 12V-only prototype, measure transfer. Exact manufacturer datasheet pending."
+    },
+    {
+      "ref": "R16",
+      "value": "1M_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "VM_ADC_A0",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "ADC side discharge; effective VM divider ratio about11.1 when Q1ON."
+    },
+    {
+      "ref": "R17",
+      "value": "100k_1%",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "+5V_LOGIC",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Discharge Q1 gate/logic rail when host loses power."
+    },
+    {
+      "ref": "C14",
+      "value": "10nF_16V_X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "VM_ADC_A0",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "ADC filter; cold detection requires100ms low AFTER MCUboot."
+    },
+    {
+      "ref": "R18",
+      "value": "2.2k_0.5W_BLEED",
+      "footprint": "Resistor_SMD:R_2010_5025Metric",
+      "nets": {
+        "1": "VM",
+        "2": "GND"
+      },
+      "names": {},
+      "types": {},
+      "populate": true,
+      "note": "Discharges470uF: tau about1.03s, nominal12V to0.27V about3.9s. Verify actual cold threshold; no automatic timed assumption."
+    },
+    {
+      "ref": "#FLG01",
+      "value": "PWR_FLAG_VM",
+      "footprint": "",
+      "nets": {
+        "1": "VM"
+      },
+      "names": {},
+      "types": {
+        "1": "power_out"
+      },
+      "populate": false,
+      "note": "Electrical annotation only, supply throughD1."
+    }
+  ]
+}

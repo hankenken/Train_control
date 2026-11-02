@@ -1,0 +1,12 @@
+{
+  "status": "PAUSED_DRAFT_NO_HARDWARE_TEST",
+  "target": "arduino:avr:leonardo",
+  "arduino_cli": "1.3.1",
+  "arduino_avr_core": "1.8.6",
+  "state_machine_scenarios_passed": 16,
+  "native_i2c_hardware_tested": false,
+  "camera_app_uses_this_firmware": false,
+  "pc_test_zip_includes_this_firmware": false,
+  "mandatory_external_gate": "HC221 one-shot AND sleep request AND logic power good",
+  "firmware_boot_precondition": "observe VM rail low100ms after MCUboot then high100ms; not MCUresetalone"
+}

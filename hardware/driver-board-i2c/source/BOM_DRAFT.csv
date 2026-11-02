@@ -1,0 +1,50 @@
+﻿Reference,MPN_or_value,Footprint_candidate,Populate,Notes
+J1,LATTEPANDA_CONTROL_WIRES,,False,Wire holes only; board physical header mapping must be checked. Never connect VM to logic 5V.
+J2,12V_AFTER_EXTERNAL_FUSE_AND_LATCHING_STOP,,False,External 2A fuse initial candidate; verify fault clearing vs wiring and supply current limit.
+D1,SS34_CANDIDATE,Diode_SMD:D_SMA,True,Series reverse polarity protection; forward loss and surge rating need selected datasheet.
+D2,SMBJ18A_CANDIDATE,Diode_SMD:D_SMB,True,Regeneration clamp. Inductive energy and overshoot not yet measured; no generic flyback diode across bipolar load.
+C1,470uF_35V_BULK_CANDIDATE,Capacitor_SMD:CP_Elec_10x10.5,True,Specific manufacturer/ESR/ripple ratings unresolved.
+U1,DRV8235RTER,Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm,True,"TI SLVSHO3. 7bit address 0x30. RTE0016C exact land/thermal via review required, not old Texas_RTE footprint with smaller EP."
+R1,1.69k_1%,Resistor_SMD:R_0805_2012Metric,True,Itrip nominal 1.183A with internal3V; not forced current. No direct electrical relation to old DRV8871 ILIM.
+C2,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Place immediately VM to GND; no long common trace.
+C6,100nF_16V_X7R,Capacitor_SMD:C_0805_2012Metric,True,"VREF input bypass, internal3V selected in CONFIG3. Never tie to5V."
+J3,TURNOUT_0_BLUE_WHITE_WIRES,,False,Blue/white to physical route P/N must be measured; no connector installed.
+U2,DRV8235RTER,Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm,True,"TI SLVSHO3. 7bit address 0x32. RTE0016C exact land/thermal via review required, not old Texas_RTE footprint with smaller EP."
+R2,1.69k_1%,Resistor_SMD:R_0805_2012Metric,True,Itrip nominal 1.183A with internal3V; not forced current. No direct electrical relation to old DRV8871 ILIM.
+C3,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Place immediately VM to GND; no long common trace.
+C7,100nF_16V_X7R,Capacitor_SMD:C_0805_2012Metric,True,"VREF input bypass, internal3V selected in CONFIG3. Never tie to5V."
+J4,TURNOUT_1_BLUE_WHITE_WIRES,,False,Blue/white to physical route P/N must be measured; no connector installed.
+U3,DRV8235RTER,Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm,True,"TI SLVSHO3. 7bit address 0x36. RTE0016C exact land/thermal via review required, not old Texas_RTE footprint with smaller EP."
+R3,1.69k_1%,Resistor_SMD:R_0805_2012Metric,True,Itrip nominal 1.183A with internal3V; not forced current. No direct electrical relation to old DRV8871 ILIM.
+C4,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Place immediately VM to GND; no long common trace.
+C8,100nF_16V_X7R,Capacitor_SMD:C_0805_2012Metric,True,"VREF input bypass, internal3V selected in CONFIG3. Never tie to5V."
+J5,TURNOUT_2_BLUE_WHITE_WIRES,,False,Blue/white to physical route P/N must be measured; no connector installed.
+U4,DRV8235RTER,Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm,True,"TI SLVSHO3. 7bit address 0x38. RTE0016C exact land/thermal via review required, not old Texas_RTE footprint with smaller EP."
+R4,1.69k_1%,Resistor_SMD:R_0805_2012Metric,True,Itrip nominal 1.183A with internal3V; not forced current. No direct electrical relation to old DRV8871 ILIM.
+C5,100nF_50V_X7R,Capacitor_SMD:C_0805_2012Metric,True,Place immediately VM to GND; no long common trace.
+C9,100nF_16V_X7R,Capacitor_SMD:C_0805_2012Metric,True,"VREF input bypass, internal3V selected in CONFIG3. Never tie to5V."
+J6,TURNOUT_3_BLUE_WHITE_WIRES,,False,Blue/white to physical route P/N must be measured; no connector installed.
+U5,CD74HC221M96,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,True,"Non-retriggerable one-shot. Unused half reset low and inputs low. Cext is between14 and15, NOT toGND. Existing LCSC C133954 evidence is historical, not fresh availability."
+R5,620k_1%,Resistor_SMD:R_0805_2012Metric,True,0.7RC at4.5V with470nF gives204ms nominal; NOT guaranteed worst-case bound.
+C10,470nF_50V_X7R_10%,Capacitor_SMD:C_1206_3216Metric,True,C2167387 historical selected KEMET; fresh stock unverified. Timer tolerance and supply/temp must be measured.
+U6,SN74HC08DR,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,True,"nSLEEP = D4 AND one-shotQ AND powergood; pinout TI HC08 SOIC14, unused inputs grounded."
+U7,MCP100T-450I/TT_CANDIDATE,Package_TO_SOT_SMD:SOT-23,True,DS11187F SOT23 pinout1reset2VDD3VSS. 4.5V grade proposed for5V; not previous3.0V grade. Exact ordercode/threshold/supply range pending purchasing review.
+C11,100nF_16V_X7R,Capacitor_SMD:C_0805_2012Metric,True,One at each U5/U6/U7.
+C12,100nF_16V_X7R,Capacitor_SMD:C_0805_2012Metric,True,One at each U5/U6/U7.
+C13,100nF_16V_X7R,Capacitor_SMD:C_0805_2012Metric,True,One at each U5/U6/U7.
+R6,4.7k_1%,Resistor_SMD:R_0805_2012Metric,True,One shared pullup. Account for pullups already on host/bus.
+R7,4.7k_1%,Resistor_SMD:R_0805_2012Metric,True,One shared pullup. Account for pullups already on host/bus.
+R8,10k_1%,Resistor_SMD:R_0805_2012Metric,True,One shared pullup. Account for pullups already on host/bus.
+R9,10k_1%,Resistor_SMD:R_0805_2012Metric,True,External default-low; no floating permit/bypass jumper.
+R10,10k_1%,Resistor_SMD:R_0805_2012Metric,True,External default-low; no floating permit/bypass jumper.
+R11,10k_1%,Resistor_SMD:R_0805_2012Metric,True,External default-low; no floating permit/bypass jumper.
+R12,10k_1%,Resistor_SMD:R_0805_2012Metric,True,External default-low; no floating permit/bypass jumper.
+R13,100R_1%,Resistor_SMD:R_0805_2012Metric,True,
+R14,100k_1%,Resistor_SMD:R_0805_2012Metric,True,
+R15,10k_1%,Resistor_SMD:R_0805_2012Metric,True,
+Q1,BSS138_CANDIDATE,Package_TO_SOT_SMD:SOT-23,True,"Analog isolation when logic power is OFF: body diode anode=A0, cathode=VM_DIV. Source/drain orientation critical. 12V-only prototype, measure transfer. Exact manufacturer datasheet pending."
+R16,1M_1%,Resistor_SMD:R_0805_2012Metric,True,ADC side discharge; effective VM divider ratio about11.1 when Q1ON.
+R17,100k_1%,Resistor_SMD:R_0805_2012Metric,True,Discharge Q1 gate/logic rail when host loses power.
+C14,10nF_16V_X7R,Capacitor_SMD:C_0805_2012Metric,True,ADC filter; cold detection requires100ms low AFTER MCUboot.
+R18,2.2k_0.5W_BLEED,Resistor_SMD:R_2010_5025Metric,True,"Discharges470uF: tau about1.03s, nominal12V to0.27V about3.9s. Verify actual cold threshold; no automatic timed assumption."
+#FLG01,PWR_FLAG_VM,,False,"Electrical annotation only, supply throughD1."
