@@ -1,9 +1,14 @@
 # Train_control
 
+まずは **PC＋USBカメラ1台で車両認識と画面上の模擬制御**を確認します。
+[PCでの試験手順](camera_control/PC_CAMERA_TEST_JA.md)・[検証用ZIP](camera_control/dist/Train_camera_PC_test.zip)。
+画面を4回クリックして検出範囲・A/Bを登録できます。制御出力は模擬ポイントとLEDで表示し、実機へは出力しません。
+
 現在の開発は **LattePanda 3 Delta 864・Windows 10・USBカメラ2台による検証ソフト**です。
 [Windows用の導入・操作手順](camera_control/README_LATTEPANDA.md)を参照してください。撮影・画像処理・画面表示・進路選択を本体上で行う試作で、実機出力はありません。
 
 [周辺機器の低予算案](camera_control/docs/lattepanda-budget.md)と、[通信内蔵DRV8235によるポイント制御案](camera_control/output_bridge/README.md)を追加しています。
+駆動回路の設計作業は保留し、先に実カメラでの認識・模擬制御を検証します。
 旧Pi版・ToF・基板設計と下記の旧シミュレーターは保留・保存しています。
 
 ---

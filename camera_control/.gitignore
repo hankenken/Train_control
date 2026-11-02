@@ -4,3 +4,4 @@ logs/
 recordings/
 .venv/
 config/*.local.json
+*.local.json

@@ -12,13 +12,14 @@ import time
 
 import numpy as np
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse, StreamingResponse
+from fastapi.responses import FileResponse, StreamingResponse, Response
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, StrictBool
+from pydantic import BaseModel, StrictBool, StrictInt, StrictFloat, ConfigDict
 
 from .routes import RouteManager
 from .sources import DemoSource, ReplaySource, PiSource, USBSource, clock
 from .vision import VisionEngine
+from .calibration import build_calibration
 
 ROOT = Path(__file__).resolve().parent
 
@@ -169,8 +170,31 @@ class Runtime:
         with self.lock:
             result = self.manager.release(lane, confirm_clear, clock())
             if result['accepted']:
+                self.engine.reset_lane(lane)
                 self.record({'kind': 'manual_release', 'lane': lane, 'timestamp': clock()})
             return result
+
+    def apply_calibration(self, value):
+        camera=value['camera']
+        if camera not in self.sources: raise ValueError('不明なカメラです')
+        frame=self.sources[camera].latest()
+        if frame is None or self.sources[camera].error or clock()-frame.timestamp>self.config.get('stale_frame_s',.75):
+            raise ValueError('最新の正常なカメラ映像を取得してから設定してください')
+        with self.lock:
+            proposed=build_calibration(self.config,value,[frame.image.shape[1],frame.image.shape[0]])
+            opts=copy.deepcopy(proposed['vision']);lanes=opts.pop('lanes',[])
+            engine=VisionEngine(lanes,**opts)
+            affected={camera}|{l['camera'] for l in self.vision_lanes if l['id']==value['lane']}
+            backgrounds={c:im for c,im in self.backgrounds.items() if c not in affected and any(l['camera']==c for l in lanes)}
+            for c,im in backgrounds.items(): engine.set_background(c,im)
+            self.manager.update_settings(proposed['routes']) # Atomic validation before mutation.
+            self.engine,self.config,self.vision_lanes=engine,proposed,lanes
+            self.backgrounds=backgrounds; self.tracks={};self.warnings={};self.preview_times={}
+            for c,source in self.sources.items():
+                latest=source.latest()
+                if latest:self.processed[c]=latest.sequence
+            self.record({'kind':'calibration_set','camera':camera,'lane':value['lane'],'timestamp':clock()})
+            return {'accepted':True,'background_required':True,'lane':next(l for l in lanes if l['id']==value['lane'])}
 
     def process_frame(self, camera, frame):
         started = clock()
@@ -220,6 +244,8 @@ class Runtime:
             p = tuple(map(int, track['center']))
             color = (0, 0, 255) if track['ambiguous'] else (0, 255, 0)
             cv2.circle(image, p, 7, color, 2)
+            if track.get('bbox'):
+                x0,y0,x1,y1=track['bbox'];cv2.rectangle(image,(x0,y0),(x1,y1),color,2)
             cv2.putText(image, str(track['id']), (p[0]+8, p[1]), cv2.FONT_HERSHEY_SIMPLEX, .6, color, 2)
         h, w = image.shape[:2]
         preview = cv2.resize(image, (640, max(1, round(h*640/w))))
@@ -265,6 +291,9 @@ class Runtime:
                 info = source.status()
                 info['calibrated'] = source.id in self.backgrounds
                 info['metrics'] = self.metrics.get(source.id, {})
+                frame=source.latest()
+                info['frame_size']=[frame.image.shape[1],frame.image.shape[0]] if frame else None
+                info['lanes_configured']=sum(l['camera']==source.id for l in self.vision_lanes)
                 cameras.append(info)
             warnings = [w for ws in self.warnings.values() for w in ws]
             if self.mode == 'usb':
@@ -275,7 +304,7 @@ class Runtime:
                         warnings.append(camera['id']+'：要求した動画形式と実際の報告形式が異なります（'+reported+'）。USB帯域と遅延を確認してください。')
                 warnings.append('USB映像の時刻は読取り完了時刻です。撮影時刻・内部遅延・2台の同期は未測定です。')
             if not self.vision_lanes:
-                warnings.append('実線路の検知範囲は未設定です。vision.lanesを登録するまでA/B判定を行いません。')
+                warnings.append('検出範囲が未設定です。カメラの「検出範囲・A/Bを設定」から登録してください。')
             return {'mode': self.mode, 'running': self.running, 'paused': self.paused,
                     'outputs_enabled': False, 'clock_now': clock(), 'cameras': cameras, 'routes': routes,
                     'tracks': [copy.deepcopy(t) for ts in self.tracks.values() for t in ts],
@@ -289,6 +318,21 @@ class ReleaseRequest(BaseModel):
 
 class PauseRequest(BaseModel):
     paused: StrictBool
+
+
+class CalibrationRequest(BaseModel):
+    model_config=ConfigDict(extra='forbid')
+    camera: str
+    lane: str
+    roi: list[list[StrictFloat]]
+    a: list[StrictFloat]
+    b: list[StrictFloat]
+    mode: str
+    time_threshold_s: StrictFloat=2.0
+    led_interval_s: StrictFloat=2.0
+    threshold: StrictInt=25
+    min_area: StrictInt=30
+    max_match_distance: StrictInt=80
 
 
 def create_app(config=None, mode='demo', log_path=None):
@@ -319,6 +363,28 @@ def create_app(config=None, mode='demo', log_path=None):
     @app.get('/api/config')
     def get_config():
         return copy.deepcopy(runtime.config)
+
+    @app.get('/api/config/download')
+    def download_config():
+        with runtime.lock:
+            data=json.dumps(runtime.config,ensure_ascii=False,indent=2)+'\n'
+        return Response(data,media_type='application/json',headers={'Content-Disposition':'attachment; filename="camera-test.local.json"'})
+
+    @app.post('/api/calibration')
+    def calibration(request: CalibrationRequest):
+        try:return runtime.apply_calibration(request.model_dump())
+        except ValueError as exc:raise HTTPException(409,str(exc))
+
+    @app.get('/api/snapshot/{camera}.jpg')
+    def snapshot(camera: str):
+        if camera not in runtime.sources:raise HTTPException(404,'不明なカメラです')
+        source=runtime.sources[camera];frame=source.latest()
+        if frame is None or source.error or clock()-frame.timestamp>runtime.config.get('stale_frame_s',.75):
+            raise HTTPException(409,'最新の正常な映像がありません')
+        import cv2
+        ok,data=cv2.imencode('.jpg',frame.image)
+        if not ok:raise HTTPException(409,'画像を作成できません')
+        return Response(data.tobytes(),media_type='image/jpeg',headers={'Cache-Control':'no-store'})
 
     @app.post('/api/background/{camera}')
     def background(camera: str):

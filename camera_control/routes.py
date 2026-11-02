@@ -244,3 +244,15 @@ class RouteManager:
                 })
             return {"lanes": lanes, "requests": [dict(r) for r in self._requests],
                     "hardware_outputs_enabled": False}
+
+    def update_settings(self, config: dict) -> None:
+        """Edit timing/mode only while all lanes idle; retain the last mock output."""
+        proposed = RouteManager(config)
+        with self._lock:
+            if set(proposed._lanes) != set(self._lanes):
+                raise ValueError('線区の追加・削除には再起動が必要です')
+            if any(l.state != 'idle' for l in self._lanes.values()):
+                raise ValueError('すべての線区を待機にしてください。必要なら一時停止後、編成の通過確認とロック解除を行ってください')
+            for ident, lane in self._lanes.items():
+                p=proposed._lanes[ident]
+                lane.mode, lane.time_threshold_s, lane.led_interval_s = p.mode, p.time_threshold_s, p.led_interval_s

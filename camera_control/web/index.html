@@ -14,8 +14,8 @@
   </header>
   <main>
     <section class="simulation-banner" aria-label="動作範囲">
-      <strong>実機出力なし · シミュレーション専用</strong>
-      <p>進路の要求を画面に記録します。ポイント・信号・列車の電源は操作しません。</p>
+      <strong>カメラで認識を検証 · 制御出力は画面上の模擬表示</strong>
+      <p>ポイント・信号・列車の電源には接続しません。車両の運転・停止・発車は手動です。</p>
     </section>
     <section class="toolbar" aria-label="動作状態">
       <div class="mode-info"><span id="mode-label" class="badge">モード確認中</span><span id="running-label">状態取得待ち</span></div>
@@ -24,19 +24,38 @@
     <div id="notice" class="notice" role="status" hidden></div>
     <div id="warnings" class="warnings" role="status" hidden></div>
     <section aria-labelledby="camera-heading">
-      <div class="section-heading"><h2 id="camera-heading">カメラ映像</h2><p>車両を取り除いてから背景を登録してください。</p></div>
+      <div class="section-heading"><h2 id="camera-heading">カメラ映像</h2><p>① 検出範囲・A/Bを設定 → ② 車両のいない背景を登録 → ③ 車両を置き、手動でA→Bへ通過</p></div>
       <div id="cameras" class="camera-grid"></div>
-      <p class="help">映像は表示用640×360です。デモの線区・A/B位置は例です。実際の位置は設定JSONで設置映像に合わせます。</p>
+      <p class="help">緑の枠とIDは車両候補、赤は識別が不確かな状態です。背景との差を検出するため、手や影にも反応します。最初は直線の短い1区間・1編成で試してください。</p>
+    </section>
+    <section id="calibration-panel" class="config-panel" hidden aria-labelledby="calibration-heading">
+      <h2 id="calibration-heading">検出範囲とA/Bを画面で設定</h2>
+      <p>静止画像の上を順に4回クリックします。線路1本の直線区間を囲み、A→Bを進行方向にします。</p>
+      <p id="calibration-step" class="notice"></p>
+      <div class="calibration-frame"><img id="calibration-image" alt="設定用の静止画像"><canvas id="calibration-canvas" aria-label="範囲の対角2点とA位置、B位置をクリック"></canvas></div>
+      <div class="form-grid">
+        <label>線区<select id="calibration-lane"></select></label>
+        <label>方式<select id="calibration-mode"><option value="time">A→Bの時間差</option><option value="led">Aから直・曲を交互表示、Bで選択</option></select></label>
+        <label>時間差の境界（秒）<input id="calibration-time" type="number" min="0.1" max="60" step="0.1" value="2"></label>
+        <label>直・曲の切替間隔（秒）<input id="calibration-interval" type="number" min="0.1" max="60" step="0.1" value="2"></label>
+        <label>背景差のしきい値（全カメラ共通）<input id="calibration-threshold" type="number" min="1" max="255" step="1" value="25"></label>
+        <label>候補の最小面積（画素・共通）<input id="calibration-area" type="number" min="1" step="1" value="30"></label>
+        <label>フレーム間の追跡距離（画素・共通）<input id="calibration-distance" type="number" min="1" max="1000" step="1" value="80"></label>
+      </div>
+      <p class="help">車両が出ない場合は最小面積を下げます。小さいノイズが出る場合は最小面積や背景差を上げます。変更後は背景を登録し直します。</p>
+      <div class="toolbar-buttons"><button id="calibration-undo" type="button">1点戻す</button><button id="calibration-reset" type="button">4点を選び直す</button><button id="calibration-save" type="button" disabled>適用して背景登録へ</button><button id="calibration-close" type="button">閉じる</button></div>
+      <p class="help">適用できるのは全線区が待機中のときです。設定は現在の起動中に反映されます。「設定を保存」で次回用JSONを保存できます。</p>
     </section>
     <section aria-labelledby="routes-heading">
       <div class="section-heading"><h2 id="routes-heading">線区ごとの進路</h2><p>Bの判定で進路を確定し、編成全体の通過確認後に解除します。</p></div>
       <div id="lanes" class="lane-grid"><p class="empty-state" id="lanes-empty">サーバーから線区の状態を取得しています。</p></div>
+      <p id="mock-output" class="mock-output" aria-live="polite">模擬出力：まだ切替指令はありません。A検知だけではポイント位置を変えません。</p>
     </section>
     <section class="lower-grid">
       <div aria-labelledby="tracks-heading"><h2 id="tracks-heading">検出した車両</h2><div id="tracks" class="track-list"><p class="empty-state">状態取得待ち</p></div></div>
       <div aria-labelledby="events-heading"><h2 id="events-heading">最近の記録</h2><ol id="events" class="event-list"><li class="empty-state">記録はありません。</li></ol></div>
     </section>
-    <details class="config-panel"><summary>現在の設定を確認</summary><p class="help">ここでは編集しません。位置・時間の変更は設定JSONを編集し、サーバーを再起動してください。</p><button type="button" id="load-config">設定を読み込む</button><pre id="config-content">「設定を読み込む」を押してください。</pre></details>
+    <details class="config-panel"><summary>設定の確認・保存</summary><p class="help">画面で登録した位置・方式・時間を保存できます。背景画像は含まれないため、次回の起動時には背景を登録し直してください。</p><button type="button" id="load-config">設定を確認</button> <a class="button-link" href="/api/config/download" download="camera-test.local.json">設定を保存（JSON）</a><pre id="config-content">「設定を確認」を押してください。</pre></details>
     <footer>運転・停止・発車は手動です。映像の遮蔽や誤検出を含む実機試験前の試作です。</footer>
   </main>
   <template id="camera-template">
@@ -45,12 +64,16 @@
       <div class="preview-frame"><img width="640" height="360" alt="カメラのプレビュー"><span class="preview-state">接続中</span></div>
       <p class="camera-meta"></p>
       <p class="camera-error" hidden></p>
+      <button type="button" class="calibration-button">検出範囲・A/Bを設定</button>
       <div class="background-controls"><label><input type="checkbox" class="empty-confirm">この映像の範囲に車両がいないことを確認</label><button type="button" class="background-button" disabled>空の背景を登録</button></div>
     </article>
   </template>
   <template id="lane-template">
     <article class="lane-card">
       <div class="card-heading"><h3></h3><span class="lane-phase badge">未確認</span></div>
+      <p class="lane-mode help"></p>
+      <div class="direction-leds" aria-label="方向選択LEDの模擬表示"><span class="led-straight">● 直</span><span class="led-curve">● 曲</span></div>
+      <div class="point-output"><svg viewBox="0 0 160 76" role="img" aria-label="画面上の模擬ポイント"><path class="point-base" d="M12 57 H148 M65 57 Q94 57 142 14"/><path class="point-straight" d="M12 57 H148"/><path class="point-curve" d="M12 57 H65 Q94 57 142 14"/><text x="119" y="73">直</text><text x="146" y="19">曲</text></svg><span>ポイント（模擬）</span></div>
       <dl><div><dt>車両ID</dt><dd class="lane-track">—</dd></div><div><dt>最後の進路要求</dt><dd class="lane-route">—</dd></div><div><dt>選択LED相当</dt><dd class="lane-indication">—</dd></div></dl>
       <p class="lane-reason" hidden></p>
       <label class="clear-confirm-label"><input type="checkbox" class="clear-confirm">編成全体が通過したことを確認</label>

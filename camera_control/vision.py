@@ -88,12 +88,14 @@ class _Track:
     ambiguous: bool = False
     associable: bool = True
     fired: set[str] = field(default_factory=set)
+    bbox: tuple[int, int, int, int] | None = None
 
     def public(self) -> dict[str, Any]:
         return {
             "id": self.id, "camera": self.camera, "lane": self.lane,
             "center": list(self.center), "visible": self.visible,
             "ambiguous": self.ambiguous, "last_seen": self.last_seen,
+            "area": self.area, "bbox": list(self.bbox) if self.bbox else None,
         }
 
 
@@ -102,6 +104,7 @@ class _Detection:
     center: Point
     area: int
     ambiguous: bool
+    bbox: tuple[int, int, int, int]
 
 
 def _gray(image: np.ndarray) -> np.ndarray:
@@ -266,6 +269,9 @@ class VisionEngine:
             self._tracks = {i: t for i, t in self._tracks.items() if t.camera != camera_id}
             self._last_time.pop(camera_id, None)
 
+    def reset_lane(self, lane_id: str) -> None:
+        self._tracks={i:t for i,t in self._tracks.items() if t.lane!=lane_id}
+
     def _detections(self, camera: str, gray: np.ndarray, lane: LaneSpec) -> list[_Detection]:
         mask = self._masks[camera][lane.id]
         x0, x1, y0, y1 = self._regions[camera][lane.id]
@@ -282,6 +288,7 @@ class VisionEngine:
                 result.append(_Detection(
                     (float(xs.mean() + x0), float(ys.mean() + y0)), area,
                     bool(overlap[ys, xs].any()) or (self.max_area is not None and area > self.max_area),
+                    (int(xs.min()+x0),int(ys.min()+y0),int(xs.max()+x0),int(ys.max()+y0)),
                 ))
         return sorted(result, key=lambda d: (d.center[0], d.center[1]))
 
@@ -387,6 +394,7 @@ class VisionEngine:
                                            "timestamp": old_time + fraction * (timestamp - old_time)})
                             track.fired.add(gate_name)
                 track.center, track.last_seen, track.area = detection.center, float(timestamp), detection.area
+                track.bbox = detection.bbox
                 track.visible, track.ambiguous = True, lane_uncertain
             uncertain = lane_uncertain
             for j, detection in enumerate(current):
@@ -396,6 +404,7 @@ class VisionEngine:
                     warnings.append("lane_identity_unresolved:" + lane.id)
                     continue
                 track = _Track(self._next_id, lane.id, camera, detection.center, float(timestamp), detection.area)
+                track.bbox = detection.bbox
                 self._tracks[track.id] = track
                 self._next_id += 1
         events.sort(key=lambda e: (e["timestamp"], e["track_id"], e["gate"]))

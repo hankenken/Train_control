@@ -8,7 +8,7 @@
     "fastapi": "0.141.1",
     "uvicorn": "0.52.1"
   },
-  "new_python_tests_passed": 52,
+  "new_python_tests_passed": 72,
   "existing_node_tests_passed": 10,
   "synthetic_four_object_gate_decisions_passed": true,
   "stationary_object_detection_test_passed": true,
@@ -18,7 +18,15 @@
     "engine": "headless Chromium",
     "javascript_errors": 0,
     "two_640x360_previews": true,
-    "pause_resume_controls_passed": true
+    "pause_resume_controls_passed": true,
+    "screen_four_click_calibration_passed": true,
+    "calibration_mode_and_timing_update_passed": true,
+    "background_invalidation_and_registration_passed": true,
+    "settings_export_passed": true,
+    "mobile_390px_no_horizontal_overflow": true,
+    "alternating_leds_do_not_change_mock_point_before_b": true,
+    "status_poll_interval_ms": 250,
+    "one_camera_has_one_card": true
   },
   "pi_scripts_refuse_non_pi_before_installation": true,
   "hardware_outputs_implemented": false,
@@ -32,5 +40,13 @@
   "physical_outputs_implemented": false,
   "driver_ic_candidate": "DRV8235RTER native I2C",
   "driver_ic_communication_tested_on_hardware": false,
-  "output_bridge_firmware_implemented": false
+  "output_bridge_firmware_implemented": true,
+  "camera_only_python_tests_passed": 61,
+  "screen_calibration_tests_passed": 9,
+  "standalone_bridge_client_tests_passed": 11,
+  "output_bridge_status": "Paused standalone draft; not connected to camera app or included in PC test ZIP",
+  "pc_test_archive": "Train_camera_PC_test.zip",
+  "pc_test_includes_live_driver_tools": false,
+  "pc_test_extracted_archive_tests_passed": 61,
+  "pc_test_extracted_archive_check_only_passed": true
 }
