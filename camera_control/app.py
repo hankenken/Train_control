@@ -1,4 +1,4 @@
-"""Local Pi camera/vision prototype. No GPIO or physical-output implementation."""
+"""Local camera/vision prototype for LattePanda Windows and legacy Pi. No GPIO or physical-output implementation."""
 from __future__ import annotations
 import argparse
 from collections import deque
@@ -17,7 +17,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, StrictBool
 
 from .routes import RouteManager
-from .sources import DemoSource, ReplaySource, PiSource, clock
+from .sources import DemoSource, ReplaySource, PiSource, USBSource, clock
 from .vision import VisionEngine
 
 ROOT = Path(__file__).resolve().parent
@@ -51,6 +51,17 @@ def read_config(path):
     indices=[c['index'] for c in cameras if 'index' in c]
     if len(indices)!=len(set(indices)):
         raise ValueError('camera indexが重複しています')
+    devices=[c['device'] for c in cameras if 'device' in c]
+    if any(isinstance(d,bool) or not isinstance(d,int) or d<0 for d in devices) or len(devices)!=len(set(devices)):
+        raise ValueError('USB deviceは重複しない0以上の整数で指定してください')
+    for c in cameras:
+        if 'device' not in c:continue
+        for key,default in [('capture_size',[1920,1080]),('processing_size',[1280,720])]:
+            size=c.get(key,default)
+            if not isinstance(size,list) or len(size)!=2 or any(isinstance(n,bool) or not isinstance(n,int) or n<=0 for n in size):
+                raise ValueError(key+'は正の整数2個で指定してください')
+        if c.get('backend','dshow') not in ('dshow','msmf','auto'):
+            raise ValueError('不明なUSB backendです')
     return config
 
 
@@ -60,7 +71,7 @@ class Runtime:
             raise ValueError('実機出力を有効化する設定はありません')
         self.config = copy.deepcopy(config)
         self.mode = mode
-        if mode not in ('demo', 'pi', 'replay'):
+        if mode not in ('demo', 'pi', 'replay', 'usb'):
             raise ValueError('不明な実行モードです')
         self.manager = RouteManager(config['routes'])
         opts = dict(config.get('vision', {}))
@@ -70,7 +81,7 @@ class Runtime:
         self.sources = {}
         epoch = clock()
         for c in config['cameras']:
-            cls = {'demo': DemoSource, 'pi': PiSource, 'replay': ReplaySource}[mode]
+            cls = {'demo': DemoSource, 'pi': PiSource, 'replay': ReplaySource, 'usb': USBSource}[mode]
             self.sources[c['id']] = cls(c, epoch) if mode == 'demo' else cls(c)
         self.lock = threading.RLock()
         self.stop_event = threading.Event()
@@ -256,6 +267,13 @@ class Runtime:
                 info['metrics'] = self.metrics.get(source.id, {})
                 cameras.append(info)
             warnings = [w for ws in self.warnings.values() for w in ws]
+            if self.mode == 'usb':
+                for camera in cameras:
+                    info=camera['capture_info']
+                    reported=info.get('reported_fourcc')
+                    if reported and reported!=info.get('fourcc_requested'):
+                        warnings.append(camera['id']+'：要求した動画形式と実際の報告形式が異なります（'+reported+'）。USB帯域と遅延を確認してください。')
+                warnings.append('USB映像の時刻は読取り完了時刻です。撮影時刻・内部遅延・2台の同期は未測定です。')
             if not self.vision_lanes:
                 warnings.append('実線路の検知範囲は未設定です。vision.lanesを登録するまでA/B判定を行いません。')
             return {'mode': self.mode, 'running': self.running, 'paused': self.paused,
@@ -339,14 +357,14 @@ def create_app(config=None, mode='demo', log_path=None):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Pi-only camera control prototype (no physical outputs)')
-    parser.add_argument('--mode', choices=['demo', 'pi', 'replay'], default='demo')
+    parser = argparse.ArgumentParser(description='Camera control prototype (no physical outputs)')
+    parser.add_argument('--mode', choices=['demo', 'pi', 'replay', 'usb'], default='demo')
     parser.add_argument('--config')
     parser.add_argument('--host', default='127.0.0.1')
     parser.add_argument('--port', type=int, default=8000)
     parser.add_argument('--log', help='JSONL event log path; optional')
     args = parser.parse_args()
-    config_path = args.config or str(ROOT/'config'/({'demo':'demo.json','pi':'pi5.example.json','replay':'replay.example.json'}[args.mode]))
+    config_path = args.config or str(ROOT/'config'/({'demo':'demo.json','pi':'pi5.example.json','replay':'replay.example.json','usb':'lattepanda.example.json'}[args.mode]))
     try:
         config = read_config(config_path)
         if args.mode == 'pi':

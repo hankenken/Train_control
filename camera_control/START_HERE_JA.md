@@ -1,3 +1,5 @@
+> 旧Pi版の手順です。現在のLattePanda・Windows10版は [START_HERE_WIN10_JA.md](START_HERE_WIN10_JA.md) を参照してください。
+
 # Raspberry Pi 5で試す
 
 必要：Raspberry Pi 5、64-bit Raspberry Pi OS、ネット接続、モニタ・キーボード・マウス。

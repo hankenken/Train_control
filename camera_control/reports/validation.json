@@ -1,14 +1,14 @@
 {
-  "scope": "Pi-only camera prototype; synthetic validation on cloud Linux",
+  "scope": "LattePanda Windows10 target; synthetic and mocked USB API tests executed on cloud Linux",
   "python": "3.12.14",
   "platform": "x86_64",
   "dependencies": {
-    "opencv": "5.0.0",
+    "opencv": "4.14.0",
     "numpy": "2.3.5",
     "fastapi": "0.141.1",
     "uvicorn": "0.52.1"
   },
-  "new_python_tests_passed": 37,
+  "new_python_tests_passed": 52,
   "existing_node_tests_passed": 10,
   "synthetic_four_object_gate_decisions_passed": true,
   "stationary_object_detection_test_passed": true,
@@ -24,5 +24,13 @@
   "hardware_outputs_implemented": false,
   "pi5_hardware_tested": false,
   "real_two_camera_rate_measured": false,
-  "real_train_detection_tested": false
+  "real_train_detection_tested": false,
+  "usb_backend_tests_passed": 13,
+  "windows10_scripts_executed": false,
+  "lattepanda_hardware_tested": false,
+  "windows_usb_capture_tested_on_hardware": false,
+  "physical_outputs_implemented": false,
+  "driver_ic_candidate": "DRV8235RTER native I2C",
+  "driver_ic_communication_tested_on_hardware": false,
+  "output_bridge_firmware_implemented": false
 }

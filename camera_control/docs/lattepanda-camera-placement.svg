@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 830">
+<rect width="1120" height="830" fill="#f4f7f9"/>
+<g font-family="sans-serif" fill="#18323d">
+<text x="35" y="35" font-size="25">LattePanda・USBカメラ2台の配置条件例</text>
+<rect x="80" y="100" width="600" height="600" fill="white" stroke="#263f49" stroke-width="3"/>
+<rect x="46.58" y="71.29" width="666.84" height="357.42" fill="#1a7db5" fill-opacity=".12" stroke="#1a7db5" stroke-width="2" stroke-dasharray="8 5"/>
+<circle cx="380" cy="250.0" r="15" fill="#1a7db5"/>
+<text x="405" y="256.0" font-size="20">カメラ0</text>
+<rect x="46.58" y="371.29" width="666.84" height="357.42" fill="#168567" fill-opacity=".12" stroke="#168567" stroke-width="2" stroke-dasharray="8 5"/>
+<circle cx="380" cy="550.0" r="15" fill="#168567"/>
+<text x="405" y="556.0" font-size="20">カメラ1</text>
+<text x="270" y="750" font-size="21">線路全体：約1m × 1m</text>
+<text x="725" y="135" font-size="21">上から見た配置</text>
+<text x="725" y="185" font-size="17">カメラ中心：横50cm</text>
+<text x="725" y="215" font-size="17">縦25cm／75cm</text>
+<text x="725" y="265" font-size="17">線路面からカメラまで50cm</text>
+<text x="725" y="295" font-size="17">屋根高さ5cmを仮定</text>
+<text x="725" y="325" font-size="17">→ 屋根まで45cm</text>
+<text x="725" y="375" font-size="17">1台の理論範囲：約1.11m × 0.60m</text>
+<text x="725" y="405" font-size="17">重複領域：約10cm</text>
+<text x="725" y="465" font-size="17">水平102°・垂直67°を仮定。</text>
+<text x="725" y="495" font-size="17">歪み・動画モード・屋根高さで変わる。</text>
+<text x="725" y="525" font-size="17">USB実機での画角は未確認。</text>
+<text x="725" y="585" font-size="17">各A/B地点の担当カメラを固定。</text>
+<text x="725" y="615" font-size="17">車両の2重検知を避ける。</text>
+<text x="80" y="795" font-size="16">カメラ／レイアウトの寸法確認用。検知範囲・A/B線は実車の映像で別途登録する。</text>
+</g></svg>

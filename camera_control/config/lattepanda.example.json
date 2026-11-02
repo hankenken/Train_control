@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "outputs_enabled": false,
+  "layout_note": "LattePanda 3 Delta864・Windows10用ひな形。USB機器番号・実画角・空背景を確認し、vision.lanesを登録するまでA/B判定しません。",
+  "routes": {
+    "lanes": [
+      {
+        "id": "upper_outer",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "upper_inner",
+        "mode": "time",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "lower_outer",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      },
+      {
+        "id": "lower_inner",
+        "mode": "led",
+        "time_threshold_s": 2,
+        "led_interval_s": 2
+      }
+    ]
+  },
+  "vision": {
+    "lanes": [],
+    "threshold": 25,
+    "min_area": 100,
+    "max_match_distance": 100,
+    "lost_timeout": 1.0,
+    "max_tracks": 4,
+    "morph_kernel": 3
+  },
+  "cameras": [
+    {
+      "id": "cam0",
+      "name": "USBカメラ 上半分",
+      "device": 0,
+      "backend": "dshow",
+      "fps": 15,
+      "capture_size": [
+        1920,
+        1080
+      ],
+      "processing_size": [
+        1280,
+        720
+      ],
+      "fourcc": "MJPG",
+      "properties": {}
+    },
+    {
+      "id": "cam1",
+      "name": "USBカメラ 下半分",
+      "device": 1,
+      "backend": "dshow",
+      "fps": 15,
+      "capture_size": [
+        1920,
+        1080
+      ],
+      "processing_size": [
+        1280,
+        720
+      ],
+      "fourcc": "MJPG",
+      "properties": {}
+    }
+  ],
+  "stale_frame_s": 0.75,
+  "preview_fps": 4
+}

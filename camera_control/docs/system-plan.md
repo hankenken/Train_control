@@ -1,3 +1,5 @@
+> 最新版：LattePanda 3 Delta 864＋Windows 10＋USB UVCカメラ2台。下記は旧Pi版の設計記録です。現構成は [README_LATTEPANDA.md](../README_LATTEPANDA.md) を参照。
+
 # カメラ方式：実装した検証範囲
 
 Windowsは使わず、Pi 5と2台のCamera Module 3 Wideで完結する構成。

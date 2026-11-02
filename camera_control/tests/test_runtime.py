@@ -80,6 +80,26 @@ class RuntimeTests(unittest.TestCase):
             self.assertEqual(len(rows),1)
             self.assertTrue(rows[0]['simulated'])
 
+    def test_lattepanda_config_uses_two_usb_sources_without_opening_devices(self):
+        config = read_config(ROOT/'config/lattepanda.example.json')
+        runtime = Runtime(config, mode='usb')
+        self.assertEqual([s.config['device'] for s in runtime.sources.values()], [0,1])
+        self.assertTrue(all(s.latest() is None for s in runtime.sources.values()))
+        self.assertFalse(runtime.status()['outputs_enabled'])
+        self.assertTrue(any('USB' in w for w in runtime.status()['warnings']))
+        self.assertFalse(runtime.vision_lanes)
+
+    def test_duplicate_usb_device_or_invalid_dimensions_are_rejected(self):
+        config = read_config(ROOT/'config/lattepanda.example.json')
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/'bad.json'
+            for change in ['duplicate','size']:
+                bad=copy.deepcopy(config)
+                if change=='duplicate':bad['cameras'][1]['device']=0
+                else:bad['cameras'][0]['capture_size']=[0,1080]
+                p.write_text(json.dumps(bad))
+                with self.assertRaises(ValueError):read_config(p)
+
     def test_config_cannot_enable_outputs(self):
         with tempfile.TemporaryDirectory() as d:
             path=Path(d)/'bad.json'

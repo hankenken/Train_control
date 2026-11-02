@@ -33,6 +33,7 @@ class LatestSource:
         self.error = None
         self.frames = 0
         self.capture_info = {}
+        self._first_timestamp = None
 
     def start(self):
         self._thread = threading.Thread(target=self._run, name='capture-'+self.id, daemon=True)
@@ -57,6 +58,8 @@ class LatestSource:
             raise ValueError('Invalid capture timestamp')
         # Consumers never share a driver-owned request buffer.
         with self._lock:
+            if self._first_timestamp is None:
+                self._first_timestamp = timestamp
             self.frames += 1
             self._frame = Frame(image.copy(), timestamp, self.frames, kind)
 
@@ -71,10 +74,13 @@ class LatestSource:
 
     def status(self):
         f = self.latest()
+        rate = ((self.frames-1)/(f.timestamp-self._first_timestamp)
+                if f and self.frames>1 and f.timestamp>self._first_timestamp else None)
         return {'id': self.id, 'name': self.config.get('name', self.id),
                 'frames': self.frames, 'last_timestamp': f.timestamp if f else None,
                 'timestamp_kind': f.timestamp_kind if f else None,
-                'error': self.error, 'capture_info': self.capture_info}
+                'error': self.error, 'observed_read_fps': round(rate,2) if rate is not None else None,
+                'capture_info': dict(self.capture_info)}
 
 
 class DemoSource(LatestSource):
@@ -204,3 +210,88 @@ class PiSource(LatestSource):
                 self.camera.stop()
             finally:
                 self.camera.close()
+
+
+class USBSource(LatestSource):
+    """UVC capture for LattePanda/Windows. Times are host-read, not exposure times.
+
+    The latest-frame slot bounds our own queue only. Driver/USB buffering and
+    inter-camera synchronization must be measured separately on real devices.
+    """
+    def run(self):
+        import cv2
+        device = self.config.get('device')
+        if isinstance(device, bool) or not isinstance(device, int) or device < 0:
+            raise ValueError('USBカメラのdeviceは0以上の整数で指定してください')
+        backend = self.config.get('backend', 'dshow')
+        apis = {'dshow': cv2.CAP_DSHOW, 'msmf': cv2.CAP_MSMF, 'auto': cv2.CAP_ANY}
+        if backend not in apis:
+            raise ValueError('backendはdshow、msmf、autoのいずれかです')
+        width, height = self.config.get('capture_size', [1920, 1080])
+        low = tuple(self.config.get('processing_size', [1280, 720]))
+        fps = float(self.config.get('fps', 15))
+        fourcc = self.config.get('fourcc', 'MJPG')
+        if not isinstance(fourcc, str) or len(fourcc) != 4:
+            raise ValueError('fourccはMJPGなどの4文字です')
+        self.capture = cv2.VideoCapture(device, apis[backend])
+        if not self.capture.isOpened():
+            raise RuntimeError(f'USBカメラ{device}を開けません。機器番号・権限・使用中アプリを確認してください')
+        accepted = {}
+        # Some UVC devices choose supported resolutions according to codec.
+        for name, prop, value in [
+                ('fourcc', cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*fourcc)),
+                ('width', cv2.CAP_PROP_FRAME_WIDTH, width),
+                ('height', cv2.CAP_PROP_FRAME_HEIGHT, height),
+                ('fps', cv2.CAP_PROP_FPS, fps),
+                ('buffer_size', cv2.CAP_PROP_BUFFERSIZE, 1)]:
+            accepted[name] = bool(self.capture.set(prop, value))
+        properties = self.config.get('properties', {})
+        property_ids = {'autofocus': cv2.CAP_PROP_AUTOFOCUS,
+                        'focus': cv2.CAP_PROP_FOCUS,
+                        'auto_exposure': cv2.CAP_PROP_AUTO_EXPOSURE,
+                        'exposure': cv2.CAP_PROP_EXPOSURE,
+                        'auto_wb': cv2.CAP_PROP_AUTO_WB,
+                        'wb_temperature': cv2.CAP_PROP_WB_TEMPERATURE}
+        for name, value in properties.items():
+            if name not in property_ids or isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+                raise ValueError('不明または無効なカメラ設定: '+name)
+            # Units vary by camera/backend. No guessed exposure conversion.
+            accepted[name] = bool(self.capture.set(property_ids[name], value))
+        def reported(prop):
+            value = float(self.capture.get(prop))
+            return value if math.isfinite(value) else None
+        code = reported(cv2.CAP_PROP_FOURCC)
+        codec = ''.join(chr((int(code) >> (8*i)) & 255) for i in range(4)) if code is not None else None
+        if codec is not None:
+            codec = ''.join(c if 32 <= ord(c) < 127 else '?' for c in codec)
+        self.capture_info = {
+            'device_index': device, 'backend_requested': backend,
+            'requested_size': [width, height], 'processing_size': list(low),
+            'fps_target': fps, 'fourcc_requested': fourcc,
+            'reported_size': [reported(cv2.CAP_PROP_FRAME_WIDTH), reported(cv2.CAP_PROP_FRAME_HEIGHT)],
+            'reported_fps': reported(cv2.CAP_PROP_FPS), 'reported_fourcc': codec,
+            'property_set_accepted': accepted, 'driver_buffering_verified': False,
+            'timestamp_note': 'host_read_complete。露光時刻ではなく、USB内部遅延と2台の同期は未測定。',
+            'note': '機器番号は再接続で変わる場合があります。各画像の担当範囲を確認してください'}
+        while not self._stop.is_set():
+            ok, image = self.capture.read()
+            timestamp = clock()
+            if not ok or image is None or not isinstance(image, np.ndarray) or image.size == 0:
+                raise RuntimeError('USBカメラの取得が停止しました。接続を確認してアプリを再起動してください')
+            if image.dtype != np.uint8 or image.ndim not in (2, 3):
+                raise RuntimeError('USBカメラの画像形式を解釈できません')
+            actual_height, actual_width = image.shape[:2]
+            self.capture_info['actual_frame_size'] = [actual_width, actual_height]
+            if (actual_width, actual_height) != (width, height):
+                raise RuntimeError(f'要求{width}x{height}に対し実画像は{actual_width}x{actual_height}です。対応モードを確認し設定を修正してください')
+            if abs(actual_width/actual_height-low[0]/low[1]) > .01:
+                raise RuntimeError('撮影サイズと画像処理サイズの縦横比を合わせてください')
+            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) if image.ndim == 3 else image
+            if (actual_width, actual_height) != low:
+                gray = cv2.resize(gray, low, interpolation=cv2.INTER_AREA)
+            self.publish(gray, timestamp, 'host_read_complete')
+            # Drain camera/driver frames continuously; do not accumulate a queue.
+
+    def close(self):
+        if hasattr(self, 'capture'):
+            self.capture.release()

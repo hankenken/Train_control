@@ -1,3 +1,5 @@
+> 現在の指定は **LattePanda 3 Delta 864＋Windows 10**です。[現在の導入手順](README_LATTEPANDA.md)を参照してください。以下は旧Pi版の保存資料です。
+
 # Raspberry Pi内で動かすカメラ進路選択・試作
 
 Raspberry Pi 5（8GB）とCamera Module 3 Wideを2台使用し、撮影から検出・進路選択・ブラウザ表示までPi内で実行する構成です。Windowsはブラウザで表示する端末として使えます。

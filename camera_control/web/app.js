@@ -4,7 +4,7 @@
   const $ = (selector, scope = document) => scope.querySelector(selector);
   const cameraCards = new Map();
   const laneCards = new Map();
-  const modeNames = { demo: "デモ映像", replay: "録画の再生", pi: "Raspberry Piカメラ" };
+  const modeNames = { demo: "デモ映像", replay: "録画の再生", pi: "Raspberry Piカメラ", usb: "LattePanda・USBカメラ" };
   const phaseNames = { idle: "待機", waiting: "Bの判定待ち", locked: "進路確定・ロック中", uncertain: "判定保留" };
   const laneNames = { upper_outer: "上側・外線", upper_inner: "上側・内線", lower_outer: "下側・外線", lower_inner: "下側・内線", UP_OUT: "上側・外線", UP_IN: "上側・内線", LOW_OUT: "下側・外線", LOW_IN: "下側・内線" };
   let connected = false;
